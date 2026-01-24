@@ -14,7 +14,7 @@ source(here::here("code", "0-setup.R"))
 # a = exp(int)
 
 ds <- load_ds() |>
-  filter(age_years >= 1 & age_years <= 8) |>
+  filter(age_years >= 1 & age_years <= 9) |>
   filter(inventory_type == 'used') %>%
   filter(!is.na(price), !is.na(msrp)) %>%
   # Compute RR for all vehicles

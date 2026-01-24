@@ -11,7 +11,6 @@ price_levels <- c(
 # Open
 ds <- load_ds() %>%
   filter(inventory_type == 'new') %>%
-  filter(listing_year %in% c(2018, 2024)) %>%
   mutate(
     price_bin = case_when(
       price < 30000 ~ "$0-$30k",

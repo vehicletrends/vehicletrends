@@ -11,7 +11,6 @@ ds <- load_ds() %>%
 # Basic quantiles by age ----
 
 quantiles <- ds %>%
-  filter(age_years <= 10) %>%
   mutate(age_months = age_years * 12) %>%
   group_by(age_months, powertrain, vehicle_type) %>%
   summarise(
@@ -23,15 +22,14 @@ quantiles <- ds %>%
 
 # Save
 
-write_parquet(
+write_csv(
   quantiles,
-  here::here('data', 'quantiles_miles.parquet')
+  here::here('data', 'quantiles_miles.csv')
 )
 
 # Separately compute the quantiles for BEVs only, separating out Tesla
 
 quantiles_bev <- ds %>%
-  filter(age_years <= 10) %>%
   mutate(age_months = age_years * 12) %>%
   filter(powertrain == "bev") %>%
   group_by(age_months, vehicle_type, tesla) %>%
@@ -44,9 +42,9 @@ quantiles_bev <- ds %>%
 
 # Save
 
-write_parquet(
+write_csv(
   quantiles_bev,
-  here::here('data', 'quantiles_miles_bev.parquet')
+  here::here('data', 'quantiles_miles_bev.csv')
 )
 
 # Quantiles of DVMT ----
@@ -104,7 +102,7 @@ quantiles_dvmt <- rbind(
   quantiles_dvmt_bev
 )
 
-write_parquet(
+write_csv(
   quantiles_dvmt,
-  here::here('data', 'quantiles_dvmt.parquet')
+  here::here('data', 'quantiles_dvmt.csv')
 )

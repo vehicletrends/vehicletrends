@@ -83,11 +83,12 @@ raw_data_filters <- function(ds) {
   ds %>%
     filter(listing_year < 2025) %>%
     filter(listing_year >= 2018) %>%
-    filter(!powertrain %in% c('cng', 'fcev')) %>%
+    filter(powertrain != 'cng') %>%
     filter(!vehicle_type %in% c('truck', 'van')) %>%
     filter(state %in% us_states) %>%
     filter(!is.na(latitude)) %>%
     filter(!is.na(longitude)) %>%
+    filter(age_years <= 15) %>%
 
     # dealer_id "2202_2504_1102390" is a very large Tesla store in Illinois
     # Since no other Tesla store sales are recorded in this dataset,
@@ -117,12 +118,6 @@ raw_data_filters <- function(ds) {
         )
       ),
     ) %>%
-    # Merge together flex and cv powertrains
-    mutate(
-      powertrain = ifelse(powertrain == 'flex', 'cv', powertrain)
-    ) %>%
-    # filter(vehicle_type %in% c('car', 'suv')) %>%
-    # filter(powertrain %in% c('cv', 'hev', 'phev', 'bev')) %>%
     # Remove odd cases that are likely the result of coding errors in the
     # original raw data (very few of these out of 10s of millions of listings)
     # 1) Remove "new" cars that are more than 3 years old
@@ -140,7 +135,6 @@ raw_data_filters <- function(ds) {
 
 load_ds <- function() {
   ds <- open_dataset(here::here('data_local', 'listings.parquet')) %>%
-    filter(listing_year < 2025) %>%
     filter(!is.na(powertrain)) %>%
     filter(!is.na(vehicle_type))
   return(ds)
@@ -261,24 +255,49 @@ get_quantiles_detailed <- function(df, var) {
 }
 
 clean_factors_powertrain <- function(ds) {
-    ds %>%
-        mutate(
-            powertrain = factor(
-                powertrain,
-                levels = c("cv", "flex", "hev", "phev", "bev"),
-                labels = c("Conventional", "Flex-fuel", "Hybrid", "PHEV", "BEV")
-            )
+  ds %>%
+    mutate(
+      powertrain = factor(
+        powertrain,
+        levels = c(
+          "cv",
+          "diesel",
+          "flex",
+          "hev",
+          "phev",
+          "bev"
+        ),
+        labels = c(
+          "Conventional",
+          "Diesel",
+          "Flex-fuel",
+          "Hybrid",
+          "PHEV",
+          "BEV"
         )
+      )
+    )
 }
 
 clean_factors_vehicle_type <- function(ds) {
-    ds %>%
-        mutate(
-            vehicle_type = factor(
-                vehicle_type,
-                levels = c("car", "cuv", "suv", "pickup", "minivan"),
-                labels = c("Car", "CUV", "SUV", "Pickup", "Minivan")
-            )
+  ds %>%
+    mutate(
+      vehicle_type = factor(
+        vehicle_type,
+        levels = c(
+          "car",
+          "cuv",
+          "suv",
+          "pickup",
+          "minivan"
+        ),
+        labels = c(
+          "Car",
+          "CUV",
+          "SUV",
+          "Pickup",
+          "Minivan"
         )
+      )
+    )
 }
-
