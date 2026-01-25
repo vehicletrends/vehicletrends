@@ -1,4 +1,4 @@
-source(here::here("code", "setup.R"))
+source(here::here("R", "setup.R"))
 
 # Basic exponential decline model: r = a*exp(b1*x1 + b2*x2)
 # where

@@ -1,4 +1,4 @@
-source(here::here("code", "setup.R"))
+source(here::here("R", "setup.R"))
 
 font <- "Arial"
 col_red <- "#FF0000"
@@ -7,13 +7,13 @@ col_blue <- "#0000FF"
 # Import counts data to compute HHI
 
 counts_total_18 <- open_dataset(here(
-  'data_local',
+  'data-raw',
   'counts-2018',
   'counts_30.parquet'
 ))
 
 counts_total_24 <- open_dataset(here(
-  'data_local',
+  'data-raw',
   'counts-2024',
   'counts_30.parquet'
 ))

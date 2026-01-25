@@ -1,4 +1,4 @@
-source(here::here("code", "setup.R"))
+source(here::here("R", "setup.R"))
 
 # The raw listings are stored on an external drive. Since they are
 # under a license agreement, they cannot be made publicly
@@ -75,7 +75,7 @@ ds <- ds %>%
 
 # Inflation adjust the listing prices and MSRPs
 
-cpi <- read_csv(here::here('data_local', 'inflation-cpi.csv')) %>%
+cpi <- read_csv(here::here('data-raw', 'inflation-cpi.csv')) %>%
   clean_names() %>%
   pivot_longer(
     names_to = 'month',
@@ -114,4 +114,4 @@ ds <- ds %>%
 
 # Write the "data/listings.parquet" file
 ds %>%
-  write_parquet(here::here('data_local', 'listings.parquet'))
+  write_parquet(here::here('data-raw', 'listings.parquet'))

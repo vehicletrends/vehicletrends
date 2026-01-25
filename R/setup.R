@@ -134,14 +134,23 @@ raw_data_filters <- function(ds) {
 }
 
 load_ds <- function() {
-  ds <- open_dataset(here::here('data_local', 'listings.parquet')) %>%
+  ds <- open_dataset(here::here('data-raw', 'listings.parquet')) %>%
     filter(!is.na(powertrain)) %>%
     filter(!is.na(vehicle_type))
   return(ds)
 }
 
+get_quantiles_summary <- function(df, var) {
+  df %>%
+    summarise(
+      q25 = quantile({{ var }}, 0.25),
+      q50 = quantile({{ var }}, 0.5),
+      q75 = quantile({{ var }}, 0.75)
+    )
+}
+
 get_quantiles_detailed <- function(df, var) {
-  result <- df %>%
+  df %>%
     summarise(
       var01 = fquantile({{ var }}, 0.01),
       var02 = fquantile({{ var }}, 0.02),
@@ -251,7 +260,6 @@ get_quantiles_detailed <- function(df, var) {
     separate(quantile, into = c('drop', 'quantile'), sep = 'var') %>%
     select(-drop) %>%
     mutate(quantile = as.numeric(quantile))
-  return(result)
 }
 
 clean_factors_powertrain <- function(ds) {

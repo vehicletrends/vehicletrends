@@ -1,5 +1,4 @@
-# Load functions, libraries, and other settings
-source(here::here("code", "setup.R"))
+source(here::here("R", "setup.R"))
 
 ds <- load_ds() %>%
   filter(age_years >= 1 & age_years <= 9) |>
