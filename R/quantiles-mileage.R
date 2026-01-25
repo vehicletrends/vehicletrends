@@ -160,6 +160,35 @@ select_bev_tesla <- function(df) {
     mutate(powertrain = ifelse(tesla == 1, 'bev_tesla', 'bev_non_tesla'))
 }
 
+# Format powertrain and vehicle_type labels for display
+format_labels <- function(df) {
+  powertrain_labels <- c(
+    "all" = "All",
+    "diesel" = "Diesel",
+    "cv" = "Conventional",
+    "flex" = "Flex Fuel",
+    "hev" = "Hybrid",
+    "phev" = "PHEV",
+    "bev" = "BEV",
+    "bev_tesla" = "BEV (Tesla)",
+    "bev_non_tesla" = "BEV (Non-Tesla)",
+    "fcev" = "Fuel Cell EV"
+  )
+  vehicle_type_labels <- c(
+    "all" = "All",
+    "car" = "Car",
+    "cuv" = "CUV",
+    "suv" = "SUV",
+    "pickup" = "Pickup",
+    "minivan" = "Minivan"
+  )
+  df %>%
+    mutate(
+      powertrain = powertrain_labels[powertrain],
+      vehicle_type = vehicle_type_labels[vehicle_type]
+    )
+}
+
 names_vmt_age <- c(
   "age_bin",
   "powertrain",
@@ -241,6 +270,7 @@ vmt_age <- rbind(
   vmt_age_both_bev
 ) %>%
   mutate(age_bin = age_bin + 1.5) %>% # midpoint of each bin
+  format_labels() %>%
   arrange(powertrain, vehicle_type, age_bin, quantile)
 
 # Preview
@@ -321,6 +351,7 @@ vmt_daily <- rbind(
   vmt_daily_both,
   vmt_daily_both_bev
 ) %>%
+  format_labels() %>%
   arrange(powertrain, vehicle_type, quantile)
 
 # Save
