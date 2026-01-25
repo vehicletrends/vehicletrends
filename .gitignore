@@ -6,3 +6,8 @@
 .vscode
 data_local
 listings.parquet
+docs
+doc
+Meta
+.idea
+.Rproj.user

@@ -1,4 +1,4 @@
-source(here::here('code', '0-setup.R'))
+source(here::here("code", "setup.R"))
 
 price_levels <- c(
   "$0-$30k",

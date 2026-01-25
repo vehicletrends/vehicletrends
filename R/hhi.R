@@ -1,5 +1,4 @@
-# Load functions, libraries, and other settings
-source(here::here("code", "0-setup.R"))
+source(here::here("code", "setup.R"))
 
 font <- "Arial"
 col_red <- "#FF0000"
