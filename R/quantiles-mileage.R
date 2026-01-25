@@ -1,12 +1,32 @@
 source(here::here("R", "setup.R"))
 
-get_quantiles_miles <- function(df) {
+get_quantiles_vmt <- function(df) {
   df %>%
     summarise(
-      q25 = quantile(miles, 0.25),
-      q50 = quantile(miles, 0.5),
-      q75 = quantile(miles, 0.75)
+      vmt25 = quantile(miles, 0.25),
+      vmt50 = quantile(miles, 0.50),
+      vmt75 = quantile(miles, 0.75)
     )
+}
+
+# Reshape vmt quantiles to long format (call after collect)
+reshape_quantiles_vmt <- function(df) {
+  df %>%
+    pivot_longer(
+      names_to = 'quantile',
+      values_to = 'miles',
+      cols = starts_with('vmt')
+    ) %>%
+    mutate(quantile = as.numeric(gsub("vmt", "", quantile)))
+}
+
+# Helper to run the full quantile pipeline for vmt by age
+collect_vmt_quantiles <- function(df) {
+  df %>%
+    get_quantiles_vmt() %>%
+    collect() %>%
+    ungroup() %>%
+    reshape_quantiles_vmt()
 }
 
 # Summarize dvmt quantiles (works in Arrow)
@@ -120,7 +140,7 @@ reshape_quantiles_dvmt <- function(df) {
   df %>%
     pivot_longer(
       names_to = 'quantile',
-      values_to = 'dvmt',
+      values_to = 'miles',
       cols = starts_with('dvmt')
     ) %>%
     mutate(quantile = as.numeric(gsub("dvmt", "", quantile)))
@@ -134,27 +154,25 @@ collect_dvmt_quantiles <- function(df) {
     reshape_quantiles_dvmt()
 }
 
-
 select_bev_tesla <- function(df) {
   df %>%
     filter(powertrain == "bev") %>%
     mutate(powertrain = ifelse(tesla == 1, 'bev_tesla', 'bev_non_tesla'))
 }
 
-names_avmt <- c(
+names_vmt_age <- c(
   "age_bin",
   "powertrain",
   "vehicle_type",
-  "q25",
-  "q50",
-  "q75"
+  "quantile",
+  "miles"
 )
 
-names_dvmt <- c(
+names_vmt_daily <- c(
   "powertrain",
   "vehicle_type",
   "quantile",
-  "dvmt"
+  "miles"
 )
 
 # Open miles arrow dataset
@@ -169,79 +187,70 @@ ds <- load_ds() %>%
   mutate(age_bin = floor(age_months / 3) * 3)
 
 # Quantiles for all powertrains by age
-avmt_pt <- ds %>%
-  group_by(age_bin, powertrain) %>%
-  get_quantiles_miles() %>%
-  collect() %>%
-  ungroup() %>%
-  mutate(vehicle_type = 'all') %>%
-  select(all_of(names_avmt))
+vmt_age_all <- ds %>%
+  group_by(age_bin) %>%
+  collect_vmt_quantiles() %>%
+  mutate(
+    powertrain = 'all',
+    vehicle_type = 'all'
+  ) %>%
+  select(all_of(names_vmt_age))
 
-# Quantiles for all vehicle_types by age
-avmt_vt <- ds %>%
-  group_by(age_bin, vehicle_type) %>%
-  get_quantiles_miles() %>%
-  collect() %>%
-  ungroup() %>%
-  mutate(powertrain = 'all') %>%
-  select(all_of(names_avmt))
+# Quantiles for all powertrains by age
+vmt_age_pt <- ds %>%
+  group_by(age_bin, powertrain) %>%
+  collect_vmt_quantiles() %>%
+  mutate(vehicle_type = 'all') %>%
+  select(all_of(names_vmt_age))
 
 # Quantiles for all powertrains by age, BEV only
-avmt_pt_bev <- ds %>%
+vmt_age_pt_bev <- ds %>%
   select_bev_tesla() %>%
   group_by(age_bin, powertrain) %>%
-  get_quantiles_miles() %>%
-  collect() %>%
-  ungroup() %>%
+  collect_vmt_quantiles() %>%
   mutate(vehicle_type = 'all') %>%
-  select(all_of(names_avmt))
+  select(all_of(names_vmt_age))
 
-# Quantiles for all vehicle_types by age, BEV only
-avmt_vt_bev <- ds %>%
-  select_bev_tesla() %>%
+# Quantiles for all vehicle_types by age
+vmt_age_vt <- ds %>%
   group_by(age_bin, vehicle_type) %>%
-  get_quantiles_miles() %>%
-  collect() %>%
-  ungroup() %>%
+  collect_vmt_quantiles() %>%
   mutate(powertrain = 'all') %>%
-  select(all_of(names_avmt))
+  select(all_of(names_vmt_age))
 
 # Quantiles for all powertrains and vehicle_types by age
-avmt <- ds %>%
+vmt_age_both <- ds %>%
   group_by(age_bin, powertrain, vehicle_type) %>%
-  get_quantiles_miles() %>%
-  collect() %>%
-  ungroup() %>%
-  select(all_of(names_avmt))
+  collect_vmt_quantiles() %>%
+  select(all_of(names_vmt_age))
 
 # Quantiles for all powertrains and vehicle_types by age, BEV only
-avmt_bev <- ds %>%
+vmt_age_both_bev <- ds %>%
   select_bev_tesla() %>%
   group_by(age_bin, powertrain, vehicle_type) %>%
-  get_quantiles_miles() %>%
-  collect() %>%
-  select(all_of(names_avmt))
+  collect_vmt_quantiles() %>%
+  select(all_of(names_vmt_age))
 
 # Combine
-
-quantiles_avmt <- rbind(
-  avmt_pt,
-  avmt_vt,
-  avmt_pt_bev,
-  avmt_vt_bev,
-  avmt,
-  avmt_bev
+vmt_age <- rbind(
+  vmt_age_all,
+  vmt_age_vt,
+  vmt_age_pt,
+  vmt_age_pt_bev,
+  vmt_age_both,
+  vmt_age_both_bev
 ) %>%
   mutate(age_bin = age_bin + 1.5) %>% # midpoint of each bin
-  arrange(powertrain, vehicle_type, age_bin)
+  arrange(powertrain, vehicle_type, age_bin, quantile)
 
 # Preview
-quantiles_avmt %>%
+vmt_age %>%
+  filter(quantile == 50) %>%
   ggplot() +
   geom_smooth(
     aes(
       x = age_bin,
-      y = q50,
+      y = miles,
       color = vehicle_type
     ),
     se = FALSE
@@ -249,91 +258,81 @@ quantiles_avmt %>%
   facet_wrap(vars(powertrain)) +
   labs(x = "Age (months)")
 
-# Save
 
-write_csv(
-  quantiles_avmt,
-  here::here('data-raw', 'quantiles_avmt.csv')
-)
+# Quantiles of daily VMT ----
 
-# Quantiles of DVMT ----
-
-# Prepare dataset with dvmt calculated
-ds_dvmt <- ds %>%
+# Prepare dataset with daily vmt calculated
+ds_daily <- ds %>%
   mutate(
     age_days = age_years * 365.25,
     dvmt = miles / age_days
   )
 
 # Quantiles for all powertrains
-dvmt_pt <- ds_dvmt %>%
+vmt_daily_pt <- ds_daily %>%
   group_by(powertrain) %>%
   collect_dvmt_quantiles() %>%
   mutate(vehicle_type = 'all') %>%
-  select(all_of(names_dvmt))
-
-# Quantiles for all vehicle_types
-dvmt_vt <- ds_dvmt %>%
-  group_by(vehicle_type) %>%
-  collect_dvmt_quantiles() %>%
-  mutate(powertrain = 'all') %>%
-  select(all_of(names_dvmt))
+  select(all_of(names_vmt_daily))
 
 # Quantiles for all powertrains, BEV only
-dvmt_pt_bev <- ds_dvmt %>%
+vmt_daily_pt_bev <- ds_daily %>%
   select_bev_tesla() %>%
   group_by(powertrain) %>%
   collect_dvmt_quantiles() %>%
   mutate(vehicle_type = 'all') %>%
-  select(all_of(names_dvmt))
+  select(all_of(names_vmt_daily))
 
-# Quantiles for all vehicle_types, BEV only
-dvmt_vt_bev <- ds_dvmt %>%
-  select_bev_tesla() %>%
+# Quantiles for all vehicle_types
+vmt_daily_vt <- ds_daily %>%
   group_by(vehicle_type) %>%
   collect_dvmt_quantiles() %>%
   mutate(powertrain = 'all') %>%
-  select(all_of(names_dvmt))
+  select(all_of(names_vmt_daily))
 
 # Quantiles for all powertrains and vehicle_types
-dvmt <- ds_dvmt %>%
+vmt_daily_both <- ds_daily %>%
   group_by(powertrain, vehicle_type) %>%
   collect_dvmt_quantiles() %>%
-  select(all_of(names_dvmt))
+  select(all_of(names_vmt_daily))
 
 # Quantiles for all powertrains and vehicle_types, BEV only
-dvmt_bev <- ds_dvmt %>%
+vmt_daily_both_bev <- ds_daily %>%
   select_bev_tesla() %>%
   group_by(powertrain, vehicle_type) %>%
   collect_dvmt_quantiles() %>%
-  select(all_of(names_dvmt))
+  select(all_of(names_vmt_daily))
 
 # Quantiles for all vehicles
-dvmt_all <- ds_dvmt %>%
+vmt_daily_all <- ds_daily %>%
   collect_dvmt_quantiles() %>%
   mutate(
     powertrain = 'all',
     vehicle_type = 'all'
   ) %>%
-  select(all_of(names_dvmt))
+  select(all_of(names_vmt_daily))
 
 # Combine
-quantiles_dvmt <- rbind(
-  dvmt_all,
-  dvmt_pt,
-  dvmt_vt,
-  dvmt_pt_bev,
-  dvmt_vt_bev,
-  dvmt,
-  dvmt_bev
+vmt_daily <- rbind(
+  vmt_daily_all,
+  vmt_daily_pt,
+  vmt_daily_vt,
+  vmt_daily_pt_bev,
+  vmt_daily_both,
+  vmt_daily_both_bev
 ) %>%
   arrange(powertrain, vehicle_type, quantile)
 
+# Save
 write_csv(
-  quantiles_dvmt,
-  here::here('data', 'quantiles_dvmt.csv')
+  vmt_age,
+  here::here('data-raw', 'vmt_age.csv')
+)
+write_csv(
+  vmt_daily,
+  here::here('data-raw', 'vmt_daily.csv')
 )
 
 # Save the datasets for package
-usethis::use_data(quantiles_avmt, overwrite = TRUE)
-usethis::use_data(quantiles_dvmt, overwrite = TRUE)
+usethis::use_data(vmt_age, overwrite = TRUE)
+usethis::use_data(vmt_daily, overwrite = TRUE)
