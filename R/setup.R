@@ -290,3 +290,9 @@ format_labels <- function(df) {
       vehicle_type = vehicle_type_labels[vehicle_type]
     )
 }
+
+select_bev_tesla <- function(df) {
+  df %>%
+    filter(powertrain == "bev") %>%
+    mutate(powertrain = ifelse(tesla == 1, 'bev_tesla', 'bev_non_tesla'))
+}

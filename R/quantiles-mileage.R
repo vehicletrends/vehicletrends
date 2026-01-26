@@ -154,12 +154,6 @@ collect_dvmt_quantiles <- function(df) {
     reshape_quantiles_dvmt()
 }
 
-select_bev_tesla <- function(df) {
-  df %>%
-    filter(powertrain == "bev") %>%
-    mutate(powertrain = ifelse(tesla == 1, 'bev_tesla', 'bev_non_tesla'))
-}
-
 names_vmt_age <- c(
   "age_bin",
   "powertrain",
