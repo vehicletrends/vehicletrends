@@ -262,50 +262,31 @@ get_quantiles_detailed <- function(df, var) {
     mutate(quantile = as.numeric(quantile))
 }
 
-clean_factors_powertrain <- function(ds) {
-  ds %>%
+# Format powertrain and vehicle_type labels for display
+format_labels <- function(df) {
+  powertrain_labels <- c(
+    "all" = "All",
+    "diesel" = "Diesel",
+    "cv" = "Conventional",
+    "flex" = "Flex Fuel",
+    "hev" = "Hybrid",
+    "phev" = "PHEV",
+    "bev" = "BEV",
+    "bev_tesla" = "BEV (Tesla)",
+    "bev_non_tesla" = "BEV (Non-Tesla)",
+    "fcev" = "Fuel Cell EV"
+  )
+  vehicle_type_labels <- c(
+    "all" = "All",
+    "car" = "Car",
+    "cuv" = "CUV",
+    "suv" = "SUV",
+    "pickup" = "Pickup",
+    "minivan" = "Minivan"
+  )
+  df %>%
     mutate(
-      powertrain = factor(
-        powertrain,
-        levels = c(
-          "cv",
-          "diesel",
-          "flex",
-          "hev",
-          "phev",
-          "bev"
-        ),
-        labels = c(
-          "Conventional",
-          "Diesel",
-          "Flex-fuel",
-          "Hybrid",
-          "PHEV",
-          "BEV"
-        )
-      )
-    )
-}
-
-clean_factors_vehicle_type <- function(ds) {
-  ds %>%
-    mutate(
-      vehicle_type = factor(
-        vehicle_type,
-        levels = c(
-          "car",
-          "cuv",
-          "suv",
-          "pickup",
-          "minivan"
-        ),
-        labels = c(
-          "Car",
-          "CUV",
-          "SUV",
-          "Pickup",
-          "Minivan"
-        )
-      )
+      powertrain = powertrain_labels[powertrain],
+      vehicle_type = vehicle_type_labels[vehicle_type]
     )
 }
