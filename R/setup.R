@@ -1,5 +1,6 @@
 # Load packages
 library(tidyverse)
+library(rvest)
 library(arrow)
 library(here)
 library(data.table)
@@ -267,14 +268,14 @@ format_labels <- function(df) {
   powertrain_labels <- c(
     "all" = "All",
     "diesel" = "Diesel",
-    "cv" = "Conventional",
-    "flex" = "Flex Fuel",
-    "hev" = "Hybrid",
-    "phev" = "PHEV",
-    "bev" = "BEV",
+    "cv" = "Gasoline",
+    "flex" = "Flex Fuel (E85)",
+    "hev" = "Hybrid Electric (HEV)",
+    "phev" = "Plug-In Hybrid Electric (PHEV)",
+    "bev" = "Battery Electric (BEV)",
     "bev_tesla" = "BEV (Tesla)",
     "bev_non_tesla" = "BEV (Non-Tesla)",
-    "fcev" = "Fuel Cell EV"
+    "fcev" = "Fuel Cell"
   )
   vehicle_type_labels <- c(
     "all" = "All",
