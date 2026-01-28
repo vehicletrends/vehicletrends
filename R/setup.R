@@ -292,6 +292,104 @@ format_labels <- function(df) {
     )
 }
 
+# Format make names for display
+format_make <- function(make) {
+  # Lookup table for special cases
+  make_labels <- c(
+    "alfa romeo" = "Alfa Romeo",
+    "bmw" = "BMW",
+    "gmc" = "GMC",
+    "land rover" = "Land Rover",
+    "mercedes-benz" = "Mercedes-Benz",
+    "mini" = "MINI",
+    "ram" = "RAM"
+  )
+
+  # Use lookup if exists, otherwise title case
+  ifelse(
+    make %in% names(make_labels),
+    make_labels[make],
+    str_to_title(make)
+  )
+}
+
+# Format model names for display
+format_model <- function(model) {
+  # Special full-model replacements
+  model_labels <- c(
+    "bz4x" = "bZ4X",
+    "i-miev" = "i-MiEV",
+    "id.4" = "ID.4"
+  )
+
+  # Check for exact matches first
+  if (model %in% names(model_labels)) {
+    return(model_labels[model])
+  }
+
+  # Start with the original model
+  result <- model
+
+  # Apply title case as base
+  result <- str_to_title(result)
+
+  # Fix powertrain suffixes (case-insensitive replacement)
+  result <- str_replace(result, "(?i)\\bev\\b", "EV")
+  result <- str_replace(result, "(?i)\\bbev\\b", "BEV")
+  result <- str_replace(result, "(?i)\\bphev\\b", "PHEV")
+  result <- str_replace(result, "(?i)\\bhev\\b", "HEV")
+  result <- str_replace(result, "(?i)\\bfcev\\b", "FCEV")
+
+  # Fix class names (S-Class, C-Class, etc.)
+  result <- str_replace(result, "(?i)-class\\b", "-Class")
+
+  # Fix short letter codes at start (2-3 uppercase letters before space/hyphen/number)
+  # Examples: RX, TX, NX, GLE, GLK, etc.
+  result <- str_replace(result, "^([A-Za-z]{2,3})(?=[ -]|$)", function(x) toupper(x))
+
+  # Fix Mazda CX- models
+  result <- str_replace(result, "(?i)^cx-", "CX-")
+
+  # Fix Audi/Mercedes letter-number combos (A4, Q5, S5, E350, etc.)
+  result <- str_replace(result, "^([A-Za-z])([0-9])", function(x) toupper(x))
+
+  # Fix BMW i-series (should be lowercase i)
+  result <- str_replace(result, "^I([0-9x])", "i\\1")
+
+  # Fix e-tron (Audi styling)
+  result <- str_replace(result, "(?i)\\be-tron\\b", "e-tron")
+  result <- str_replace(result, "(?i)\\bE-Tron\\b", "e-tron")
+
+  # Fix "Plug-in" to "Plug-In"
+  result <- str_replace(result, "(?i)plug-in", "Plug-In")
+
+  # Fix number series (3 Series, 5 Series)
+  result <- str_replace(result, "(?i)\\bseries\\b", "Series")
+
+  # Fix common model name capitalizations
+  result <- str_replace(result, "(?i)\\bsuv\\b", "SUV")
+  result <- str_replace(result, "(?i)\\bxl\\b", "XL")
+  result <- str_replace(result, "(?i)\\bxd\\b", "XD")
+  result <- str_replace(result, "(?i)\\bhd\\b", "HD")
+  result <- str_replace(result, "(?i)\\bld\\b", "LD")
+  result <- str_replace(result, "(?i)\\besv\\b", "ESV")
+  result <- str_replace(result, "(?i)\\beqs\\b", "EQS")
+  result <- str_replace(result, "(?i)\\beqe\\b", "EQE")
+  result <- str_replace(result, "(?i)\\beqb\\b", "EQB")
+  result <- str_replace(result, "(?i)\\b4xe\\b", "4xe")
+  result <- str_replace(result, "(?i)\\b4-door\\b", "4-Door")
+  result <- str_replace(result, "(?i)\\b2-door\\b", "2-Door")
+  result <- str_replace(result, "(?i)\\blr4\\b", "LR4")
+  result <- str_replace(result, "(?i)\\beuv\\b", "EUV")
+
+  return(result)
+}
+
+# Vectorized version for use in mutate
+format_model_vec <- function(models) {
+  sapply(models, format_model, USE.NAMES = FALSE)
+}
+
 select_bev_tesla <- function(df) {
   df %>%
     filter(powertrain == "bev") %>%

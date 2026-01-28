@@ -1,13 +1,18 @@
 source(here::here("R", "setup.R"))
 
-ds <- load_ds() |>
-  filter(age_years >= 2 & age_years <= 9) |>
+# Open miles arrow dataset
+
+ds <- load_ds() %>%
+  filter(!is.na(miles), !is.na(age_years)) %>%
   filter(inventory_type == 'used') %>%
+  filter(miles > 0) %>%
+  mutate(age_months = age_years * 12) %>%
+  filter(age_months <= 180) %>% # 15 years old cap
   select(make, model, vehicle_type, powertrain, miles, age_years)
 
-# Mileage by vehicle type and powertrain ----
+# Annual VMT by vehicle type and powertrain ----
 
-get_annual_mileage_powertrain <- function(row) {
+get_annual_mileage_type <- function(row) {
   model <- feols(
     fml = miles ~ age_years,
     data = ds |>
@@ -17,14 +22,14 @@ get_annual_mileage_powertrain <- function(row) {
       collect()
   )
 
-  # Predict retention rates at different ages
-  pred_data <- data.frame(age_years = seq(2, 9, 0.5))
-  pred_data$mileage_predicted <- predict(model, newdata = pred_data)
-  pred_data$vehicle_type <- row$vehicle_type
-  pred_data$powertrain <- row$powertrain
-  pred_data$coef <- coef(model)["age_years"]
+  # Store result in data frame
+  result <- data.frame(
+    vehicle_type = row$vehicle_type,
+    powertrain = row$powertrain,
+    vmt_annual = coef(model)["age_years"]
+  )
 
-  return(pred_data)
+  return(result)
 }
 
 # Get all unique combinations of vehicle_type and powertrain
@@ -35,23 +40,13 @@ combinations <- ds |>
 # Loop through each row in combinations to get predictions
 results <- list()
 for (i in 1:nrow(combinations)) {
-  results[[i]] <- get_annual_mileage_powertrain(combinations[i, ])
+  results[[i]] <- get_annual_mileage_type(combinations[i, ])
 }
+vmt_annual_type <- rbindlist(results)
 
-mileage <- rbindlist(results)
+# Annual VMT by make and model ----
 
-mileage %>%
-  distinct(vehicle_type, powertrain, coef) %>%
-  mutate(coef = round(coef))
-
-write_csv(
-  mileage,
-  here('data', 'mileage_powertrain_type.csv')
-)
-
-# Mileage coefficient by make and model ----
-
-get_annual_mileage_make_model <- function(row) {
+get_annual_mileage_model <- function(row) {
   model <- feols(
     fml = miles ~ age_years,
     data = ds |>
@@ -63,35 +58,51 @@ get_annual_mileage_make_model <- function(row) {
       collect()
   )
 
-  # Predict retention rates at different ages
-  pred_data <- data.frame(
+  # Store result in data frame
+  result <- data.frame(
     make = row$make,
     model = row$model,
     vehicle_type = row$vehicle_type,
-    powertrain = row$powertrain
+    powertrain = row$powertrain,
+    vmt_annual = coef(model)["age_years"]
   )
 
-  pred_data$coef <- coef(model)["age_years"]
-
-  return(pred_data)
+  return(result)
 }
 
 # Get all unique combinations of vehicle_type and powertrain
 combinations <- ds |>
-  distinct(make, model, vehicle_type, powertrain) |>
+  count(make, model, vehicle_type, powertrain) |>
+  arrange(n) |>
+  filter(n >= 100) |>
   collect()
 
 # Loop through each row in combinations to get predictions
 results <- list()
 for (i in 1:nrow(combinations)) {
-  results[[i]] <- get_annual_mileage_make_model(combinations[i, ])
+  results[[i]] <- get_annual_mileage_model(combinations[i, ])
 }
+vmt_annual_model <- rbindlist(results)
 
-mileage <- rbindlist(results)
+vmt_annual_type <- vmt_annual_type %>%
+  format_labels()
+vmt_annual_model <- vmt_annual_model %>%
+  format_labels() %>%
+  mutate(
+    make = format_make(make),
+    model = format_model_vec(model)
+  )
 
-mileage
-
+# Save
 write_csv(
-  mileage,
-  here('data', 'mileage_make_model.csv')
+  vmt_annual_type,
+  here::here('data-raw', 'vmt_annual_type.csv')
 )
+write_csv(
+  vmt_annual_model,
+  here::here('data-raw', 'vmt_annual_model.csv')
+)
+
+# Save the datasets for package
+usethis::use_data(vmt_annual_type, overwrite = TRUE)
+usethis::use_data(vmt_annual_model, overwrite = TRUE)
