@@ -317,9 +317,11 @@ format_make <- function(make) {
 format_model <- function(model) {
   # Special full-model replacements
   model_labels <- c(
+    "ev9" = "EV9",
     "bz4x" = "bZ4X",
     "i-miev" = "i-MiEV",
-    "id.4" = "ID.4"
+    "id.4" = "ID.4",
+    "rav4" = "RAV4"
   )
 
   # Check for exact matches first
@@ -345,7 +347,9 @@ format_model <- function(model) {
 
   # Fix short letter codes at start (2-3 uppercase letters before space/hyphen/number)
   # Examples: RX, TX, NX, GLE, GLK, etc.
-  result <- str_replace(result, "^([A-Za-z]{2,3})(?=[ -]|$)", function(x) toupper(x))
+  result <- str_replace(result, "^([A-Za-z]{2,3})(?=[ -]|$)", function(x) {
+    toupper(x)
+  })
 
   # Fix Mazda CX- models
   result <- str_replace(result, "(?i)^cx-", "CX-")

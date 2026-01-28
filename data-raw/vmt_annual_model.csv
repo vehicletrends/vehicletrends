@@ -5,13 +5,11 @@ Honda,Prologue,CUV,Battery Electric (BEV),3943.975894824141
 Ford,Escape,CUV,Plug-In Hybrid Electric (PHEV),7705.680648915657
 Lexus,TX Hybrid,CUV,Hybrid Electric (HEV),7951.9089420561595
 Mazda,CX-5,CUV,Diesel,11223.632421044773
-Kia,Ev9,CUV,Battery Electric (BEV),7286.15201928374
+Kia,EV9,CUV,Battery Electric (BEV),7286.15201928374
 Alfa Romeo,Tonale,CUV,Plug-In Hybrid Electric (PHEV),2678.8294865604894
 Chevrolet,Blazer EV,CUV,Battery Electric (BEV),3221.6113919279396
-Pontiac,Montana,Minivan,Gasoline,-2857.596178973833
 BMW,i5,Car,Battery Electric (BEV),4133.829161347475
 Hyundai,Nexo,CUV,Fuel Cell,7271.856845914244
-Jeep,Liberty,SUV,Diesel,-1447.5004147327152
 Mercedes-Benz,GLE,CUV,Plug-In Hybrid Electric (PHEV),5821.288271439378
 Mercedes-Benz,S-Class,Car,Diesel,5037.587021735033
 Jeep,Wrangler 4-Door,SUV,Diesel,8131.4116351557905
@@ -32,8 +30,7 @@ Mitsubishi,i-MiEV,Car,Battery Electric (BEV),3269.2388047848044
 Cadillac,Escalade ESV,SUV,Diesel,14805.059103938742
 Mercedes-Benz,GLE-Class,CUV,Plug-In Hybrid Electric (PHEV),9779.033159196593
 Saturn,VUE,CUV,Hybrid Electric (HEV),5735.777004696848
-Fisker,Karma,Car,Plug-In Hybrid Electric (PHEV),-259.3169633111508
-Toyota,Rav4,CUV,Battery Electric (BEV),5685.235823812819
+Toyota,RAV4,CUV,Battery Electric (BEV),5685.235823812819
 Volkswagen,Touareg,SUV,Hybrid Electric (HEV),9931.802341976521
 Mercedes-Benz,GLE-Class,CUV,Diesel,11472.141943160937
 Audi,A8,Car,Diesel,10914.617449722748
@@ -372,7 +369,7 @@ Chevrolet,Trailblazer,CUV,Gasoline,10431.589016187141
 Ford,Ecosport,CUV,Gasoline,9391.451288695967
 Chevrolet,Silverado 2500hd,Pickup,Flex Fuel (E85),13060.171268147444
 Mercedes-Benz,GLA-Class,CUV,Gasoline,9222.768532113088
-Toyota,Rav4,CUV,Hybrid Electric (HEV),11852.820552998743
+Toyota,RAV4,CUV,Hybrid Electric (HEV),11852.820552998743
 Kia,Telluride,CUV,Gasoline,15107.917840822858
 Buick,Envision,CUV,Gasoline,10254.391319410057
 Chevrolet,Silverado 2500hd,Pickup,Gasoline,10404.849816175934
@@ -543,7 +540,7 @@ Nissan,Altima,Car,Gasoline,10093.05842376819
 RAM,RAM 1500 Pickup,Pickup,Gasoline,12602.64937262857
 Toyota,Corolla,Car,Gasoline,9375.559733760772
 Honda,Civic,Car,Gasoline,10291.050945945544
-Toyota,Rav4,CUV,Gasoline,10263.927425933976
+Toyota,RAV4,CUV,Gasoline,10263.927425933976
 Ford,Escape,CUV,Gasoline,10957.424861932423
 Honda,Accord,Car,Gasoline,10725.345737958121
 Honda,CR-V,CUV,Gasoline,10839.232230423078

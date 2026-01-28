@@ -91,7 +91,8 @@ vmt_annual_model <- vmt_annual_model %>%
   mutate(
     make = format_make(make),
     model = format_model_vec(model)
-  )
+  ) %>%
+  filter(vmt_annual > 0)
 
 # Save
 write_csv(
