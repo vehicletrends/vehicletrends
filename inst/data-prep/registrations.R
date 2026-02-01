@@ -1,4 +1,4 @@
-source(here::here("R", "setup.R"))
+source(here::here("inst", "data-prep", "0setup.R"))
 
 # Scrape registration tables from AFDC for years 2016-2024
 

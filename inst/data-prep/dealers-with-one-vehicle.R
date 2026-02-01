@@ -1,4 +1,4 @@
-source(here::here("R", "setup.R"))
+source(here::here("inst", "data-prep", "0setup.R"))
 
 # Open
 ds <- load_ds() %>%

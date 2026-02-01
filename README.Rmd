@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# vehicletrends <a href='https://vehicletrends.github.io/vehicletrends/'><img src='man/figures/logo.png' align="right" style="height:139px;"/></a>
+# vehicletrends <a href='https://pkg.vehicletrends.us/'><img src='man/figures/logo.png' align="right" style="height:139px;"/></a>
 
 <!-- badges: start -->
 <!-- badges: end -->

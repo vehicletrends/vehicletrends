@@ -1,4 +1,4 @@
-source(here::here("R", "setup.R"))
+source(here::here("inst", "data-prep", "0setup.R"))
 
 font <- "Arial"
 col_red <- "#FF0000"
