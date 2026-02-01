@@ -27,3 +27,9 @@ reference:
 - title: "Data"
   desc: "Each of the following are data frames contained in this package"
   contents:
+  - depreciation
+  - registrations
+  - vmt_age
+  - vmt_daily
+  - vmt_annual_type
+  - vmt_annual_model
