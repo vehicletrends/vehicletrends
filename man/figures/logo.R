@@ -170,8 +170,12 @@ ggsave(
   bg = "transparent",
   device = cairo_pdf
 )
-renderthis::to_png(
-  here::here("man", "figures", "logo.pdf"),
+ggsave(
   here::here("man", "figures", "logo.png"),
-  density = 300
+  logo,
+  height = 6,
+  width = 6,
+  dpi = 300,
+  bg = "transparent",
+  device = ragg::agg_png
 )
