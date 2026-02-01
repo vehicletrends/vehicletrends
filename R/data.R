@@ -154,35 +154,6 @@
 #' head(vmt_annual_type)
 "vmt_annual_type"
 
-#' Estimated annual VMT by powertrain and vehicle type
-#'
-#' Estimated annual vehicle miles traveled for each combination of powertrain
-#' and vehicle type. This is an alternate name for the same data as
-#' [vmt_annual_type].
-#'
-#' @format A data frame with 31 rows and 3 variables:
-#'
-#' Variable | Description
-#' -------- | -------------------------------------------
-#' `vehicle_type` | Vehicle type: "Car", "CUV", "SUV", "Pickup", "Minivan"
-#' `powertrain`   | Powertrain category: "Gasoline", "Battery Electric (BEV)", "Hybrid Electric (HEV)", "Plug-In Hybrid Electric (PHEV)", "Diesel", "Flex Fuel (E85)"
-#' `vmt_annual`   | Estimated annual vehicle miles traveled
-#'
-#' @docType data
-#'
-#' @usage data(vmt_annual_pt_vt)
-#'
-#' @keywords datasets
-#'
-#' @source Computed from used vehicle listings data from
-#' \href{https://www.marketcheck.com/}{Marketcheck}.
-#'
-#' @examples
-#' data(vmt_annual_pt_vt)
-#'
-#' head(vmt_annual_pt_vt)
-"vmt_annual_pt_vt"
-
 #' Estimated annual VMT by make and model
 #'
 #' Estimated annual vehicle miles traveled for individual vehicle make/model
@@ -216,34 +187,3 @@
 #'
 #' head(vmt_annual_model)
 "vmt_annual_model"
-
-#' Estimated annual VMT by make and model
-#'
-#' Estimated annual vehicle miles traveled for individual vehicle make/model
-#' combinations. This is an alternate name for the same data as
-#' [vmt_annual_model].
-#'
-#' @format A data frame with 551 rows and 5 variables:
-#'
-#' Variable | Description
-#' -------- | -------------------------------------------
-#' `make`         | Vehicle manufacturer (e.g., "Toyota", "BMW", "Mercedes-Benz")
-#' `model`        | Vehicle model name (e.g., "Camry", "RAV4", "Model 3")
-#' `vehicle_type` | Vehicle type: "Car", "CUV", "SUV", "Pickup", "Minivan"
-#' `powertrain`   | Powertrain category: "Gasoline", "Battery Electric (BEV)", "Hybrid Electric (HEV)", "Plug-In Hybrid Electric (PHEV)", "Diesel", "Flex Fuel (E85)"
-#' `vmt_annual`   | Estimated annual vehicle miles traveled
-#'
-#' @docType data
-#'
-#' @usage data(vmt_annual_mm)
-#'
-#' @keywords datasets
-#'
-#' @source Computed from used vehicle listings data from
-#' \href{https://www.marketcheck.com/}{Marketcheck}.
-#'
-#' @examples
-#' data(vmt_annual_mm)
-#'
-#' head(vmt_annual_mm)
-"vmt_annual_mm"
