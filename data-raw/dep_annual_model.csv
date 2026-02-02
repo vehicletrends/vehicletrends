@@ -1,424 +1,424 @@
-make,model,vehicle_type,powertrain,dep_annual
-GMC,Envoy,SUV,Gasoline,0.32962229476279714
-Ford,Escape,CUV,Plug-In Hybrid Electric (PHEV),0.1525176723860111
-Volkswagen,Touareg,SUV,Hybrid Electric (HEV),0.09110492904158474
-Honda,Prologue,CUV,Battery Electric (BEV),0.21003844421402507
-Nissan,Titan,Pickup,Flex Fuel (E85),0.016743481235623747
-Kia,Rondo,Minivan,Gasoline,0.2641110749148312
-Chevrolet,HHR,Minivan,Gasoline,0.02467453438605849
-BMW,i5,Car,Battery Electric (BEV),0.011685632776204269
-Dodge,RAM 2500 Pickup,Pickup,Gasoline,0.029654352836760323
-Chevrolet,Blazer EV,CUV,Battery Electric (BEV),0.19632653388766652
-Ford,Crown Victoria,Car,Flex Fuel (E85),0.10920385000364685
-Mercedes-Benz,R-Class,Minivan,Gasoline,0.16665271521362568
-GMC,Hummer EV,SUV,Battery Electric (BEV),0.21843094604897906
-Hummer,H3,SUV,Gasoline,0.2213591589167596
-GMC,Hummer EV,Pickup,Battery Electric (BEV),0.08265160457251919
-Hyundai,Nexo,CUV,Fuel Cell,0.24992710560816667
-Mitsubishi,i-MiEV,Car,Battery Electric (BEV),0.08483517959725506
-Audi,Q8 e-tron,CUV,Battery Electric (BEV),0.15665095557842934
-Chevrolet,Tahoe,SUV,Hybrid Electric (HEV),0.10868513444677563
-Mercury,Mountaineer,SUV,Gasoline,0.0963195334874194
-Nissan,Rogue,CUV,Hybrid Electric (HEV),0.05087450098737756
-Toyota,RAV4,CUV,Battery Electric (BEV),0.015979891530109924
-BMW,i7,Car,Battery Electric (BEV),0.05021151506796184
-Saturn,VUE,CUV,Gasoline,0.05954006355214814
-Chevrolet,Silverado 1500,Pickup,Hybrid Electric (HEV),0.09965740562773628
-Land Rover,Range Rover Sport,SUV,Hybrid Electric (HEV),0.2158713601639798
-GMC,Yukon,SUV,Hybrid Electric (HEV),0.12324080161504725
-Chrysler,PT Cruiser,Minivan,Gasoline,0.17833148140433208
-Lincoln,Town Car,Car,Flex Fuel (E85),0.1062810227024289
-Cadillac,Escalade,SUV,Hybrid Electric (HEV),0.11514754057828414
-Ford,Explorer,SUV,Hybrid Electric (HEV),0.1327512641549592
-Jeep,Commander,SUV,Gasoline,0.11905595689893034
-Lexus,RZ,CUV,Battery Electric (BEV),0.10660396437324293
-Volkswagen,Touareg 2,SUV,Hybrid Electric (HEV),0.11855530837190542
-Infiniti,Qx60,CUV,Hybrid Electric (HEV),0.1076801152773349
-Chrysler,Pacifica,Minivan,Flex Fuel (E85),0.12546274244437772
-Mercury,Grand Marquis,Car,Flex Fuel (E85),0.09095207521811388
-Nissan,Pathfinder Hybrid,CUV,Hybrid Electric (HEV),0.07679567202183535
-Mercedes-Benz,E-Class,Car,Hybrid Electric (HEV),0.201236771195335
-Hyundai,Ioniq 6,Car,Battery Electric (BEV),0.1777003897400249
-GMC,Sierra 1500,Pickup,Hybrid Electric (HEV),0.08594664323039036
-Ford,Explorer Sport Trac,Pickup,Gasoline,0.09334419812796935
-Rivian,R1s,SUV,Battery Electric (BEV),0.03864033278515244
-Cadillac,Lyriq,CUV,Battery Electric (BEV),0.12330389513411877
-Lexus,HS,Car,Hybrid Electric (HEV),0.08194283087403942
-Hyundai,Santa Fe,CUV,Plug-In Hybrid Electric (PHEV),0.1490653951386599
-Kia,Sorento,CUV,Plug-In Hybrid Electric (PHEV),0.14108729534038666
-Audi,Q4 e-tron,CUV,Battery Electric (BEV),0.10259776184755398
-Volkswagen,Routan,Minivan,Gasoline,0.11807987552157428
-Mercedes-Benz,EQE,Car,Battery Electric (BEV),0.27342956783739436
-Chevrolet,Malibu,Car,Flex Fuel (E85),0.10058245473834304
-MINI,Hardtop 2 Door,Car,Battery Electric (BEV),0.06725688540533503
-Dodge,RAM 1500 Pickup,Pickup,Flex Fuel (E85),0.071582729331506
-Rivian,R1t,Pickup,Battery Electric (BEV),0.05298387343920896
-Toyota,bZ4X,CUV,Battery Electric (BEV),0.215208400520856
-GMC,Sierra Denali,Pickup,Flex Fuel (E85),0.06043611687886652
-Kia,Sportage,CUV,Hybrid Electric (HEV),0.06538964739138942
-Mercedes-Benz,B-Class,Minivan,Battery Electric (BEV),0.058077254845755544
-Subaru,Crosstrek,CUV,Hybrid Electric (HEV),0.055276064352610677
-Kia,Optima,Car,Plug-In Hybrid Electric (PHEV),0.06724372508134668
-Subaru,Solterra,CUV,Battery Electric (BEV),0.3299266467321843
-Dodge,RAM 1500 Pickup,Pickup,Gasoline,0.1595130131063185
-BMW,IX,CUV,Battery Electric (BEV),0.07196125342485604
-Hyundai,Sonata Plug-In Hybrid,Car,Plug-In Hybrid Electric (PHEV),0.06248383767611976
-Audi,e-tron Sportback,CUV,Battery Electric (BEV),0.194038811583217
-Volvo,C40,CUV,Battery Electric (BEV),0.20790482139929067
-Mercedes-Benz,EQE SUV,CUV,Battery Electric (BEV),0.23782836784609118
-Volkswagen,Jetta,Car,Hybrid Electric (HEV),0.04328423971810147
-Porsche,Cayenne,CUV,Hybrid Electric (HEV),0.1003672782178543
-Ford,Focus,Car,Battery Electric (BEV),0.08517709093591908
-BMW,X3,CUV,Hybrid Electric (HEV),0.1293947422836602
-Jaguar,I-Pace,CUV,Battery Electric (BEV),0.18450025249805457
-BMW,i4,Car,Battery Electric (BEV),0.11797904748196542
-Nissan,Ariya,CUV,Battery Electric (BEV),0.2644931560629632
-Smart,Fortwo,Car,Battery Electric (BEV),0.03998790575911049
-Honda,CR-V,CUV,Hybrid Electric (HEV),0.03911940789613855
-Porsche,Panamera,Car,Hybrid Electric (HEV),0.11500269647145478
-Ford,F-150 Lightning,Pickup,Battery Electric (BEV),0.07131173872767171
-Mercedes-Benz,EQB,CUV,Battery Electric (BEV),0.22134768603820332
-Volkswagen,Routan,Minivan,Flex Fuel (E85),0.13101992990027267
-Jeep,Grand Cherokee,SUV,Hybrid Electric (HEV),0.05426580281457871
-Hyundai,Ioniq,Car,Battery Electric (BEV),0.11745476697192725
-Kia,Sorento,CUV,Hybrid Electric (HEV),0.07008734211777623
-Nissan,Cube,Minivan,Gasoline,0.05930241095741373
-Infiniti,Q50,Car,Hybrid Electric (HEV),0.06127359175196845
-Chevrolet,HHR,Minivan,Flex Fuel (E85),0.09435926480368784
-Volvo,Xc40,CUV,Battery Electric (BEV),0.10326431466779085
-Audi,A5 Coupe,Car,Flex Fuel (E85),0.06737298926292568
-Toyota,Mirai,Car,Fuel Cell,0.1437775040312752
-Buick,Lucerne,Car,Flex Fuel (E85),0.09554645062710954
-Kia,Soul,Car,Battery Electric (BEV),0.04797049470517012
-Kia,Ev6,CUV,Battery Electric (BEV),0.15040392496023636
-Subaru,XV Crosstrek,CUV,Hybrid Electric (HEV),0.025382694730021194
-Dodge,Challenger,Car,Flex Fuel (E85),0.046882288711275644
-Hyundai,Ioniq 5,CUV,Battery Electric (BEV),0.15899679226078878
-Honda,Civic,Car,Hybrid Electric (HEV),0.06191076470678081
-Mercedes-Benz,C-Class,Car,Flex Fuel (E85),0.1385787791452776
-Audi,Allroad,Car,Flex Fuel (E85),0.0865303400484504
-GMC,Sierra 2500hd,Pickup,Gasoline,0.06057713426510358
-Toyota,FJ Cruiser,SUV,Gasoline,0.030389930385498753
-Audi,A5 Cabriolet,Car,Flex Fuel (E85),0.07067091258116431
-Mercedes-Benz,EQS,CUV,Battery Electric (BEV),0.29556971760100137
-Jeep,Wrangler 4-Door,SUV,Gasoline,0.048594851935412575
-Audi,Q5,CUV,Hybrid Electric (HEV),0.08857396599196476
-Cadillac,ATS,Car,Flex Fuel (E85),0.04849634047993645
-Fiat,500l,Minivan,Gasoline,0.04279308645138247
-Toyota,Prius Plug-In,Car,Plug-In Hybrid Electric (PHEV),0.0542221142707916
-Polestar,2,Car,Battery Electric (BEV),0.1967805960430481
-Honda,CR-Z,Car,Hybrid Electric (HEV),0.06690841544207782
-Buick,Regal,Car,Flex Fuel (E85),0.0637750849988945
-Kia,Niro,CUV,Battery Electric (BEV),0.09019123240394034
-Cadillac,CTS Sedan,Car,Flex Fuel (E85),0.05642859671004419
-Ford,Transit Connect,Minivan,Gasoline,0.08793122152760491
-Ford,F-350 Super Duty,Pickup,Gasoline,0.050805566087917864
-Chrysler,Town & Country,Minivan,Gasoline,0.14205779894329118
-Volkswagen,ID.4,CUV,Battery Electric (BEV),0.1140917828250988
-Audi,A5,Car,Flex Fuel (E85),0.053537694128794056
-Hyundai,Kona EV,CUV,Battery Electric (BEV),0.1315165063668826
-Kia,Carnival,Minivan,Gasoline,0.10599471593400434
-Chevrolet,Silverado 3500hd,Pickup,Flex Fuel (E85),0.031535934688596834
-Lincoln,Navigator,SUV,Flex Fuel (E85),0.10761679838258809
-Cadillac,Escalade ESV,SUV,Flex Fuel (E85),0.09844585603313494
-Dodge,Grand Caravan,Minivan,Gasoline,0.1428205316100798
-Porsche,Taycan,Car,Battery Electric (BEV),0.10927686560939509
-Dodge,Avenger,Car,Flex Fuel (E85),0.03957691926405438
-Fiat,500e,Car,Battery Electric (BEV),0.0060900450004138795
-Lexus,NX Hybrid,CUV,Hybrid Electric (HEV),0.053878359266289144
-Chevrolet,Bolt EUV,CUV,Battery Electric (BEV),0.1021958878347824
-Jeep,Grand Cherokee Wk,SUV,Gasoline,0.18043955367673736
-Hyundai,Santa Cruz,Pickup,Gasoline,0.029686200704070576
-Volkswagen,E-Golf,Car,Battery Electric (BEV),0.05318062539338031
-Ford,Escape,CUV,Hybrid Electric (HEV),0.1518572653681084
-Lexus,RX Hybrid,CUV,Hybrid Electric (HEV),0.06482882478875962
-Mazda,Mazda5,Minivan,Gasoline,0.05611117190559034
-Honda,Clarity,Car,Hybrid Electric (HEV),0.03779184954868475
-Ford,Fusion,Car,Flex Fuel (E85),0.07693146115720528
-Hyundai,Ioniq,Car,Hybrid Electric (HEV),0.05045915603702267
-Audi,e-tron,CUV,Battery Electric (BEV),0.13718977073657113
-Toyota,Sequoia,SUV,Flex Fuel (E85),0.07279726582241586
-Toyota,Prius V,Minivan,Hybrid Electric (HEV),0.04093149671131047
-Infiniti,QX,SUV,Gasoline,0.12092943447888638
-Lexus,UX Hybrid,CUV,Hybrid Electric (HEV),0.045328714736857845
-Chevrolet,Malibu,Car,Hybrid Electric (HEV),0.19429434514401867
-Chevrolet,Impala Limited,Car,Flex Fuel (E85),0.015904561337676815
-Buick,Verano,Car,Flex Fuel (E85),0.014440669249658034
-BMW,3 Series,Car,Hybrid Electric (HEV),0.11884614523177939
-Lexus,ES Hybrid,Car,Hybrid Electric (HEV),0.07379065357450931
-BMW,i3,Car,Battery Electric (BEV),0.06910889240396956
-Ford,Mustang Mach-E,CUV,Battery Electric (BEV),0.15834941334017472
-Jeep,Cherokee,SUV,Flex Fuel (E85),0.14145127850696526
-Land Rover,Range Rover Sport,SUV,Flex Fuel (E85),0.11911773839830975
-Jeep,Wrangler Unlimited,SUV,Hybrid Electric (HEV),0.13031792666562136
-Kia,Niro,CUV,Hybrid Electric (HEV),0.05195116757341689
-Ford,Maverick,Pickup,Gasoline,0.06379054021500452
-Chevrolet,Avalanche,Pickup,Flex Fuel (E85),0.07975412586947173
-Nissan,Xterra,SUV,Gasoline,0.08439745281703526
-Dodge,Charger,Car,Flex Fuel (E85),0.06680142797402167
-Toyota,Prius V,Car,Hybrid Electric (HEV),0.10836256880622464
-Cadillac,Escalade,SUV,Flex Fuel (E85),0.09266462331491021
-Lexus,RX,CUV,Hybrid Electric (HEV),0.12002498482767787
-Toyota,Venza,CUV,Hybrid Electric (HEV),0.03786203001426969
-Kia,Niro,CUV,Plug-In Hybrid Electric (PHEV),0.02168593484821879
-Ford,Fusion,Car,Hybrid Electric (HEV),0.05739802711201014
-RAM,RAM 1500 Classic,Pickup,Flex Fuel (E85),0.0366914993872679
-Honda,Insight,Car,Hybrid Electric (HEV),0.13815053077966877
-Nissan,Quest,Minivan,Gasoline,0.0730204404335858
-Mercedes-Benz,G-Class,SUV,Gasoline,0.04633214002478914
-Chrysler,Pacifica Hybrid,Minivan,Hybrid Electric (HEV),0.07228499883167305
-Land Rover,LR4,SUV,Gasoline,0.12738375774760757
-BMW,5 Series,Car,Hybrid Electric (HEV),0.12993260909294735
-Toyota,Avalon,Car,Hybrid Electric (HEV),0.07954176400591295
-Acura,TL,Car,Gasoline,0.07883295186149042
-Lexus,LX,SUV,Gasoline,0.09298513243130024
-Ford,F-250 Super Duty,Pickup,Gasoline,0.0684486247156324
-Kia,Optima,Car,Hybrid Electric (HEV),0.07130312677307316
-BMW,i3,Car,Hybrid Electric (HEV),0.09211913333823973
-GMC,Yukon XL,SUV,Flex Fuel (E85),0.07441678450309186
-Nissan,Rogue Select,CUV,Gasoline,0.03866959595612118
-Chrysler,Voyager,Minivan,Gasoline,0.08991467327710778
-Ford,F-350 Super Duty,Pickup,Flex Fuel (E85),0.05137123558265211
-Toyota,Highlander,CUV,Hybrid Electric (HEV),0.08924507642316382
-Chevrolet,Silverado 1500 Limited,Pickup,Gasoline,0.05399990304963842
-Toyota,Sienna,Minivan,Hybrid Electric (HEV),0.025290137281436476
-Lincoln,MKZ,Car,Hybrid Electric (HEV),0.08289576421758338
-GMC,Sierra 2500hd,Pickup,Flex Fuel (E85),0.03479939620407302
-Jeep,Liberty,SUV,Gasoline,0.09039442245929252
-Chevrolet,Suburban,SUV,Gasoline,0.057278499328081045
-Chevrolet,Captiva Sport,CUV,Flex Fuel (E85),0.04661274933023096
-Volkswagen,Taos,CUV,Gasoline,0.09803044883761058
-Audi,A4,Car,Flex Fuel (E85),0.06927777827693282
-Toyota,Prius Prime,Car,Plug-In Hybrid Electric (PHEV),0.033591238750451335
-Cadillac,SRX,CUV,Flex Fuel (E85),0.07323512870568238
-Nissan,Juke,CUV,Gasoline,0.03761295548364618
-GMC,Yukon,SUV,Flex Fuel (E85),0.07772169451618571
-Chevrolet,Silverado 2500hd,Pickup,Gasoline,0.052755820176837664
-Jeep,Wrangler Jk Unlimited,SUV,Gasoline,0.027123885856517704
-Dodge,Avenger,Car,Gasoline,0.043780271875599186
-Lexus,CT,Car,Hybrid Electric (HEV),0.05887281507596043
-RAM,RAM 1500,Pickup,Gasoline,0.08891751981553264
-Toyota,Venza,CUV,Gasoline,0.04753628702237789
-Toyota,Sequoia,SUV,Gasoline,0.07954514142311997
-Ford,Flex,CUV,Flex Fuel (E85),0.1348336551181305
-Toyota,C-Hr,CUV,Gasoline,0.03767948137634802
-BMW,X7,SUV,Gasoline,0.09627274203634806
-Ford,Fusion Energi,Car,Plug-In Hybrid Electric (PHEV),0.06964490665310297
-Toyota,Prius C,Car,Hybrid Electric (HEV),0.038513357891215017
-Chevrolet,Silverado 1500 LD,Pickup,Gasoline,0.0012790216420126566
-Chevrolet,Trailblazer,CUV,Gasoline,0.06932727406549166
-Tesla,Model X,CUV,Battery Electric (BEV),0.12304363482657443
-Chrysler,300,Car,Flex Fuel (E85),0.0306807483374979
-Mercedes-Benz,GLE,CUV,Gasoline,0.10322356077808437
-Mercedes-Benz,GLK-Class,CUV,Gasoline,0.08857974615481479
-Ford,Expedition,SUV,Flex Fuel (E85),0.09514462675977298
-Hyundai,Sonata Hybrid,Car,Hybrid Electric (HEV),0.0820900044406978
-Ford,C-Max,Minivan,Hybrid Electric (HEV),0.05701087878647637
-Mercedes-Benz,GL-Class,CUV,Gasoline,0.12611088871688614
-Kia,Telluride,CUV,Gasoline,0.06847737952589839
-Ford,Taurus,Car,Gasoline,0.10056584644146194
-Audi,Q5,CUV,Flex Fuel (E85),0.09835229074233098
-Hyundai,Palisade,CUV,Gasoline,0.06064353272115963
-Chevrolet,Bolt EV,Car,Battery Electric (BEV),0.08969966887941327
-Ford,Escape,CUV,Flex Fuel (E85),0.14504036044210622
-Toyota,Camry,Car,Hybrid Electric (HEV),0.07370900852279494
-Dodge,Durango,SUV,Flex Fuel (E85),0.10677845912621953
-Jeep,Grand Cherokee L,SUV,Gasoline,0.06076065252863605
-Buick,Encore Gx,CUV,Gasoline,0.059320179091309155
-Buick,Lacrosse,Car,Flex Fuel (E85),0.06405877461428977
-Honda,Accord,Car,Hybrid Electric (HEV),0.07083796646947127
-Mercedes-Benz,M-Class,CUV,Gasoline,0.10555472131480648
-Kia,K5,Car,Gasoline,0.07475350033063588
-Ford,Bronco Sport,CUV,Gasoline,0.05446062460950607
-Subaru,XV Crosstrek,CUV,Gasoline,0.03747150361720997
-Mazda,CX-30,CUV,Gasoline,0.033679252343217225
-Nissan,Leaf,Car,Battery Electric (BEV),0.1248748410293774
-Nissan,Altima Sedan,Car,Gasoline,0.051143009134532624
-Mercedes-Benz,E-Class,Car,Flex Fuel (E85),0.06624634082352565
-Tesla,Model Y,CUV,Battery Electric (BEV),0.10162965105563271
-Toyota,RAV4,CUV,Hybrid Electric (HEV),0.030444750492072403
-Honda,Passport,SUV,Gasoline,0.06211394412774185
-Chevrolet,Volt,Car,Plug-In Hybrid Electric (PHEV),0.08482642308605581
-Jeep,ALL-New Wrangler Unlimited,SUV,Gasoline,0.02592992670712624
-Ford,Ranger,Pickup,Gasoline,0.06664445092780702
-Chevrolet,Impala,Car,Gasoline,0.048656270210151176
-Jeep,Gladiator,Pickup,Gasoline,0.025365009444834774
-Chrysler,200,Car,Flex Fuel (E85),0.07819109871952601
-Mercedes-Benz,GLC-Class,CUV,Gasoline,0.0381830736838189
-Lincoln,Navigator,SUV,Gasoline,0.1329235437577072
-Tesla,Model S,Car,Battery Electric (BEV),0.10962536391029132
-Cadillac,Escalade ESV,SUV,Gasoline,0.07192544960451874
-Nissan,Versa Note,Car,Gasoline,0.029578697956892386
-Land Rover,Range Rover,SUV,Gasoline,0.1326089637359411
-Jeep,Renegade,CUV,Flex Fuel (E85),0.021206236660063937
-Kia,Sedona,Minivan,Gasoline,0.090477291201704
-Nissan,Kicks,CUV,Gasoline,0.02764665606765848
-Subaru,Ascent,CUV,Gasoline,0.07790008364956946
-Chevrolet,Silverado 2500hd,Pickup,Flex Fuel (E85),0.03850750389007118
-GMC,Sierra 1500 Denali,Pickup,Gasoline,0.048102371119508436
-MINI,Countryman,CUV,Gasoline,0.08133288468725763
-Ford,Taurus,Car,Flex Fuel (E85),0.05666086379147672
-Ford,Ecosport,CUV,Gasoline,0.06668559218156012
-Land Rover,Range Rover Sport,SUV,Gasoline,0.12130457480652523
-Mercedes-Benz,GLC,CUV,Gasoline,0.13759902120765422
-Honda,Ridgeline,Pickup,Gasoline,0.05865757893770529
-Mercedes-Benz,GLA-Class,CUV,Gasoline,0.06272173307908935
-GMC,Canyon,Pickup,Gasoline,0.028065746591377727
-Buick,Envision,CUV,Gasoline,0.08974853289387041
-Audi,Q3,CUV,Gasoline,0.08419016377298694
-Honda,FIT,Car,Gasoline,0.04417198239135256
-Porsche,Macan,CUV,Gasoline,0.0866715101370863
-Mercedes-Benz,S-Class,Car,Gasoline,0.12735700283354434
-Lincoln,MKX,CUV,Gasoline,0.10358297843683406
-Mercedes-Benz,GLE-Class,CUV,Gasoline,0.10066586689597634
-Cadillac,SRX,CUV,Gasoline,0.09329697434936046
-Toyota,Avalon,Car,Gasoline,0.07362789697400396
-Honda,Civic Hatchback,Car,Gasoline,0.015984125193342802
-Lincoln,MKC,CUV,Gasoline,0.08204458147701865
-Subaru,WRX,Car,Gasoline,0.049374858790306564
-Lincoln,MKZ,Car,Gasoline,0.09508742862679065
-Dodge,Journey,CUV,Flex Fuel (E85),0.05916236079230186
-Toyota,Tundra,Pickup,Flex Fuel (E85),0.03357822117183029
-Dodge,Dart,Car,Gasoline,0.0320892076954824
-Infiniti,Qx80,SUV,Gasoline,0.09838880782258486
-MINI,Cooper,Car,Gasoline,0.07576018061080125
-Chevrolet,Blazer,CUV,Gasoline,0.07573380161776178
-Chevrolet,Tahoe,SUV,Gasoline,0.03587732704531521
-Volvo,Xc90,CUV,Gasoline,0.12386224289722281
-Infiniti,Qx60,CUV,Gasoline,0.10309874868149671
-Chevrolet,Corvette,Car,Gasoline,0.021647786533569247
-Cadillac,Escalade,SUV,Gasoline,0.06719239795724374
-Hyundai,Kona,CUV,Gasoline,0.023487573037333287
-Lexus,GX,SUV,Gasoline,0.08730834891926265
-Chevrolet,Suburban,SUV,Flex Fuel (E85),0.09590769540612154
-Mercedes-Benz,C-Class Sedan,Car,Gasoline,0.09114625922488662
-Nissan,Titan,Pickup,Gasoline,0.056316663294348035
-Volvo,Xc60,CUV,Gasoline,0.12441244409429508
-Mazda,CX-9,CUV,Gasoline,0.10401635265877396
-Audi,Q7,CUV,Gasoline,0.1367781835746429
-Chevrolet,Sonic,Car,Gasoline,0.05218461671277319
-Honda,HR-V,CUV,Gasoline,0.03347015552552479
-Mitsubishi,Outlander,CUV,Gasoline,0.060179346389948374
-Ford,Fusion Hybrid,Car,Hybrid Electric (HEV),0.02330608139723389
-RAM,RAM 1500 Classic,Pickup,Gasoline,0.020795761722802397
-RAM,RAM 2500 Pickup,Pickup,Gasoline,0.04749988176011777
-Ford,F-250 Super Duty,Pickup,Flex Fuel (E85),0.05957186364281131
-BMW,X1,CUV,Gasoline,0.10002116267141492
-Audi,A4,Car,Gasoline,0.0985657491695261
-Subaru,Crosstrek,CUV,Gasoline,0.037799856376338536
-Audi,Q5,CUV,Gasoline,0.10643278131817346
-Mitsubishi,Outlander Sport,CUV,Gasoline,0.05968888925981852
-Mazda,Mazda6,Car,Gasoline,0.058730039820910185
-Chrysler,200,Car,Gasoline,0.013190659770735746
-GMC,Sierra 1500,Pickup,Flex Fuel (E85),0.04692710398220523
-Volkswagen,Atlas,CUV,Gasoline,0.06229482470106895
-Ford,Focus,Car,Gasoline,0.10574003710442426
-GMC,Yukon XL,SUV,Gasoline,0.0983498843219891
-Chrysler,Town & Country,Minivan,Flex Fuel (E85),0.09057351881866738
-Acura,TLX,Car,Gasoline,0.07436194907812999
-Tesla,Model 3,Car,Battery Electric (BEV),0.055566870264701196
-Nissan,Armada,SUV,Gasoline,0.09301705873715171
-Ford,Fiesta,Car,Gasoline,0.05561158734610916
-Jeep,Wrangler,SUV,Gasoline,0.029224656638281443
-Hyundai,Accent,Car,Gasoline,0.0435254765366998
-Subaru,Legacy,Car,Gasoline,0.07244847110544694
-BMW,4 Series,Car,Gasoline,0.07955201664375777
-Lexus,IS,Car,Gasoline,0.07171830733239826
-Nissan,Rogue Sport,CUV,Gasoline,0.026696898169200844
-RAM,RAM 1500 Pickup,Pickup,Flex Fuel (E85),0.03978086133777803
-Lexus,NX,CUV,Gasoline,0.05371103949320355
-Mercedes-Benz,E-Class,Car,Gasoline,0.12348169211149551
-GMC,Terrain,CUV,Flex Fuel (E85),0.07130564967292996
-Toyota,Sienna,Minivan,Gasoline,0.07371070601598695
-Infiniti,Q50,Car,Gasoline,0.06578669834371031
-Toyota,Prius,Car,Hybrid Electric (HEV),0.0783205464456097
-Toyota,Tundra,Pickup,Gasoline,0.037597026960529356
-Subaru,Impreza,Car,Gasoline,0.06369287307813154
-Cadillac,Xt5,CUV,Gasoline,0.09204931587319132
-Nissan,Murano,CUV,Gasoline,0.08026308523297565
-Nissan,Versa Sedan,Car,Gasoline,0.05180768010982795
-Chrysler,300,Car,Gasoline,0.06780838089633612
-Jeep,Renegade,CUV,Gasoline,0.035447233721464855
-Chevrolet,Tahoe,SUV,Flex Fuel (E85),0.09030673973222281
-GMC,Yukon,SUV,Gasoline,0.09422261106476892
-Jeep,Patriot,CUV,Gasoline,0.050032853563579116
-Lexus,ES,Car,Gasoline,0.08427538172192928
-Acura,RDX,CUV,Gasoline,0.09427202090472142
-Chevrolet,Impala,Car,Flex Fuel (E85),0.06904903097080617
-Nissan,Maxima,Car,Gasoline,0.08381373397266689
-Mercedes-Benz,C-Class,Car,Gasoline,0.08273154098430535
-Volkswagen,Passat,Car,Gasoline,0.06962449870573073
-BMW,X5,CUV,Gasoline,0.12199294124635662
-BMW,5 Series,Car,Gasoline,0.133106389404554
-BMW,X3,CUV,Gasoline,0.11522773959801136
-Mazda,Mazda3,Car,Gasoline,0.07085154010111894
-Chevrolet,Colorado,Pickup,Gasoline,0.03687930768743242
-Acura,MDX,CUV,Gasoline,0.11100673823263241
-Jeep,Grand Cherokee,SUV,Flex Fuel (E85),0.07239928828189313
-Buick,Enclave,CUV,Gasoline,0.11198366106389723
-Nissan,Frontier,Pickup,Gasoline,0.03885275376461428
-Dodge,Journey,CUV,Gasoline,0.082532212783749
-Dodge,Durango,SUV,Gasoline,0.06651551761464236
-Ford,Edge,CUV,Gasoline,0.0758247439621379
-Ford,Expedition,SUV,Gasoline,0.10100719219872989
-Chrysler,Pacifica,Minivan,Gasoline,0.04827336764124368
-Buick,Encore,CUV,Gasoline,0.05817137893656754
-Chevrolet,Trax,CUV,Gasoline,0.051364137221993844
-Chevrolet,Camaro,Car,Gasoline,0.044791735462492155
-Mazda,CX-5,CUV,Gasoline,0.0481129040313194
-GMC,Terrain,CUV,Gasoline,0.07942413603371723
-GMC,Acadia,CUV,Gasoline,0.12260941230353839
-Kia,Forte,Car,Gasoline,0.06115727026796236
-Dodge,Challenger,Car,Gasoline,0.01817270502796675
-Kia,Sportage,CUV,Gasoline,0.05887704040630426
-Volkswagen,Tiguan,CUV,Gasoline,0.0980588243645436
-Ford,Focus,Car,Flex Fuel (E85),0.032374217583717946
-Honda,Odyssey,Minivan,Gasoline,0.10344212186970791
-Nissan,Pathfinder,CUV,Gasoline,0.08747336599725852
-Lexus,RX,CUV,Gasoline,0.09225419857155592
-Hyundai,Santa Fe,CUV,Gasoline,0.07520266282089438
-Ford,Explorer,SUV,Flex Fuel (E85),0.08999924641988011
-Toyota,4runner,SUV,Gasoline,0.03416036662187982
-Dodge,Charger,Car,Gasoline,0.061898659242861975
-BMW,3 Series,Car,Gasoline,0.11570978859418468
-Subaru,Forester,CUV,Gasoline,0.07491498178925027
-Ford,Mustang,Car,Gasoline,0.039859816907446444
-Kia,Soul,Car,Gasoline,0.047505469427337244
-Chevrolet,Silverado 1500,Pickup,Flex Fuel (E85),0.04203366590848412
-Toyota,Tacoma,Pickup,Gasoline,0.01610094927291328
-GMC,Sierra 1500,Pickup,Gasoline,0.049547185166292196
-Dodge,Grand Caravan,Minivan,Flex Fuel (E85),0.05209068292549868
-Jeep,Wrangler Unlimited,SUV,Gasoline,0.02510393710792258
-Kia,Optima,Car,Gasoline,0.0540300717833605
-Volkswagen,Jetta,Car,Gasoline,0.07093588368208847
-Hyundai,Tucson,CUV,Gasoline,0.054302635269429356
-Kia,Sorento,CUV,Gasoline,0.08147758147898321
-Honda,Pilot,CUV,Gasoline,0.09388472008255222
-Subaru,Outback,Car,Gasoline,0.07261632711176058
-Jeep,Compass,CUV,Gasoline,0.06453084187240643
-Chevrolet,Equinox,CUV,Flex Fuel (E85),0.05233220425769547
-Chevrolet,Cruze,Car,Gasoline,0.06404384463049084
-Chevrolet,Traverse,CUV,Gasoline,0.1204017611822894
-Hyundai,Sonata,Car,Gasoline,0.07276366081568064
-Toyota,Highlander,CUV,Gasoline,0.06420523359250441
-Ford,Explorer,SUV,Gasoline,0.09531798977093209
-Nissan,Sentra,Car,Gasoline,0.04822089797994067
-Hyundai,Elantra,Car,Gasoline,0.05072014802984193
-Ford,Fusion,Car,Gasoline,0.064344641675803
-Nissan,Rogue,CUV,Gasoline,0.06995898666050437
-Chevrolet,Malibu,Car,Gasoline,0.07805080960934319
-Jeep,Cherokee,SUV,Gasoline,0.043647155943822624
-Chevrolet,Equinox,CUV,Gasoline,0.07506150045942528
-Jeep,Grand Cherokee,SUV,Gasoline,0.09533316293209837
-Ford,F-150,Pickup,Flex Fuel (E85),0.04734333379273681
-Honda,CR-V,CUV,Gasoline,0.06551925860636088
-Toyota,Corolla,Car,Gasoline,0.03173370935521003
-Honda,Civic,Car,Gasoline,0.04998483674964738
-Toyota,RAV4,CUV,Gasoline,0.04324362375538038
-RAM,RAM 1500 Pickup,Pickup,Gasoline,0.047393953342920514
-Honda,Accord,Car,Gasoline,0.0690389832665782
-Nissan,Altima,Car,Gasoline,0.07289840154858651
-Ford,Escape,CUV,Gasoline,0.07671675394993471
-Toyota,Camry,Car,Gasoline,0.05636184400374877
-Ford,F-150,Pickup,Gasoline,0.07049818361462035
-Chevrolet,Silverado 1500,Pickup,Gasoline,0.04743783351541797
+make,model,powertrain,vehicle_type,dep_annual
+Acura,MDX,Gasoline,CUV,0.11100673823263241
+Acura,RDX,Gasoline,CUV,0.09427202090472142
+Acura,TL,Gasoline,Car,0.07883295186149042
+Acura,TLX,Gasoline,Car,0.07436194907812999
+Audi,A4,Flex Fuel (E85),Car,0.06927777827693282
+Audi,A4,Gasoline,Car,0.0985657491695261
+Audi,A5,Flex Fuel (E85),Car,0.053537694128794056
+Audi,A5 Cabriolet,Flex Fuel (E85),Car,0.07067091258116431
+Audi,A5 Coupe,Flex Fuel (E85),Car,0.06737298926292568
+Audi,Allroad,Flex Fuel (E85),Car,0.0865303400484504
+Audi,Q3,Gasoline,CUV,0.08419016377298694
+Audi,Q4 e-tron,Battery Electric (BEV),CUV,0.10259776184755398
+Audi,Q5,Flex Fuel (E85),CUV,0.09835229074233098
+Audi,Q5,Gasoline,CUV,0.10643278131817346
+Audi,Q5,Hybrid Electric (HEV),CUV,0.08857396599196476
+Audi,Q7,Gasoline,CUV,0.1367781835746429
+Audi,Q8 e-tron,Battery Electric (BEV),CUV,0.15665095557842934
+Audi,e-tron,Battery Electric (BEV),CUV,0.13718977073657113
+Audi,e-tron Sportback,Battery Electric (BEV),CUV,0.194038811583217
+BMW,3 Series,Gasoline,Car,0.11570978859418468
+BMW,3 Series,Hybrid Electric (HEV),Car,0.11884614523177939
+BMW,4 Series,Gasoline,Car,0.07955201664375777
+BMW,5 Series,Gasoline,Car,0.133106389404554
+BMW,5 Series,Hybrid Electric (HEV),Car,0.12993260909294735
+BMW,IX,Battery Electric (BEV),CUV,0.07196125342485604
+BMW,X1,Gasoline,CUV,0.10002116267141492
+BMW,X3,Gasoline,CUV,0.11522773959801136
+BMW,X3,Hybrid Electric (HEV),CUV,0.1293947422836602
+BMW,X5,Gasoline,CUV,0.12199294124635662
+BMW,X7,Gasoline,SUV,0.09627274203634806
+BMW,i3,Battery Electric (BEV),Car,0.06910889240396956
+BMW,i3,Hybrid Electric (HEV),Car,0.09211913333823973
+BMW,i4,Battery Electric (BEV),Car,0.11797904748196542
+BMW,i5,Battery Electric (BEV),Car,0.011685632776204269
+BMW,i7,Battery Electric (BEV),Car,0.05021151506796184
+Buick,Enclave,Gasoline,CUV,0.11198366106389723
+Buick,Encore,Gasoline,CUV,0.05817137893656754
+Buick,Encore Gx,Gasoline,CUV,0.059320179091309155
+Buick,Envision,Gasoline,CUV,0.08974853289387041
+Buick,Lacrosse,Flex Fuel (E85),Car,0.06405877461428977
+Buick,Lucerne,Flex Fuel (E85),Car,0.09554645062710954
+Buick,Regal,Flex Fuel (E85),Car,0.0637750849988945
+Buick,Verano,Flex Fuel (E85),Car,0.014440669249658034
+Cadillac,ATS,Flex Fuel (E85),Car,0.04849634047993645
+Cadillac,CTS Sedan,Flex Fuel (E85),Car,0.05642859671004419
+Cadillac,Escalade,Flex Fuel (E85),SUV,0.09266462331491021
+Cadillac,Escalade,Gasoline,SUV,0.06719239795724374
+Cadillac,Escalade,Hybrid Electric (HEV),SUV,0.11514754057828414
+Cadillac,Escalade ESV,Flex Fuel (E85),SUV,0.09844585603313494
+Cadillac,Escalade ESV,Gasoline,SUV,0.07192544960451874
+Cadillac,Lyriq,Battery Electric (BEV),CUV,0.12330389513411877
+Cadillac,SRX,Flex Fuel (E85),CUV,0.07323512870568238
+Cadillac,SRX,Gasoline,CUV,0.09329697434936046
+Cadillac,Xt5,Gasoline,CUV,0.09204931587319132
+Chevrolet,Avalanche,Flex Fuel (E85),Pickup,0.07975412586947173
+Chevrolet,Blazer,Gasoline,CUV,0.07573380161776178
+Chevrolet,Blazer EV,Battery Electric (BEV),CUV,0.19632653388766652
+Chevrolet,Bolt EUV,Battery Electric (BEV),CUV,0.1021958878347824
+Chevrolet,Bolt EV,Battery Electric (BEV),Car,0.08969966887941327
+Chevrolet,Camaro,Gasoline,Car,0.044791735462492155
+Chevrolet,Captiva Sport,Flex Fuel (E85),CUV,0.04661274933023096
+Chevrolet,Colorado,Gasoline,Pickup,0.03687930768743242
+Chevrolet,Corvette,Gasoline,Car,0.021647786533569247
+Chevrolet,Cruze,Gasoline,Car,0.06404384463049084
+Chevrolet,Equinox,Flex Fuel (E85),CUV,0.05233220425769547
+Chevrolet,Equinox,Gasoline,CUV,0.07506150045942528
+Chevrolet,HHR,Flex Fuel (E85),Minivan,0.09435926480368784
+Chevrolet,HHR,Gasoline,Minivan,0.02467453438605849
+Chevrolet,Impala,Flex Fuel (E85),Car,0.06904903097080617
+Chevrolet,Impala,Gasoline,Car,0.048656270210151176
+Chevrolet,Impala Limited,Flex Fuel (E85),Car,0.015904561337676815
+Chevrolet,Malibu,Flex Fuel (E85),Car,0.10058245473834304
+Chevrolet,Malibu,Gasoline,Car,0.07805080960934319
+Chevrolet,Malibu,Hybrid Electric (HEV),Car,0.19429434514401867
+Chevrolet,Silverado 1500,Flex Fuel (E85),Pickup,0.04203366590848412
+Chevrolet,Silverado 1500,Gasoline,Pickup,0.04743783351541797
+Chevrolet,Silverado 1500,Hybrid Electric (HEV),Pickup,0.09965740562773628
+Chevrolet,Silverado 1500 LD,Gasoline,Pickup,0.0012790216420126566
+Chevrolet,Silverado 1500 Limited,Gasoline,Pickup,0.05399990304963842
+Chevrolet,Silverado 2500hd,Flex Fuel (E85),Pickup,0.03850750389007118
+Chevrolet,Silverado 2500hd,Gasoline,Pickup,0.052755820176837664
+Chevrolet,Silverado 3500hd,Flex Fuel (E85),Pickup,0.031535934688596834
+Chevrolet,Sonic,Gasoline,Car,0.05218461671277319
+Chevrolet,Suburban,Flex Fuel (E85),SUV,0.09590769540612154
+Chevrolet,Suburban,Gasoline,SUV,0.057278499328081045
+Chevrolet,Tahoe,Flex Fuel (E85),SUV,0.09030673973222281
+Chevrolet,Tahoe,Gasoline,SUV,0.03587732704531521
+Chevrolet,Tahoe,Hybrid Electric (HEV),SUV,0.10868513444677563
+Chevrolet,Trailblazer,Gasoline,CUV,0.06932727406549166
+Chevrolet,Traverse,Gasoline,CUV,0.1204017611822894
+Chevrolet,Trax,Gasoline,CUV,0.051364137221993844
+Chevrolet,Volt,Plug-In Hybrid Electric (PHEV),Car,0.08482642308605581
+Chrysler,200,Flex Fuel (E85),Car,0.07819109871952601
+Chrysler,200,Gasoline,Car,0.013190659770735746
+Chrysler,300,Flex Fuel (E85),Car,0.0306807483374979
+Chrysler,300,Gasoline,Car,0.06780838089633612
+Chrysler,PT Cruiser,Gasoline,Minivan,0.17833148140433208
+Chrysler,Pacifica,Flex Fuel (E85),Minivan,0.12546274244437772
+Chrysler,Pacifica,Gasoline,Minivan,0.04827336764124368
+Chrysler,Pacifica Hybrid,Hybrid Electric (HEV),Minivan,0.07228499883167305
+Chrysler,Town & Country,Flex Fuel (E85),Minivan,0.09057351881866738
+Chrysler,Town & Country,Gasoline,Minivan,0.14205779894329118
+Chrysler,Voyager,Gasoline,Minivan,0.08991467327710778
+Dodge,Avenger,Flex Fuel (E85),Car,0.03957691926405438
+Dodge,Avenger,Gasoline,Car,0.043780271875599186
+Dodge,Challenger,Flex Fuel (E85),Car,0.046882288711275644
+Dodge,Challenger,Gasoline,Car,0.01817270502796675
+Dodge,Charger,Flex Fuel (E85),Car,0.06680142797402167
+Dodge,Charger,Gasoline,Car,0.061898659242861975
+Dodge,Dart,Gasoline,Car,0.0320892076954824
+Dodge,Durango,Flex Fuel (E85),SUV,0.10677845912621953
+Dodge,Durango,Gasoline,SUV,0.06651551761464236
+Dodge,Grand Caravan,Flex Fuel (E85),Minivan,0.05209068292549868
+Dodge,Grand Caravan,Gasoline,Minivan,0.1428205316100798
+Dodge,Journey,Flex Fuel (E85),CUV,0.05916236079230186
+Dodge,Journey,Gasoline,CUV,0.082532212783749
+Dodge,RAM 1500 Pickup,Flex Fuel (E85),Pickup,0.071582729331506
+Dodge,RAM 1500 Pickup,Gasoline,Pickup,0.1595130131063185
+Dodge,RAM 2500 Pickup,Gasoline,Pickup,0.029654352836760323
+Fiat,500e,Battery Electric (BEV),Car,0.0060900450004138795
+Fiat,500l,Gasoline,Minivan,0.04279308645138247
+Ford,Bronco Sport,Gasoline,CUV,0.05446062460950607
+Ford,C-Max,Hybrid Electric (HEV),Minivan,0.05701087878647637
+Ford,Crown Victoria,Flex Fuel (E85),Car,0.10920385000364685
+Ford,Ecosport,Gasoline,CUV,0.06668559218156012
+Ford,Edge,Gasoline,CUV,0.0758247439621379
+Ford,Escape,Flex Fuel (E85),CUV,0.14504036044210622
+Ford,Escape,Gasoline,CUV,0.07671675394993471
+Ford,Escape,Hybrid Electric (HEV),CUV,0.1518572653681084
+Ford,Escape,Plug-In Hybrid Electric (PHEV),CUV,0.1525176723860111
+Ford,Expedition,Flex Fuel (E85),SUV,0.09514462675977298
+Ford,Expedition,Gasoline,SUV,0.10100719219872989
+Ford,Explorer,Flex Fuel (E85),SUV,0.08999924641988011
+Ford,Explorer,Gasoline,SUV,0.09531798977093209
+Ford,Explorer,Hybrid Electric (HEV),SUV,0.1327512641549592
+Ford,Explorer Sport Trac,Gasoline,Pickup,0.09334419812796935
+Ford,F-150,Flex Fuel (E85),Pickup,0.04734333379273681
+Ford,F-150,Gasoline,Pickup,0.07049818361462035
+Ford,F-150 Lightning,Battery Electric (BEV),Pickup,0.07131173872767171
+Ford,F-250 Super Duty,Flex Fuel (E85),Pickup,0.05957186364281131
+Ford,F-250 Super Duty,Gasoline,Pickup,0.0684486247156324
+Ford,F-350 Super Duty,Flex Fuel (E85),Pickup,0.05137123558265211
+Ford,F-350 Super Duty,Gasoline,Pickup,0.050805566087917864
+Ford,Fiesta,Gasoline,Car,0.05561158734610916
+Ford,Flex,Flex Fuel (E85),CUV,0.1348336551181305
+Ford,Focus,Battery Electric (BEV),Car,0.08517709093591908
+Ford,Focus,Flex Fuel (E85),Car,0.032374217583717946
+Ford,Focus,Gasoline,Car,0.10574003710442426
+Ford,Fusion,Flex Fuel (E85),Car,0.07693146115720528
+Ford,Fusion,Gasoline,Car,0.064344641675803
+Ford,Fusion,Hybrid Electric (HEV),Car,0.05739802711201014
+Ford,Fusion Energi,Plug-In Hybrid Electric (PHEV),Car,0.06964490665310297
+Ford,Fusion Hybrid,Hybrid Electric (HEV),Car,0.02330608139723389
+Ford,Maverick,Gasoline,Pickup,0.06379054021500452
+Ford,Mustang,Gasoline,Car,0.039859816907446444
+Ford,Mustang Mach-E,Battery Electric (BEV),CUV,0.15834941334017472
+Ford,Ranger,Gasoline,Pickup,0.06664445092780702
+Ford,Taurus,Flex Fuel (E85),Car,0.05666086379147672
+Ford,Taurus,Gasoline,Car,0.10056584644146194
+Ford,Transit Connect,Gasoline,Minivan,0.08793122152760491
+GMC,Acadia,Gasoline,CUV,0.12260941230353839
+GMC,Canyon,Gasoline,Pickup,0.028065746591377727
+GMC,Envoy,Gasoline,SUV,0.32962229476279714
+GMC,Hummer EV,Battery Electric (BEV),Pickup,0.08265160457251919
+GMC,Hummer EV,Battery Electric (BEV),SUV,0.21843094604897906
+GMC,Sierra 1500,Flex Fuel (E85),Pickup,0.04692710398220523
+GMC,Sierra 1500,Gasoline,Pickup,0.049547185166292196
+GMC,Sierra 1500,Hybrid Electric (HEV),Pickup,0.08594664323039036
+GMC,Sierra 1500 Denali,Gasoline,Pickup,0.048102371119508436
+GMC,Sierra 2500hd,Flex Fuel (E85),Pickup,0.03479939620407302
+GMC,Sierra 2500hd,Gasoline,Pickup,0.06057713426510358
+GMC,Sierra Denali,Flex Fuel (E85),Pickup,0.06043611687886652
+GMC,Terrain,Flex Fuel (E85),CUV,0.07130564967292996
+GMC,Terrain,Gasoline,CUV,0.07942413603371723
+GMC,Yukon,Flex Fuel (E85),SUV,0.07772169451618571
+GMC,Yukon,Gasoline,SUV,0.09422261106476892
+GMC,Yukon,Hybrid Electric (HEV),SUV,0.12324080161504725
+GMC,Yukon XL,Flex Fuel (E85),SUV,0.07441678450309186
+GMC,Yukon XL,Gasoline,SUV,0.0983498843219891
+Honda,Accord,Gasoline,Car,0.0690389832665782
+Honda,Accord,Hybrid Electric (HEV),Car,0.07083796646947127
+Honda,CR-V,Gasoline,CUV,0.06551925860636088
+Honda,CR-V,Hybrid Electric (HEV),CUV,0.03911940789613855
+Honda,CR-Z,Hybrid Electric (HEV),Car,0.06690841544207782
+Honda,Civic,Gasoline,Car,0.04998483674964738
+Honda,Civic,Hybrid Electric (HEV),Car,0.06191076470678081
+Honda,Civic Hatchback,Gasoline,Car,0.015984125193342802
+Honda,Clarity,Hybrid Electric (HEV),Car,0.03779184954868475
+Honda,FIT,Gasoline,Car,0.04417198239135256
+Honda,HR-V,Gasoline,CUV,0.03347015552552479
+Honda,Insight,Hybrid Electric (HEV),Car,0.13815053077966877
+Honda,Odyssey,Gasoline,Minivan,0.10344212186970791
+Honda,Passport,Gasoline,SUV,0.06211394412774185
+Honda,Pilot,Gasoline,CUV,0.09388472008255222
+Honda,Prologue,Battery Electric (BEV),CUV,0.21003844421402507
+Honda,Ridgeline,Gasoline,Pickup,0.05865757893770529
+Hummer,H3,Gasoline,SUV,0.2213591589167596
+Hyundai,Accent,Gasoline,Car,0.0435254765366998
+Hyundai,Elantra,Gasoline,Car,0.05072014802984193
+Hyundai,Ioniq,Battery Electric (BEV),Car,0.11745476697192725
+Hyundai,Ioniq,Hybrid Electric (HEV),Car,0.05045915603702267
+Hyundai,Ioniq 5,Battery Electric (BEV),CUV,0.15899679226078878
+Hyundai,Ioniq 6,Battery Electric (BEV),Car,0.1777003897400249
+Hyundai,Kona,Gasoline,CUV,0.023487573037333287
+Hyundai,Kona EV,Battery Electric (BEV),CUV,0.1315165063668826
+Hyundai,Nexo,Fuel Cell,CUV,0.24992710560816667
+Hyundai,Palisade,Gasoline,CUV,0.06064353272115963
+Hyundai,Santa Cruz,Gasoline,Pickup,0.029686200704070576
+Hyundai,Santa Fe,Gasoline,CUV,0.07520266282089438
+Hyundai,Santa Fe,Plug-In Hybrid Electric (PHEV),CUV,0.1490653951386599
+Hyundai,Sonata,Gasoline,Car,0.07276366081568064
+Hyundai,Sonata Hybrid,Hybrid Electric (HEV),Car,0.0820900044406978
+Hyundai,Sonata Plug-In Hybrid,Plug-In Hybrid Electric (PHEV),Car,0.06248383767611976
+Hyundai,Tucson,Gasoline,CUV,0.054302635269429356
+Infiniti,Q50,Gasoline,Car,0.06578669834371031
+Infiniti,Q50,Hybrid Electric (HEV),Car,0.06127359175196845
+Infiniti,QX,Gasoline,SUV,0.12092943447888638
+Infiniti,Qx60,Gasoline,CUV,0.10309874868149671
+Infiniti,Qx60,Hybrid Electric (HEV),CUV,0.1076801152773349
+Infiniti,Qx80,Gasoline,SUV,0.09838880782258486
+Jaguar,I-Pace,Battery Electric (BEV),CUV,0.18450025249805457
+Jeep,ALL-New Wrangler Unlimited,Gasoline,SUV,0.02592992670712624
+Jeep,Cherokee,Flex Fuel (E85),SUV,0.14145127850696526
+Jeep,Cherokee,Gasoline,SUV,0.043647155943822624
+Jeep,Commander,Gasoline,SUV,0.11905595689893034
+Jeep,Compass,Gasoline,CUV,0.06453084187240643
+Jeep,Gladiator,Gasoline,Pickup,0.025365009444834774
+Jeep,Grand Cherokee,Flex Fuel (E85),SUV,0.07239928828189313
+Jeep,Grand Cherokee,Gasoline,SUV,0.09533316293209837
+Jeep,Grand Cherokee,Hybrid Electric (HEV),SUV,0.05426580281457871
+Jeep,Grand Cherokee L,Gasoline,SUV,0.06076065252863605
+Jeep,Grand Cherokee Wk,Gasoline,SUV,0.18043955367673736
+Jeep,Liberty,Gasoline,SUV,0.09039442245929252
+Jeep,Patriot,Gasoline,CUV,0.050032853563579116
+Jeep,Renegade,Flex Fuel (E85),CUV,0.021206236660063937
+Jeep,Renegade,Gasoline,CUV,0.035447233721464855
+Jeep,Wrangler,Gasoline,SUV,0.029224656638281443
+Jeep,Wrangler 4-Door,Gasoline,SUV,0.048594851935412575
+Jeep,Wrangler Jk Unlimited,Gasoline,SUV,0.027123885856517704
+Jeep,Wrangler Unlimited,Gasoline,SUV,0.02510393710792258
+Jeep,Wrangler Unlimited,Hybrid Electric (HEV),SUV,0.13031792666562136
+Kia,Carnival,Gasoline,Minivan,0.10599471593400434
+Kia,Ev6,Battery Electric (BEV),CUV,0.15040392496023636
+Kia,Forte,Gasoline,Car,0.06115727026796236
+Kia,K5,Gasoline,Car,0.07475350033063588
+Kia,Niro,Battery Electric (BEV),CUV,0.09019123240394034
+Kia,Niro,Hybrid Electric (HEV),CUV,0.05195116757341689
+Kia,Niro,Plug-In Hybrid Electric (PHEV),CUV,0.02168593484821879
+Kia,Optima,Gasoline,Car,0.0540300717833605
+Kia,Optima,Hybrid Electric (HEV),Car,0.07130312677307316
+Kia,Optima,Plug-In Hybrid Electric (PHEV),Car,0.06724372508134668
+Kia,Rondo,Gasoline,Minivan,0.2641110749148312
+Kia,Sedona,Gasoline,Minivan,0.090477291201704
+Kia,Sorento,Gasoline,CUV,0.08147758147898321
+Kia,Sorento,Hybrid Electric (HEV),CUV,0.07008734211777623
+Kia,Sorento,Plug-In Hybrid Electric (PHEV),CUV,0.14108729534038666
+Kia,Soul,Battery Electric (BEV),Car,0.04797049470517012
+Kia,Soul,Gasoline,Car,0.047505469427337244
+Kia,Sportage,Gasoline,CUV,0.05887704040630426
+Kia,Sportage,Hybrid Electric (HEV),CUV,0.06538964739138942
+Kia,Telluride,Gasoline,CUV,0.06847737952589839
+Land Rover,LR4,Gasoline,SUV,0.12738375774760757
+Land Rover,Range Rover,Gasoline,SUV,0.1326089637359411
+Land Rover,Range Rover Sport,Flex Fuel (E85),SUV,0.11911773839830975
+Land Rover,Range Rover Sport,Gasoline,SUV,0.12130457480652523
+Land Rover,Range Rover Sport,Hybrid Electric (HEV),SUV,0.2158713601639798
+Lexus,CT,Hybrid Electric (HEV),Car,0.05887281507596043
+Lexus,ES,Gasoline,Car,0.08427538172192928
+Lexus,ES Hybrid,Hybrid Electric (HEV),Car,0.07379065357450931
+Lexus,GX,Gasoline,SUV,0.08730834891926265
+Lexus,HS,Hybrid Electric (HEV),Car,0.08194283087403942
+Lexus,IS,Gasoline,Car,0.07171830733239826
+Lexus,LX,Gasoline,SUV,0.09298513243130024
+Lexus,NX,Gasoline,CUV,0.05371103949320355
+Lexus,NX Hybrid,Hybrid Electric (HEV),CUV,0.053878359266289144
+Lexus,RX,Gasoline,CUV,0.09225419857155592
+Lexus,RX,Hybrid Electric (HEV),CUV,0.12002498482767787
+Lexus,RX Hybrid,Hybrid Electric (HEV),CUV,0.06482882478875962
+Lexus,RZ,Battery Electric (BEV),CUV,0.10660396437324293
+Lexus,UX Hybrid,Hybrid Electric (HEV),CUV,0.045328714736857845
+Lincoln,MKC,Gasoline,CUV,0.08204458147701865
+Lincoln,MKX,Gasoline,CUV,0.10358297843683406
+Lincoln,MKZ,Gasoline,Car,0.09508742862679065
+Lincoln,MKZ,Hybrid Electric (HEV),Car,0.08289576421758338
+Lincoln,Navigator,Flex Fuel (E85),SUV,0.10761679838258809
+Lincoln,Navigator,Gasoline,SUV,0.1329235437577072
+Lincoln,Town Car,Flex Fuel (E85),Car,0.1062810227024289
+MINI,Cooper,Gasoline,Car,0.07576018061080125
+MINI,Countryman,Gasoline,CUV,0.08133288468725763
+MINI,Hardtop 2 Door,Battery Electric (BEV),Car,0.06725688540533503
+Mazda,CX-30,Gasoline,CUV,0.033679252343217225
+Mazda,CX-5,Gasoline,CUV,0.0481129040313194
+Mazda,CX-9,Gasoline,CUV,0.10401635265877396
+Mazda,Mazda3,Gasoline,Car,0.07085154010111894
+Mazda,Mazda5,Gasoline,Minivan,0.05611117190559034
+Mazda,Mazda6,Gasoline,Car,0.058730039820910185
+Mercedes-Benz,B-Class,Battery Electric (BEV),Minivan,0.058077254845755544
+Mercedes-Benz,C-Class,Flex Fuel (E85),Car,0.1385787791452776
+Mercedes-Benz,C-Class,Gasoline,Car,0.08273154098430535
+Mercedes-Benz,C-Class Sedan,Gasoline,Car,0.09114625922488662
+Mercedes-Benz,E-Class,Flex Fuel (E85),Car,0.06624634082352565
+Mercedes-Benz,E-Class,Gasoline,Car,0.12348169211149551
+Mercedes-Benz,E-Class,Hybrid Electric (HEV),Car,0.201236771195335
+Mercedes-Benz,EQB,Battery Electric (BEV),CUV,0.22134768603820332
+Mercedes-Benz,EQE,Battery Electric (BEV),Car,0.27342956783739436
+Mercedes-Benz,EQE SUV,Battery Electric (BEV),CUV,0.23782836784609118
+Mercedes-Benz,EQS,Battery Electric (BEV),CUV,0.29556971760100137
+Mercedes-Benz,G-Class,Gasoline,SUV,0.04633214002478914
+Mercedes-Benz,GL-Class,Gasoline,CUV,0.12611088871688614
+Mercedes-Benz,GLA-Class,Gasoline,CUV,0.06272173307908935
+Mercedes-Benz,GLC,Gasoline,CUV,0.13759902120765422
+Mercedes-Benz,GLC-Class,Gasoline,CUV,0.0381830736838189
+Mercedes-Benz,GLE,Gasoline,CUV,0.10322356077808437
+Mercedes-Benz,GLE-Class,Gasoline,CUV,0.10066586689597634
+Mercedes-Benz,GLK-Class,Gasoline,CUV,0.08857974615481479
+Mercedes-Benz,M-Class,Gasoline,CUV,0.10555472131480648
+Mercedes-Benz,R-Class,Gasoline,Minivan,0.16665271521362568
+Mercedes-Benz,S-Class,Gasoline,Car,0.12735700283354434
+Mercury,Grand Marquis,Flex Fuel (E85),Car,0.09095207521811388
+Mercury,Mountaineer,Gasoline,SUV,0.0963195334874194
+Mitsubishi,Outlander,Gasoline,CUV,0.060179346389948374
+Mitsubishi,Outlander Sport,Gasoline,CUV,0.05968888925981852
+Mitsubishi,i-MiEV,Battery Electric (BEV),Car,0.08483517959725506
+Nissan,Altima,Gasoline,Car,0.07289840154858651
+Nissan,Altima Sedan,Gasoline,Car,0.051143009134532624
+Nissan,Ariya,Battery Electric (BEV),CUV,0.2644931560629632
+Nissan,Armada,Gasoline,SUV,0.09301705873715171
+Nissan,Cube,Gasoline,Minivan,0.05930241095741373
+Nissan,Frontier,Gasoline,Pickup,0.03885275376461428
+Nissan,Juke,Gasoline,CUV,0.03761295548364618
+Nissan,Kicks,Gasoline,CUV,0.02764665606765848
+Nissan,Leaf,Battery Electric (BEV),Car,0.1248748410293774
+Nissan,Maxima,Gasoline,Car,0.08381373397266689
+Nissan,Murano,Gasoline,CUV,0.08026308523297565
+Nissan,Pathfinder,Gasoline,CUV,0.08747336599725852
+Nissan,Pathfinder Hybrid,Hybrid Electric (HEV),CUV,0.07679567202183535
+Nissan,Quest,Gasoline,Minivan,0.0730204404335858
+Nissan,Rogue,Gasoline,CUV,0.06995898666050437
+Nissan,Rogue,Hybrid Electric (HEV),CUV,0.05087450098737756
+Nissan,Rogue Select,Gasoline,CUV,0.03866959595612118
+Nissan,Rogue Sport,Gasoline,CUV,0.026696898169200844
+Nissan,Sentra,Gasoline,Car,0.04822089797994067
+Nissan,Titan,Flex Fuel (E85),Pickup,0.016743481235623747
+Nissan,Titan,Gasoline,Pickup,0.056316663294348035
+Nissan,Versa Note,Gasoline,Car,0.029578697956892386
+Nissan,Versa Sedan,Gasoline,Car,0.05180768010982795
+Nissan,Xterra,Gasoline,SUV,0.08439745281703526
+Polestar,2,Battery Electric (BEV),Car,0.1967805960430481
+Porsche,Cayenne,Hybrid Electric (HEV),CUV,0.1003672782178543
+Porsche,Macan,Gasoline,CUV,0.0866715101370863
+Porsche,Panamera,Hybrid Electric (HEV),Car,0.11500269647145478
+Porsche,Taycan,Battery Electric (BEV),Car,0.10927686560939509
+RAM,RAM 1500,Gasoline,Pickup,0.08891751981553264
+RAM,RAM 1500 Classic,Flex Fuel (E85),Pickup,0.0366914993872679
+RAM,RAM 1500 Classic,Gasoline,Pickup,0.020795761722802397
+RAM,RAM 1500 Pickup,Flex Fuel (E85),Pickup,0.03978086133777803
+RAM,RAM 1500 Pickup,Gasoline,Pickup,0.047393953342920514
+RAM,RAM 2500 Pickup,Gasoline,Pickup,0.04749988176011777
+Rivian,R1s,Battery Electric (BEV),SUV,0.03864033278515244
+Rivian,R1t,Battery Electric (BEV),Pickup,0.05298387343920896
+Saturn,VUE,Gasoline,CUV,0.05954006355214814
+Smart,Fortwo,Battery Electric (BEV),Car,0.03998790575911049
+Subaru,Ascent,Gasoline,CUV,0.07790008364956946
+Subaru,Crosstrek,Gasoline,CUV,0.037799856376338536
+Subaru,Crosstrek,Hybrid Electric (HEV),CUV,0.055276064352610677
+Subaru,Forester,Gasoline,CUV,0.07491498178925027
+Subaru,Impreza,Gasoline,Car,0.06369287307813154
+Subaru,Legacy,Gasoline,Car,0.07244847110544694
+Subaru,Outback,Gasoline,Car,0.07261632711176058
+Subaru,Solterra,Battery Electric (BEV),CUV,0.3299266467321843
+Subaru,WRX,Gasoline,Car,0.049374858790306564
+Subaru,XV Crosstrek,Gasoline,CUV,0.03747150361720997
+Subaru,XV Crosstrek,Hybrid Electric (HEV),CUV,0.025382694730021194
+Tesla,Model 3,Battery Electric (BEV),Car,0.055566870264701196
+Tesla,Model S,Battery Electric (BEV),Car,0.10962536391029132
+Tesla,Model X,Battery Electric (BEV),CUV,0.12304363482657443
+Tesla,Model Y,Battery Electric (BEV),CUV,0.10162965105563271
+Toyota,4runner,Gasoline,SUV,0.03416036662187982
+Toyota,Avalon,Gasoline,Car,0.07362789697400396
+Toyota,Avalon,Hybrid Electric (HEV),Car,0.07954176400591295
+Toyota,C-Hr,Gasoline,CUV,0.03767948137634802
+Toyota,Camry,Gasoline,Car,0.05636184400374877
+Toyota,Camry,Hybrid Electric (HEV),Car,0.07370900852279494
+Toyota,Corolla,Gasoline,Car,0.03173370935521003
+Toyota,FJ Cruiser,Gasoline,SUV,0.030389930385498753
+Toyota,Highlander,Gasoline,CUV,0.06420523359250441
+Toyota,Highlander,Hybrid Electric (HEV),CUV,0.08924507642316382
+Toyota,Mirai,Fuel Cell,Car,0.1437775040312752
+Toyota,Prius,Hybrid Electric (HEV),Car,0.0783205464456097
+Toyota,Prius C,Hybrid Electric (HEV),Car,0.038513357891215017
+Toyota,Prius Plug-In,Plug-In Hybrid Electric (PHEV),Car,0.0542221142707916
+Toyota,Prius Prime,Plug-In Hybrid Electric (PHEV),Car,0.033591238750451335
+Toyota,Prius V,Hybrid Electric (HEV),Car,0.10836256880622464
+Toyota,Prius V,Hybrid Electric (HEV),Minivan,0.04093149671131047
+Toyota,RAV4,Battery Electric (BEV),CUV,0.015979891530109924
+Toyota,RAV4,Gasoline,CUV,0.04324362375538038
+Toyota,RAV4,Hybrid Electric (HEV),CUV,0.030444750492072403
+Toyota,Sequoia,Flex Fuel (E85),SUV,0.07279726582241586
+Toyota,Sequoia,Gasoline,SUV,0.07954514142311997
+Toyota,Sienna,Gasoline,Minivan,0.07371070601598695
+Toyota,Sienna,Hybrid Electric (HEV),Minivan,0.025290137281436476
+Toyota,Tacoma,Gasoline,Pickup,0.01610094927291328
+Toyota,Tundra,Flex Fuel (E85),Pickup,0.03357822117183029
+Toyota,Tundra,Gasoline,Pickup,0.037597026960529356
+Toyota,Venza,Gasoline,CUV,0.04753628702237789
+Toyota,Venza,Hybrid Electric (HEV),CUV,0.03786203001426969
+Toyota,bZ4X,Battery Electric (BEV),CUV,0.215208400520856
+Volkswagen,Atlas,Gasoline,CUV,0.06229482470106895
+Volkswagen,E-Golf,Battery Electric (BEV),Car,0.05318062539338031
+Volkswagen,ID.4,Battery Electric (BEV),CUV,0.1140917828250988
+Volkswagen,Jetta,Gasoline,Car,0.07093588368208847
+Volkswagen,Jetta,Hybrid Electric (HEV),Car,0.04328423971810147
+Volkswagen,Passat,Gasoline,Car,0.06962449870573073
+Volkswagen,Routan,Flex Fuel (E85),Minivan,0.13101992990027267
+Volkswagen,Routan,Gasoline,Minivan,0.11807987552157428
+Volkswagen,Taos,Gasoline,CUV,0.09803044883761058
+Volkswagen,Tiguan,Gasoline,CUV,0.0980588243645436
+Volkswagen,Touareg,Hybrid Electric (HEV),SUV,0.09110492904158474
+Volkswagen,Touareg 2,Hybrid Electric (HEV),SUV,0.11855530837190542
+Volvo,C40,Battery Electric (BEV),CUV,0.20790482139929067
+Volvo,Xc40,Battery Electric (BEV),CUV,0.10326431466779085
+Volvo,Xc60,Gasoline,CUV,0.12441244409429508
+Volvo,Xc90,Gasoline,CUV,0.12386224289722281

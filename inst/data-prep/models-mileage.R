@@ -85,14 +85,19 @@ for (i in 1:nrow(combinations)) {
 vmt_annual_model <- rbindlist(results)
 
 vmt_annual_type <- vmt_annual_type %>%
-  format_labels()
+  format_labels() %>%
+  select(powertrain, vehicle_type, vmt_annual) %>%
+  arrange(powertrain, vehicle_type)
+
 vmt_annual_model <- vmt_annual_model %>%
   format_labels() %>%
   mutate(
     make = format_make(make),
     model = format_model_vec(model)
   ) %>%
-  filter(vmt_annual > 0)
+  filter(vmt_annual > 0) %>%
+  select(make, model, powertrain, vehicle_type, vmt_annual) %>%
+  arrange(make, model, powertrain, vehicle_type)
 
 # Save
 write_csv(
