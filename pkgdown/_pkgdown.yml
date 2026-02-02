@@ -2,30 +2,40 @@ url: https://vehicletrends.github.io/vehicletrends/
 
 home:
   title: Data on Vehicle Trends in the USA
+  description: An R data package containing tidy formatted summary data on vehicle trends in the United States, including depreciation curves, mileage accumulation, market concentration, and market share breakdowns.
 
 template:
-  params:
+  bootstrap: 5
+  light-switch: false
+  bslib:
     bootswatch: cosmo
-    twitter:
-      creator: "@JohnHelveston"
-      card: summary
+    border-radius: 0.5rem
+  opengraph:
+    image:
+      src: https://vehicletrends.github.io/vehicletrends/reference/figures/logo.png
+      alt: "Logo for the vehicletrends package"
+  twitter:
+    creator: "@JohnHelveston"
+    card: summary
 
 navbar:
   title: "vehicletrends"
   left:
     - icon: fa-home fa-lg
       href: index.html
+    - text: "Datasets"
+      href: articles/datasets.html
     - text: "Reference"
       href: reference/index.html
     - text: "Changelog"
       href: news/index.html
   right:
-   - icon: fa-github
-     href: https://github.com/vehicletrends/vehicletrends
+    - icon: fa-github
+      href: https://github.com/vehicletrends/vehicletrends
 
 reference:
-- title: "Data"
-  desc: "Each of the following are data frames contained in this package"
+- title: "Datasets"
+  desc: "Data frames contained in this package"
   contents:
   - depreciation
   - registrations
@@ -33,3 +43,4 @@ reference:
   - vmt_daily
   - vmt_annual_type
   - vmt_annual_model
+  - percent_market
