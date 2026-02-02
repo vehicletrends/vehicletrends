@@ -37,10 +37,12 @@ reference:
 - title: "Datasets"
   desc: "Data frames contained in this package"
   contents:
-  - depreciation
-  - registrations
   - vmt_age
   - vmt_daily
   - vmt_annual_type
   - vmt_annual_model
+  - depreciation
+  - dep_annual_type
+  - dep_annual_model
   - percent_market
+  - registrations

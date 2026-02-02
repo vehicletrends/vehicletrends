@@ -223,3 +223,71 @@
 #'
 #' head(percent_market)
 "percent_market"
+
+#' Estimated annual depreciation rate by powertrain and vehicle type
+#'
+#' Estimated annual depreciation rate for each combination of powertrain
+#' and vehicle type. Computed by fitting log-linear regressions of retention
+#' rate (price / MSRP) on vehicle age (in years) for used vehicle listings;
+#' the annual depreciation rate is \code{1 - exp(b)} where \code{b} is the
+#' age coefficient. Only used vehicles aged 1--10 years with valid price and
+#' MSRP values are included.
+#'
+#' @format A data frame with 3 variables:
+#'
+#' Variable | Description
+#' -------- | -------------------------------------------
+#' `vehicle_type` | Vehicle type: "Car", "CUV", "SUV", "Pickup", "Minivan"
+#' `powertrain`   | Powertrain category: "Gasoline", "Battery Electric (BEV)", "Hybrid Electric (HEV)", "Plug-In Hybrid Electric (PHEV)", "Diesel", "Flex Fuel (E85)"
+#' `dep_annual`   | Estimated annual depreciation rate (proportion, 0--1)
+#'
+#' @docType data
+#'
+#' @usage data(dep_annual_type)
+#'
+#' @keywords datasets
+#'
+#' @source Computed from used vehicle listings data from
+#' \href{https://www.marketcheck.com/}{Marketcheck}.
+#'
+#' @examples
+#' data(dep_annual_type)
+#'
+#' head(dep_annual_type)
+"dep_annual_type"
+
+#' Estimated annual depreciation rate by make and model
+#'
+#' Estimated annual depreciation rate for individual vehicle make/model
+#' combinations. Computed by fitting log-linear regressions of retention
+#' rate (price / MSRP) on vehicle age (in years) for used vehicle listings;
+#' the annual depreciation rate is \code{1 - exp(b)} where \code{b} is the
+#' age coefficient. Only used vehicles aged 1--10 years with valid price and
+#' MSRP values are included. Only make/model combinations with at least 100
+#' listings are included, and results are filtered to positive depreciation
+#' rates only.
+#'
+#' @format A data frame with 5 variables:
+#'
+#' Variable | Description
+#' -------- | -------------------------------------------
+#' `make`         | Vehicle manufacturer (e.g., "Toyota", "BMW", "Mercedes-Benz")
+#' `model`        | Vehicle model name (e.g., "Camry", "RAV4", "Model 3")
+#' `vehicle_type` | Vehicle type: "Car", "CUV", "SUV", "Pickup", "Minivan"
+#' `powertrain`   | Powertrain category: "Gasoline", "Battery Electric (BEV)", "Hybrid Electric (HEV)", "Plug-In Hybrid Electric (PHEV)", "Diesel", "Flex Fuel (E85)"
+#' `dep_annual`   | Estimated annual depreciation rate (proportion, 0--1)
+#'
+#' @docType data
+#'
+#' @usage data(dep_annual_model)
+#'
+#' @keywords datasets
+#'
+#' @source Computed from used vehicle listings data from
+#' \href{https://www.marketcheck.com/}{Marketcheck}.
+#'
+#' @examples
+#' data(dep_annual_model)
+#'
+#' head(dep_annual_model)
+"dep_annual_model"

@@ -9,39 +9,35 @@ source(here::here("inst", "data-prep", "0setup.R"))
 #
 # Log transformation: ln(r) = ln(a) + b1*x1 + b2*x2
 #
-# To convert log-space estimated coefficients back to original model:
-# a = exp(int)
+# Annual depreciation rate = 1 - exp(b), where b is the age_years coefficient
 
 ds <- load_ds() |>
-  filter(age_years >= 1 & age_years <= 9) |>
+  filter(age_years >= 1 & age_years <= 10) |>
   filter(inventory_type == 'used') %>%
   filter(!is.na(price), !is.na(msrp)) %>%
-  # Compute RR for all vehicles
   mutate(rr = price / msrp) %>%
-  # Some outliers have greater than 1 RRs
   filter(rr < 1) %>%
   select(make, model, vehicle_type, powertrain, rr, age_years)
 
-# Mileage coefficient by vehicle type and powertrain ----
+# Annual depreciation by vehicle type and powertrain ----
 
-# Function to get age coefficient for vehicle type and powertrain
-get_dep_predictions <- function(vt, pt) {
+get_dep_annual_type <- function(row) {
   model <- feols(
     fml = log(rr) ~ age_years,
     data = ds |>
-      filter(vehicle_type == vt) |>
-      filter(powertrain == pt) |>
+      filter(vehicle_type == row$vehicle_type) |>
+      filter(powertrain == row$powertrain) |>
       select(rr, age_years) |>
       collect()
   )
 
-  # Predict retention rates at different ages
-  pred_data <- data.frame(age_years = seq(1, 5, 0.5))
-  pred_data$rr_predicted <- exp(predict(model, newdata = pred_data))
-  pred_data$vehicle_type <- vt
-  pred_data$powertrain <- pt
+  result <- data.frame(
+    vehicle_type = row$vehicle_type,
+    powertrain = row$powertrain,
+    dep_annual = 1 - exp(coef(model)["age_years"])
+  )
 
-  return(pred_data)
+  return(result)
 }
 
 # Get all unique combinations of vehicle_type and powertrain
@@ -49,26 +45,16 @@ combinations <- ds |>
   distinct(vehicle_type, powertrain) |>
   collect()
 
-# Loop through each row in combinations
+# Loop through each row in combinations to get estimates
 results <- list()
 for (i in 1:nrow(combinations)) {
-  results[[i]] <- get_dep_predictions(
-    combinations$vehicle_type[i],
-    combinations$powertrain[i]
-  )
+  results[[i]] <- get_dep_annual_type(combinations[i, ])
 }
-dep_powertrain_type <- rbindlist(results)
+dep_annual_type <- rbindlist(results)
 
-dep_powertrain_type
+# Annual depreciation by make and model ----
 
-write_csv(
-  dep_powertrain_type,
-  here('data', 'depreciation_powertrain_type.csv')
-)
-
-# Mileage coefficient by make and model ----
-
-get_dep_predictions_make_model <- function(row) {
+get_dep_annual_model <- function(row) {
   model <- feols(
     fml = log(rr) ~ age_years,
     data = ds |>
@@ -80,34 +66,51 @@ get_dep_predictions_make_model <- function(row) {
       collect()
   )
 
-  # Predict retention rates at different ages
-  pred_data <- data.frame(age_years = seq(1, 5, 0.5))
-  pred_data$rr_predicted <- exp(predict(model, newdata = pred_data))
-  pred_data$make <- row$make
-  pred_data$model <- row$model
-  pred_data$powertrain <- row$powertrain
-  pred_data$vehicle_type <- row$vehicle_type
+  result <- data.frame(
+    make = row$make,
+    model = row$model,
+    vehicle_type = row$vehicle_type,
+    powertrain = row$powertrain,
+    dep_annual = 1 - exp(coef(model)["age_years"])
+  )
 
-  return(pred_data)
+  return(result)
 }
 
-# Get all unique combinations of make and model
-combinations_make_model <- ds |>
-  distinct(make, model, powertrain, vehicle_type) |>
+# Get all unique combinations of make, model, vehicle_type, and powertrain
+combinations <- ds |>
+  count(make, model, vehicle_type, powertrain) |>
+  arrange(n) |>
+  filter(n >= 100) |>
   collect()
 
-# Loop through each row in combinations
+# Loop through each row in combinations to get estimates
 results <- list()
-for (i in 1:nrow(combinations_make_model)) {
-  results[[i]] <- get_dep_predictions_make_model(
-    combinations_make_model[i, ]
-  )
+for (i in 1:nrow(combinations)) {
+  results[[i]] <- get_dep_annual_model(combinations[i, ])
 }
-dep_pred_make_model <- rbindlist(results)
+dep_annual_model <- rbindlist(results)
 
-dep_pred_make_model
+dep_annual_type <- dep_annual_type %>%
+  format_labels()
+dep_annual_model <- dep_annual_model %>%
+  format_labels() %>%
+  mutate(
+    make = format_make(make),
+    model = format_model_vec(model)
+  ) %>%
+  filter(dep_annual > 0)
 
+# Save
 write_csv(
-  dep_pred_make_model,
-  here('data', 'depreciation_make_model.csv')
+  dep_annual_type,
+  here::here('data-raw', 'dep_annual_type.csv')
 )
+write_csv(
+  dep_annual_model,
+  here::here('data-raw', 'dep_annual_model.csv')
+)
+
+# Save the datasets for package
+usethis::use_data(dep_annual_type, overwrite = TRUE)
+usethis::use_data(dep_annual_model, overwrite = TRUE)
