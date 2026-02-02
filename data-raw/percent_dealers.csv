@@ -1,0 +1,1491 @@
+listing_year,inventory_type,group_var,group_level,category_var,category_level,p
+2018,Used,powertrain,Gasoline,vehicle_type,Pickup,0.8387126102372943
+2021,Used,powertrain,Gasoline,vehicle_type,Pickup,0.7811082116745421
+2019,Used,powertrain,Gasoline,vehicle_type,Pickup,0.8406556981859821
+2020,Used,powertrain,Gasoline,vehicle_type,Pickup,0.8123634935826646
+2020,Used,powertrain,Gasoline,vehicle_type,Car,0.9530049817173427
+2019,Used,powertrain,Gasoline,vehicle_type,Car,0.9492858434279515
+2021,Used,powertrain,Gasoline,vehicle_type,Car,0.9410630744998472
+2018,Used,powertrain,Gasoline,vehicle_type,Car,0.9576325120465496
+2018,Used,powertrain,Gasoline,vehicle_type,CUV,0.9225687183683365
+2020,Used,powertrain,Gasoline,vehicle_type,CUV,0.9220348965618789
+2019,Used,powertrain,Gasoline,vehicle_type,CUV,0.9179473271861628
+2021,Used,powertrain,Gasoline,vehicle_type,CUV,0.9020382255448198
+2021,Used,powertrain,Gasoline,vehicle_type,SUV,0.7930742647577403
+2018,Used,powertrain,Gasoline,vehicle_type,SUV,0.8584719823014213
+2019,Used,powertrain,Gasoline,vehicle_type,SUV,0.8543964322304586
+2020,Used,powertrain,Gasoline,vehicle_type,SUV,0.8357014896071069
+2024,Used,powertrain,Gasoline,vehicle_type,Pickup,0.7951612316864798
+2022,Used,powertrain,Gasoline,vehicle_type,Pickup,0.7856724346705207
+2023,Used,powertrain,Gasoline,vehicle_type,Pickup,0.7823649245524528
+2024,Used,powertrain,Gasoline,vehicle_type,SUV,0.8125931581052096
+2022,Used,powertrain,Gasoline,vehicle_type,SUV,0.7889340260146088
+2023,Used,powertrain,Gasoline,vehicle_type,SUV,0.799581748363951
+2022,Used,powertrain,Gasoline,vehicle_type,CUV,0.9044568571540175
+2023,Used,powertrain,Gasoline,vehicle_type,CUV,0.9168905154230291
+2024,Used,powertrain,Gasoline,vehicle_type,CUV,0.9232013669247828
+2022,Used,powertrain,Gasoline,vehicle_type,Car,0.9324049841803055
+2024,Used,powertrain,Gasoline,vehicle_type,Car,0.9365797796924419
+2023,Used,powertrain,Gasoline,vehicle_type,Car,0.9388306982278389
+2018,Used,powertrain,Diesel,vehicle_type,Pickup,0.5622632360517623
+2019,Used,powertrain,Diesel,vehicle_type,Pickup,0.581932140059061
+2020,Used,powertrain,Diesel,vehicle_type,Pickup,0.527227662028516
+2021,Used,powertrain,Diesel,vehicle_type,Pickup,0.5074170721959705
+2018,Used,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,Car,0.1654998939297512
+2019,Used,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,Car,0.20339902368468632
+2020,Used,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,Car,0.1740410807627181
+2021,Used,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,Car,0.18445118367538849
+2024,Used,powertrain,Hybrid Electric (HEV),vehicle_type,Pickup,0.1593957901625041
+2023,Used,powertrain,Hybrid Electric (HEV),vehicle_type,Pickup,0.16382123348176458
+2022,Used,powertrain,Hybrid Electric (HEV),vehicle_type,Pickup,0.18729737119643763
+2024,Used,powertrain,Hybrid Electric (HEV),vehicle_type,CUV,0.28287345039444506
+2022,Used,powertrain,Hybrid Electric (HEV),vehicle_type,CUV,0.23702199132846374
+2023,Used,powertrain,Hybrid Electric (HEV),vehicle_type,CUV,0.2586670031909715
+2018,Used,powertrain,Hybrid Electric (HEV),vehicle_type,Minivan,0.16640906749098403
+2020,Used,powertrain,Hybrid Electric (HEV),vehicle_type,Minivan,0.11565927998233086
+2021,Used,powertrain,Hybrid Electric (HEV),vehicle_type,Minivan,0.12814726003244234
+2019,Used,powertrain,Hybrid Electric (HEV),vehicle_type,Minivan,0.15678298077502562
+2018,Used,powertrain,Hybrid Electric (HEV),vehicle_type,Pickup,0.010273661241931084
+2021,Used,powertrain,Hybrid Electric (HEV),vehicle_type,Pickup,0.13089780661541717
+2020,Used,powertrain,Hybrid Electric (HEV),vehicle_type,Pickup,0.06046774153966968
+2019,Used,powertrain,Hybrid Electric (HEV),vehicle_type,Pickup,0.026999337069848733
+2021,Used,powertrain,Hybrid Electric (HEV),vehicle_type,SUV,0.030655664480334768
+2020,Used,powertrain,Hybrid Electric (HEV),vehicle_type,SUV,0.025595720140371543
+2019,Used,powertrain,Hybrid Electric (HEV),vehicle_type,SUV,0.036129693244139095
+2018,Used,powertrain,Hybrid Electric (HEV),vehicle_type,SUV,0.032881777131254356
+2024,Used,powertrain,Hybrid Electric (HEV),vehicle_type,SUV,0.09866579416148617
+2023,Used,powertrain,Hybrid Electric (HEV),vehicle_type,SUV,0.08289314752384215
+2022,Used,powertrain,Hybrid Electric (HEV),vehicle_type,SUV,0.06968477793836178
+2023,Used,powertrain,Hybrid Electric (HEV),vehicle_type,Car,0.4808631848419838
+2024,Used,powertrain,Hybrid Electric (HEV),vehicle_type,Car,0.47224342894535937
+2022,Used,powertrain,Hybrid Electric (HEV),vehicle_type,Car,0.4657630561306199
+2024,Used,powertrain,Flex Fuel (E85),vehicle_type,SUV,0.6177881993674338
+2023,Used,powertrain,Flex Fuel (E85),vehicle_type,SUV,0.640555986226541
+2022,Used,powertrain,Flex Fuel (E85),vehicle_type,SUV,0.6567516893871334
+2020,Used,powertrain,Flex Fuel (E85),vehicle_type,Pickup,0.7175145402341162
+2019,Used,powertrain,Flex Fuel (E85),vehicle_type,Pickup,0.7474838787440486
+2018,Used,powertrain,Flex Fuel (E85),vehicle_type,Pickup,0.733824287056399
+2021,Used,powertrain,Flex Fuel (E85),vehicle_type,Pickup,0.6901991207654512
+2023,Used,powertrain,Flex Fuel (E85),vehicle_type,Pickup,0.686293244875516
+2024,Used,powertrain,Flex Fuel (E85),vehicle_type,Pickup,0.6814629003526375
+2022,Used,powertrain,Flex Fuel (E85),vehicle_type,Pickup,0.7013202609273075
+2021,Used,powertrain,Flex Fuel (E85),vehicle_type,Minivan,0.4941345181841691
+2018,Used,powertrain,Flex Fuel (E85),vehicle_type,Minivan,0.5532018062248083
+2019,Used,powertrain,Flex Fuel (E85),vehicle_type,Minivan,0.5727415175073827
+2020,Used,powertrain,Flex Fuel (E85),vehicle_type,Minivan,0.5341235367739086
+2024,Used,powertrain,Flex Fuel (E85),vehicle_type,CUV,0.561093539826226
+2023,Used,powertrain,Flex Fuel (E85),vehicle_type,CUV,0.592258739115542
+2022,Used,powertrain,Flex Fuel (E85),vehicle_type,CUV,0.6017538377407132
+2019,Used,powertrain,Flex Fuel (E85),vehicle_type,SUV,0.7408847104200567
+2020,Used,powertrain,Flex Fuel (E85),vehicle_type,SUV,0.698863775798179
+2021,Used,powertrain,Flex Fuel (E85),vehicle_type,SUV,0.6690410701271834
+2018,Used,powertrain,Flex Fuel (E85),vehicle_type,SUV,0.7306421795920841
+2021,New,powertrain,Gasoline,vehicle_type,Pickup,0.7257823347217772
+2018,New,powertrain,Gasoline,vehicle_type,Pickup,0.6927083333333334
+2019,New,powertrain,Gasoline,vehicle_type,Pickup,0.6906435317373161
+2020,New,powertrain,Gasoline,vehicle_type,Pickup,0.6901673752758194
+2019,New,powertrain,Gasoline,vehicle_type,CUV,0.976004831978915
+2020,New,powertrain,Gasoline,vehicle_type,CUV,0.9720144233356655
+2021,New,powertrain,Gasoline,vehicle_type,CUV,0.9767168642529104
+2018,New,powertrain,Gasoline,vehicle_type,CUV,0.9792214912280702
+2022,New,powertrain,Gasoline,vehicle_type,Car,0.8216010537099371
+2023,New,powertrain,Gasoline,vehicle_type,Car,0.8281139627972687
+2024,New,powertrain,Gasoline,vehicle_type,Car,0.8110328638497653
+2018,New,powertrain,Gasoline,vehicle_type,SUV,0.7259320175438596
+2019,New,powertrain,Gasoline,vehicle_type,SUV,0.7805842301779047
+2020,New,powertrain,Gasoline,vehicle_type,SUV,0.7760077498519994
+2021,New,powertrain,Gasoline,vehicle_type,SUV,0.778703407027662
+2022,New,powertrain,Gasoline,vehicle_type,SUV,0.7554027025708571
+2023,New,powertrain,Gasoline,vehicle_type,SUV,0.7527195667530021
+2024,New,powertrain,Gasoline,vehicle_type,SUV,0.743755868544601
+2022,New,powertrain,Gasoline,vehicle_type,Pickup,0.7100346358358944
+2023,New,powertrain,Gasoline,vehicle_type,Pickup,0.7095361431598776
+2024,New,powertrain,Gasoline,vehicle_type,Pickup,0.7041784037558686
+2022,New,powertrain,Gasoline,vehicle_type,CUV,0.956875945168057
+2023,New,powertrain,Gasoline,vehicle_type,CUV,0.9560631033670827
+2024,New,powertrain,Gasoline,vehicle_type,CUV,0.953943661971831
+2020,New,powertrain,Fuel Cell,vehicle_type,Car,8.610946665949088e-4
+2020,New,powertrain,Fuel Cell,vehicle_type,CUV,5.920025832839998e-4
+2019,New,powertrain,Fuel Cell,vehicle_type,CUV,3.843619591478146e-4
+2018,New,powertrain,Fuel Cell,vehicle_type,CUV,1.0964912280701755e-4
+2018,New,powertrain,Flex Fuel (E85),vehicle_type,Car,0.3457236842105263
+2019,New,powertrain,Flex Fuel (E85),vehicle_type,Car,0.2566439710081265
+2020,New,powertrain,Flex Fuel (E85),vehicle_type,Car,0.12066089015661159
+2018,New,powertrain,Fuel Cell,vehicle_type,Car,7.127192982456141e-4
+2019,New,powertrain,Fuel Cell,vehicle_type,Car,8.785416209092906e-4
+2021,New,powertrain,Fuel Cell,vehicle_type,Car,3.7381181245327354e-4
+2021,New,powertrain,Flex Fuel (E85),vehicle_type,Car,0.02344334080956958
+2022,New,powertrain,Flex Fuel (E85),vehicle_type,Car,1.9513146982779649e-4
+2019,Used,powertrain,Diesel,vehicle_type,CUV,0.1566624480202495
+2020,Used,powertrain,Diesel,vehicle_type,CUV,0.14640850082210607
+2021,Used,powertrain,Diesel,vehicle_type,CUV,0.1491642569997884
+2018,Used,powertrain,Diesel,vehicle_type,CUV,0.13907324908325
+2024,Used,powertrain,Diesel,vehicle_type,CUV,0.09204929654269822
+2022,Used,powertrain,Diesel,vehicle_type,CUV,0.11931174563493614
+2023,Used,powertrain,Diesel,vehicle_type,CUV,0.1114496385368404
+2019,Used,powertrain,Diesel,vehicle_type,Car,0.2711384318688604
+2018,Used,powertrain,Diesel,vehicle_type,Car,0.23144528290450647
+2020,Used,powertrain,Diesel,vehicle_type,Car,0.23976048491987534
+2021,Used,powertrain,Diesel,vehicle_type,Car,0.19253826080823752
+2023,Used,powertrain,Diesel,vehicle_type,Car,0.16317222232237827
+2022,Used,powertrain,Diesel,vehicle_type,Car,0.17757118862544433
+2024,Used,powertrain,Diesel,vehicle_type,Car,0.13427491184062237
+2018,Used,powertrain,Diesel,vehicle_type,Minivan,0.002757826469072946
+2019,Used,powertrain,Diesel,vehicle_type,Minivan,0.001657325378171518
+2024,Used,powertrain,Diesel,vehicle_type,Minivan,0.0012542261969680445
+2023,Used,powertrain,Diesel,vehicle_type,Minivan,0.001892949214876778
+2022,Used,powertrain,Diesel,vehicle_type,Minivan,0.0019921096832154995
+2020,Used,powertrain,Diesel,vehicle_type,Minivan,2.9448575425163807e-4
+2018,New,powertrain,Flex Fuel (E85),vehicle_type,CUV,0.2725877192982456
+2019,New,powertrain,Flex Fuel (E85),vehicle_type,CUV,0.297331429826488
+2020,New,powertrain,Flex Fuel (E85),vehicle_type,CUV,0.11463322749044723
+2021,New,powertrain,Flex Fuel (E85),vehicle_type,CUV,0.0029370928121328632
+2021,New,powertrain,Flex Fuel (E85),vehicle_type,Pickup,0.30220014952472496
+2019,New,powertrain,Flex Fuel (E85),vehicle_type,Pickup,0.5096639578300022
+2020,New,powertrain,Flex Fuel (E85),vehicle_type,Pickup,0.4042839459663097
+2018,New,powertrain,Flex Fuel (E85),vehicle_type,Pickup,0.5428179824561403
+2024,New,powertrain,Flex Fuel (E85),vehicle_type,Pickup,0.2255399061032864
+2022,New,powertrain,Flex Fuel (E85),vehicle_type,Pickup,0.2577198887750622
+2023,New,powertrain,Flex Fuel (E85),vehicle_type,Pickup,0.25359076995526253
+2022,New,powertrain,Hybrid Electric (HEV),vehicle_type,Car,0.20713205522220596
+2023,New,powertrain,Hybrid Electric (HEV),vehicle_type,Car,0.21784789263009183
+2024,New,powertrain,Hybrid Electric (HEV),vehicle_type,Car,0.22295774647887323
+2018,New,powertrain,Hybrid Electric (HEV),vehicle_type,CUV,0.14391447368421054
+2020,New,powertrain,Hybrid Electric (HEV),vehicle_type,CUV,0.3366880146386093
+2021,New,powertrain,Hybrid Electric (HEV),vehicle_type,CUV,0.3394211257075724
+2019,New,powertrain,Hybrid Electric (HEV),vehicle_type,CUV,0.14386119042389633
+2018,New,powertrain,Hybrid Electric (HEV),vehicle_type,Car,0.3762609649122807
+2021,New,powertrain,Hybrid Electric (HEV),vehicle_type,Car,0.28361636227704795
+2020,New,powertrain,Hybrid Electric (HEV),vehicle_type,Car,0.3173672030568861
+2019,New,powertrain,Hybrid Electric (HEV),vehicle_type,Car,0.35602899187349
+2023,New,powertrain,Flex Fuel (E85),vehicle_type,CUV,0.15700494466682363
+2024,New,powertrain,Flex Fuel (E85),vehicle_type,CUV,0.2035211267605634
+2022,New,powertrain,Hybrid Electric (HEV),vehicle_type,CUV,0.22210839553148934
+2024,New,powertrain,Hybrid Electric (HEV),vehicle_type,CUV,0.1684507042253521
+2023,New,powertrain,Hybrid Electric (HEV),vehicle_type,CUV,0.19684483164586766
+2018,New,powertrain,Hybrid Electric (HEV),vehicle_type,Minivan,0.1793859649122807
+2021,New,powertrain,Hybrid Electric (HEV),vehicle_type,Minivan,0.1816191391647976
+2020,New,powertrain,Hybrid Electric (HEV),vehicle_type,Minivan,0.12577363973951886
+2019,New,powertrain,Hybrid Electric (HEV),vehicle_type,Minivan,0.0680320667691632
+2024,New,powertrain,Hybrid Electric (HEV),vehicle_type,Minivan,0.12849765258215962
+2023,New,powertrain,Hybrid Electric (HEV),vehicle_type,Minivan,0.16190251942547682
+2022,New,powertrain,Hybrid Electric (HEV),vehicle_type,Minivan,0.14503146494950972
+2021,New,powertrain,Hybrid Electric (HEV),vehicle_type,Pickup,0.2641247463419844
+2020,New,powertrain,Hybrid Electric (HEV),vehicle_type,Pickup,0.09111457940907379
+2018,New,powertrain,Hybrid Electric (HEV),vehicle_type,Pickup,0.020668859649122805
+2019,New,powertrain,Hybrid Electric (HEV),vehicle_type,Pickup,9.88359323522952e-4
+2022,New,powertrain,Hybrid Electric (HEV),vehicle_type,Pickup,0.0030245377823308454
+2023,New,powertrain,Hybrid Electric (HEV),vehicle_type,Pickup,6.592889098186956e-4
+2024,New,powertrain,Hybrid Electric (HEV),vehicle_type,Pickup,0.008262910798122065
+2022,Used,powertrain,Battery Electric (BEV),vehicle_type,Car,0.2159876567321589
+2023,Used,powertrain,Battery Electric (BEV),vehicle_type,Car,0.26544556418900644
+2024,Used,powertrain,Battery Electric (BEV),vehicle_type,Car,0.26996764459955647
+2024,Used,powertrain,Battery Electric (BEV),vehicle_type,CUV,0.24924564656269313
+2023,Used,powertrain,Battery Electric (BEV),vehicle_type,CUV,0.20964863256954336
+2022,Used,powertrain,Battery Electric (BEV),vehicle_type,CUV,0.15179094566618492
+2023,Used,powertrain,Battery Electric (BEV),vehicle_type,SUV,0.008310948457697092
+2024,Used,powertrain,Battery Electric (BEV),vehicle_type,SUV,0.019522303413676518
+2022,Used,powertrain,Battery Electric (BEV),vehicle_type,SUV,3.710792547166126e-4
+2024,Used,powertrain,Flex Fuel (E85),vehicle_type,Minivan,0.39611735194677716
+2022,Used,powertrain,Flex Fuel (E85),vehicle_type,Minivan,0.4670911292527636
+2023,Used,powertrain,Flex Fuel (E85),vehicle_type,Minivan,0.4402639312048171
+2020,Used,powertrain,Hybrid Electric (HEV),vehicle_type,Car,0.5266632309995337
+2019,Used,powertrain,Hybrid Electric (HEV),vehicle_type,Car,0.5483939010426083
+2021,Used,powertrain,Hybrid Electric (HEV),vehicle_type,Car,0.5153160777675906
+2018,Used,powertrain,Hybrid Electric (HEV),vehicle_type,Car,0.5291087068521381
+2022,Used,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,Car,0.15665403695168156
+2024,Used,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,Car,0.15666921147344312
+2023,Used,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,Car,0.17324992338062703
+2022,New,powertrain,Battery Electric (BEV),vehicle_type,CUV,0.3920679057515001
+2023,New,powertrain,Battery Electric (BEV),vehicle_type,CUV,0.5605368495408524
+2024,New,powertrain,Battery Electric (BEV),vehicle_type,CUV,0.640093896713615
+2018,New,powertrain,Battery Electric (BEV),vehicle_type,Minivan,0.0010964912280701754
+2023,New,powertrain,Battery Electric (BEV),vehicle_type,SUV,0.046574052272192135
+2024,New,powertrain,Battery Electric (BEV),vehicle_type,SUV,0.08967136150234742
+2023,New,powertrain,Battery Electric (BEV),vehicle_type,Pickup,0.17626559924652696
+2024,New,powertrain,Battery Electric (BEV),vehicle_type,Pickup,0.21591549295774648
+2022,New,powertrain,Battery Electric (BEV),vehicle_type,Pickup,0.11068832625981755
+2018,New,powertrain,Flex Fuel (E85),vehicle_type,SUV,0.22099780701754385
+2019,New,powertrain,Flex Fuel (E85),vehicle_type,SUV,0.22562047001976718
+2020,New,powertrain,Flex Fuel (E85),vehicle_type,SUV,0.1111888488240676
+2021,New,powertrain,Flex Fuel (E85),vehicle_type,SUV,0.0016020506247997437
+2021,Used,powertrain,Battery Electric (BEV),vehicle_type,CUV,0.08712415073935632
+2020,Used,powertrain,Battery Electric (BEV),vehicle_type,CUV,0.03963287442636629
+2019,Used,powertrain,Battery Electric (BEV),vehicle_type,CUV,0.025311878502983186
+2018,Used,powertrain,Battery Electric (BEV),vehicle_type,CUV,0.01048580173955208
+2018,Used,powertrain,Flex Fuel (E85),vehicle_type,Car,0.7280661878352578
+2019,Used,powertrain,Flex Fuel (E85),vehicle_type,Car,0.7421804375338998
+2020,Used,powertrain,Flex Fuel (E85),vehicle_type,Car,0.697342266067879
+2021,Used,powertrain,Flex Fuel (E85),vehicle_type,Car,0.6624115475938595
+2023,Used,powertrain,Flex Fuel (E85),vehicle_type,Car,0.6131352647424688
+2022,Used,powertrain,Flex Fuel (E85),vehicle_type,Car,0.6358345377133706
+2024,Used,powertrain,Flex Fuel (E85),vehicle_type,Car,0.5667284691169521
+2021,Used,powertrain,Flex Fuel (E85),vehicle_type,CUV,0.5853962432705645
+2019,Used,powertrain,Flex Fuel (E85),vehicle_type,CUV,0.6565419152654733
+2018,Used,powertrain,Flex Fuel (E85),vehicle_type,CUV,0.6347849804527684
+2020,Used,powertrain,Flex Fuel (E85),vehicle_type,CUV,0.6128248545976588
+2023,New,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,CUV,0.09804567930303744
+2024,New,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,CUV,0.10230046948356808
+2022,New,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,CUV,0.04741694716815455
+2021,Used,powertrain,Gasoline,vehicle_type,Minivan,0.6154171662317511
+2020,Used,powertrain,Gasoline,vehicle_type,Minivan,0.6514270288841444
+2018,Used,powertrain,Gasoline,vehicle_type,Minivan,0.6905779313270903
+2019,Used,powertrain,Gasoline,vehicle_type,Minivan,0.6872476345446875
+2022,Used,powertrain,Gasoline,vehicle_type,Minivan,0.5867739541424163
+2024,Used,powertrain,Gasoline,vehicle_type,Minivan,0.5844148762133275
+2023,Used,powertrain,Gasoline,vehicle_type,Minivan,0.5865438352953902
+2021,Used,powertrain,Hybrid Electric (HEV),vehicle_type,CUV,0.25798716411594613
+2020,Used,powertrain,Hybrid Electric (HEV),vehicle_type,CUV,0.2331100149696925
+2018,Used,powertrain,Hybrid Electric (HEV),vehicle_type,CUV,0.2161105555050459
+2019,Used,powertrain,Hybrid Electric (HEV),vehicle_type,CUV,0.24118604230699692
+2021,New,powertrain,Battery Electric (BEV),vehicle_type,CUV,0.3113318380860835
+2019,New,powertrain,Battery Electric (BEV),vehicle_type,CUV,0.05205359103887547
+2020,New,powertrain,Battery Electric (BEV),vehicle_type,CUV,0.06146063182821161
+2018,New,powertrain,Battery Electric (BEV),vehicle_type,CUV,0.005043859649122807
+2018,New,powertrain,Gasoline,vehicle_type,Car,0.8786184210526315
+2021,New,powertrain,Gasoline,vehicle_type,Car,0.8407027662074121
+2020,New,powertrain,Gasoline,vehicle_type,Car,0.8564124643452989
+2019,New,powertrain,Gasoline,vehicle_type,Car,0.8641005930155942
+2022,New,powertrain,Gasoline,vehicle_type,Minivan,0.22084004097760868
+2023,New,powertrain,Gasoline,vehicle_type,Minivan,0.23635507417000234
+2024,New,powertrain,Gasoline,vehicle_type,Minivan,0.23779342723004696
+2023,Used,powertrain,Hybrid Electric (HEV),vehicle_type,Minivan,0.200616560601417
+2024,Used,powertrain,Hybrid Electric (HEV),vehicle_type,Minivan,0.21796270040353363
+2022,Used,powertrain,Hybrid Electric (HEV),vehicle_type,Minivan,0.16091168313737744
+2021,Used,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,CUV,0.09568140677527799
+2020,Used,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,CUV,0.07344965520626273
+2019,Used,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,CUV,0.057885855481227023
+2018,Used,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,CUV,0.026062975422008063
+2024,New,powertrain,Battery Electric (BEV),vehicle_type,Car,0.18910798122065728
+2022,New,powertrain,Battery Electric (BEV),vehicle_type,Car,0.1490804429484365
+2023,New,powertrain,Battery Electric (BEV),vehicle_type,Car,0.2243465975983047
+2018,New,powertrain,Battery Electric (BEV),vehicle_type,Car,0.14583333333333334
+2021,New,powertrain,Battery Electric (BEV),vehicle_type,Car,0.1775072092278116
+2019,New,powertrain,Battery Electric (BEV),vehicle_type,Car,0.1398528442784977
+2020,New,powertrain,Battery Electric (BEV),vehicle_type,Car,0.1522523007373123
+2024,New,powertrain,Battery Electric (BEV),vehicle_type,Minivan,0.025070422535211266
+2021,New,powertrain,Gasoline,vehicle_type,Minivan,0.3116522482110435
+2020,New,powertrain,Gasoline,vehicle_type,Minivan,0.38157257413486895
+2019,New,powertrain,Gasoline,vehicle_type,Minivan,0.3778827146936086
+2018,New,powertrain,Gasoline,vehicle_type,Minivan,0.3457236842105263
+2022,Used,powertrain,Diesel,vehicle_type,Pickup,0.5013280731221437
+2023,Used,powertrain,Diesel,vehicle_type,Pickup,0.49211271160468006
+2024,Used,powertrain,Diesel,vehicle_type,Pickup,0.4980913949176573
+2021,Used,powertrain,Fuel Cell,vehicle_type,Car,0.002680019747513929
+2019,Used,powertrain,Fuel Cell,vehicle_type,Car,0.001597059000783463
+2018,Used,powertrain,Fuel Cell,vehicle_type,Car,7.273388489862715e-4
+2020,Used,powertrain,Fuel Cell,vehicle_type,Car,0.001840535964072738
+2023,Used,powertrain,Fuel Cell,vehicle_type,Car,0.003281111972453082
+2024,Used,powertrain,Fuel Cell,vehicle_type,Car,0.0038717417384665723
+2022,Used,powertrain,Fuel Cell,vehicle_type,Car,0.0019530487090348033
+2019,Used,powertrain,Fuel Cell,vehicle_type,CUV,3.01331886940276e-5
+2024,Used,powertrain,Fuel Cell,vehicle_type,CUV,6.54378885374632e-4
+2023,Used,powertrain,Fuel Cell,vehicle_type,CUV,0.0014602751086192287
+2022,Used,powertrain,Fuel Cell,vehicle_type,CUV,0.001230420686691926
+2021,New,powertrain,Fuel Cell,vehicle_type,CUV,5.340168749332479e-5
+2018,New,powertrain,Flex Fuel (E85),vehicle_type,Minivan,0.1568530701754386
+2020,New,powertrain,Flex Fuel (E85),vehicle_type,Minivan,0.11963834024003014
+2019,New,powertrain,Flex Fuel (E85),vehicle_type,Minivan,0.13238524050076872
+2021,New,powertrain,Flex Fuel (E85),vehicle_type,Minivan,0.04704688668161914
+2018,Used,powertrain,Diesel,vehicle_type,SUV,0.10594902566900022
+2021,Used,powertrain,Diesel,vehicle_type,SUV,0.09934880221924443
+2020,Used,powertrain,Diesel,vehicle_type,SUV,0.09394095560627255
+2019,Used,powertrain,Diesel,vehicle_type,SUV,0.11402398601820045
+2022,Used,powertrain,Diesel,vehicle_type,SUV,0.12849107456739972
+2023,Used,powertrain,Diesel,vehicle_type,SUV,0.14123203951756838
+2024,Used,powertrain,Diesel,vehicle_type,SUV,0.1507070927400298
+2021,New,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,CUV,0.05099861155612517
+2018,New,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,CUV,0.056085526315789475
+2019,New,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,CUV,0.05331649461893257
+2020,New,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,CUV,0.045046014746246164
+2021,New,powertrain,Hybrid Electric (HEV),vehicle_type,SUV,0.1794830716650646
+2020,New,powertrain,Hybrid Electric (HEV),vehicle_type,SUV,0.022173187664818902
+2018,New,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,Car,0.19144736842105264
+2019,New,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,Car,0.15649022622446737
+2021,New,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,Car,0.06445583680444301
+2020,New,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,Car,0.08686292449276142
+2019,New,powertrain,Hybrid Electric (HEV),vehicle_type,SUV,7.687239182956292e-4
+2024,New,powertrain,Hybrid Electric (HEV),vehicle_type,SUV,0.09145539906103287
+2022,New,powertrain,Hybrid Electric (HEV),vehicle_type,SUV,0.1138104297770623
+2023,New,powertrain,Hybrid Electric (HEV),vehicle_type,SUV,0.11264421944902284
+2022,New,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,Car,0.04214839748280404
+2023,New,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,Car,0.044219449022839655
+2024,New,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,Car,0.061971830985915494
+2020,Used,powertrain,Battery Electric (BEV),vehicle_type,Car,0.1650101842990012
+2021,Used,powertrain,Battery Electric (BEV),vehicle_type,Car,0.20758398570656134
+2019,Used,powertrain,Battery Electric (BEV),vehicle_type,Car,0.1618152232869282
+2018,Used,powertrain,Battery Electric (BEV),vehicle_type,Car,0.1295269266903052
+2019,New,powertrain,Battery Electric (BEV),vehicle_type,Minivan,5.490885130683066e-5
+2021,Used,powertrain,Fuel Cell,vehicle_type,CUV,1.1754472576815479e-4
+2022,New,powertrain,Flex Fuel (E85),vehicle_type,Minivan,5.853944094833894e-4
+2024,Used,powertrain,Battery Electric (BEV),vehicle_type,Pickup,0.05355000545315738
+2022,Used,powertrain,Battery Electric (BEV),vehicle_type,Pickup,0.014237725088863716
+2023,Used,powertrain,Battery Electric (BEV),vehicle_type,Pickup,0.0366691305053273
+2023,Used,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,CUV,0.09331338224954479
+2022,Used,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,CUV,0.08181321042146791
+2024,Used,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,CUV,0.12215072526993129
+2019,Used,powertrain,Battery Electric (BEV),vehicle_type,Minivan,0.00590610498402941
+2018,Used,powertrain,Battery Electric (BEV),vehicle_type,Minivan,0.005485347152771464
+2021,Used,powertrain,Battery Electric (BEV),vehicle_type,Minivan,0.004278628017960834
+2020,Used,powertrain,Battery Electric (BEV),vehicle_type,Minivan,0.004687231588505239
+2022,Used,powertrain,Battery Electric (BEV),vehicle_type,Minivan,0.0018553962735830631
+2024,Used,powertrain,Battery Electric (BEV),vehicle_type,Minivan,0.0017631875522594249
+2023,Used,powertrain,Battery Electric (BEV),vehicle_type,Minivan,0.0028484378661955325
+2024,Used,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,Minivan,0.001435998109572109
+2020,Used,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,SUV,0.013153697023239834
+2021,Used,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,SUV,0.02557773232715048
+2019,Used,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,SUV,0.0025311878502983186
+2022,Used,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,SUV,0.031717511034725206
+2023,Used,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,SUV,0.050893291748544234
+2024,Used,powertrain,Plug-In Hybrid Electric (PHEV),vehicle_type,SUV,0.07483549641909332
+2021,Used,powertrain,Diesel,vehicle_type,Minivan,3.291252321508334e-4
+2020,Used,powertrain,Fuel Cell,vehicle_type,CUV,2.454047952096984e-5
+2019,New,powertrain,Gasoline,price_bin,$50k-$60k,0.9498133099055568
+2020,New,powertrain,Gasoline,price_bin,$40k-$50k,0.9338033475055164
+2021,New,powertrain,Gasoline,price_bin,$30k-$40k,0.8560824522054897
+2021,New,powertrain,Gasoline,price_bin,$20k-$30k,0.8106376161486702
+2018,New,powertrain,Gasoline,price_bin,$20k-$30k,0.8304276315789474
+2018,New,powertrain,Gasoline,price_bin,$30k-$40k,0.8658991228070175
+2018,New,powertrain,Gasoline,price_bin,$40k-$50k,0.941173245614035
+2019,New,powertrain,Gasoline,price_bin,$20k-$30k,0.8267625741269493
+2019,New,powertrain,Gasoline,price_bin,$30k-$40k,0.8597078849110477
+2018,New,powertrain,Gasoline,price_bin,$50k-$60k,0.9374451754385965
+2019,New,powertrain,Gasoline,price_bin,$40k-$50k,0.9415220733582254
+2020,New,powertrain,Gasoline,price_bin,$30k-$40k,0.8564124643452989
+2020,New,powertrain,Gasoline,price_bin,$20k-$30k,0.8222915881814757
+2020,New,powertrain,Gasoline,price_bin,$50k-$60k,0.9482805015876433
+2021,New,powertrain,Gasoline,price_bin,$40k-$50k,0.9393356830075831
+2020,New,powertrain,Gasoline,price_bin,$60k-$70k,0.8209461277649212
+2021,New,powertrain,Gasoline,price_bin,$50k-$60k,0.9509238491936345
+2021,New,powertrain,Gasoline,price_bin,$60k-$70k,0.8199295097725088
+2018,New,powertrain,Gasoline,price_bin,$60k-$70k,0.8095394736842105
+2019,New,powertrain,Gasoline,price_bin,$60k-$70k,0.7998572369866023
+2023,New,powertrain,Gasoline,price_bin,$20k-$30k,0.7768777960913587
+2024,New,powertrain,Gasoline,price_bin,$10k-$20k,0.1127699530516432
+2024,New,powertrain,Gasoline,price_bin,$20k-$30k,0.7950234741784038
+2022,New,powertrain,Gasoline,price_bin,$20k-$30k,0.7700375628079419
+2022,New,powertrain,Gasoline,price_bin,$30k-$40k,0.8498463339675106
+2024,New,powertrain,Gasoline,price_bin,$30k-$40k,0.8492488262910798
+2023,New,powertrain,Gasoline,price_bin,$30k-$40k,0.8469036967271015
+2023,New,powertrain,Gasoline,price_bin,$10k-$20k,0.06936661172592418
+2022,New,powertrain,Gasoline,price_bin,$40k-$50k,0.9371676667154495
+2023,New,powertrain,Gasoline,price_bin,$40k-$50k,0.9409465505062397
+2023,New,powertrain,Gasoline,price_bin,$60k-$70k,0.7547916176124323
+2022,New,powertrain,Gasoline,price_bin,$50k-$60k,0.9311185911507879
+2023,New,powertrain,Gasoline,price_bin,$50k-$60k,0.9206027784318342
+2022,New,powertrain,Gasoline,price_bin,$70k+,0.7484755353919703
+2024,New,powertrain,Gasoline,price_bin,$50k-$60k,0.9021596244131456
+2024,New,powertrain,Gasoline,price_bin,$60k-$70k,0.7257746478873239
+2024,New,powertrain,Gasoline,price_bin,$40k-$50k,0.9367136150234742
+2022,New,powertrain,Gasoline,price_bin,$60k-$70k,0.764134835845651
+2024,New,powertrain,Gasoline,price_bin,$70k+,0.7123474178403756
+2023,New,powertrain,Gasoline,price_bin,$70k+,0.7428773251707087
+2022,New,powertrain,Gasoline,price_bin,$10k-$20k,0.09873652373286501
+2023,New,powertrain,Gasoline,price_bin,$0-$10k,1.4127619496114905e-4
+2019,New,powertrain,Gasoline,price_bin,$70k+,0.7426971227761915
+2018,New,powertrain,Gasoline,price_bin,$70k+,0.7577850877192982
+2021,New,powertrain,Gasoline,price_bin,$70k+,0.7611342518423582
+2020,New,powertrain,Gasoline,price_bin,$70k+,0.7449545234379205
+2019,New,powertrain,Gasoline,price_bin,$10k-$20k,0.4158247309466286
+2018,New,powertrain,Gasoline,price_bin,$10k-$20k,0.42872807017543857
+2020,New,powertrain,Gasoline,price_bin,$10k-$20k,0.28808998439265915
+2021,New,powertrain,Gasoline,price_bin,$10k-$20k,0.20735875253658015
+2023,Used,powertrain,Hybrid Electric (HEV),price_bin,$10k-$20k,0.3860895274838198
+2024,Used,powertrain,Hybrid Electric (HEV),price_bin,$10k-$20k,0.36663394772239793
+2023,Used,powertrain,Hybrid Electric (HEV),price_bin,$30k-$40k,0.2611909354774739
+2022,Used,powertrain,Hybrid Electric (HEV),price_bin,$30k-$40k,0.2403812351080036
+2022,Used,powertrain,Hybrid Electric (HEV),price_bin,$20k-$30k,0.2652826061481973
+2024,Used,powertrain,Hybrid Electric (HEV),price_bin,$20k-$30k,0.31590140691460356
+2024,Used,powertrain,Hybrid Electric (HEV),price_bin,$0-$10k,0.23921183698694878
+2022,Used,powertrain,Hybrid Electric (HEV),price_bin,$10k-$20k,0.3550837857896176
+2023,Used,powertrain,Hybrid Electric (HEV),price_bin,$20k-$30k,0.2750184787899547
+2022,Used,powertrain,Hybrid Electric (HEV),price_bin,$0-$10k,0.1304441232764345
+2023,Used,powertrain,Hybrid Electric (HEV),price_bin,$0-$10k,0.1745118895238782
+2024,Used,powertrain,Hybrid Electric (HEV),price_bin,$30k-$40k,0.259570291198604
+2022,Used,powertrain,Hybrid Electric (HEV),price_bin,$40k-$50k,0.2213976016561853
+2023,Used,powertrain,Hybrid Electric (HEV),price_bin,$40k-$50k,0.1801727090807478
+2024,Used,powertrain,Hybrid Electric (HEV),price_bin,$40k-$50k,0.13280255934852947
+2023,Used,powertrain,Hybrid Electric (HEV),price_bin,$50k-$60k,0.095512808956354
+2024,Used,powertrain,Hybrid Electric (HEV),price_bin,$50k-$60k,0.05227760206492893
+2024,Used,powertrain,Hybrid Electric (HEV),price_bin,$70k+,0.010470062165994111
+2022,Used,powertrain,Hybrid Electric (HEV),price_bin,$50k-$60k,0.12978008671536267
+2022,Used,powertrain,Hybrid Electric (HEV),price_bin,$70k+,0.025975547830162884
+2023,Used,powertrain,Hybrid Electric (HEV),price_bin,$60k-$70k,0.030719861544286
+2022,Used,powertrain,Hybrid Electric (HEV),price_bin,$60k-$70k,0.06341549158236007
+2023,Used,powertrain,Hybrid Electric (HEV),price_bin,$70k+,0.012926138924444283
+2024,Used,powertrain,Hybrid Electric (HEV),price_bin,$60k-$70k,0.01875886138073945
+2022,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$10k-$20k,0.07198937541502284
+2022,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$20k-$30k,0.09605093551033163
+2024,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$0-$10k,0.04160759079507034
+2023,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$30k-$40k,0.04867583695397429
+2023,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$60k-$70k,0.036867439470695346
+2024,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$10k-$20k,0.11586141709383066
+2023,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$20k-$30k,0.1037155888874867
+2023,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$10k-$20k,0.10802430186230147
+2024,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$20k-$30k,0.08356054822408841
+2023,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$0-$10k,0.01966864374695776
+2022,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$30k-$40k,0.06538807077848521
+2024,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$30k-$40k,0.06643763405678554
+2024,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$40k-$50k,0.07997964154578835
+2024,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$60k-$70k,0.01645035809066783
+2024,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$70k+,0.018504380703093758
+2022,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$70k+,0.047420022655365025
+2022,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$40k-$50k,0.02958868794187727
+2023,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$70k+,0.02455425553011592
+2022,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$60k-$70k,0.017518846920042186
+2023,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$50k-$60k,0.04656655068596874
+2024,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$50k-$60k,0.037263242083833206
+2023,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$40k-$50k,0.03225224900394815
+2022,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$0-$10k,0.005585719307839537
+2021,New,powertrain,Battery Electric (BEV),price_bin,$30k-$40k,0.14322332585709707
+2020,New,powertrain,Battery Electric (BEV),price_bin,$40k-$50k,0.12249071632312578
+2020,New,powertrain,Battery Electric (BEV),price_bin,$30k-$40k,0.09918734190840106
+2018,New,powertrain,Battery Electric (BEV),price_bin,$40k-$50k,0.11288377192982456
+2021,New,powertrain,Battery Electric (BEV),price_bin,$40k-$50k,0.18898857203887642
+2019,New,powertrain,Battery Electric (BEV),price_bin,$30k-$40k,0.08697562047001976
+2019,New,powertrain,Battery Electric (BEV),price_bin,$40k-$50k,0.11953656929497035
+2018,New,powertrain,Battery Electric (BEV),price_bin,$50k-$60k,0.058278508771929825
+2019,New,powertrain,Battery Electric (BEV),price_bin,$50k-$60k,0.06611025697342411
+2020,New,powertrain,Battery Electric (BEV),price_bin,$50k-$60k,0.07534578332705452
+2018,New,powertrain,Battery Electric (BEV),price_bin,$60k-$70k,0.008223684210526315
+2019,New,powertrain,Battery Electric (BEV),price_bin,$60k-$70k,0.009005051614320228
+2020,New,powertrain,Battery Electric (BEV),price_bin,$60k-$70k,0.007373123082718906
+2021,New,powertrain,Battery Electric (BEV),price_bin,$50k-$60k,0.18765352985154332
+2018,New,powertrain,Battery Electric (BEV),price_bin,$70k+,0.006743421052631579
+2021,New,powertrain,Battery Electric (BEV),price_bin,$60k-$70k,0.12367830823454021
+2018,New,powertrain,Battery Electric (BEV),price_bin,$30k-$40k,0.04775219298245614
+2020,New,powertrain,Battery Electric (BEV),price_bin,$70k+,0.043592917496367255
+2021,New,powertrain,Battery Electric (BEV),price_bin,$70k+,0.0822920004272135
+2019,New,powertrain,Battery Electric (BEV),price_bin,$70k+,0.030639139029211507
+2021,New,powertrain,Battery Electric (BEV),price_bin,$20k-$30k,0.0383424116202072
+2019,New,powertrain,Battery Electric (BEV),price_bin,$20k-$30k,0.0050516143202284204
+2020,New,powertrain,Battery Electric (BEV),price_bin,$20k-$30k,0.012109143748990905
+2018,New,powertrain,Battery Electric (BEV),price_bin,$20k-$30k,0.004495614035087719
+2024,New,powertrain,Battery Electric (BEV),price_bin,$20k-$30k,0.08126760563380282
+2024,New,powertrain,Battery Electric (BEV),price_bin,$30k-$40k,0.268075117370892
+2022,New,powertrain,Battery Electric (BEV),price_bin,$40k-$50k,0.2164008000390263
+2022,New,powertrain,Battery Electric (BEV),price_bin,$30k-$40k,0.15337333528464803
+2023,New,powertrain,Battery Electric (BEV),price_bin,$30k-$40k,0.21163174005180127
+2023,New,powertrain,Battery Electric (BEV),price_bin,$40k-$50k,0.26065457970332
+2023,New,powertrain,Battery Electric (BEV),price_bin,$70k+,0.27676006592889096
+2022,New,powertrain,Battery Electric (BEV),price_bin,$70k+,0.19586321283965072
+2024,New,powertrain,Battery Electric (BEV),price_bin,$70k+,0.34619718309859154
+2024,New,powertrain,Battery Electric (BEV),price_bin,$60k-$70k,0.28497652582159627
+2024,New,powertrain,Battery Electric (BEV),price_bin,$50k-$60k,0.507981220657277
+2022,New,powertrain,Battery Electric (BEV),price_bin,$60k-$70k,0.20044880238060392
+2023,New,powertrain,Battery Electric (BEV),price_bin,$50k-$60k,0.37268660230751116
+2023,New,powertrain,Battery Electric (BEV),price_bin,$60k-$70k,0.310948905109489
+2022,New,powertrain,Battery Electric (BEV),price_bin,$50k-$60k,0.2236694472901117
+2024,New,powertrain,Battery Electric (BEV),price_bin,$40k-$50k,0.47906103286384977
+2022,New,powertrain,Battery Electric (BEV),price_bin,$20k-$30k,0.04253866042245963
+2023,New,powertrain,Battery Electric (BEV),price_bin,$20k-$30k,0.10143630798210501
+2024,New,powertrain,Battery Electric (BEV),price_bin,$10k-$20k,0.0029577464788732395
+2022,New,powertrain,Battery Electric (BEV),price_bin,$10k-$20k,1.4634860237084735e-4
+2018,Used,powertrain,Gasoline,price_bin,$0-$10k,0.868078916265115
+2020,Used,powertrain,Gasoline,price_bin,$0-$10k,0.8647574173599352
+2021,Used,powertrain,Gasoline,price_bin,$40k-$50k,0.6144062815901451
+2021,Used,powertrain,Gasoline,price_bin,$10k-$20k,0.9108540799774314
+2020,Used,powertrain,Gasoline,price_bin,$10k-$20k,0.9258632113671501
+2021,Used,powertrain,Gasoline,price_bin,$20k-$30k,0.791052495474528
+2018,Used,powertrain,Gasoline,price_bin,$20k-$30k,0.8268024365851441
+2021,Used,powertrain,Gasoline,price_bin,$30k-$40k,0.6915626395843618
+2021,Used,powertrain,Gasoline,price_bin,$0-$10k,0.7893833603686202
+2020,Used,powertrain,Gasoline,price_bin,$20k-$30k,0.793344621953913
+2020,Used,powertrain,Gasoline,price_bin,$30k-$40k,0.6732925961373285
+2018,Used,powertrain,Gasoline,price_bin,$10k-$20k,0.9337515531715005
+2020,Used,powertrain,Gasoline,price_bin,$40k-$50k,0.5914746374144151
+2021,Used,powertrain,Gasoline,price_bin,$50k-$60k,0.5311611068011378
+2019,Used,powertrain,Gasoline,price_bin,$10k-$20k,0.9281323449647442
+2018,Used,powertrain,Gasoline,price_bin,$30k-$40k,0.7388853532139286
+2021,Used,powertrain,Gasoline,price_bin,$70k+,0.37724804288031594
+2020,Used,powertrain,Gasoline,price_bin,$50k-$60k,0.48285847505460255
+2021,Used,powertrain,Gasoline,price_bin,$60k-$70k,0.4359263699837788
+2019,Used,powertrain,Gasoline,price_bin,$20k-$30k,0.8313746760682216
+2019,Used,powertrain,Gasoline,price_bin,$0-$10k,0.8594286747423613
+2019,Used,powertrain,Gasoline,price_bin,$30k-$40k,0.7389561863436389
+2019,Used,powertrain,Gasoline,price_bin,$40k-$50k,0.656089917435063
+2018,Used,powertrain,Gasoline,price_bin,$50k-$60k,0.5174712852683577
+2018,Used,powertrain,Gasoline,price_bin,$40k-$50k,0.650756129345092
+2020,Used,powertrain,Gasoline,price_bin,$60k-$70k,0.3334560357309382
+2020,Used,powertrain,Gasoline,price_bin,$70k+,0.2730864561093524
+2018,Used,powertrain,Gasoline,price_bin,$60k-$70k,0.36754856502106253
+2018,Used,powertrain,Gasoline,price_bin,$70k+,0.2970876140255175
+2019,Used,powertrain,Gasoline,price_bin,$50k-$60k,0.5376062194901464
+2019,Used,powertrain,Gasoline,price_bin,$60k-$70k,0.3736816729946363
+2019,Used,powertrain,Gasoline,price_bin,$70k+,0.30675586090520096
+2023,Used,powertrain,Gasoline,price_bin,$20k-$30k,0.7932899457354559
+2022,Used,powertrain,Gasoline,price_bin,$20k-$30k,0.796746220850748
+2023,Used,powertrain,Gasoline,price_bin,$40k-$50k,0.5409868575240224
+2023,Used,powertrain,Gasoline,price_bin,$50k-$60k,0.4419946276298473
+2022,Used,powertrain,Gasoline,price_bin,$30k-$40k,0.6936643099878911
+2024,Used,powertrain,Gasoline,price_bin,$30k-$40k,0.6219325989748065
+2023,Used,powertrain,Gasoline,price_bin,$10k-$20k,0.9146910887162198
+2022,Used,powertrain,Gasoline,price_bin,$10k-$20k,0.9046131010507402
+2024,Used,powertrain,Gasoline,price_bin,$10k-$20k,0.9147671501799542
+2024,Used,powertrain,Gasoline,price_bin,$0-$10k,0.8379503399134766
+2022,Used,powertrain,Gasoline,price_bin,$40k-$50k,0.5938049294949416
+2023,Used,powertrain,Gasoline,price_bin,$30k-$40k,0.6579711190034073
+2024,Used,powertrain,Gasoline,price_bin,$20k-$30k,0.7775111789726251
+2022,Used,powertrain,Gasoline,price_bin,$70k+,0.37598140697629
+2022,Used,powertrain,Gasoline,price_bin,$60k-$70k,0.40889027772352643
+2022,Used,powertrain,Gasoline,price_bin,$50k-$60k,0.49810554275223623
+2022,Used,powertrain,Gasoline,price_bin,$0-$10k,0.7184094371313621
+2023,Used,powertrain,Gasoline,price_bin,$0-$10k,0.7669328814292667
+2023,Used,powertrain,Gasoline,price_bin,$60k-$70k,0.34972687447042494
+2024,Used,powertrain,Gasoline,price_bin,$50k-$60k,0.40586032646235504
+2024,Used,powertrain,Gasoline,price_bin,$60k-$70k,0.31893699785509144
+2024,Used,powertrain,Gasoline,price_bin,$40k-$50k,0.5080888501108809
+2023,Used,powertrain,Gasoline,price_bin,$70k+,0.3307613261461357
+2024,Used,powertrain,Gasoline,price_bin,$70k+,0.2903988075762533
+2018,New,powertrain,Gasoline,price_bin,$0-$10k,6.030701754385965e-4
+2020,Used,powertrain,Diesel,price_bin,$40k-$50k,0.33313700949716557
+2019,Used,powertrain,Diesel,price_bin,$40k-$50k,0.3835954920749714
+2020,Used,powertrain,Diesel,price_bin,$0-$10k,0.06441875874254582
+2021,Used,powertrain,Diesel,price_bin,$20k-$30k,0.2510755342407786
+2019,Used,powertrain,Diesel,price_bin,$10k-$20k,0.3402940999216537
+2019,Used,powertrain,Diesel,price_bin,$20k-$30k,0.359127342855421
+2019,Used,powertrain,Diesel,price_bin,$30k-$40k,0.37777978665702405
+2020,Used,powertrain,Diesel,price_bin,$10k-$20k,0.3008908194066112
+2020,Used,powertrain,Diesel,price_bin,$20k-$30k,0.32265822474171146
+2019,Used,powertrain,Diesel,price_bin,$70k+,0.1892062918097993
+2018,Used,powertrain,Diesel,price_bin,$10k-$20k,0.2916325726581204
+2019,Used,powertrain,Diesel,price_bin,$60k-$70k,0.29238232989814983
+2021,Used,powertrain,Diesel,price_bin,$40k-$50k,0.28718527399675575
+2018,Used,powertrain,Diesel,price_bin,$30k-$40k,0.3546989120223051
+2018,Used,powertrain,Diesel,price_bin,$20k-$30k,0.33951571354971666
+2020,Used,powertrain,Diesel,price_bin,$30k-$40k,0.32675648482171343
+2021,Used,powertrain,Diesel,price_bin,$30k-$40k,0.2817076897759598
+2021,Used,powertrain,Diesel,price_bin,$60k-$70k,0.3049815454780544
+2021,Used,powertrain,Diesel,price_bin,$50k-$60k,0.30970684345393423
+2019,Used,powertrain,Diesel,price_bin,$50k-$60k,0.37301874284336767
+2021,Used,powertrain,Diesel,price_bin,$10k-$20k,0.20890048663516467
+2020,Used,powertrain,Diesel,price_bin,$50k-$60k,0.319762448158237
+2021,Used,powertrain,Diesel,price_bin,$70k+,0.31746479535463246
+2020,Used,powertrain,Diesel,price_bin,$70k+,0.19320719526859556
+2020,Used,powertrain,Diesel,price_bin,$60k-$70k,0.24837419323173573
+2019,Used,powertrain,Diesel,price_bin,$0-$10k,0.07409751099861388
+2023,Used,powertrain,Diesel,price_bin,$20k-$30k,0.25008563341686346
+2022,Used,powertrain,Diesel,price_bin,$50k-$60k,0.2986016171243311
+2023,Used,powertrain,Diesel,price_bin,$10k-$20k,0.22028520434837476
+2022,Used,powertrain,Diesel,price_bin,$30k-$40k,0.2712394047107535
+2023,Used,powertrain,Diesel,price_bin,$70k+,0.22459391732318953
+2022,Used,powertrain,Diesel,price_bin,$20k-$30k,0.24028358267255184
+2022,Used,powertrain,Diesel,price_bin,$10k-$20k,0.20758954728330925
+2022,Used,powertrain,Diesel,price_bin,$60k-$70k,0.2855943127221593
+2022,Used,powertrain,Diesel,price_bin,$70k+,0.2910042576461857
+2023,Used,powertrain,Diesel,price_bin,$40k-$50k,0.30047413870810724
+2024,Used,powertrain,Diesel,price_bin,$70k+,0.16572145272112554
+2024,Used,powertrain,Diesel,price_bin,$60k-$70k,0.22083469662267785
+2024,Used,powertrain,Diesel,price_bin,$30k-$40k,0.3020503871741739
+2022,Used,powertrain,Diesel,price_bin,$40k-$50k,0.2880942150697238
+2023,Used,powertrain,Diesel,price_bin,$50k-$60k,0.2865925111323442
+2024,Used,powertrain,Diesel,price_bin,$50k-$60k,0.272676046097357
+2024,Used,powertrain,Diesel,price_bin,$40k-$50k,0.3086668847929618
+2023,Used,powertrain,Diesel,price_bin,$60k-$70k,0.25331266112603434
+2023,Used,powertrain,Diesel,price_bin,$30k-$40k,0.2743514395428077
+2024,Used,powertrain,Diesel,price_bin,$10k-$20k,0.22467008397862362
+2024,Used,powertrain,Diesel,price_bin,$20k-$30k,0.2630239575380812
+2023,Used,powertrain,Diesel,price_bin,$0-$10k,0.05384989814130415
+2022,Used,powertrain,Diesel,price_bin,$0-$10k,0.02650287098160228
+2024,Used,powertrain,Diesel,price_bin,$0-$10k,0.0934125858872287
+2021,Used,powertrain,Fuel Cell,price_bin,$10k-$20k,0.0024684392411312506
+2020,Used,powertrain,Fuel Cell,price_bin,$10k-$20k,0.0016932930869469189
+2021,Used,powertrain,Fuel Cell,price_bin,$20k-$30k,6.582504643016668e-4
+2021,Used,powertrain,Fuel Cell,price_bin,$30k-$40k,1.8807156122904766e-4
+2019,Used,powertrain,Fuel Cell,price_bin,$10k-$20k,8.738624721268004e-4
+2019,Used,powertrain,Fuel Cell,price_bin,$20k-$30k,0.0010546616042909661
+2019,Used,powertrain,Fuel Cell,price_bin,$70k+,3.01331886940276e-5
+2019,Used,powertrain,Fuel Cell,price_bin,$30k-$40k,2.410655095522208e-4
+2020,Used,powertrain,Fuel Cell,price_bin,$30k-$40k,1.4724287712581904e-4
+2018,Used,powertrain,Fuel Cell,price_bin,$20k-$30k,2.727520683698518e-4
+2018,Used,powertrain,Fuel Cell,price_bin,$30k-$40k,2.4244628299542384e-4
+2021,Used,powertrain,Fuel Cell,price_bin,$0-$10k,2.3508945153630958e-4
+2018,Used,powertrain,Fuel Cell,price_bin,$60k-$70k,3.030578537442798e-5
+2022,Used,powertrain,Fuel Cell,price_bin,$10k-$20k,0.0021483535799382836
+2023,Used,powertrain,Fuel Cell,price_bin,$10k-$20k,0.0034794209378211254
+2024,Used,powertrain,Fuel Cell,price_bin,$0-$10k,0.0035627294870396627
+2023,Used,powertrain,Fuel Cell,price_bin,$0-$10k,0.0013521065820548414
+2022,Used,powertrain,Fuel Cell,price_bin,$20k-$30k,0.001269481660872622
+2020,Used,powertrain,Fuel Cell,price_bin,$20k-$30k,5.644310289823064e-4
+2024,Used,powertrain,Fuel Cell,price_bin,$10k-$20k,0.0012178718144472316
+2022,Used,powertrain,Fuel Cell,price_bin,$0-$10k,1.9530487090348034e-5
+2023,Used,powertrain,Fuel Cell,price_bin,$20k-$30k,3.064774919324307e-4
+2018,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$10k-$20k,0.10419129011728338
+2018,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$20k-$30k,0.08431069491165863
+2020,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$20k-$30k,0.11386782497730005
+2020,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$10k-$20k,0.11347517730496454
+2021,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$20k-$30k,0.13026306509626914
+2019,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$20k-$30k,0.12411860423069969
+2019,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$10k-$20k,0.1306876393659977
+2021,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$30k-$40k,0.04682981874603286
+2019,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$30k-$40k,0.04275899475682517
+2021,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$10k-$20k,0.11197310576674424
+2018,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$30k-$40k,0.040579446616359066
+2021,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$0-$10k,0.014810635446787502
+2020,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$0-$10k,0.01536234018012712
+2020,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$30k-$40k,0.03200078529534467
+2021,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$70k+,0.04201048498953852
+2020,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$70k+,0.025399396304203785
+2018,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$40k-$50k,0.010243355456556656
+2019,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$40k-$50k,0.020671367444102935
+2019,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$70k+,0.02377508587958778
+2019,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$0-$10k,0.009190622551678419
+2021,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$40k-$50k,0.027623010555516372
+2018,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$70k+,0.020274570415492316
+2018,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$0-$10k,0.003121495893566082
+2018,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$60k-$70k,0.007909809982725703
+2018,Used,powertrain,Hybrid Electric (HEV),price_bin,$10k-$20k,0.45695063187562507
+2019,Used,powertrain,Hybrid Electric (HEV),price_bin,$20k-$30k,0.3425239558850118
+2020,Used,powertrain,Hybrid Electric (HEV),price_bin,$10k-$20k,0.43120076566296106
+2021,Used,powertrain,Hybrid Electric (HEV),price_bin,$60k-$70k,0.05188424195406352
+2019,Used,powertrain,Hybrid Electric (HEV),price_bin,$10k-$20k,0.46992707768336045
+2021,Used,powertrain,Hybrid Electric (HEV),price_bin,$50k-$60k,0.09822037285187013
+2018,Used,powertrain,Hybrid Electric (HEV),price_bin,$20k-$30k,0.33106039943025123
+2021,Used,powertrain,Hybrid Electric (HEV),price_bin,$10k-$20k,0.41048969132755014
+2021,Used,powertrain,Hybrid Electric (HEV),price_bin,$20k-$30k,0.30397066083644825
+2021,Used,powertrain,Hybrid Electric (HEV),price_bin,$30k-$40k,0.19594705785551403
+2019,Used,powertrain,Hybrid Electric (HEV),price_bin,$30k-$40k,0.1471704935816308
+2021,Used,powertrain,Hybrid Electric (HEV),price_bin,$0-$10k,0.2078425841032513
+2021,Used,powertrain,Hybrid Electric (HEV),price_bin,$70k+,0.03307708583115876
+2021,Used,powertrain,Hybrid Electric (HEV),price_bin,$40k-$50k,0.181042386628112
+2020,Used,powertrain,Hybrid Electric (HEV),price_bin,$30k-$40k,0.13826106162114407
+2019,Used,powertrain,Hybrid Electric (HEV),price_bin,$40k-$50k,0.07078286024227083
+2020,Used,powertrain,Hybrid Electric (HEV),price_bin,$40k-$50k,0.09732754178016638
+2018,Used,powertrain,Hybrid Electric (HEV),price_bin,$40k-$50k,0.04827711610146377
+2020,Used,powertrain,Hybrid Electric (HEV),price_bin,$60k-$70k,0.014012613806473779
+2020,Used,powertrain,Hybrid Electric (HEV),price_bin,$20k-$30k,0.297798718986969
+2020,Used,powertrain,Hybrid Electric (HEV),price_bin,$50k-$60k,0.0384058504503178
+2018,Used,powertrain,Hybrid Electric (HEV),price_bin,$30k-$40k,0.139285389580871
+2019,Used,powertrain,Hybrid Electric (HEV),price_bin,$0-$10k,0.24422949436509372
+2020,Used,powertrain,Hybrid Electric (HEV),price_bin,$0-$10k,0.25870573511006406
+2018,Used,powertrain,Hybrid Electric (HEV),price_bin,$0-$10k,0.23232415068036488
+2019,Used,powertrain,Hybrid Electric (HEV),price_bin,$50k-$60k,0.03790755137708672
+2018,Used,powertrain,Hybrid Electric (HEV),price_bin,$60k-$70k,0.017425826590296088
+2018,Used,powertrain,Hybrid Electric (HEV),price_bin,$50k-$60k,0.02633572749037791
+2019,Used,powertrain,Hybrid Electric (HEV),price_bin,$70k+,0.014463930573133249
+2019,Used,powertrain,Hybrid Electric (HEV),price_bin,$60k-$70k,0.021063098897125293
+2020,Used,powertrain,Hybrid Electric (HEV),price_bin,$70k+,0.014208937642641537
+2020,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$60k-$70k,0.005816093646469852
+2020,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$40k-$50k,0.02404966993055044
+2021,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$60k-$70k,0.005195476878952441
+2018,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$50k-$60k,0.007030942206867291
+2020,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$50k-$60k,0.011534025374855825
+2019,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$60k-$70k,0.01006448502380522
+2019,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$50k-$60k,0.014735129271379497
+2022,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$50k-$60k,0.015936877465723996
+2018,Used,powertrain,Diesel,price_bin,$50k-$60k,0.3525775070460951
+2018,Used,powertrain,Diesel,price_bin,$60k-$70k,0.2910264569506319
+2018,Used,powertrain,Diesel,price_bin,$70k+,0.19271448919598752
+2018,Used,powertrain,Diesel,price_bin,$40k-$50k,0.379337515531715
+2018,Used,powertrain,Diesel,price_bin,$0-$10k,0.05800527320665515
+2021,Used,powertrain,Diesel,price_bin,$0-$10k,0.02992688718057221
+2024,New,powertrain,Gasoline,price_bin,$0-$10k,2.8169014084507044e-4
+2018,New,powertrain,Fuel Cell,price_bin,$70k+,8.223684210526315e-4
+2019,New,powertrain,Fuel Cell,price_bin,$70k+,0.0012629035800571051
+2020,New,powertrain,Fuel Cell,price_bin,$70k+,0.0014530972498789086
+2018,New,powertrain,Fuel Cell,price_bin,$60k-$70k,2.192982456140351e-4
+2019,New,powertrain,Fuel Cell,price_bin,$60k-$70k,2.745442565341533e-4
+2020,New,powertrain,Fuel Cell,price_bin,$60k-$70k,3.229104999730908e-4
+2019,New,powertrain,Fuel Cell,price_bin,$50k-$60k,1.0981770261366133e-4
+2021,New,powertrain,Fuel Cell,price_bin,$50k-$60k,2.6700843746662396e-4
+2021,New,powertrain,Fuel Cell,price_bin,$70k+,3.204101249599487e-4
+2021,New,powertrain,Fuel Cell,price_bin,$60k-$70k,2.1360674997329915e-4
+2018,New,powertrain,Flex Fuel (E85),price_bin,$10k-$20k,0.0362390350877193
+2020,New,powertrain,Flex Fuel (E85),price_bin,$40k-$50k,0.3534255422205479
+2020,New,powertrain,Flex Fuel (E85),price_bin,$30k-$40k,0.3317367203056886
+2019,New,powertrain,Flex Fuel (E85),price_bin,$50k-$60k,0.3884252141445201
+2019,New,powertrain,Flex Fuel (E85),price_bin,$30k-$40k,0.4090160333845816
+2018,New,powertrain,Flex Fuel (E85),price_bin,$40k-$50k,0.493640350877193
+2018,New,powertrain,Flex Fuel (E85),price_bin,$30k-$40k,0.4629934210526316
+2019,New,powertrain,Flex Fuel (E85),price_bin,$40k-$50k,0.4486053151768065
+2018,New,powertrain,Flex Fuel (E85),price_bin,$20k-$30k,0.3317982456140351
+2020,New,powertrain,Flex Fuel (E85),price_bin,$20k-$30k,0.13018674990581777
+2019,New,powertrain,Flex Fuel (E85),price_bin,$20k-$30k,0.26405666593454863
+2023,New,powertrain,Flex Fuel (E85),price_bin,$20k-$30k,0.15851189074640923
+2024,New,powertrain,Flex Fuel (E85),price_bin,$20k-$30k,0.20370892018779344
+2024,New,powertrain,Flex Fuel (E85),price_bin,$30k-$40k,0.05197183098591549
+2023,New,powertrain,Flex Fuel (E85),price_bin,$10k-$20k,7.534730397927949e-4
+2024,New,powertrain,Flex Fuel (E85),price_bin,$10k-$20k,0.008075117370892018
+2023,New,powertrain,Flex Fuel (E85),price_bin,$30k-$40k,0.07261596421003061
+2021,New,powertrain,Flex Fuel (E85),price_bin,$30k-$40k,0.13756274698280466
+2021,New,powertrain,Flex Fuel (E85),price_bin,$20k-$30k,0.028569902808928762
+2021,New,powertrain,Flex Fuel (E85),price_bin,$40k-$50k,0.19438214247570224
+2020,New,powertrain,Flex Fuel (E85),price_bin,$10k-$20k,9.149130832570906e-4
+2018,New,powertrain,Flex Fuel (E85),price_bin,$50k-$60k,0.4367872807017544
+2018,New,powertrain,Flex Fuel (E85),price_bin,$60k-$70k,0.32012061403508774
+2019,New,powertrain,Flex Fuel (E85),price_bin,$60k-$70k,0.2679002855260268
+2021,New,powertrain,Flex Fuel (E85),price_bin,$60k-$70k,0.2134999465983125
+2020,New,powertrain,Flex Fuel (E85),price_bin,$70k+,0.25095527689575375
+2018,New,powertrain,Flex Fuel (E85),price_bin,$70k+,0.22730263157894737
+2020,New,powertrain,Flex Fuel (E85),price_bin,$50k-$60k,0.2747430170604381
+2019,New,powertrain,Flex Fuel (E85),price_bin,$70k+,0.24165385460136174
+2021,New,powertrain,Flex Fuel (E85),price_bin,$70k+,0.16688027341663997
+2021,New,powertrain,Flex Fuel (E85),price_bin,$50k-$60k,0.23315176759585604
+2020,New,powertrain,Flex Fuel (E85),price_bin,$60k-$70k,0.2415908723965341
+2022,New,powertrain,Flex Fuel (E85),price_bin,$50k-$60k,0.21508366261768866
+2022,New,powertrain,Flex Fuel (E85),price_bin,$40k-$50k,0.16552026928142835
+2022,New,powertrain,Flex Fuel (E85),price_bin,$30k-$40k,0.07293038684813893
+2022,New,powertrain,Flex Fuel (E85),price_bin,$70k+,0.1717156934484609
+2022,New,powertrain,Flex Fuel (E85),price_bin,$60k-$70k,0.20927850139031173
+2024,New,powertrain,Flex Fuel (E85),price_bin,$40k-$50k,0.0835680751173709
+2023,New,powertrain,Flex Fuel (E85),price_bin,$40k-$50k,0.1406639981163174
+2023,New,powertrain,Flex Fuel (E85),price_bin,$50k-$60k,0.21031316223216387
+2024,New,powertrain,Flex Fuel (E85),price_bin,$50k-$60k,0.16253521126760564
+2023,New,powertrain,Flex Fuel (E85),price_bin,$60k-$70k,0.19500824111137274
+2024,New,powertrain,Flex Fuel (E85),price_bin,$70k+,0.12690140845070422
+2024,New,powertrain,Flex Fuel (E85),price_bin,$60k-$70k,0.14220657276995305
+2023,New,powertrain,Flex Fuel (E85),price_bin,$70k+,0.17268660230751118
+2022,New,powertrain,Flex Fuel (E85),price_bin,$20k-$30k,0.0013659202887945753
+2021,New,powertrain,Hybrid Electric (HEV),price_bin,$40k-$50k,0.33680444302039947
+2019,New,powertrain,Hybrid Electric (HEV),price_bin,$40k-$50k,0.2342411596749396
+2018,New,powertrain,Hybrid Electric (HEV),price_bin,$60k-$70k,0.10076754385964912
+2020,New,powertrain,Hybrid Electric (HEV),price_bin,$40k-$50k,0.32414832355632095
+2019,New,powertrain,Hybrid Electric (HEV),price_bin,$60k-$70k,0.07560948824950582
+2020,New,powertrain,Hybrid Electric (HEV),price_bin,$50k-$60k,0.1794306011517141
+2020,New,powertrain,Hybrid Electric (HEV),price_bin,$60k-$70k,0.17813895915182176
+2019,New,powertrain,Hybrid Electric (HEV),price_bin,$50k-$60k,0.1534702394025917
+2021,New,powertrain,Hybrid Electric (HEV),price_bin,$50k-$60k,0.2501335042187333
+2021,New,powertrain,Hybrid Electric (HEV),price_bin,$30k-$40k,0.3180070490227491
+2020,New,powertrain,Hybrid Electric (HEV),price_bin,$30k-$40k,0.31473010064043916
+2020,New,powertrain,Hybrid Electric (HEV),price_bin,$20k-$30k,0.23045046014746245
+2018,New,powertrain,Hybrid Electric (HEV),price_bin,$40k-$50k,0.2219298245614035
+2019,New,powertrain,Hybrid Electric (HEV),price_bin,$70k+,0.061058642653195695
+2020,New,powertrain,Hybrid Electric (HEV),price_bin,$70k+,0.09735751574188688
+2018,New,powertrain,Hybrid Electric (HEV),price_bin,$70k+,0.051535087719298246
+2021,New,powertrain,Hybrid Electric (HEV),price_bin,$60k-$70k,0.3341343586457332
+2018,New,powertrain,Hybrid Electric (HEV),price_bin,$50k-$60k,0.18728070175438596
+2019,New,powertrain,Hybrid Electric (HEV),price_bin,$30k-$40k,0.2835493081484735
+2018,New,powertrain,Hybrid Electric (HEV),price_bin,$30k-$40k,0.32894736842105265
+2021,New,powertrain,Hybrid Electric (HEV),price_bin,$20k-$30k,0.21488839047313896
+2018,New,powertrain,Hybrid Electric (HEV),price_bin,$20k-$30k,0.24901315789473685
+2021,New,powertrain,Hybrid Electric (HEV),price_bin,$70k+,0.26716864252910394
+2019,New,powertrain,Hybrid Electric (HEV),price_bin,$10k-$20k,0.0018669009444322424
+2019,New,powertrain,Hybrid Electric (HEV),price_bin,$20k-$30k,0.21914122556556118
+2021,New,powertrain,Hybrid Electric (HEV),price_bin,$10k-$20k,6.408202499198974e-4
+2024,New,powertrain,Hybrid Electric (HEV),price_bin,$30k-$40k,0.24192488262910797
+2022,New,powertrain,Hybrid Electric (HEV),price_bin,$40k-$50k,0.2605005122201083
+2022,New,powertrain,Hybrid Electric (HEV),price_bin,$30k-$40k,0.22532806478364797
+2024,New,powertrain,Hybrid Electric (HEV),price_bin,$40k-$50k,0.2063849765258216
+2023,New,powertrain,Hybrid Electric (HEV),price_bin,$30k-$40k,0.2349894042853779
+2023,New,powertrain,Hybrid Electric (HEV),price_bin,$40k-$50k,0.24869319519660937
+2023,New,powertrain,Hybrid Electric (HEV),price_bin,$50k-$60k,0.20536849540852367
+2024,New,powertrain,Hybrid Electric (HEV),price_bin,$50k-$60k,0.21112676056338028
+2023,New,powertrain,Hybrid Electric (HEV),price_bin,$20k-$30k,0.06847186249117024
+2024,New,powertrain,Hybrid Electric (HEV),price_bin,$20k-$30k,0.09671361502347418
+2022,New,powertrain,Hybrid Electric (HEV),price_bin,$50k-$60k,0.1806429581930826
+2023,New,powertrain,Hybrid Electric (HEV),price_bin,$60k-$70k,0.16529314810454437
+2022,New,powertrain,Hybrid Electric (HEV),price_bin,$60k-$70k,0.16849602419630225
+2022,New,powertrain,Hybrid Electric (HEV),price_bin,$70k+,0.11556661300551246
+2024,New,powertrain,Hybrid Electric (HEV),price_bin,$60k-$70k,0.1288262910798122
+2024,New,powertrain,Hybrid Electric (HEV),price_bin,$70k+,0.08352112676056338
+2023,New,powertrain,Hybrid Electric (HEV),price_bin,$70k+,0.11622321638803862
+2022,New,powertrain,Hybrid Electric (HEV),price_bin,$20k-$30k,0.08863847016927655
+2024,New,powertrain,Hybrid Electric (HEV),price_bin,$10k-$20k,9.389671361502347e-5
+2023,Used,powertrain,Battery Electric (BEV),price_bin,$20k-$30k,0.1376805062287043
+2022,Used,powertrain,Battery Electric (BEV),price_bin,$10k-$20k,0.059138314909573844
+2022,Used,powertrain,Battery Electric (BEV),price_bin,$30k-$40k,0.06829811335494708
+2022,Used,powertrain,Battery Electric (BEV),price_bin,$60k-$70k,0.10390219132065154
+2022,Used,powertrain,Battery Electric (BEV),price_bin,$70k+,0.11243701417913363
+2022,Used,powertrain,Battery Electric (BEV),price_bin,$50k-$60k,0.11290574586930198
+2022,Used,powertrain,Battery Electric (BEV),price_bin,$40k-$50k,0.09091441740557009
+2023,Used,powertrain,Battery Electric (BEV),price_bin,$50k-$60k,0.09569308983396131
+2024,Used,powertrain,Battery Electric (BEV),price_bin,$10k-$20k,0.14038244810411896
+2024,Used,powertrain,Battery Electric (BEV),price_bin,$20k-$30k,0.22528810848147746
+2023,Used,powertrain,Battery Electric (BEV),price_bin,$0-$10k,0.03906686617750455
+2023,Used,powertrain,Battery Electric (BEV),price_bin,$10k-$20k,0.09399844958445258
+2023,Used,powertrain,Battery Electric (BEV),price_bin,$30k-$40k,0.17224035046602607
+2023,Used,powertrain,Battery Electric (BEV),price_bin,$70k+,0.0841370855793326
+2024,Used,powertrain,Battery Electric (BEV),price_bin,$30k-$40k,0.1786272585160141
+2023,Used,powertrain,Battery Electric (BEV),price_bin,$40k-$50k,0.1543564874073807
+2022,Used,powertrain,Battery Electric (BEV),price_bin,$0-$10k,0.01767509081676497
+2024,Used,powertrain,Battery Electric (BEV),price_bin,$0-$10k,0.05878503653615443
+2024,Used,powertrain,Battery Electric (BEV),price_bin,$60k-$70k,0.05313193005416803
+2024,Used,powertrain,Battery Electric (BEV),price_bin,$40k-$50k,0.09323081397462464
+2024,Used,powertrain,Battery Electric (BEV),price_bin,$70k+,0.06605591304031701
+2022,Used,powertrain,Battery Electric (BEV),price_bin,$20k-$30k,0.056150150384750595
+2024,Used,powertrain,Battery Electric (BEV),price_bin,$50k-$60k,0.06045733813211183
+2023,Used,powertrain,Battery Electric (BEV),price_bin,$60k-$70k,0.05067695469541546
+2021,Used,powertrain,Battery Electric (BEV),price_bin,$60k-$70k,0.05658603098478971
+2020,Used,powertrain,Battery Electric (BEV),price_bin,$70k+,0.0386512552455275
+2021,Used,powertrain,Battery Electric (BEV),price_bin,$70k+,0.07226649740226156
+2019,Used,powertrain,Battery Electric (BEV),price_bin,$70k+,0.03603929367805701
+2018,Used,powertrain,Battery Electric (BEV),price_bin,$70k+,0.02248689274782556
+2021,Used,powertrain,Battery Electric (BEV),price_bin,$30k-$40k,0.04332698591814185
+2021,Used,powertrain,Battery Electric (BEV),price_bin,$40k-$50k,0.05503444060465007
+2020,Used,powertrain,Battery Electric (BEV),price_bin,$60k-$70k,0.029963925495104175
+2021,Used,powertrain,Battery Electric (BEV),price_bin,$50k-$60k,0.06500223334978959
+2020,Used,powertrain,Battery Electric (BEV),price_bin,$50k-$60k,0.0337676998208545
+2020,Used,powertrain,Battery Electric (BEV),price_bin,$40k-$50k,0.0345775356450465
+2019,Used,powertrain,Battery Electric (BEV),price_bin,$10k-$20k,0.09139396130898572
+2018,Used,powertrain,Battery Electric (BEV),price_bin,$20k-$30k,0.041852289602085035
+2021,Used,powertrain,Battery Electric (BEV),price_bin,$20k-$30k,0.07607494651714977
+2021,Used,powertrain,Battery Electric (BEV),price_bin,$10k-$20k,0.07967181512565531
+2019,Used,powertrain,Battery Electric (BEV),price_bin,$20k-$30k,0.04173446634122823
+2019,Used,powertrain,Battery Electric (BEV),price_bin,$60k-$70k,0.022147893690110287
+2019,Used,powertrain,Battery Electric (BEV),price_bin,$40k-$50k,0.023564153558729584
+2020,Used,powertrain,Battery Electric (BEV),price_bin,$30k-$40k,0.023534319860610078
+2020,Used,powertrain,Battery Electric (BEV),price_bin,$10k-$20k,0.0734741956857837
+2022,New,powertrain,Hybrid Electric (HEV),price_bin,$10k-$20k,9.756573491389824e-5
+2018,New,powertrain,Hybrid Electric (HEV),price_bin,$10k-$20k,0.0028508771929824563
+2018,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$30k-$40k,0.16206140350877193
+2018,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$40k-$50k,0.17012061403508771
+2019,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$40k-$50k,0.126455084559631
+2021,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$30k-$40k,0.06386841824201644
+2020,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$40k-$50k,0.06275227382810397
+2019,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$30k-$40k,0.1541840544695805
+2021,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$40k-$50k,0.05575136174303108
+2020,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$30k-$40k,0.0963887842419676
+2020,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$20k-$30k,0.042139820246488345
+2018,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$20k-$30k,0.05
+2019,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$20k-$30k,0.04897869536569295
+2021,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$20k-$30k,0.020239239559970094
+2018,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$50k-$60k,0.01864035087719298
+2021,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$50k-$60k,0.04069208586991349
+2019,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$50k-$60k,0.005875247089830881
+2020,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$50k-$60k,3.7672891663527257e-4
+2018,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$60k-$70k,5.482456140350877e-5
+2021,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$60k-$70k,0.002723486062159564
+2018,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$70k+,2.192982456140351e-4
+2022,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$30k-$40k,0.04166056880823455
+2023,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$30k-$40k,0.04210030609842241
+2024,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$40k-$50k,0.12028169014084507
+2024,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$30k-$40k,0.09018779342723005
+2023,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$40k-$50k,0.09225335530963033
+2022,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$40k-$50k,0.02585491975218303
+2024,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$50k-$60k,0.018028169014084508
+2023,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$60k-$70k,0.0018365905344949376
+2022,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$70k+,2.926972047416947e-4
+2022,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$20k-$30k,0.001219571686423728
+2020,Used,powertrain,Battery Electric (BEV),price_bin,$20k-$30k,0.05663942673439839
+2018,Used,powertrain,Battery Electric (BEV),price_bin,$30k-$40k,0.012031396793647908
+2019,Used,powertrain,Battery Electric (BEV),price_bin,$30k-$40k,0.027330802145483037
+2018,Used,powertrain,Hybrid Electric (HEV),price_bin,$70k+,0.013819438130739159
+2023,New,powertrain,Hybrid Electric (HEV),price_bin,$10k-$20k,9.418412997409936e-5
+2024,Used,powertrain,Flex Fuel (E85),price_bin,$30k-$40k,0.29136219871305485
+2023,Used,powertrain,Flex Fuel (E85),price_bin,$30k-$40k,0.3724062088734248
+2022,Used,powertrain,Flex Fuel (E85),price_bin,$40k-$50k,0.3289519940627319
+2024,Used,powertrain,Flex Fuel (E85),price_bin,$20k-$30k,0.49789144581379285
+2022,Used,powertrain,Flex Fuel (E85),price_bin,$30k-$40k,0.4808210616772782
+2023,Used,powertrain,Flex Fuel (E85),price_bin,$40k-$50k,0.22143900196506155
+2022,Used,powertrain,Flex Fuel (E85),price_bin,$50k-$60k,0.19221905394320535
+2024,Used,powertrain,Flex Fuel (E85),price_bin,$40k-$50k,0.1735194677718399
+2023,Used,powertrain,Flex Fuel (E85),price_bin,$20k-$30k,0.5806847067731525
+2022,Used,powertrain,Flex Fuel (E85),price_bin,$20k-$30k,0.6442131166751299
+2022,Used,powertrain,Flex Fuel (E85),price_bin,$10k-$20k,0.7599507831725323
+2022,Used,powertrain,Flex Fuel (E85),price_bin,$60k-$70k,0.10866763017069646
+2024,Used,powertrain,Flex Fuel (E85),price_bin,$10k-$20k,0.7523175918857018
+2023,Used,powertrain,Flex Fuel (E85),price_bin,$10k-$20k,0.7723232796697255
+2023,Used,powertrain,Flex Fuel (E85),price_bin,$50k-$60k,0.12464619877769564
+2024,Used,powertrain,Flex Fuel (E85),price_bin,$60k-$70k,0.02350310829970553
+2023,Used,powertrain,Flex Fuel (E85),price_bin,$70k+,0.021038778416773332
+2023,Used,powertrain,Flex Fuel (E85),price_bin,$60k-$70k,0.052587931998052964
+2022,Used,powertrain,Flex Fuel (E85),price_bin,$70k+,0.04935354087730948
+2024,Used,powertrain,Flex Fuel (E85),price_bin,$70k+,0.014287272330679463
+2023,Used,powertrain,Flex Fuel (E85),price_bin,$0-$10k,0.5123402260722205
+2024,Used,powertrain,Flex Fuel (E85),price_bin,$0-$10k,0.6126440542407388
+2024,Used,powertrain,Flex Fuel (E85),price_bin,$50k-$60k,0.07159995637474098
+2022,Used,powertrain,Flex Fuel (E85),price_bin,$0-$10k,0.4334010390219132
+2019,New,powertrain,Flex Fuel (E85),price_bin,$10k-$20k,0.0015374478365912585
+2020,New,powertrain,Hybrid Electric (HEV),price_bin,$10k-$20k,5.920025832839998e-4
+2018,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$10k-$20k,1.644736842105263e-4
+2019,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$70k+,1.64726553920492e-4
+2023,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$50k-$60k,0.051377442900871206
+2023,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$20k-$30k,2.825523899222981e-4
+2021,Used,powertrain,Battery Electric (BEV),price_bin,$0-$10k,0.03653290076874251
+2020,Used,powertrain,Battery Electric (BEV),price_bin,$0-$10k,0.03985373874205502
+2019,Used,powertrain,Battery Electric (BEV),price_bin,$0-$10k,0.03835954920749714
+2018,Used,powertrain,Battery Electric (BEV),price_bin,$10k-$20k,0.07997696760311543
+2018,Used,powertrain,Battery Electric (BEV),price_bin,$60k-$70k,0.010243355456556656
+2018,Used,powertrain,Battery Electric (BEV),price_bin,$50k-$60k,0.010516107524926509
+2019,Used,powertrain,Battery Electric (BEV),price_bin,$50k-$60k,0.026095341409027903
+2018,Used,powertrain,Battery Electric (BEV),price_bin,$0-$10k,0.02666909112949662
+2018,Used,powertrain,Battery Electric (BEV),price_bin,$40k-$50k,0.00927357032457496
+2022,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$50k-$60k,0.044538757988194545
+2022,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$60k-$70k,0.005024635348065759
+2024,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$20k-$30k,0.004084507042253521
+2023,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$70k+,2.354603249352484e-4
+2019,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$10k-$20k,1.64726553920492e-4
+2022,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$10k-$20k,4.878286745694912e-5
+2020,Used,powertrain,Flex Fuel (E85),price_bin,$20k-$30k,0.6764092370364917
+2019,Used,powertrain,Flex Fuel (E85),price_bin,$30k-$40k,0.6097752064123425
+2019,Used,powertrain,Flex Fuel (E85),price_bin,$10k-$20k,0.8071174591695294
+2021,Used,powertrain,Flex Fuel (E85),price_bin,$20k-$30k,0.6623175118132449
+2021,Used,powertrain,Flex Fuel (E85),price_bin,$30k-$40k,0.5206761172626184
+2020,Used,powertrain,Flex Fuel (E85),price_bin,$60k-$70k,0.07919212741416967
+2021,Used,powertrain,Flex Fuel (E85),price_bin,$60k-$70k,0.13204974492794508
+2020,Used,powertrain,Flex Fuel (E85),price_bin,$40k-$50k,0.3628309897175391
+2020,Used,powertrain,Flex Fuel (E85),price_bin,$10k-$20k,0.7979827725833762
+2019,Used,powertrain,Flex Fuel (E85),price_bin,$20k-$30k,0.7398300488157656
+2021,Used,powertrain,Flex Fuel (E85),price_bin,$10k-$20k,0.7631943954674754
+2019,Used,powertrain,Flex Fuel (E85),price_bin,$40k-$50k,0.4482613150123546
+2018,Used,powertrain,Flex Fuel (E85),price_bin,$30k-$40k,0.6363608812922387
+2018,Used,powertrain,Flex Fuel (E85),price_bin,$10k-$20k,0.7855259569051732
+2018,Used,powertrain,Flex Fuel (E85),price_bin,$20k-$30k,0.7297936176016001
+2019,Used,powertrain,Flex Fuel (E85),price_bin,$0-$10k,0.5239558850117519
+2020,Used,powertrain,Flex Fuel (E85),price_bin,$30k-$40k,0.5016319418881445
+2020,Used,powertrain,Flex Fuel (E85),price_bin,$0-$10k,0.5560872659451765
+2018,Used,powertrain,Flex Fuel (E85),price_bin,$40k-$50k,0.475497772524775
+2018,Used,powertrain,Flex Fuel (E85),price_bin,$50k-$60k,0.3026941843197867
+2018,Used,powertrain,Flex Fuel (E85),price_bin,$0-$10k,0.4771948965057429
+2020,Used,powertrain,Flex Fuel (E85),price_bin,$50k-$60k,0.18157500797565584
+2021,Used,powertrain,Flex Fuel (E85),price_bin,$40k-$50k,0.39476220701977105
+2018,Used,powertrain,Flex Fuel (E85),price_bin,$60k-$70k,0.10952510834318271
+2019,Used,powertrain,Flex Fuel (E85),price_bin,$60k-$70k,0.07430844331947206
+2021,Used,powertrain,Flex Fuel (E85),price_bin,$50k-$60k,0.2577285657192562
+2019,Used,powertrain,Flex Fuel (E85),price_bin,$70k+,0.07686976435846442
+2021,Used,powertrain,Flex Fuel (E85),price_bin,$70k+,0.10513200272703764
+2019,Used,powertrain,Flex Fuel (E85),price_bin,$50k-$60k,0.23934791779666123
+2021,Used,powertrain,Flex Fuel (E85),price_bin,$0-$10k,0.46571220349342923
+2018,Used,powertrain,Flex Fuel (E85),price_bin,$70k+,0.06121768645634452
+2020,Used,powertrain,Flex Fuel (E85),price_bin,$70k+,0.06486048737392329
+2021,Used,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$50k-$60k,0.015022215953170182
+2018,Used,powertrain,Fuel Cell,price_bin,$40k-$50k,1.2122314149771192e-4
+2018,Used,powertrain,Fuel Cell,price_bin,$50k-$60k,3.030578537442798e-5
+2023,Used,powertrain,Fuel Cell,price_bin,$30k-$40k,1.802808776073122e-5
+2022,Used,powertrain,Fuel Cell,price_bin,$30k-$40k,1.9530487090348034e-4
+2021,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$70k+,1.6020506247997436e-4
+2020,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$70k+,5.38184166621818e-5
+2019,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$60k-$70k,5.490885130683066e-5
+2024,New,powertrain,Plug-In Hybrid Electric (PHEV),price_bin,$70k+,1.4084507042253522e-4
+2023,New,powertrain,Battery Electric (BEV),price_bin,$10k-$20k,1.8836825994819872e-4
+2020,Used,powertrain,Fuel Cell,price_bin,$60k-$70k,7.362143856290952e-5
+2020,Used,powertrain,Fuel Cell,price_bin,$50k-$60k,2.454047952096984e-5
+2018,Used,powertrain,Fuel Cell,price_bin,$70k+,3.030578537442798e-5
+2024,Used,powertrain,Fuel Cell,price_bin,$70k+,1.817719126040644e-5
+2021,Used,powertrain,Fuel Cell,price_bin,$50k-$60k,2.3508945153630958e-5
+2021,Used,powertrain,Fuel Cell,price_bin,$40k-$50k,2.3508945153630958e-5
+2023,Used,powertrain,Fuel Cell,price_bin,$70k+,1.802808776073122e-5
+2024,Used,powertrain,Fuel Cell,price_bin,$50k-$60k,3.635438252081288e-5
+2024,Used,powertrain,Fuel Cell,price_bin,$30k-$40k,1.817719126040644e-5
+2020,Used,powertrain,Fuel Cell,price_bin,$0-$10k,2.454047952096984e-5
+2018,Used,powertrain,Fuel Cell,price_bin,$10k-$20k,3.030578537442798e-5
+2024,Used,powertrain,Fuel Cell,price_bin,$40k-$50k,1.817719126040644e-5
+2021,New,powertrain,Fuel Cell,price_bin,$40k-$50k,5.340168749332479e-5
+2021,New,powertrain,Fuel Cell,price_bin,$30k-$40k,5.340168749332479e-5
+2022,New,powertrain,Flex Fuel (E85),price_bin,$10k-$20k,4.878286745694912e-5
+2018,New,vehicle_type,Car,price_bin,$40k-$50k,0.7283991228070176
+2021,New,vehicle_type,Car,price_bin,$30k-$40k,0.6678949054790131
+2019,New,vehicle_type,Car,price_bin,$40k-$50k,0.6721392488469141
+2020,New,vehicle_type,Car,price_bin,$40k-$50k,0.6582530541951456
+2020,New,vehicle_type,Car,price_bin,$30k-$40k,0.7215973306065335
+2021,New,vehicle_type,Car,price_bin,$40k-$50k,0.6434903342945637
+2021,New,vehicle_type,Car,price_bin,$50k-$60k,0.46838620100395173
+2018,New,vehicle_type,Car,price_bin,$20k-$30k,0.7217105263157895
+2018,New,vehicle_type,Car,price_bin,$30k-$40k,0.7635964912280702
+2020,New,vehicle_type,Car,price_bin,$50k-$60k,0.49190032829234165
+2019,New,vehicle_type,Car,price_bin,$50k-$60k,0.49599165385460137
+2018,New,vehicle_type,Car,price_bin,$50k-$60k,0.5352521929824562
+2020,New,vehicle_type,Car,price_bin,$20k-$30k,0.6839782573596684
+2018,New,vehicle_type,Car,price_bin,$60k-$70k,0.2704495614035088
+2021,New,vehicle_type,Car,price_bin,$60k-$70k,0.24634198440670727
+2019,New,vehicle_type,Car,price_bin,$30k-$40k,0.7368767845376675
+2021,New,vehicle_type,Car,price_bin,$20k-$30k,0.6044002990494499
+2020,New,vehicle_type,Car,price_bin,$70k+,0.32328722888972605
+2021,New,vehicle_type,Car,price_bin,$70k+,0.31207946171099005
+2019,New,vehicle_type,Car,price_bin,$60k-$70k,0.25636942675159236
+2019,New,vehicle_type,Car,price_bin,$20k-$30k,0.7074456402372062
+2020,New,vehicle_type,Car,price_bin,$60k-$70k,0.22926645498089446
+2018,New,vehicle_type,Car,price_bin,$70k+,0.3325657894736842
+2019,New,vehicle_type,Car,price_bin,$70k+,0.30853283549308147
+2023,New,vehicle_type,Car,price_bin,$50k-$60k,0.4231222039086414
+2024,New,vehicle_type,Car,price_bin,$40k-$50k,0.504037558685446
+2023,New,vehicle_type,Car,price_bin,$40k-$50k,0.6011773016246762
+2024,New,vehicle_type,Car,price_bin,$30k-$40k,0.6038028169014085
+2024,New,vehicle_type,Car,price_bin,$70k+,0.27605633802816903
+2023,New,vehicle_type,Car,price_bin,$70k+,0.3211207911466918
+2022,New,vehicle_type,Car,price_bin,$70k+,0.3372847455973462
+2022,New,vehicle_type,Car,price_bin,$60k-$70k,0.22264500707351578
+2023,New,vehicle_type,Car,price_bin,$60k-$70k,0.2755356722392277
+2022,New,vehicle_type,Car,price_bin,$30k-$40k,0.6282745499780477
+2022,New,vehicle_type,Car,price_bin,$40k-$50k,0.6050051222010829
+2023,New,vehicle_type,Car,price_bin,$30k-$40k,0.6421473981634095
+2024,New,vehicle_type,Car,price_bin,$20k-$30k,0.5407981220657277
+2023,New,vehicle_type,Car,price_bin,$20k-$30k,0.5121262067341653
+2022,New,vehicle_type,Car,price_bin,$20k-$30k,0.49026781794233865
+2024,New,vehicle_type,Car,price_bin,$10k-$20k,0.10629107981220658
+2024,New,vehicle_type,Car,price_bin,$60k-$70k,0.2131455399061033
+2024,New,vehicle_type,Car,price_bin,$50k-$60k,0.3385915492957747
+2022,New,vehicle_type,Car,price_bin,$50k-$60k,0.38938484804136786
+2021,New,vehicle_type,CUV,price_bin,$40k-$50k,0.8524511374559436
+2021,New,vehicle_type,CUV,price_bin,$50k-$60k,0.7841503791519812
+2020,New,vehicle_type,CUV,price_bin,$70k+,0.1871804531510683
+2021,New,vehicle_type,CUV,price_bin,$70k+,0.20564989853679377
+2021,New,vehicle_type,CUV,price_bin,$60k-$70k,0.48120260600234965
+2019,New,vehicle_type,CUV,price_bin,$50k-$60k,0.7087085438172633
+2020,New,vehicle_type,CUV,price_bin,$50k-$60k,0.705451805607879
+2019,New,vehicle_type,CUV,price_bin,$40k-$50k,0.811937184274105
+2020,New,vehicle_type,CUV,price_bin,$40k-$50k,0.8166944728486087
+2021,New,vehicle_type,CUV,price_bin,$30k-$40k,0.8447612944569048
+2020,New,vehicle_type,CUV,price_bin,$60k-$70k,0.4407728324632689
+2019,New,vehicle_type,CUV,price_bin,$70k+,0.20140566659345485
+2018,New,vehicle_type,CUV,price_bin,$70k+,0.24797149122807016
+2019,New,vehicle_type,CUV,price_bin,$30k-$40k,0.8436745003294531
+2020,New,vehicle_type,CUV,price_bin,$30k-$40k,0.8396211183466983
+2019,New,vehicle_type,CUV,price_bin,$60k-$70k,0.4262025038436196
+2023,New,vehicle_type,CUV,price_bin,$50k-$60k,0.7537555921827173
+2024,New,vehicle_type,CUV,price_bin,$40k-$50k,0.8316901408450704
+2024,New,vehicle_type,CUV,price_bin,$50k-$60k,0.7446948356807511
+2024,New,vehicle_type,CUV,price_bin,$30k-$40k,0.8366666666666667
+2023,New,vehicle_type,CUV,price_bin,$60k-$70k,0.41624676242053216
+2024,New,vehicle_type,CUV,price_bin,$70k+,0.19746478873239437
+2023,New,vehicle_type,CUV,price_bin,$70k+,0.22166234989404285
+2023,New,vehicle_type,CUV,price_bin,$30k-$40k,0.8410171886037203
+2022,New,vehicle_type,CUV,price_bin,$40k-$50k,0.8579930728328211
+2024,New,vehicle_type,CUV,price_bin,$60k-$70k,0.3407042253521127
+2022,New,vehicle_type,CUV,price_bin,$70k+,0.22020586370066833
+2023,New,vehicle_type,CUV,price_bin,$40k-$50k,0.8629620908876854
+2022,New,vehicle_type,CUV,price_bin,$60k-$70k,0.39699497536465195
+2022,New,vehicle_type,CUV,price_bin,$50k-$60k,0.7636470071710815
+2023,New,vehicle_type,CUV,price_bin,$20k-$30k,0.6861313868613139
+2024,New,vehicle_type,CUV,price_bin,$20k-$30k,0.7296244131455399
+2022,New,vehicle_type,CUV,price_bin,$30k-$40k,0.8430167325235377
+2022,New,vehicle_type,CUV,price_bin,$20k-$30k,0.7279379481925947
+2021,New,vehicle_type,CUV,price_bin,$20k-$30k,0.7893303428388337
+2019,New,vehicle_type,CUV,price_bin,$20k-$30k,0.7703711838348342
+2022,New,vehicle_type,Pickup,price_bin,$70k+,0.542660617591102
+2023,New,vehicle_type,Pickup,price_bin,$70k+,0.5425947727807864
+2023,New,vehicle_type,Pickup,price_bin,$60k-$70k,0.5942076760065929
+2023,New,vehicle_type,Pickup,price_bin,$50k-$60k,0.6131857781963739
+2024,New,vehicle_type,Pickup,price_bin,$40k-$50k,0.6756338028169014
+2024,New,vehicle_type,Pickup,price_bin,$60k-$70k,0.5661971830985916
+2024,New,vehicle_type,Pickup,price_bin,$50k-$60k,0.5923943661971831
+2023,New,vehicle_type,Pickup,price_bin,$40k-$50k,0.6780786437485283
+2024,New,vehicle_type,Pickup,price_bin,$70k+,0.5134272300469483
+2022,New,vehicle_type,Pickup,price_bin,$40k-$50k,0.6791550807356457
+2022,New,vehicle_type,Pickup,price_bin,$50k-$60k,0.6384213864090931
+2022,New,vehicle_type,Pickup,price_bin,$60k-$70k,0.5937362798185277
+2022,New,vehicle_type,Pickup,price_bin,$30k-$40k,0.5300258549197522
+2024,New,vehicle_type,SUV,price_bin,$70k+,0.6360093896713614
+2023,New,vehicle_type,SUV,price_bin,$70k+,0.666352719566753
+2024,New,vehicle_type,Pickup,price_bin,$30k-$40k,0.5640845070422535
+2019,New,vehicle_type,Car,price_bin,$10k-$20k,0.3768394465187788
+2020,New,vehicle_type,Car,price_bin,$10k-$20k,0.23841558581346536
+2023,New,vehicle_type,CUV,price_bin,$10k-$20k,0.004379562043795621
+2024,New,vehicle_type,SUV,price_bin,$60k-$70k,0.5253051643192488
+2023,New,vehicle_type,SUV,price_bin,$60k-$70k,0.5259712738403579
+2018,New,vehicle_type,Car,price_bin,$10k-$20k,0.4052631578947368
+2021,New,vehicle_type,Car,price_bin,$10k-$20k,0.16335576204208052
+2018,New,vehicle_type,Minivan,price_bin,$50k-$60k,0.2604714912280702
+2018,New,vehicle_type,Minivan,price_bin,$40k-$50k,0.3196271929824561
+2024,New,vehicle_type,Minivan,price_bin,$70k+,0.02408450704225352
+2024,New,vehicle_type,Minivan,price_bin,$60k-$70k,0.0447887323943662
+2019,New,vehicle_type,Minivan,price_bin,$20k-$30k,0.11234350977377554
+2020,New,vehicle_type,Minivan,price_bin,$30k-$40k,0.31537592164038536
+2021,New,vehicle_type,Minivan,price_bin,$20k-$30k,0.03535191712058101
+2018,New,vehicle_type,Minivan,price_bin,$30k-$40k,0.3350877192982456
+2018,New,vehicle_type,Minivan,price_bin,$20k-$30k,0.171875
+2021,New,vehicle_type,Minivan,price_bin,$50k-$60k,0.24879846203140019
+2019,New,vehicle_type,Minivan,price_bin,$30k-$40k,0.3259389413573468
+2020,New,vehicle_type,Minivan,price_bin,$20k-$30k,0.10268553899144287
+2020,New,vehicle_type,Minivan,price_bin,$50k-$60k,0.22313115548140575
+2018,New,vehicle_type,Minivan,price_bin,$70k+,0.0014254385964912282
+2018,New,vehicle_type,Minivan,price_bin,$60k-$70k,0.07658991228070175
+2020,New,vehicle_type,Minivan,price_bin,$40k-$50k,0.29820784672514933
+2020,New,vehicle_type,Minivan,price_bin,$60k-$70k,0.046552930412787255
+2021,New,vehicle_type,Minivan,price_bin,$60k-$70k,0.10712378511160953
+2019,New,vehicle_type,Minivan,price_bin,$40k-$50k,0.3021084998901823
+2019,New,vehicle_type,Minivan,price_bin,$60k-$70k,0.044366351855919174
+2021,New,vehicle_type,Minivan,price_bin,$40k-$50k,0.30513724233685785
+2019,New,vehicle_type,Minivan,price_bin,$70k+,0.001317812431363936
+2021,New,vehicle_type,Minivan,price_bin,$30k-$40k,0.2342198013457225
+2022,New,vehicle_type,Minivan,price_bin,$20k-$30k,0.001219571686423728
+2022,New,vehicle_type,Minivan,price_bin,$30k-$40k,0.09327284257768671
+2018,New,vehicle_type,Pickup,price_bin,$30k-$40k,0.5520833333333334
+2018,New,vehicle_type,Pickup,price_bin,$40k-$50k,0.6686951754385965
+2018,New,vehicle_type,Pickup,price_bin,$50k-$60k,0.6748355263157895
+2018,New,vehicle_type,Pickup,price_bin,$60k-$70k,0.6073464912280702
+2021,New,vehicle_type,Pickup,price_bin,$70k+,0.5160205062479974
+2019,New,vehicle_type,Pickup,price_bin,$50k-$60k,0.6682407204041292
+2019,New,vehicle_type,Pickup,price_bin,$30k-$40k,0.5820887327037119
+2019,New,vehicle_type,Pickup,price_bin,$40k-$50k,0.6735668789808917
+2020,New,vehicle_type,Pickup,price_bin,$30k-$40k,0.5607879016199343
+2020,New,vehicle_type,Pickup,price_bin,$40k-$50k,0.6718691136106776
+2019,New,vehicle_type,Pickup,price_bin,$60k-$70k,0.6010871952558753
+2019,New,vehicle_type,Pickup,price_bin,$70k+,0.4869316933889743
+2020,New,vehicle_type,Pickup,price_bin,$50k-$60k,0.6704160163607986
+2021,New,vehicle_type,Pickup,price_bin,$50k-$60k,0.6736622877282922
+2021,New,vehicle_type,Pickup,price_bin,$60k-$70k,0.6229306846096336
+2021,New,vehicle_type,Pickup,price_bin,$40k-$50k,0.6941151340382357
+2020,New,vehicle_type,Pickup,price_bin,$60k-$70k,0.6153597761153867
+2020,New,vehicle_type,Pickup,price_bin,$70k+,0.4944297938754642
+2021,New,vehicle_type,Pickup,price_bin,$30k-$40k,0.5362597458079675
+2020,New,vehicle_type,Pickup,price_bin,$20k-$30k,0.23976104623001993
+2018,New,vehicle_type,Pickup,price_bin,$20k-$30k,0.24139254385964912
+2018,New,vehicle_type,Pickup,price_bin,$70k+,0.4861293859649123
+2019,New,vehicle_type,Pickup,price_bin,$20k-$30k,0.254227981550626
+2021,New,vehicle_type,Pickup,price_bin,$20k-$30k,0.17713339741535833
+2024,New,vehicle_type,CUV,price_bin,$10k-$20k,0.03107981220657277
+2022,New,vehicle_type,Minivan,price_bin,$50k-$60k,0.23693838723840188
+2020,New,vehicle_type,Minivan,price_bin,$10k-$20k,4.8436574995963617e-4
+2020,New,vehicle_type,Minivan,price_bin,$70k+,0.0013992788332167268
+2019,New,vehicle_type,Minivan,price_bin,$50k-$60k,0.23231934987920053
+2020,New,vehicle_type,Pickup,price_bin,$10k-$20k,4.305473332974544e-4
+2023,New,vehicle_type,Pickup,price_bin,$30k-$40k,0.5415116552860842
+2022,New,vehicle_type,CUV,price_bin,$10k-$20k,0.005122201082979658
+2019,New,vehicle_type,SUV,price_bin,$40k-$50k,0.46656050955414013
+2019,New,vehicle_type,SUV,price_bin,$30k-$40k,0.28860092246870195
+2018,New,vehicle_type,SUV,price_bin,$50k-$60k,0.5084978070175439
+2019,New,vehicle_type,SUV,price_bin,$50k-$60k,0.5611684603558094
+2018,New,vehicle_type,SUV,price_bin,$40k-$50k,0.4225328947368421
+2018,New,vehicle_type,SUV,price_bin,$30k-$40k,0.28366228070175437
+2020,New,vehicle_type,SUV,price_bin,$60k-$70k,0.5448038318712664
+2020,New,vehicle_type,SUV,price_bin,$70k+,0.6295678381142027
+2018,New,vehicle_type,SUV,price_bin,$70k+,0.634813596491228
+2019,New,vehicle_type,SUV,price_bin,$70k+,0.6350208653634966
+2018,New,vehicle_type,SUV,price_bin,$60k-$70k,0.5356359649122807
+2019,New,vehicle_type,SUV,price_bin,$60k-$70k,0.5511201405666594
+2021,New,vehicle_type,SUV,price_bin,$70k+,0.6755313467905586
+2020,New,vehicle_type,SUV,price_bin,$50k-$60k,0.5439965556213336
+2021,New,vehicle_type,SUV,price_bin,$60k-$70k,0.5450176225568728
+2020,New,vehicle_type,SUV,price_bin,$40k-$50k,0.46224638071147944
+2018,New,vehicle_type,SUV,price_bin,$20k-$30k,0.13470394736842106
+2018,New,vehicle_type,CUV,price_bin,$50k-$60k,0.6930921052631579
+2018,New,vehicle_type,CUV,price_bin,$60k-$70k,0.4817982456140351
+2018,New,vehicle_type,CUV,price_bin,$30k-$40k,0.8537828947368421
+2018,New,vehicle_type,CUV,price_bin,$40k-$50k,0.8444078947368421
+2018,New,vehicle_type,CUV,price_bin,$20k-$30k,0.7547697368421052
+2018,New,vehicle_type,Minivan,price_bin,$10k-$20k,0.0018640350877192982
+2019,New,vehicle_type,Minivan,price_bin,$10k-$20k,9.88359323522952e-4
+2021,New,vehicle_type,Minivan,price_bin,$70k+,0.0026700843746662395
+2019,Used,vehicle_type,CUV,price_bin,$0-$10k,0.6419875851262581
+2019,Used,vehicle_type,CUV,price_bin,$20k-$30k,0.7367865967576689
+2021,Used,vehicle_type,CUV,price_bin,$30k-$40k,0.5541763641065426
+2020,Used,vehicle_type,CUV,price_bin,$30k-$40k,0.524871775994503
+2018,Used,vehicle_type,CUV,price_bin,$0-$10k,0.6400278813225445
+2020,Used,vehicle_type,CUV,price_bin,$0-$10k,0.6633046209722938
+2018,Used,vehicle_type,CUV,price_bin,$40k-$50k,0.4339182349910598
+2020,Used,vehicle_type,CUV,price_bin,$40k-$50k,0.39304032000785294
+2021,Used,vehicle_type,CUV,price_bin,$60k-$70k,0.14780073818087783
+2019,Used,vehicle_type,CUV,price_bin,$40k-$50k,0.44099921653709395
+2020,Used,vehicle_type,CUV,price_bin,$50k-$60k,0.19367346437949398
+2020,Used,vehicle_type,CUV,price_bin,$20k-$30k,0.6683108787945716
+2018,Used,vehicle_type,CUV,price_bin,$20k-$30k,0.7317937994363124
+2018,Used,vehicle_type,CUV,price_bin,$10k-$20k,0.8460163045125314
+2021,Used,vehicle_type,CUV,price_bin,$10k-$20k,0.825069939111832
+2019,Used,vehicle_type,CUV,price_bin,$10k-$20k,0.8501476526246007
+2021,Used,vehicle_type,CUV,price_bin,$20k-$30k,0.6700989726590968
+2021,Used,vehicle_type,CUV,price_bin,$50k-$60k,0.29567200319721654
+2018,Used,vehicle_type,CUV,price_bin,$30k-$40k,0.6093584265236234
+2020,Used,vehicle_type,CUV,price_bin,$10k-$20k,0.8439225502466318
+2019,Used,vehicle_type,CUV,price_bin,$60k-$70k,0.11095040077140964
+2021,Used,vehicle_type,CUV,price_bin,$40k-$50k,0.452923337329854
+2019,Used,vehicle_type,CUV,price_bin,$30k-$40k,0.6123365274513349
+2021,Used,vehicle_type,CUV,price_bin,$0-$10k,0.5502268613207325
+2018,Used,vehicle_type,CUV,price_bin,$50k-$60k,0.23144528290450647
+2019,Used,vehicle_type,CUV,price_bin,$50k-$60k,0.23305008135960947
+2020,Used,vehicle_type,CUV,price_bin,$60k-$70k,0.09384279368818867
+2021,Used,vehicle_type,CUV,price_bin,$70k+,0.11124432846698169
+2020,Used,vehicle_type,CUV,price_bin,$70k+,0.07541289356794031
+2018,Used,vehicle_type,CUV,price_bin,$60k-$70k,0.12161711670757948
+2019,Used,vehicle_type,CUV,price_bin,$70k+,0.08982703549689629
+2018,Used,vehicle_type,CUV,price_bin,$70k+,0.08640179410249417
+2021,Used,vehicle_type,Pickup,price_bin,$30k-$40k,0.6238333685967511
+2020,Used,vehicle_type,Pickup,price_bin,$40k-$50k,0.5220496208495914
+2020,Used,vehicle_type,Pickup,price_bin,$50k-$60k,0.41151930108714324
+2021,Used,vehicle_type,Pickup,price_bin,$50k-$60k,0.4738698074617392
+2018,Used,vehicle_type,Pickup,price_bin,$40k-$50k,0.57668878988999
+2021,Used,vehicle_type,Pickup,price_bin,$40k-$50k,0.5574676164280509
+2019,Used,vehicle_type,Pickup,price_bin,$30k-$40k,0.679021274031218
+2019,Used,vehicle_type,Pickup,price_bin,$40k-$50k,0.5812692099077924
+2020,Used,vehicle_type,Pickup,price_bin,$30k-$40k,0.6086529730790939
+2018,Used,vehicle_type,Pickup,price_bin,$30k-$40k,0.6691517410673697
+2020,Used,vehicle_type,Pickup,price_bin,$70k+,0.21794399862573316
+2021,Used,vehicle_type,Pickup,price_bin,$60k-$70k,0.39492676963584644
+2020,Used,vehicle_type,Pickup,price_bin,$60k-$70k,0.29693980220373506
+2021,Used,vehicle_type,Pickup,price_bin,$20k-$30k,0.6493405740884407
+2020,Used,vehicle_type,Pickup,price_bin,$10k-$20k,0.6828879236300277
+2020,Used,vehicle_type,Pickup,price_bin,$20k-$30k,0.6848757024712263
+2021,Used,vehicle_type,Pickup,price_bin,$10k-$20k,0.5846204480804946
+2018,Used,vehicle_type,Pickup,price_bin,$10k-$20k,0.7069733612146559
+2019,Used,vehicle_type,Pickup,price_bin,$10k-$20k,0.7090941963478575
+2019,Used,vehicle_type,Pickup,price_bin,$20k-$30k,0.7274453082625203
+2019,Used,vehicle_type,Pickup,price_bin,$0-$10k,0.34993672030374257
+2018,Used,vehicle_type,Pickup,price_bin,$0-$10k,0.38091341637118525
+2018,Used,vehicle_type,Pickup,price_bin,$20k-$30k,0.7107918901718338
+2019,Used,vehicle_type,Pickup,price_bin,$50k-$60k,0.4476887844271681
+2018,Used,vehicle_type,Pickup,price_bin,$50k-$60k,0.43882777222171715
+2018,Used,vehicle_type,Pickup,price_bin,$60k-$70k,0.3068460769160833
+2021,Used,vehicle_type,Pickup,price_bin,$0-$10k,0.14119472459270752
+2020,Used,vehicle_type,Pickup,price_bin,$0-$10k,0.3062651844217036
+2019,Used,vehicle_type,Pickup,price_bin,$60k-$70k,0.3201349966853492
+2021,Used,vehicle_type,Pickup,price_bin,$70k+,0.34837905823165716
+2019,Used,vehicle_type,Pickup,price_bin,$70k+,0.21542216597360334
+2018,Used,vehicle_type,Pickup,price_bin,$70k+,0.20535200169712398
+2020,Used,vehicle_type,Car,price_bin,$0-$10k,0.8361432182384844
+2021,Used,vehicle_type,Car,price_bin,$40k-$50k,0.39151797258856996
+2018,Used,vehicle_type,Car,price_bin,$30k-$40k,0.5838712610237294
+2021,Used,vehicle_type,Car,price_bin,$30k-$40k,0.528222488656934
+2020,Used,vehicle_type,Car,price_bin,$30k-$40k,0.48882181157819826
+2019,Used,vehicle_type,Car,price_bin,$0-$10k,0.8273066955945279
+2020,Used,vehicle_type,Car,price_bin,$40k-$50k,0.327100051535007
+2019,Used,vehicle_type,Car,price_bin,$40k-$50k,0.3634363888386669
+2018,Used,vehicle_type,Car,price_bin,$10k-$20k,0.8894141891687123
+2020,Used,vehicle_type,Car,price_bin,$20k-$30k,0.6830351665071536
+2019,Used,vehicle_type,Car,price_bin,$30k-$40k,0.5729825830169348
+2019,Used,vehicle_type,Car,price_bin,$10k-$20k,0.8869704092087025
+2018,Used,vehicle_type,Car,price_bin,$0-$10k,0.8278934448586235
+2020,Used,vehicle_type,Car,price_bin,$10k-$20k,0.876389604652875
+2018,Used,vehicle_type,Car,price_bin,$20k-$30k,0.7393702457799194
+2021,Used,vehicle_type,Car,price_bin,$10k-$20k,0.8621200366739544
+2021,Used,vehicle_type,Car,price_bin,$20k-$30k,0.6848155723252698
+2021,Used,vehicle_type,Car,price_bin,$0-$10k,0.7646284411218469
+2019,Used,vehicle_type,Car,price_bin,$20k-$30k,0.7433556318929669
+2020,Used,vehicle_type,Car,price_bin,$50k-$60k,0.2038086824216545
+2019,Used,vehicle_type,Car,price_bin,$70k+,0.1609112276261074
+2020,Used,vehicle_type,Car,price_bin,$70k+,0.13899727600677317
+2018,Used,vehicle_type,Car,price_bin,$40k-$50k,0.3571536806376337
+2021,Used,vehicle_type,Car,price_bin,$50k-$60k,0.26941251146061074
+2021,Used,vehicle_type,Car,price_bin,$60k-$70k,0.1856031219879164
+2018,Used,vehicle_type,Car,price_bin,$50k-$60k,0.20280631572567204
+2020,Used,vehicle_type,Car,price_bin,$60k-$70k,0.13347566811455497
+2018,Used,vehicle_type,Car,price_bin,$70k+,0.15171076158438646
+2019,Used,vehicle_type,Car,price_bin,$50k-$60k,0.22705357680949798
+2019,Used,vehicle_type,Car,price_bin,$60k-$70k,0.16579280419453987
+2021,Used,vehicle_type,Car,price_bin,$70k+,0.20410466182382397
+2018,Used,vehicle_type,Car,price_bin,$60k-$70k,0.15865078643513048
+2018,Used,vehicle_type,SUV,price_bin,$30k-$40k,0.6306936994272206
+2020,Used,vehicle_type,SUV,price_bin,$30k-$40k,0.5643574075437434
+2021,Used,vehicle_type,SUV,price_bin,$40k-$50k,0.5157157298352023
+2019,Used,vehicle_type,SUV,price_bin,$30k-$40k,0.6353582836135719
+2021,Used,vehicle_type,SUV,price_bin,$30k-$40k,0.5707971883301596
+2018,Used,vehicle_type,SUV,price_bin,$40k-$50k,0.5446252689638452
+2021,Used,vehicle_type,SUV,price_bin,$50k-$60k,0.4279803465218516
+2019,Used,vehicle_type,SUV,price_bin,$20k-$30k,0.7078286024227084
+2019,Used,vehicle_type,SUV,price_bin,$40k-$50k,0.5571023925751823
+2020,Used,vehicle_type,SUV,price_bin,$40k-$50k,0.49660114358634566
+2019,Used,vehicle_type,SUV,price_bin,$10k-$20k,0.7214186705237148
+2021,Used,vehicle_type,SUV,price_bin,$60k-$70k,0.3282083832898418
+2018,Used,vehicle_type,SUV,price_bin,$20k-$30k,0.6916689396005697
+2020,Used,vehicle_type,SUV,price_bin,$20k-$30k,0.6511570836094137
+2020,Used,vehicle_type,SUV,price_bin,$10k-$20k,0.7142997374168691
+2018,Used,vehicle_type,SUV,price_bin,$10k-$20k,0.6955177743431221
+2018,Used,vehicle_type,SUV,price_bin,$70k+,0.21929266296936084
+2018,Used,vehicle_type,SUV,price_bin,$50k-$60k,0.4303724581022517
+2021,Used,vehicle_type,SUV,price_bin,$20k-$30k,0.6357053858993347
+2021,Used,vehicle_type,SUV,price_bin,$10k-$20k,0.651997084890801
+2021,Used,vehicle_type,SUV,price_bin,$70k+,0.3023250346756941
+2020,Used,vehicle_type,SUV,price_bin,$70k+,0.21094996196225674
+2019,Used,vehicle_type,SUV,price_bin,$60k-$70k,0.27460374856867353
+2019,Used,vehicle_type,SUV,price_bin,$50k-$60k,0.4422346772735491
+2020,Used,vehicle_type,SUV,price_bin,$50k-$60k,0.38423028785982477
+2020,Used,vehicle_type,SUV,price_bin,$60k-$70k,0.23566222483987337
+2019,Used,vehicle_type,SUV,price_bin,$70k+,0.23151328873621407
+2018,Used,vehicle_type,SUV,price_bin,$60k-$70k,0.2895111676819105
+2018,Used,vehicle_type,SUV,price_bin,$0-$10k,0.4571930781586205
+2019,Used,vehicle_type,SUV,price_bin,$0-$10k,0.4033628638582535
+2020,Used,vehicle_type,SUV,price_bin,$0-$10k,0.35912537730987265
+2021,Used,vehicle_type,SUV,price_bin,$0-$10k,0.21804546629992713
+2024,Used,vehicle_type,CUV,price_bin,$10k-$20k,0.8401316028647253
+2022,Used,vehicle_type,CUV,price_bin,$30k-$40k,0.5482403031131596
+2023,Used,vehicle_type,CUV,price_bin,$20k-$30k,0.6560060574374876
+2022,Used,vehicle_type,CUV,price_bin,$10k-$20k,0.8226045857583688
+2023,Used,vehicle_type,CUV,price_bin,$30k-$40k,0.5072923614992157
+2022,Used,vehicle_type,CUV,price_bin,$20k-$30k,0.6742510058200851
+2024,Used,vehicle_type,CUV,price_bin,$20k-$30k,0.629876031555604
+2023,Used,vehicle_type,CUV,price_bin,$10k-$20k,0.8423984567956877
+2022,Used,vehicle_type,CUV,price_bin,$0-$10k,0.5147455177532128
+2024,Used,vehicle_type,CUV,price_bin,$40k-$50k,0.33256989130039627
+2024,Used,vehicle_type,CUV,price_bin,$0-$10k,0.7180172319773148
+2024,Used,vehicle_type,CUV,price_bin,$30k-$40k,0.47782382666230416
+2022,Used,vehicle_type,CUV,price_bin,$40k-$50k,0.44830280067184874
+2023,Used,vehicle_type,CUV,price_bin,$40k-$50k,0.38576502190412665
+2022,Used,vehicle_type,CUV,price_bin,$60k-$70k,0.16821608530916762
+2023,Used,vehicle_type,CUV,price_bin,$50k-$60k,0.22497250716616488
+2023,Used,vehicle_type,CUV,price_bin,$60k-$70k,0.1111071048693865
+2024,Used,vehicle_type,CUV,price_bin,$60k-$70k,0.08163376595048533
+2023,Used,vehicle_type,CUV,price_bin,$0-$10k,0.598766878797166
+2024,Used,vehicle_type,CUV,price_bin,$50k-$60k,0.1507070927400298
+2022,Used,vehicle_type,CUV,price_bin,$50k-$60k,0.2996367329401195
+2023,Used,vehicle_type,CUV,price_bin,$70k+,0.07456417097838432
+2022,Used,vehicle_type,CUV,price_bin,$70k+,0.12997539158626617
+2024,Used,vehicle_type,CUV,price_bin,$70k+,0.05767622786926964
+2022,New,vehicle_type,SUV,price_bin,$50k-$60k,0.48114542172788916
+2023,New,vehicle_type,SUV,price_bin,$50k-$60k,0.4618789733929833
+2024,New,vehicle_type,SUV,price_bin,$50k-$60k,0.4663849765258216
+2024,New,vehicle_type,SUV,price_bin,$40k-$50k,0.4223943661971831
+2023,New,vehicle_type,SUV,price_bin,$40k-$50k,0.41455144808099836
+2022,New,vehicle_type,SUV,price_bin,$60k-$70k,0.547392555734426
+2022,New,vehicle_type,SUV,price_bin,$70k+,0.6611054197765744
+2022,New,vehicle_type,SUV,price_bin,$40k-$50k,0.41499585345626616
+2023,New,vehicle_type,SUV,price_bin,$30k-$40k,0.1750882976218507
+2022,New,vehicle_type,SUV,price_bin,$30k-$40k,0.19513146982779647
+2022,New,vehicle_type,SUV,price_bin,$20k-$30k,0.005463681155178301
+2024,New,vehicle_type,SUV,price_bin,$20k-$30k,0.005868544600938967
+2024,New,vehicle_type,SUV,price_bin,$30k-$40k,0.19464788732394367
+2023,New,vehicle_type,SUV,price_bin,$20k-$30k,0.006074876383329409
+2022,New,vehicle_type,Car,price_bin,$10k-$20k,0.09571198595053418
+2023,New,vehicle_type,Car,price_bin,$10k-$20k,0.06687073228161054
+2022,New,vehicle_type,Pickup,price_bin,$20k-$30k,0.24864627542806966
+2024,New,vehicle_type,Pickup,price_bin,$20k-$30k,0.21882629107981222
+2023,New,vehicle_type,Pickup,price_bin,$20k-$30k,0.2551448080998352
+2020,New,vehicle_type,CUV,price_bin,$20k-$30k,0.7758462946020128
+2020,New,vehicle_type,CUV,price_bin,$10k-$20k,0.11614014315698833
+2021,New,vehicle_type,CUV,price_bin,$10k-$20k,0.08923421980134573
+2019,New,vehicle_type,CUV,price_bin,$10k-$20k,0.11948166044366351
+2018,New,vehicle_type,CUV,price_bin,$10k-$20k,0.08031798245614036
+2022,New,vehicle_type,SUV,price_bin,$10k-$20k,4.878286745694912e-5
+2023,New,vehicle_type,CUV,price_bin,$0-$10k,9.418412997409936e-5
+2024,New,vehicle_type,CUV,price_bin,$0-$10k,1.8779342723004695e-4
+2023,Used,vehicle_type,Pickup,price_bin,$30k-$40k,0.5801438641403306
+2024,Used,vehicle_type,Pickup,price_bin,$30k-$40k,0.5581670120333007
+2024,Used,vehicle_type,Pickup,price_bin,$10k-$20k,0.6887701312393208
+2023,Used,vehicle_type,Pickup,price_bin,$20k-$30k,0.663487713858191
+2024,Used,vehicle_type,Pickup,price_bin,$20k-$30k,0.6661213509288545
+2023,Used,vehicle_type,Pickup,price_bin,$10k-$20k,0.6364996664803765
+2022,Used,vehicle_type,Pickup,price_bin,$30k-$40k,0.6145267762978008
+2023,Used,vehicle_type,Pickup,price_bin,$40k-$50k,0.4819989543709099
+2023,Used,vehicle_type,Pickup,price_bin,$0-$10k,0.15963871712127495
+2022,Used,vehicle_type,Pickup,price_bin,$60k-$70k,0.3636772001093707
+2022,Used,vehicle_type,Pickup,price_bin,$10k-$20k,0.6070075387680168
+2024,Used,vehicle_type,Pickup,price_bin,$40k-$50k,0.449103864470862
+2022,Used,vehicle_type,Pickup,price_bin,$40k-$50k,0.5314440842154603
+2023,Used,vehicle_type,Pickup,price_bin,$50k-$60k,0.38720726892498514
+2022,Used,vehicle_type,Pickup,price_bin,$70k+,0.32321003085816963
+2024,Used,vehicle_type,Pickup,price_bin,$50k-$60k,0.3486203511833352
+2023,Used,vehicle_type,Pickup,price_bin,$60k-$70k,0.3030160990823703
+2023,Used,vehicle_type,Pickup,price_bin,$70k+,0.2652292271358777
+2022,Used,vehicle_type,Pickup,price_bin,$20k-$30k,0.6619077379789852
+2022,Used,vehicle_type,Pickup,price_bin,$50k-$60k,0.44386938010233973
+2024,Used,vehicle_type,Pickup,price_bin,$60k-$70k,0.26627767477369396
+2024,Used,vehicle_type,Pickup,price_bin,$70k+,0.21245501145163048
+2024,Used,vehicle_type,Pickup,price_bin,$0-$10k,0.24639182753480932
+2022,Used,vehicle_type,Pickup,price_bin,$0-$10k,0.13335416585289636
+2022,Used,vehicle_type,SUV,price_bin,$40k-$50k,0.48457091519862505
+2024,Used,vehicle_type,SUV,price_bin,$0-$10k,0.36076271494528667
+2022,Used,vehicle_type,SUV,price_bin,$10k-$20k,0.6364009218389907
+2022,Used,vehicle_type,SUV,price_bin,$30k-$40k,0.5627123940471075
+2022,Used,vehicle_type,SUV,price_bin,$20k-$30k,0.6266747392679973
+2024,Used,vehicle_type,SUV,price_bin,$20k-$30k,0.6190424255644018
+2024,Used,vehicle_type,SUV,price_bin,$10k-$20k,0.7151270585669103
+2023,Used,vehicle_type,SUV,price_bin,$30k-$40k,0.5274838197912347
+2023,Used,vehicle_type,SUV,price_bin,$20k-$30k,0.6277199877409003
+2024,Used,vehicle_type,SUV,price_bin,$30k-$40k,0.48989348165921404
+2024,Used,vehicle_type,SUV,price_bin,$50k-$60k,0.3227360308285164
+2023,Used,vehicle_type,SUV,price_bin,$60k-$70k,0.27952550073013754
+2024,Used,vehicle_type,SUV,price_bin,$40k-$50k,0.39609917475551676
+2022,Used,vehicle_type,SUV,price_bin,$60k-$70k,0.3133080739033631
+2024,Used,vehicle_type,SUV,price_bin,$60k-$70k,0.24828225542589158
+2023,Used,vehicle_type,SUV,price_bin,$10k-$20k,0.6806504534064072
+2023,Used,vehicle_type,SUV,price_bin,$40k-$50k,0.4223079557951288
+2022,Used,vehicle_type,SUV,price_bin,$0-$10k,0.18399671887816882
+2022,Used,vehicle_type,SUV,price_bin,$50k-$60k,0.3887543455333776
+2023,Used,vehicle_type,SUV,price_bin,$0-$10k,0.23313923092177613
+2023,Used,vehicle_type,SUV,price_bin,$50k-$60k,0.33681876363374136
+2023,Used,vehicle_type,SUV,price_bin,$70k+,0.2662388000504786
+2022,Used,vehicle_type,SUV,price_bin,$70k+,0.314870512870591
+2024,Used,vehicle_type,SUV,price_bin,$70k+,0.21978041952957428
+2022,Used,vehicle_type,Car,price_bin,$20k-$30k,0.6773758837545408
+2022,Used,vehicle_type,Car,price_bin,$30k-$40k,0.5222842857700871
+2023,Used,vehicle_type,Car,price_bin,$30k-$40k,0.46580973156177324
+2023,Used,vehicle_type,Car,price_bin,$20k-$30k,0.6526348050262308
+2022,Used,vehicle_type,Car,price_bin,$40k-$50k,0.38207491894847856
+2023,Used,vehicle_type,Car,price_bin,$50k-$60k,0.19477546016694008
+2022,Used,vehicle_type,Car,price_bin,$60k-$70k,0.17700480449982423
+2022,Used,vehicle_type,Car,price_bin,$50k-$60k,0.26012655755634545
+2022,Used,vehicle_type,Car,price_bin,$70k+,0.20298035232998712
+2023,Used,vehicle_type,Car,price_bin,$40k-$50k,0.308875227604608
+2023,Used,vehicle_type,Car,price_bin,$60k-$70k,0.11916566009843337
+2023,Used,vehicle_type,Car,price_bin,$10k-$20k,0.8592186626764499
+2022,Used,vehicle_type,Car,price_bin,$10k-$20k,0.851626889574626
+2023,Used,vehicle_type,Car,price_bin,$70k+,0.180695523625809
+2024,Used,vehicle_type,Car,price_bin,$40k-$50k,0.25746173701239683
+2024,Used,vehicle_type,Car,price_bin,$10k-$20k,0.8429490675100884
+2024,Used,vehicle_type,Car,price_bin,$30k-$40k,0.4099865488784673
+2024,Used,vehicle_type,Car,price_bin,$20k-$30k,0.6125713454756971
+2024,Used,vehicle_type,Car,price_bin,$0-$10k,0.8002144908568728
+2023,Used,vehicle_type,Car,price_bin,$0-$10k,0.7360687951828949
+2024,Used,vehicle_type,Car,price_bin,$70k+,0.15910495510233758
+2022,Used,vehicle_type,Car,price_bin,$0-$10k,0.6829616030623804
+2024,Used,vehicle_type,Car,price_bin,$60k-$70k,0.12731304758788672
+2024,Used,vehicle_type,Car,price_bin,$50k-$60k,0.15148871196422728
+2019,Used,vehicle_type,Minivan,price_bin,$10k-$20k,0.5920568914602543
+2021,Used,vehicle_type,Minivan,price_bin,$0-$10k,0.33949267696358465
+2018,Used,vehicle_type,Minivan,price_bin,$10k-$20k,0.572506591508319
+2021,Used,vehicle_type,Minivan,price_bin,$10k-$20k,0.5273996755765569
+2021,Used,vehicle_type,Minivan,price_bin,$40k-$50k,0.1701107271316736
+2018,Used,vehicle_type,Minivan,price_bin,$20k-$30k,0.5080764918022851
+2019,Used,vehicle_type,Minivan,price_bin,$0-$10k,0.4550111492798168
+2019,Used,vehicle_type,Minivan,price_bin,$40k-$50k,0.11369252094256614
+2020,Used,vehicle_type,Minivan,price_bin,$10k-$20k,0.5552283491619426
+2021,Used,vehicle_type,Minivan,price_bin,$30k-$40k,0.3011730963631662
+2021,Used,vehicle_type,Minivan,price_bin,$70k+,0.0014105367092178574
+2020,Used,vehicle_type,Minivan,price_bin,$0-$10k,0.4368450759527841
+2020,Used,vehicle_type,Minivan,price_bin,$30k-$40k,0.266067878966355
+2021,Used,vehicle_type,Minivan,price_bin,$50k-$60k,0.04229259233138209
+2018,Used,vehicle_type,Minivan,price_bin,$0-$10k,0.48249840894626783
+2019,Used,vehicle_type,Minivan,price_bin,$20k-$30k,0.5127162056288797
+2019,Used,vehicle_type,Minivan,price_bin,$50k-$60k,0.012746338817573675
+2021,Used,vehicle_type,Minivan,price_bin,$20k-$30k,0.4078096715800362
+2020,Used,vehicle_type,Minivan,price_bin,$20k-$30k,0.4343419470416452
+2019,Used,vehicle_type,Minivan,price_bin,$30k-$40k,0.3269752305188935
+2020,Used,vehicle_type,Minivan,price_bin,$40k-$50k,0.09222312203980466
+2018,Used,vehicle_type,Minivan,price_bin,$30k-$40k,0.33012092008364397
+2018,Used,vehicle_type,Minivan,price_bin,$40k-$50k,0.11755614146740613
+2018,Used,vehicle_type,Minivan,price_bin,$50k-$60k,0.013607297633118163
+2024,Used,vehicle_type,Minivan,price_bin,$20k-$30k,0.3241174973643073
+2024,Used,vehicle_type,Minivan,price_bin,$10k-$20k,0.4974006616497619
+2023,Used,vehicle_type,Minivan,price_bin,$50k-$60k,0.0440606464872271
+2022,Used,vehicle_type,Minivan,price_bin,$10k-$20k,0.49607437209484007
+2024,Used,vehicle_type,Minivan,price_bin,$0-$10k,0.3681971861707929
+2023,Used,vehicle_type,Minivan,price_bin,$10k-$20k,0.5157475346589987
+2023,Used,vehicle_type,Minivan,price_bin,$40k-$50k,0.12803547927671313
+2024,Used,vehicle_type,Minivan,price_bin,$30k-$40k,0.20840149780055986
+2023,Used,vehicle_type,Minivan,price_bin,$30k-$40k,0.23586147217364653
+2023,Used,vehicle_type,Minivan,price_bin,$0-$10k,0.3055941156321549
+2023,Used,vehicle_type,Minivan,price_bin,$60k-$70k,0.008545313598586598
+2024,Used,vehicle_type,Minivan,price_bin,$40k-$50k,0.10121060093794307
+2024,Used,vehicle_type,Minivan,price_bin,$50k-$60k,0.024248373141382194
+2022,Used,vehicle_type,Minivan,price_bin,$30k-$40k,0.2795789226983321
+2022,Used,vehicle_type,Minivan,price_bin,$20k-$30k,0.3790281629623843
+2022,Used,vehicle_type,Minivan,price_bin,$60k-$70k,0.01847584078746924
+2022,Used,vehicle_type,Minivan,price_bin,$40k-$50k,0.17807898128979338
+2022,Used,vehicle_type,Minivan,price_bin,$50k-$60k,0.0729854302566306
+2022,Used,vehicle_type,Minivan,price_bin,$0-$10k,0.28180539822663175
+2023,Used,vehicle_type,Minivan,price_bin,$20k-$30k,0.3527555932142278
+2022,Used,vehicle_type,Minivan,price_bin,$70k+,0.002167884067028632
+2023,Used,vehicle_type,Minivan,price_bin,$70k+,0.0019109773026375091
+2024,Used,vehicle_type,Minivan,price_bin,$60k-$70k,0.003417311956956411
+2021,Used,vehicle_type,Minivan,price_bin,$60k-$70k,0.005830218398100477
+2018,New,vehicle_type,Car,price_bin,$0-$10k,2.192982456140351e-4
+2020,Used,vehicle_type,Minivan,price_bin,$50k-$60k,0.0073130628972490124
+2019,Used,vehicle_type,Minivan,price_bin,$70k+,0.0025914542276863736
+2020,Used,vehicle_type,Minivan,price_bin,$70k+,0.001963238361677587
+2019,Used,vehicle_type,Minivan,price_bin,$60k-$70k,0.0014765262460073524
+2018,Used,vehicle_type,Minivan,price_bin,$70k+,0.002969966966693942
+2018,Used,vehicle_type,Minivan,price_bin,$60k-$70k,0.0016365124102191108
+2020,Used,vehicle_type,Minivan,price_bin,$60k-$70k,0.0011288620579646127
+2024,Used,vehicle_type,Minivan,price_bin,$70k+,0.0017086559784782055
+2018,New,vehicle_type,Pickup,price_bin,$10k-$20k,0.0020833333333333333
+2021,New,vehicle_type,SUV,price_bin,$40k-$50k,0.44681191925664854
+2021,New,vehicle_type,SUV,price_bin,$30k-$40k,0.2751254939656093
+2020,New,vehicle_type,SUV,price_bin,$30k-$40k,0.26747753081104353
+2021,New,vehicle_type,SUV,price_bin,$50k-$60k,0.4793335469400833
+2019,New,vehicle_type,SUV,price_bin,$20k-$30k,0.12178783219855041
+2020,New,vehicle_type,SUV,price_bin,$20k-$30k,0.11210376190732468
+2021,New,vehicle_type,SUV,price_bin,$20k-$30k,0.08704475061411941
+2019,New,vehicle_type,SUV,price_bin,$10k-$20k,0.0035141664836371624
+2018,New,vehicle_type,SUV,price_bin,$10k-$20k,0.003399122807017544
+2022,New,vehicle_type,Pickup,price_bin,$10k-$20k,1.9513146982779649e-4
+2018,New,vehicle_type,SUV,price_bin,$0-$10k,3.837719298245614e-4
+2019,New,vehicle_type,Pickup,price_bin,$10k-$20k,0.001317812431363936
+2020,New,vehicle_type,SUV,price_bin,$10k-$20k,3.229104999730908e-4
+2023,New,vehicle_type,Minivan,price_bin,$30k-$40k,0.12300447374617376
+2023,New,vehicle_type,Minivan,price_bin,$60k-$70k,0.054532611255003534
+2024,New,vehicle_type,Minivan,price_bin,$50k-$60k,0.2432394366197183
+2022,New,vehicle_type,Minivan,price_bin,$60k-$70k,0.0694180203912386
+2022,New,vehicle_type,Minivan,price_bin,$40k-$50k,0.26011024928045273
+2023,New,vehicle_type,Minivan,price_bin,$40k-$50k,0.28523663762655993
+2024,New,vehicle_type,Minivan,price_bin,$40k-$50k,0.29225352112676056
+2024,New,vehicle_type,Minivan,price_bin,$20k-$30k,6.103286384976526e-4
+2023,New,vehicle_type,Minivan,price_bin,$20k-$30k,7.534730397927949e-4
+2022,New,vehicle_type,Minivan,price_bin,$70k+,0.0030245377823308454
+2023,New,vehicle_type,Minivan,price_bin,$70k+,0.00447374617376972
+2023,New,vehicle_type,Pickup,price_bin,$10k-$20k,6.121968448316459e-4
+2021,New,vehicle_type,SUV,price_bin,$10k-$20k,4.272134999465983e-4
+2023,New,vehicle_type,Minivan,price_bin,$50k-$60k,0.25311984930539205
+2024,New,vehicle_type,Minivan,price_bin,$30k-$40k,0.16230046948356808
+2024,New,vehicle_type,Pickup,price_bin,$0-$10k,4.694835680751174e-5
+2024,New,vehicle_type,Pickup,price_bin,$10k-$20k,4.694835680751174e-5
+2024,New,vehicle_type,SUV,price_bin,$0-$10k,4.694835680751174e-5
+2024,New,vehicle_type,SUV,price_bin,$10k-$20k,4.694835680751174e-5
+2023,New,vehicle_type,Car,price_bin,$0-$10k,4.709206498704968e-5

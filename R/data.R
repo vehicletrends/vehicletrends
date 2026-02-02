@@ -291,3 +291,37 @@
 #'
 #' head(dep_annual_model)
 "dep_annual_model"
+
+#' Percentage of dealers with at least one listing by variable pairs
+#'
+#' Percentage of dealers that have at least one listing for each combination of
+#' two grouping variables, computed across all listing years and inventory types.
+#' Three variable-pair combinations are included: powertrain by vehicle type,
+#' powertrain by price bin, and vehicle type by price bin.
+#'
+#' @format A data frame with 7 variables:
+#'
+#' Variable | Description
+#' -------- | -------------------------------------------
+#' `listing_year`   | Year of the vehicle listing (2018--2024)
+#' `inventory_type`  | Inventory type: "New" or "Used"
+#' `group_var`      | Name of the grouping variable: "powertrain", "vehicle_type", or "price_bin"
+#' `group_level`    | Level of the grouping variable (e.g., "Gasoline", "Car", "$30k-$40k")
+#' `category_var`   | Name of the category variable: "powertrain", "vehicle_type", or "price_bin"
+#' `category_level` | Level of the category variable
+#' `p`              | Proportion of dealers with at least one listing in this group-category combination
+#'
+#' @docType data
+#'
+#' @usage data(percent_dealers)
+#'
+#' @keywords datasets
+#'
+#' @source Computed from vehicle listings data from
+#' \href{https://www.marketcheck.com/}{Marketcheck}.
+#'
+#' @examples
+#' data(percent_dealers)
+#'
+#' head(percent_dealers)
+"percent_dealers"

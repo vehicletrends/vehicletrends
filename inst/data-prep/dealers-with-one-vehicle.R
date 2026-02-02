@@ -1,92 +1,128 @@
 source(here::here("inst", "data-prep", "0setup.R"))
 
-# Open
-ds <- load_ds() %>%
-  filter(inventory_type == 'new') %>%
-  mutate(
-    price_bin = case_when(
-      price < 30000 ~ "$0-$30k",
-      price >= 30000 & price < 40000 ~ "$30k-$40k",
-      price >= 40000 & price < 50000 ~ "$40k-$50k",
-      price >= 50000 & price < 60000 ~ "$50k-$60k",
-      price >= 60000 ~ "$60k+",
-      TRUE ~ "Other"
-    )
-  )
+ds <- load_ds_prices()
 
-get_dealer_percentages <- function(var1, var2) {
+# Compute the percentage of dealers that have at least one listing
+# for each combination of two grouping variables, broken out by
+# listing_year and inventory_type.
+get_dealer_percentages <- function(var1, var2, var1_name, var2_name) {
   dealers_all <- ds %>%
-    distinct(dealer_id, listing_year) %>%
-    count(listing_year, name = "total_dealers")
+    distinct(dealer_id, listing_year, inventory_type) %>%
+    count(listing_year, inventory_type, name = "total_dealers")
 
   ds %>%
-    # Get distinct dealers that have at least one of each var1/var2 combo
-    distinct(dealer_id, listing_year, {{ var1 }}, {{ var2 }}) %>%
-    # Count dealers per year/var1/var2
-    count(listing_year, {{ var1 }}, {{ var2 }}) %>%
-    # Get total dealers per year and join
-    left_join(dealers_all, by = "listing_year") %>%
-    # Calculate percentage
+    distinct(
+      dealer_id,
+      listing_year,
+      inventory_type,
+      {{ var1 }},
+      {{ var2 }}
+    ) %>%
+    count(listing_year, inventory_type, {{ var1 }}, {{ var2 }}) %>%
+    left_join(dealers_all, by = c("listing_year", "inventory_type")) %>%
     mutate(p = n / total_dealers) %>%
-    select(listing_year, {{ var1 }}, {{ var2 }}, p) %>%
+    select(listing_year, inventory_type, {{ var1 }}, {{ var2 }}, p) %>%
     collect() %>%
-    arrange(listing_year, {{ var1 }}, {{ var2 }}) %>%
-    as.data.table()
+    rename(
+      group_level = {{ var1 }},
+      category_level = {{ var2 }}
+    ) %>%
+    mutate(
+      group_var = var1_name,
+      category_var = var2_name,
+      group_level = as.character(group_level),
+      category_level = as.character(category_level)
+    ) %>%
+    select(
+      listing_year,
+      inventory_type,
+      group_var,
+      group_level,
+      category_var,
+      category_level,
+      p
+    )
 }
 
-# Example usage for powertrain and vehicle_type
-p_one_powertrain_vehicle_type <- get_dealer_percentages(
-  powertrain,
-  vehicle_type
+# Build unified dataset from all 3 combinations
+percent_dealers <- bind_rows(
+  get_dealer_percentages(
+    powertrain,
+    vehicle_type,
+    "powertrain",
+    "vehicle_type"
+  ),
+  get_dealer_percentages(
+    powertrain,
+    price_bin,
+    "powertrain",
+    "price_bin"
+  ),
+  get_dealer_percentages(
+    vehicle_type,
+    price_bin,
+    "vehicle_type",
+    "price_bin"
+  )
 )
 
-p_one_vehicle_type_price_bin <- get_dealer_percentages(
-  vehicle_type,
-  price_bin
+# Format labels
+powertrain_labels <- c(
+  "all" = "All",
+  "diesel" = "Diesel",
+  "cv" = "Gasoline",
+  "flex" = "Flex Fuel (E85)",
+  "hev" = "Hybrid Electric (HEV)",
+  "phev" = "Plug-In Hybrid Electric (PHEV)",
+  "bev" = "Battery Electric (BEV)",
+  "bev_tesla" = "BEV (Tesla)",
+  "bev_non_tesla" = "BEV (Non-Tesla)",
+  "fcev" = "Fuel Cell"
+)
+vehicle_type_labels <- c(
+  "all" = "All",
+  "car" = "Car",
+  "cuv" = "CUV",
+  "suv" = "SUV",
+  "pickup" = "Pickup",
+  "minivan" = "Minivan"
 )
 
-p_one_powertrain_price_bin <- get_dealer_percentages(
-  powertrain,
-  price_bin
-)
+format_level <- function(level, var) {
+  case_when(
+    var == "powertrain" ~ powertrain_labels[level],
+    var == "vehicle_type" ~ vehicle_type_labels[level],
+    TRUE ~ level
+  )
+}
 
-p_one_powertrain_vehicle_type %>%
-  write_csv(here('data', 'p_one_powertrain_vehicle_type.csv'))
+percent_dealers <- percent_dealers %>%
+  mutate(
+    inventory_type = str_to_title(inventory_type),
+    group_level = format_level(group_level, group_var),
+    category_level = format_level(category_level, category_var)
+  )
 
-p_one_powertrain_price_bin %>%
-  write_csv(here('data', 'p_one_powertrain_price_bin.csv'))
+# Save
+write_csv(percent_dealers, here::here('data-raw', 'percent_dealers.csv'))
+usethis::use_data(percent_dealers, overwrite = TRUE)
 
-p_one_vehicle_type_price_bin %>%
-  write_csv(here('data', 'p_one_vehicle_type_price_bin.csv'))
+# Visualize ----
 
-# Visualize
+plot_dealer_grid <- function(data, gvar, cvar) {
+  data %>%
+    filter(group_var == gvar, category_var == cvar) %>%
+    ggplot(aes(x = listing_year, y = p, color = inventory_type)) +
+    geom_line() +
+    facet_grid(group_level ~ category_level) +
+    labs(
+      x = "Listing Year",
+      y = "% of Dealers",
+      color = "Inventory Type"
+    ) +
+    theme_minimal_grid()
+}
 
-p_one_powertrain_vehicle_type %>%
-  ggplot() +
-  geom_line(
-    aes(
-      x = listing_year,
-      y = p
-    )
-  ) +
-  facet_grid(powertrain ~ vehicle_type)
-
-p_one_powertrain_price_bin %>%
-  ggplot() +
-  geom_line(
-    aes(
-      x = listing_year,
-      y = p
-    )
-  ) +
-  facet_grid(powertrain ~ price_bin)
-
-p_one_vehicle_type_price_bin %>%
-  ggplot() +
-  geom_line(
-    aes(
-      x = listing_year,
-      y = p
-    )
-  ) +
-  facet_grid(vehicle_type ~ price_bin)
+plot_dealer_grid(percent_dealers, "powertrain", "vehicle_type")
+plot_dealer_grid(percent_dealers, "powertrain", "price_bin")
+plot_dealer_grid(percent_dealers, "vehicle_type", "price_bin")

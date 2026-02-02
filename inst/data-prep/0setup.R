@@ -23,6 +23,17 @@ options(dplyr.width = Inf)
 
 set.seed(123)
 
+price_levels <- c(
+  "$0-$10k",
+  "$10k-$20k",
+  "$20k-$30k",
+  "$30k-$40k",
+  "$40k-$50k",
+  "$50k-$60k",
+  "$60k-$70k",
+  "$70k+"
+)
+
 us_states <- c(
   "AK",
   "AL",
@@ -139,6 +150,23 @@ load_ds <- function() {
     filter(!is.na(powertrain)) %>%
     filter(!is.na(vehicle_type))
   return(ds)
+}
+
+load_ds_prices <- function() {
+  load_ds() %>%
+    mutate(
+      price_bin = case_when(
+        price < 10000 ~ "$0-$10k",
+        price >= 10000 & price < 20000 ~ "$10k-$20k",
+        price >= 20000 & price < 30000 ~ "$20k-$30k",
+        price >= 30000 & price < 40000 ~ "$30k-$40k",
+        price >= 40000 & price < 50000 ~ "$40k-$50k",
+        price >= 50000 & price < 60000 ~ "$50k-$60k",
+        price >= 60000 & price < 70000 ~ "$60k-$70k",
+        price >= 70000 ~ "$70k+",
+        TRUE ~ "Other"
+      )
+    )
 }
 
 get_quantiles_summary <- function(df, var) {

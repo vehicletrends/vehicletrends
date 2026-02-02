@@ -45,4 +45,5 @@ reference:
   - dep_annual_type
   - dep_annual_model
   - percent_market
+  - percent_dealers
   - registrations

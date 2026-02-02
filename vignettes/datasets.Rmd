@@ -150,6 +150,24 @@ Market share (proportion) of vehicle listings for each combination of two groupi
 head(percent_market, 10)
 ```
 
+## `percent_dealers`
+
+Percentage of dealers that have at least one listing for each combination of two grouping variables, computed across all listing years and inventory types. Three variable-pair combinations are included: powertrain by vehicle type, powertrain by price bin, and vehicle type by price bin.
+
+| Variable | Description |
+|:----------|:------------------------------------------------|
+| `listing_year` | Year of the vehicle listing (2018--2024) |
+| `inventory_type` | Inventory type: "New" or "Used" |
+| `group_var` | Name of the grouping variable: "powertrain", "vehicle_type", or "price_bin" |
+| `group_level` | Level of the grouping variable (e.g., "Gasoline", "Car", "$30k-$40k") |
+| `category_var` | Name of the category variable: "powertrain", "vehicle_type", or "price_bin" |
+| `category_level` | Level of the category variable |
+| `p` | Proportion of dealers with at least one listing in this group-category combination |
+
+```{r}
+head(percent_dealers, 10)
+```
+
 ## `registrations`
 
 Annual vehicle registration counts by US state and powertrain type, scraped from the [Alternative Fuels Data Center (AFDC)](https://afdc.energy.gov/vehicle-registration) for years 2016 through 2024.

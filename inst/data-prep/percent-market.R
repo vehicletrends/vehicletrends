@@ -1,31 +1,6 @@
 source(here::here("inst", "data-prep", "0setup.R"))
 
-price_levels <- c(
-  "$0-$10k",
-  "$10k-$20k",
-  "$20k-$30k",
-  "$30k-$40k",
-  "$40k-$50k",
-  "$50k-$60k",
-  "$60k-$70k",
-  "$70k+"
-)
-
-# Open
-ds <- load_ds() %>%
-  mutate(
-    price_bin = case_when(
-      price < 10000 ~ "$0-$10k",
-      price >= 10000 & price < 20000 ~ "$10k-$20k",
-      price >= 20000 & price < 30000 ~ "$20k-$30k",
-      price >= 30000 & price < 40000 ~ "$30k-$40k",
-      price >= 40000 & price < 50000 ~ "$40k-$50k",
-      price >= 50000 & price < 60000 ~ "$50k-$60k",
-      price >= 60000 & price < 70000 ~ "$60k-$70k",
-      price >= 70000 ~ "$70k+",
-      TRUE ~ "Other"
-    )
-  )
+ds <- load_ds_prices()
 
 # Compute market share percentages for a pair of grouping variables.
 # Returns a long data frame with columns:
