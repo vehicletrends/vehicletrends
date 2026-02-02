@@ -1,57 +1,142 @@
 source(here::here("inst", "data-prep", "0setup.R"))
 
 price_levels <- c(
-  "$0-$30k",
+  "$0-$10k",
+  "$10k-$20k",
+  "$20k-$30k",
   "$30k-$40k",
   "$40k-$50k",
   "$50k-$60k",
-  "$60k+"
+  "$60k-$70k",
+  "$70k+"
 )
 
 # Open
 ds <- load_ds() %>%
-  filter(inventory_type == 'new') %>%
   mutate(
     price_bin = case_when(
-      price < 30000 ~ "$0-$30k",
+      price < 10000 ~ "$0-$10k",
+      price >= 10000 & price < 20000 ~ "$10k-$20k",
+      price >= 20000 & price < 30000 ~ "$20k-$30k",
       price >= 30000 & price < 40000 ~ "$30k-$40k",
       price >= 40000 & price < 50000 ~ "$40k-$50k",
       price >= 50000 & price < 60000 ~ "$50k-$60k",
-      price >= 60000 ~ "$60k+",
+      price >= 60000 & price < 70000 ~ "$60k-$70k",
+      price >= 70000 ~ "$70k+",
       TRUE ~ "Other"
     )
   )
 
-# Price bin by powertrain - compute counts by powertrain
-get_dumbbell_data <- function(ds, var1, var2) {
-  dumbbell_data <- ds %>%
-    count(listing_year, {{ var1 }}, {{ var2 }}) %>%
+# Compute market share percentages for a pair of grouping variables.
+# Returns a long data frame with columns:
+#   listing_year, inventory_type, group_var, group_level,
+#   category_var, category_level, n, p
+get_percent_market <- function(var1, var2, var1_name, var2_name) {
+  ds %>%
+    count(listing_year, inventory_type, {{ var1 }}, {{ var2 }}) %>%
     collect() %>%
-    group_by(listing_year, {{ var1 }}) %>%
+    group_by(listing_year, inventory_type, {{ var1 }}) %>%
     mutate(p = n / sum(n)) %>%
     ungroup() %>%
-    select(-n) %>%
-    pivot_wider(
-      names_from = listing_year,
-      values_from = p,
-      names_prefix = "year_"
+    rename(
+      group_level = {{ var1 }},
+      category_level = {{ var2 }}
     ) %>%
     mutate(
-      year_2018 = ifelse(is.na(year_2018), 0, year_2018),
-      year_2024 = ifelse(is.na(year_2024), 0, year_2024)
+      group_var = var1_name,
+      category_var = var2_name,
+      group_level = as.character(group_level),
+      category_level = as.character(category_level)
+    ) %>%
+    select(
+      listing_year,
+      inventory_type,
+      group_var,
+      group_level,
+      category_var,
+      category_level,
+      n,
+      p
     )
-  return(dumbbell_data)
 }
 
-get_dumbbell_data(ds, powertrain, vehicle_type) %>%
-  write_csv(here('data', 'p_market_powertrain_vehicle_type.csv'))
-get_dumbbell_data(ds, powertrain, price_bin) %>%
-  write_csv(here('data', 'p_market_powertrain_price_bin.csv'))
-get_dumbbell_data(ds, vehicle_type, powertrain) %>%
-  write_csv(here('data', 'p_market_vehicle_type_powertrain.csv'))
-get_dumbbell_data(ds, vehicle_type, price_bin) %>%
-  write_csv(here('data', 'p_market_vehicle_type_price_bin.csv'))
-get_dumbbell_data(ds, price_bin, powertrain) %>%
-  write_csv(here('data', 'p_market_price_bin_powertrain.csv'))
-get_dumbbell_data(ds, price_bin, vehicle_type) %>%
-  write_csv(here('data', 'p_market_price_bin_vehicle_type.csv'))
+# Build unified dataset from all 6 combinations
+percent_market <- bind_rows(
+  get_percent_market(
+    powertrain,
+    vehicle_type,
+    "powertrain",
+    "vehicle_type"
+  ),
+  get_percent_market(
+    powertrain,
+    price_bin,
+    "powertrain",
+    "price_bin"
+  ),
+  get_percent_market(
+    vehicle_type,
+    powertrain,
+    "vehicle_type",
+    "powertrain"
+  ),
+  get_percent_market(
+    vehicle_type,
+    price_bin,
+    "vehicle_type",
+    "price_bin"
+  ),
+  get_percent_market(
+    price_bin,
+    powertrain,
+    "price_bin",
+    "powertrain"
+  ),
+  get_percent_market(
+    price_bin,
+    vehicle_type,
+    "price_bin",
+    "vehicle_type"
+  )
+)
+
+# Format labels
+powertrain_labels <- c(
+  "all" = "All",
+  "diesel" = "Diesel",
+  "cv" = "Gasoline",
+  "flex" = "Flex Fuel (E85)",
+  "hev" = "Hybrid Electric (HEV)",
+  "phev" = "Plug-In Hybrid Electric (PHEV)",
+  "bev" = "Battery Electric (BEV)",
+  "bev_tesla" = "BEV (Tesla)",
+  "bev_non_tesla" = "BEV (Non-Tesla)",
+  "fcev" = "Fuel Cell"
+)
+vehicle_type_labels <- c(
+  "all" = "All",
+  "car" = "Car",
+  "cuv" = "CUV",
+  "suv" = "SUV",
+  "pickup" = "Pickup",
+  "minivan" = "Minivan"
+)
+
+format_level <- function(level, var) {
+  case_when(
+    var == "powertrain" ~ powertrain_labels[level],
+    var == "vehicle_type" ~ vehicle_type_labels[level],
+    TRUE ~ level
+  )
+}
+
+percent_market <- percent_market %>%
+  mutate(
+    inventory_type = str_to_title(inventory_type),
+    group_level = format_level(group_level, group_var),
+    category_level = format_level(category_level, category_var)
+  )
+
+# Save
+write_csv(percent_market, here::here('data-raw', 'percent_market.csv'))
+usethis::use_data(percent_market, overwrite = TRUE)

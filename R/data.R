@@ -187,3 +187,39 @@
 #'
 #' head(vmt_annual_model)
 "vmt_annual_model"
+
+#' Market share percentages by variable pairs
+#'
+#' Market share (proportion) of vehicle listings for each combination of two
+#' grouping variables, computed across all listing years and inventory types.
+#' Six variable-pair combinations are included: powertrain by vehicle type,
+#' powertrain by price bin, vehicle type by powertrain, vehicle type by price
+#' bin, price bin by powertrain, and price bin by vehicle type.
+#'
+#' @format A tibble with 8 variables:
+#'
+#' Variable | Description
+#' -------- | -------------------------------------------
+#' `listing_year`   | Year of the vehicle listing (2018--2024)
+#' `inventory_type`  | Inventory type: "new" or "used"
+#' `group_var`      | Name of the grouping variable: "powertrain", "vehicle_type", or "price_bin"
+#' `group_level`    | Level of the grouping variable (e.g., "bev", "car", "$30k-$40k")
+#' `category_var`   | Name of the category variable: "powertrain", "vehicle_type", or "price_bin"
+#' `category_level` | Level of the category variable
+#' `n`              | Number of listings in this group-category combination
+#' `p`              | Proportion of listings within the group (sums to 1 within each listing year, inventory type, and group level)
+#'
+#' @docType data
+#'
+#' @usage data(percent_market)
+#'
+#' @keywords datasets
+#'
+#' @source Computed from vehicle listings data from
+#' \href{https://www.marketcheck.com/}{Marketcheck}.
+#'
+#' @examples
+#' data(percent_market)
+#'
+#' head(percent_market)
+"percent_market"
