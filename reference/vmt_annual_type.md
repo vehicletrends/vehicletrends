@@ -33,11 +33,11 @@ Computed from used vehicle listings data from
 data(vmt_annual_type)
 
 head(vmt_annual_type)
-#>   vehicle_type             powertrain vmt_annual
-#> 1          Car Battery Electric (BEV)   6311.074
-#> 2          CUV Battery Electric (BEV)   9254.098
-#> 3          Car               Gasoline   9455.110
-#> 4          SUV Battery Electric (BEV)   6173.904
-#> 5          CUV               Gasoline  10826.925
-#> 6      Minivan               Gasoline  10401.421
+#>               powertrain vehicle_type vmt_annual
+#> 1 Battery Electric (BEV)          CUV   9254.098
+#> 2 Battery Electric (BEV)          Car   6311.074
+#> 3 Battery Electric (BEV)      Minivan   5675.074
+#> 4 Battery Electric (BEV)       Pickup   8346.890
+#> 5 Battery Electric (BEV)          SUV   6173.904
+#> 6                 Diesel          CUV  10350.614
 ```

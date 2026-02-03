@@ -65,120 +65,6 @@
 <p>This article provides detailed data dictionaries and previews for
 every dataset in the vehicletrends package.</p>
 <div class="section level2">
-<h2 id="depreciation">
-<code>depreciation</code><a class="anchor" aria-label="anchor" href="#depreciation"></a>
-</h2>
-<p>Retention rate (price / MSRP) quantiles for used vehicles, computed
-at 3-month age bins from vehicle listings data. Only used vehicles with
-valid price and MSRP values are included, with ages ranging from 12 to
-180 months (15 years). Quantiles are provided at the 25th, 50th, and
-75th percentiles across various groupings of powertrain and vehicle
-type.</p>
-<table class="table">
-<colgroup>
-<col width="18%">
-<col width="81%">
-</colgroup>
-<thead><tr class="header">
-<th align="left">Variable</th>
-<th align="left">Description</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td align="left"><code>age_bin</code></td>
-<td align="left">Midpoint of 3-month age bin in months (e.g., 13.5,
-16.5, …, up to 180)</td>
-</tr>
-<tr class="even">
-<td align="left"><code>powertrain</code></td>
-<td align="left">Powertrain category: “All”, “Gasoline”, “Battery
-Electric (BEV)”, “BEV (Tesla)”, “BEV (Non-Tesla)”, “Hybrid Electric
-(HEV)”, “Plug-In Hybrid Electric (PHEV)”, “Diesel”, “Flex Fuel
-(E85)”</td>
-</tr>
-<tr class="odd">
-<td align="left"><code>vehicle_type</code></td>
-<td align="left">Vehicle type: “All”, “Car”, “CUV”, “SUV”, “Pickup”,
-“Minivan”</td>
-</tr>
-<tr class="even">
-<td align="left"><code>quantile</code></td>
-<td align="left">Quantile level (25, 50, or 75)</td>
-</tr>
-<tr class="odd">
-<td align="left"><code>rr</code></td>
-<td align="left">Retention rate (price / MSRP) at the given
-quantile</td>
-</tr>
-</tbody>
-</table>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">depreciation</span>, <span class="fl">10</span><span class="op">)</span></span>
-<span><span class="co">#&gt;    age_bin powertrain vehicle_type quantile        rr</span></span>
-<span><span class="co">#&gt; 1     13.5        All          All       25 0.8073291</span></span>
-<span><span class="co">#&gt; 2     13.5        All          All       50 0.9427215</span></span>
-<span><span class="co">#&gt; 3     13.5        All          All       75 1.0860465</span></span>
-<span><span class="co">#&gt; 4     16.5        All          All       25 0.7600114</span></span>
-<span><span class="co">#&gt; 5     16.5        All          All       50 0.9012899</span></span>
-<span><span class="co">#&gt; 6     16.5        All          All       75 1.0452036</span></span>
-<span><span class="co">#&gt; 7     19.5        All          All       25 0.6969381</span></span>
-<span><span class="co">#&gt; 8     19.5        All          All       50 0.8365147</span></span>
-<span><span class="co">#&gt; 9     19.5        All          All       75 1.0007048</span></span>
-<span><span class="co">#&gt; 10    22.5        All          All       25 0.6918902</span></span></code></pre></div>
-</div>
-<div class="section level2">
-<h2 id="registrations">
-<code>registrations</code><a class="anchor" aria-label="anchor" href="#registrations"></a>
-</h2>
-<p>Annual vehicle registration counts by US state and powertrain type,
-scraped from the <a href="https://afdc.energy.gov/vehicle-registration" class="external-link">Alternative Fuels
-Data Center (AFDC)</a> for years 2016 through 2024.</p>
-<table class="table">
-<colgroup>
-<col width="18%">
-<col width="81%">
-</colgroup>
-<thead><tr class="header">
-<th align="left">Variable</th>
-<th align="left">Description</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td align="left"><code>year</code></td>
-<td align="left">Registration year (2016–2024)</td>
-</tr>
-<tr class="even">
-<td align="left"><code>state</code></td>
-<td align="left">US state name (e.g., “Alabama”, “California”)</td>
-</tr>
-<tr class="odd">
-<td align="left"><code>powertrain</code></td>
-<td align="left">Fuel/powertrain type (e.g., “Battery Electric (BEV)”,
-“Diesel”, “Gasoline”, “Hybrid Electric (HEV)”, “Plug-In Hybrid Electric
-(PHEV)”, “Biodiesel”, “Compressed Natural Gas (CNG)”, “Ethanol/Flex Fuel
-(E85)”, “Fuel Cell”, “Hydrogen”, “Methanol”, “Propane”)</td>
-</tr>
-<tr class="even">
-<td align="left"><code>count</code></td>
-<td align="left">Number of registered vehicles</td>
-</tr>
-</tbody>
-</table>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">registrations</span>, <span class="fl">10</span><span class="op">)</span></span>
-<span><span class="co">#&gt;    year   state                     powertrain   count</span></span>
-<span><span class="co">#&gt; 1  2016 Alabama         Battery Electric (BEV)     500</span></span>
-<span><span class="co">#&gt; 2  2016 Alabama                      Biodiesel       0</span></span>
-<span><span class="co">#&gt; 3  2016 Alabama   Compressed Natural Gas (CNG)   20100</span></span>
-<span><span class="co">#&gt; 4  2016 Alabama                         Diesel  126500</span></span>
-<span><span class="co">#&gt; 5  2016 Alabama                Flex Fuel (E85)  428300</span></span>
-<span><span class="co">#&gt; 6  2016 Alabama                      Fuel Cell       0</span></span>
-<span><span class="co">#&gt; 7  2016 Alabama                       Gasoline 3777300</span></span>
-<span><span class="co">#&gt; 8  2016 Alabama          Hybrid Electric (HEV)   29100</span></span>
-<span><span class="co">#&gt; 9  2016 Alabama                       Methanol       0</span></span>
-<span><span class="co">#&gt; 10 2016 Alabama Plug-In Hybrid Electric (PHEV)     900</span></span></code></pre></div>
-</div>
-<div class="section level2">
 <h2 id="vmt_age">
 <code>vmt_age</code><a class="anchor" aria-label="anchor" href="#vmt_age"></a>
 </h2>
@@ -224,7 +110,7 @@ Electric (BEV)”, “BEV (Tesla)”, “BEV (Non-Tesla)”, “Hybrid Electric
 </tr>
 </tbody>
 </table>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">vmt_age</span>, <span class="fl">10</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    age_bin powertrain vehicle_type quantile       miles</span></span>
 <span><span class="co">#&gt; 1      1.5        All          All       25    6.661913</span></span>
@@ -279,7 +165,7 @@ Electric (BEV)”, “BEV (Tesla)”, “BEV (Non-Tesla)”, “Hybrid Electric
 </tr>
 </tbody>
 </table>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">vmt_daily</span>, <span class="fl">10</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    powertrain vehicle_type quantile     miles</span></span>
 <span><span class="co">#&gt; 1         All          All        1  2.744988</span></span>
@@ -328,19 +214,19 @@ listings; the slope coefficient represents the estimated annual VMT.</p>
 </tr>
 </tbody>
 </table>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">vmt_annual_type</span>, <span class="fl">10</span><span class="op">)</span></span>
-<span><span class="co">#&gt;    vehicle_type             powertrain vmt_annual</span></span>
-<span><span class="co">#&gt; 1           Car Battery Electric (BEV)   6311.074</span></span>
-<span><span class="co">#&gt; 2           CUV Battery Electric (BEV)   9254.098</span></span>
-<span><span class="co">#&gt; 3           Car               Gasoline   9455.110</span></span>
-<span><span class="co">#&gt; 4           SUV Battery Electric (BEV)   6173.904</span></span>
-<span><span class="co">#&gt; 5           CUV               Gasoline  10826.925</span></span>
-<span><span class="co">#&gt; 6       Minivan               Gasoline  10401.421</span></span>
-<span><span class="co">#&gt; 7        Pickup               Gasoline  11279.688</span></span>
-<span><span class="co">#&gt; 8           SUV               Gasoline  10541.941</span></span>
-<span><span class="co">#&gt; 9           Car                 Diesel  10157.129</span></span>
-<span><span class="co">#&gt; 10          CUV                 Diesel  10350.614</span></span></code></pre></div>
+<span><span class="co">#&gt;                powertrain vehicle_type vmt_annual</span></span>
+<span><span class="co">#&gt; 1  Battery Electric (BEV)          CUV   9254.098</span></span>
+<span><span class="co">#&gt; 2  Battery Electric (BEV)          Car   6311.074</span></span>
+<span><span class="co">#&gt; 3  Battery Electric (BEV)      Minivan   5675.074</span></span>
+<span><span class="co">#&gt; 4  Battery Electric (BEV)       Pickup   8346.890</span></span>
+<span><span class="co">#&gt; 5  Battery Electric (BEV)          SUV   6173.904</span></span>
+<span><span class="co">#&gt; 6                  Diesel          CUV  10350.614</span></span>
+<span><span class="co">#&gt; 7                  Diesel          Car  10157.129</span></span>
+<span><span class="co">#&gt; 8                  Diesel      Minivan   5641.567</span></span>
+<span><span class="co">#&gt; 9                  Diesel       Pickup  12510.755</span></span>
+<span><span class="co">#&gt; 10                 Diesel          SUV  11291.680</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="vmt_annual_model">
@@ -389,19 +275,208 @@ filtered to positive annual VMT values only.</p>
 </tr>
 </tbody>
 </table>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">vmt_annual_model</span>, <span class="fl">10</span><span class="op">)</span></span>
-<span><span class="co">#&gt;          make     model vehicle_type                     powertrain vmt_annual</span></span>
-<span><span class="co">#&gt; 1       Lexus   RX PHEV          CUV Plug-In Hybrid Electric (PHEV)   6403.802</span></span>
-<span><span class="co">#&gt; 2   Chevrolet   Venture      Minivan                       Gasoline  16719.519</span></span>
-<span><span class="co">#&gt; 3       Honda  Prologue          CUV         Battery Electric (BEV)   3943.976</span></span>
-<span><span class="co">#&gt; 4        Ford    Escape          CUV Plug-In Hybrid Electric (PHEV)   7705.681</span></span>
-<span><span class="co">#&gt; 5       Lexus TX Hybrid          CUV          Hybrid Electric (HEV)   7951.909</span></span>
-<span><span class="co">#&gt; 6       Mazda      CX-5          CUV                         Diesel  11223.632</span></span>
-<span><span class="co">#&gt; 7         Kia       EV9          CUV         Battery Electric (BEV)   7286.152</span></span>
-<span><span class="co">#&gt; 8  Alfa Romeo    Tonale          CUV Plug-In Hybrid Electric (PHEV)   2678.829</span></span>
-<span><span class="co">#&gt; 9   Chevrolet Blazer EV          CUV         Battery Electric (BEV)   3221.611</span></span>
-<span><span class="co">#&gt; 10        BMW        i5          Car         Battery Electric (BEV)   4133.829</span></span></code></pre></div>
+<span><span class="co">#&gt;          make               model                     powertrain vehicle_type</span></span>
+<span><span class="co">#&gt; 1       Acura                 MDX                       Gasoline          CUV</span></span>
+<span><span class="co">#&gt; 2       Acura                 RDX                       Gasoline          CUV</span></span>
+<span><span class="co">#&gt; 3       Acura                  TL                       Gasoline          Car</span></span>
+<span><span class="co">#&gt; 4       Acura                 TLX                       Gasoline          Car</span></span>
+<span><span class="co">#&gt; 5  Alfa Romeo              Tonale Plug-In Hybrid Electric (PHEV)          CUV</span></span>
+<span><span class="co">#&gt; 6        Audi                  A3                         Diesel          Car</span></span>
+<span><span class="co">#&gt; 7        Audi            A3 Sedan                         Diesel          Car</span></span>
+<span><span class="co">#&gt; 8        Audi A3 Sportback e-tron Plug-In Hybrid Electric (PHEV)          Car</span></span>
+<span><span class="co">#&gt; 9        Audi                  A4                Flex Fuel (E85)          Car</span></span>
+<span><span class="co">#&gt; 10       Audi                  A4                       Gasoline          Car</span></span>
+<span><span class="co">#&gt;    vmt_annual</span></span>
+<span><span class="co">#&gt; 1   11439.057</span></span>
+<span><span class="co">#&gt; 2   10757.562</span></span>
+<span><span class="co">#&gt; 3    8313.543</span></span>
+<span><span class="co">#&gt; 4   11357.799</span></span>
+<span><span class="co">#&gt; 5    2678.829</span></span>
+<span><span class="co">#&gt; 6    9029.751</span></span>
+<span><span class="co">#&gt; 7   10771.148</span></span>
+<span><span class="co">#&gt; 8    8687.849</span></span>
+<span><span class="co">#&gt; 9    9907.146</span></span>
+<span><span class="co">#&gt; 10   9203.896</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="depreciation">
+<code>depreciation</code><a class="anchor" aria-label="anchor" href="#depreciation"></a>
+</h2>
+<p>Retention rate (price / MSRP) quantiles for used vehicles, computed
+at 3-month age bins from vehicle listings data. Only used vehicles with
+valid price and MSRP values are included, with ages ranging from 12 to
+180 months (15 years). Quantiles are provided at the 25th, 50th, and
+75th percentiles across various groupings of powertrain and vehicle
+type.</p>
+<table class="table">
+<colgroup>
+<col width="18%">
+<col width="81%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">Variable</th>
+<th align="left">Description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>age_bin</code></td>
+<td align="left">Midpoint of 3-month age bin in months (e.g., 13.5,
+16.5, …, up to 180)</td>
+</tr>
+<tr class="even">
+<td align="left"><code>powertrain</code></td>
+<td align="left">Powertrain category: “All”, “Gasoline”, “Battery
+Electric (BEV)”, “BEV (Tesla)”, “BEV (Non-Tesla)”, “Hybrid Electric
+(HEV)”, “Plug-In Hybrid Electric (PHEV)”, “Diesel”, “Flex Fuel
+(E85)”</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>vehicle_type</code></td>
+<td align="left">Vehicle type: “All”, “Car”, “CUV”, “SUV”, “Pickup”,
+“Minivan”</td>
+</tr>
+<tr class="even">
+<td align="left"><code>quantile</code></td>
+<td align="left">Quantile level (25, 50, or 75)</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>rr</code></td>
+<td align="left">Retention rate (price / MSRP) at the given
+quantile</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">depreciation</span>, <span class="fl">10</span><span class="op">)</span></span>
+<span><span class="co">#&gt;    age_bin powertrain vehicle_type quantile        rr</span></span>
+<span><span class="co">#&gt; 1     13.5        All          All       25 0.8073291</span></span>
+<span><span class="co">#&gt; 2     13.5        All          All       50 0.9427215</span></span>
+<span><span class="co">#&gt; 3     13.5        All          All       75 1.0860465</span></span>
+<span><span class="co">#&gt; 4     16.5        All          All       25 0.7600114</span></span>
+<span><span class="co">#&gt; 5     16.5        All          All       50 0.9012899</span></span>
+<span><span class="co">#&gt; 6     16.5        All          All       75 1.0452036</span></span>
+<span><span class="co">#&gt; 7     19.5        All          All       25 0.6969381</span></span>
+<span><span class="co">#&gt; 8     19.5        All          All       50 0.8365147</span></span>
+<span><span class="co">#&gt; 9     19.5        All          All       75 1.0007048</span></span>
+<span><span class="co">#&gt; 10    22.5        All          All       25 0.6918902</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="dep_annual_type">
+<code>dep_annual_type</code><a class="anchor" aria-label="anchor" href="#dep_annual_type"></a>
+</h2>
+<p>Estimated annual depreciation rate for each combination of powertrain
+and vehicle type. Computed by fitting log-linear regressions of
+retention rate (price / MSRP) on vehicle age (in years) for used vehicle
+listings; the annual depreciation rate is <code>1 - exp(b)</code> where
+<code>b</code> is the age coefficient. Only used vehicles aged 1–10
+years with valid price and MSRP values are included.</p>
+<table class="table">
+<colgroup>
+<col width="18%">
+<col width="81%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">Variable</th>
+<th align="left">Description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>vehicle_type</code></td>
+<td align="left">Vehicle type: “Car”, “CUV”, “SUV”, “Pickup”,
+“Minivan”</td>
+</tr>
+<tr class="even">
+<td align="left"><code>powertrain</code></td>
+<td align="left">Powertrain category: “Gasoline”, “Battery Electric
+(BEV)”, “Hybrid Electric (HEV)”, “Plug-In Hybrid Electric (PHEV)”,
+“Diesel”, “Flex Fuel (E85)”</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>dep_annual</code></td>
+<td align="left">Estimated annual depreciation rate (proportion,
+0–1)</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dep_annual_type</span>, <span class="fl">10</span><span class="op">)</span></span>
+<span><span class="co">#&gt;                powertrain vehicle_type dep_annual</span></span>
+<span><span class="co">#&gt; 1  Battery Electric (BEV)          CUV 0.09482215</span></span>
+<span><span class="co">#&gt; 2  Battery Electric (BEV)          Car 0.10086081</span></span>
+<span><span class="co">#&gt; 3  Battery Electric (BEV)      Minivan 0.05807725</span></span>
+<span><span class="co">#&gt; 4  Battery Electric (BEV)       Pickup 0.04463694</span></span>
+<span><span class="co">#&gt; 5  Battery Electric (BEV)          SUV 0.02958732</span></span>
+<span><span class="co">#&gt; 6         Flex Fuel (E85)          CUV 0.06405950</span></span>
+<span><span class="co">#&gt; 7         Flex Fuel (E85)          Car 0.05714146</span></span>
+<span><span class="co">#&gt; 8         Flex Fuel (E85)      Minivan 0.07145816</span></span>
+<span><span class="co">#&gt; 9         Flex Fuel (E85)       Pickup 0.04531542</span></span>
+<span><span class="co">#&gt; 10        Flex Fuel (E85)          SUV 0.09706353</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="dep_annual_model">
+<code>dep_annual_model</code><a class="anchor" aria-label="anchor" href="#dep_annual_model"></a>
+</h2>
+<p>Estimated annual depreciation rate for individual vehicle make/model
+combinations. Computed by fitting log-linear regressions of retention
+rate (price / MSRP) on vehicle age (in years) for used vehicle listings;
+the annual depreciation rate is <code>1 - exp(b)</code> where
+<code>b</code> is the age coefficient. Only used vehicles aged 1–10
+years with valid price and MSRP values are included. Only make/model
+combinations with at least 100 listings are included, and results are
+filtered to positive depreciation rates only.</p>
+<table class="table">
+<colgroup>
+<col width="18%">
+<col width="81%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">Variable</th>
+<th align="left">Description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>make</code></td>
+<td align="left">Vehicle manufacturer (e.g., “Toyota”, “BMW”,
+“Mercedes-Benz”)</td>
+</tr>
+<tr class="even">
+<td align="left"><code>model</code></td>
+<td align="left">Vehicle model name (e.g., “Camry”, “RAV4”, “Model
+3”)</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>vehicle_type</code></td>
+<td align="left">Vehicle type: “Car”, “CUV”, “SUV”, “Pickup”,
+“Minivan”</td>
+</tr>
+<tr class="even">
+<td align="left"><code>powertrain</code></td>
+<td align="left">Powertrain category: “Gasoline”, “Battery Electric
+(BEV)”, “Hybrid Electric (HEV)”, “Plug-In Hybrid Electric (PHEV)”,
+“Diesel”, “Flex Fuel (E85)”</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>dep_annual</code></td>
+<td align="left">Estimated annual depreciation rate (proportion,
+0–1)</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dep_annual_model</span>, <span class="fl">10</span><span class="op">)</span></span>
+<span><span class="co">#&gt;     make        model      powertrain vehicle_type dep_annual</span></span>
+<span><span class="co">#&gt; 1  Acura          MDX        Gasoline          CUV 0.11100674</span></span>
+<span><span class="co">#&gt; 2  Acura          RDX        Gasoline          CUV 0.09427202</span></span>
+<span><span class="co">#&gt; 3  Acura           TL        Gasoline          Car 0.07883295</span></span>
+<span><span class="co">#&gt; 4  Acura          TLX        Gasoline          Car 0.07436195</span></span>
+<span><span class="co">#&gt; 5   Audi           A4 Flex Fuel (E85)          Car 0.06927778</span></span>
+<span><span class="co">#&gt; 6   Audi           A4        Gasoline          Car 0.09856575</span></span>
+<span><span class="co">#&gt; 7   Audi           A5 Flex Fuel (E85)          Car 0.05353769</span></span>
+<span><span class="co">#&gt; 8   Audi A5 Cabriolet Flex Fuel (E85)          Car 0.07067091</span></span>
+<span><span class="co">#&gt; 9   Audi     A5 Coupe Flex Fuel (E85)          Car 0.06737299</span></span>
+<span><span class="co">#&gt; 10  Audi      Allroad Flex Fuel (E85)          Car 0.08653034</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="percent_market">
@@ -462,7 +537,7 @@ within each listing year, inventory type, and group level)</td>
 </tr>
 </tbody>
 </table>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">percent_market</span>, <span class="fl">10</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    listing_year inventory_type  group_var            group_level category_var</span></span>
 <span><span class="co">#&gt; 1          2023            New powertrain Battery Electric (BEV) vehicle_type</span></span>
@@ -486,6 +561,136 @@ within each listing year, inventory type, and group level)</td>
 <span><span class="co">#&gt; 8          Pickup   38114 0.073820421</span></span>
 <span><span class="co">#&gt; 9          Pickup    7686 0.043579334</span></span>
 <span><span class="co">#&gt; 10            Car 1568596 0.222999993</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="percent_dealers">
+<code>percent_dealers</code><a class="anchor" aria-label="anchor" href="#percent_dealers"></a>
+</h2>
+<p>Percentage of dealers that have at least one listing for each
+combination of two grouping variables, computed across all listing years
+and inventory types. Three variable-pair combinations are included:
+powertrain by vehicle type, powertrain by price bin, and vehicle type by
+price bin.</p>
+<table class="table">
+<colgroup>
+<col width="18%">
+<col width="81%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">Variable</th>
+<th align="left">Description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>listing_year</code></td>
+<td align="left">Year of the vehicle listing (2018–2024)</td>
+</tr>
+<tr class="even">
+<td align="left"><code>inventory_type</code></td>
+<td align="left">Inventory type: “New” or “Used”</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>group_var</code></td>
+<td align="left">Name of the grouping variable: “powertrain”,
+“vehicle_type”, or “price_bin”</td>
+</tr>
+<tr class="even">
+<td align="left"><code>group_level</code></td>
+<td align="left">Level of the grouping variable (e.g., “Gasoline”,
+“Car”, “$30k-$40k”)</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>category_var</code></td>
+<td align="left">Name of the category variable: “powertrain”,
+“vehicle_type”, or “price_bin”</td>
+</tr>
+<tr class="even">
+<td align="left"><code>category_level</code></td>
+<td align="left">Level of the category variable</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>p</code></td>
+<td align="left">Proportion of dealers with at least one listing in this
+group-category combination</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">percent_dealers</span>, <span class="fl">10</span><span class="op">)</span></span>
+<span><span class="co">#&gt;    listing_year inventory_type  group_var group_level category_var</span></span>
+<span><span class="co">#&gt; 1          2018           Used powertrain    Gasoline vehicle_type</span></span>
+<span><span class="co">#&gt; 2          2021           Used powertrain    Gasoline vehicle_type</span></span>
+<span><span class="co">#&gt; 3          2019           Used powertrain    Gasoline vehicle_type</span></span>
+<span><span class="co">#&gt; 4          2020           Used powertrain    Gasoline vehicle_type</span></span>
+<span><span class="co">#&gt; 5          2020           Used powertrain    Gasoline vehicle_type</span></span>
+<span><span class="co">#&gt; 6          2019           Used powertrain    Gasoline vehicle_type</span></span>
+<span><span class="co">#&gt; 7          2021           Used powertrain    Gasoline vehicle_type</span></span>
+<span><span class="co">#&gt; 8          2018           Used powertrain    Gasoline vehicle_type</span></span>
+<span><span class="co">#&gt; 9          2018           Used powertrain    Gasoline vehicle_type</span></span>
+<span><span class="co">#&gt; 10         2020           Used powertrain    Gasoline vehicle_type</span></span>
+<span><span class="co">#&gt;    category_level         p</span></span>
+<span><span class="co">#&gt; 1          Pickup 0.8387126</span></span>
+<span><span class="co">#&gt; 2          Pickup 0.7811082</span></span>
+<span><span class="co">#&gt; 3          Pickup 0.8406557</span></span>
+<span><span class="co">#&gt; 4          Pickup 0.8123635</span></span>
+<span><span class="co">#&gt; 5             Car 0.9530050</span></span>
+<span><span class="co">#&gt; 6             Car 0.9492858</span></span>
+<span><span class="co">#&gt; 7             Car 0.9410631</span></span>
+<span><span class="co">#&gt; 8             Car 0.9576325</span></span>
+<span><span class="co">#&gt; 9             CUV 0.9225687</span></span>
+<span><span class="co">#&gt; 10            CUV 0.9220349</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="registrations">
+<code>registrations</code><a class="anchor" aria-label="anchor" href="#registrations"></a>
+</h2>
+<p>Annual vehicle registration counts by US state and powertrain type,
+scraped from the <a href="https://afdc.energy.gov/vehicle-registration" class="external-link">Alternative Fuels
+Data Center (AFDC)</a> for years 2016 through 2024.</p>
+<table class="table">
+<colgroup>
+<col width="18%">
+<col width="81%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">Variable</th>
+<th align="left">Description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>year</code></td>
+<td align="left">Registration year (2016–2024)</td>
+</tr>
+<tr class="even">
+<td align="left"><code>state</code></td>
+<td align="left">US state name (e.g., “Alabama”, “California”)</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>powertrain</code></td>
+<td align="left">Fuel/powertrain type (e.g., “Battery Electric (BEV)”,
+“Diesel”, “Gasoline”, “Hybrid Electric (HEV)”, “Plug-In Hybrid Electric
+(PHEV)”, “Biodiesel”, “Compressed Natural Gas (CNG)”, “Ethanol/Flex Fuel
+(E85)”, “Fuel Cell”, “Hydrogen”, “Methanol”, “Propane”)</td>
+</tr>
+<tr class="even">
+<td align="left"><code>count</code></td>
+<td align="left">Number of registered vehicles</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">registrations</span>, <span class="fl">10</span><span class="op">)</span></span>
+<span><span class="co">#&gt;    year   state                     powertrain   count</span></span>
+<span><span class="co">#&gt; 1  2016 Alabama         Battery Electric (BEV)     500</span></span>
+<span><span class="co">#&gt; 2  2016 Alabama                      Biodiesel       0</span></span>
+<span><span class="co">#&gt; 3  2016 Alabama   Compressed Natural Gas (CNG)   20100</span></span>
+<span><span class="co">#&gt; 4  2016 Alabama                         Diesel  126500</span></span>
+<span><span class="co">#&gt; 5  2016 Alabama                Flex Fuel (E85)  428300</span></span>
+<span><span class="co">#&gt; 6  2016 Alabama                      Fuel Cell       0</span></span>
+<span><span class="co">#&gt; 7  2016 Alabama                       Gasoline 3777300</span></span>
+<span><span class="co">#&gt; 8  2016 Alabama          Hybrid Electric (HEV)   29100</span></span>
+<span><span class="co">#&gt; 9  2016 Alabama                       Methanol       0</span></span>
+<span><span class="co">#&gt; 10 2016 Alabama Plug-In Hybrid Electric (PHEV)     900</span></span></code></pre></div>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside>

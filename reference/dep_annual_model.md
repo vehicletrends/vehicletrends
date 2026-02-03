@@ -1,21 +1,23 @@
-# Estimated annual VMT by make and model
+# Estimated annual depreciation rate by make and model
 
-Estimated annual vehicle miles traveled for individual vehicle
-make/model combinations. Computed by fitting OLS regressions of total
-odometer miles on vehicle age (in years) for used vehicle listings; the
-slope coefficient represents the estimated annual VMT. Only make/model
-combinations with at least 100 listings are included, and results are
-filtered to positive annual VMT values only.
+Estimated annual depreciation rate for individual vehicle make/model
+combinations. Computed by fitting log-linear regressions of retention
+rate (price / MSRP) on vehicle age (in years) for used vehicle listings;
+the annual depreciation rate is `1 - exp(b)` where `b` is the age
+coefficient. Only used vehicles aged 1–10 years with valid price and
+MSRP values are included. Only make/model combinations with at least 100
+listings are included, and results are filtered to positive depreciation
+rates only.
 
 ## Usage
 
 ``` r
-data(vmt_annual_model)
+data(dep_annual_model)
 ```
 
 ## Format
 
-A data frame with 548 rows and 5 variables:
+A data frame with 5 variables:
 
 |                |                                                                                                                                                   |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -24,7 +26,7 @@ A data frame with 548 rows and 5 variables:
 | `model`        | Vehicle model name (e.g., "Camry", "RAV4", "Model 3")                                                                                             |
 | `vehicle_type` | Vehicle type: "Car", "CUV", "SUV", "Pickup", "Minivan"                                                                                            |
 | `powertrain`   | Powertrain category: "Gasoline", "Battery Electric (BEV)", "Hybrid Electric (HEV)", "Plug-In Hybrid Electric (PHEV)", "Diesel", "Flex Fuel (E85)" |
-| `vmt_annual`   | Estimated annual vehicle miles traveled                                                                                                           |
+| `dep_annual`   | Estimated annual depreciation rate (proportion, 0–1)                                                                                              |
 
 ## Source
 
@@ -34,14 +36,14 @@ Computed from used vehicle listings data from
 ## Examples
 
 ``` r
-data(vmt_annual_model)
+data(dep_annual_model)
 
-head(vmt_annual_model)
-#>         make  model                     powertrain vehicle_type vmt_annual
-#> 1      Acura    MDX                       Gasoline          CUV  11439.057
-#> 2      Acura    RDX                       Gasoline          CUV  10757.562
-#> 3      Acura     TL                       Gasoline          Car   8313.543
-#> 4      Acura    TLX                       Gasoline          Car  11357.799
-#> 5 Alfa Romeo Tonale Plug-In Hybrid Electric (PHEV)          CUV   2678.829
-#> 6       Audi     A3                         Diesel          Car   9029.751
+head(dep_annual_model)
+#>    make model      powertrain vehicle_type dep_annual
+#> 1 Acura   MDX        Gasoline          CUV 0.11100674
+#> 2 Acura   RDX        Gasoline          CUV 0.09427202
+#> 3 Acura    TL        Gasoline          Car 0.07883295
+#> 4 Acura   TLX        Gasoline          Car 0.07436195
+#> 5  Audi    A4 Flex Fuel (E85)          Car 0.06927778
+#> 6  Audi    A4        Gasoline          Car 0.09856575
 ```
