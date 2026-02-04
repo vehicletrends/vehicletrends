@@ -14,9 +14,11 @@
 ^Meta$
 build.R
 data-raw
+data-local
 ^cran-comments\.md$
 ^\.travis\.yml$
 ^CRAN-RELEASE$
 ^CRAN-SUBMISSION$
 ^CLAUDE.md$
+^gemini.md$
 ^.claude$

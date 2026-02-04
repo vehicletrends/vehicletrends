@@ -427,3 +427,16 @@ select_bev_tesla <- function(df) {
     filter(powertrain == "bev") %>%
     mutate(powertrain = ifelse(tesla == 1, 'bev_tesla', 'bev_non_tesla'))
 }
+
+make_dealer_dict <- function() {
+  load_ds() %>%
+    distinct(dealer_id, state, latitude, longitude) %>%
+    collect()
+}
+
+get_coords_tract <- function() {
+  coords_tract <- read_parquet(here::here('data-raw', 'tract_dt.parquet')) %>%
+    select(lat_c, lng_c, GEOID) %>%
+    unique()
+  return(coords_tract)
+}

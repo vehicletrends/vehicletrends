@@ -4,7 +4,7 @@
 .Ruserdata
 .DS_Store
 .vscode
-data_local
+data-local
 listings.parquet
 docs
 doc
@@ -12,3 +12,4 @@ Meta
 .idea
 .Rproj.user
 CLAUDE.md
+gemini.md
