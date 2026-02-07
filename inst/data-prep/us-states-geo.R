@@ -63,7 +63,7 @@ for (fips in state_fips) {
 tract_sf <- bind_rows(all_tracts_list)
 
 # Compute centroids and extract coordinates
-tract_dt <- tract_sf %>%
+tract_centroids <- tract_sf %>%
   st_centroid() %>%
   mutate(
     lat_c = st_coordinates(geometry)[, "Y"],
@@ -75,6 +75,6 @@ tract_dt <- tract_sf %>%
 
 # Save to data-raw as CSV
 data.table::fwrite(
-  tract_dt,
-  here::here("data-raw", "tract_dt.csv")
+  tract_centroids,
+  here::here("data-raw", "tract_centroids.csv")
 )

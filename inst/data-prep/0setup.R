@@ -434,9 +434,13 @@ make_dealer_dict <- function() {
     collect()
 }
 
+get_coords_dealer <- function() {
+  make_dealer_dict() %>%
+    select(dealer_id, lat_d = latitude, lng_d = longitude) %>%
+    distinct() %>%
+    as.data.table()
+}
+
 get_coords_tract <- function() {
-  coords_tract <- read_parquet(here::here('data-raw', 'tract_dt.parquet')) %>%
-    select(lat_c, lng_c, GEOID) %>%
-    unique()
-  return(coords_tract)
+  return(read_parquet(here::here('data', 'tract_dt.parquet')))
 }

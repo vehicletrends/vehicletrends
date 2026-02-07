@@ -175,10 +175,8 @@ process_tract <- function(i, p = NULL) {
 time_thresholds <- c(30, 60, 90) # minutes
 distance_filters <- time_thresholds * 1.6 * 1.5
 
-# Format the tesla data
-coords_dealer <- get_all_dealer_coords()
-
-# Format census tract data
+# Get coordinates for dealers and census tracts
+coords_dealer <- get_coords_dealer()
 coords_tract <- get_coords_tract()
 
 # Parameters
