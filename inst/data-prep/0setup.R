@@ -146,7 +146,7 @@ raw_data_filters <- function(ds) {
 }
 
 load_ds <- function() {
-  ds <- open_dataset(here::here('data-raw', 'listings.parquet')) %>%
+  ds <- open_dataset(here::here('data-local', 'listings.parquet')) %>%
     filter(!is.na(powertrain)) %>%
     filter(!is.na(vehicle_type))
   return(ds)

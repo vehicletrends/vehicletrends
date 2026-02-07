@@ -1,549 +1,566 @@
 make,model,powertrain,vehicle_type,vmt_annual
-Acura,MDX,Gasoline,CUV,11439.056627626223
-Acura,RDX,Gasoline,CUV,10757.561955844341
-Acura,TL,Gasoline,Car,8313.54278208061
-Acura,TLX,Gasoline,Car,11357.799427246257
-Alfa Romeo,Tonale,Plug-In Hybrid Electric (PHEV),CUV,2678.8294865604894
-Audi,A3,Diesel,Car,9029.750621713272
-Audi,A3 Sedan,Diesel,Car,10771.148233196285
-Audi,A3 Sportback e-tron,Plug-In Hybrid Electric (PHEV),Car,8687.848912406263
-Audi,A4,Flex Fuel (E85),Car,9907.146280790856
-Audi,A4,Gasoline,Car,9203.89613094214
-Audi,A5,Flex Fuel (E85),Car,8705.74354400027
-Audi,A5 Cabriolet,Flex Fuel (E85),Car,7288.274625809485
-Audi,A5 Coupe,Flex Fuel (E85),Car,9727.008094512601
-Audi,A6,Diesel,Car,10998.818744284104
-Audi,A7,Diesel,Car,8436.07368539196
-Audi,A8,Diesel,Car,10914.617449722748
-Audi,Allroad,Flex Fuel (E85),Car,10184.754302964066
-Audi,Q3,Gasoline,CUV,10208.065239498075
-Audi,Q4 e-tron,Battery Electric (BEV),CUV,5498.366637871327
-Audi,Q5,Diesel,CUV,11758.556978576156
-Audi,Q5,Flex Fuel (E85),CUV,10091.560119605396
-Audi,Q5,Gasoline,CUV,10067.709935325434
-Audi,Q5,Hybrid Electric (HEV),CUV,9883.901155560074
-Audi,Q7,Diesel,CUV,9623.21509239035
-Audi,Q7,Gasoline,CUV,10951.955722186933
-Audi,Q8 e-tron,Battery Electric (BEV),CUV,4900.9123802936565
-Audi,e-tron,Battery Electric (BEV),CUV,6888.108043997934
-Audi,e-tron Sportback,Battery Electric (BEV),CUV,7842.403467582813
-BMW,3 Series,Diesel,Car,10248.4051528689
-BMW,3 Series,Gasoline,Car,8658.610900056916
-BMW,3 Series,Hybrid Electric (HEV),Car,9052.221277653538
-BMW,4 Series,Gasoline,Car,8503.232290671634
-BMW,5 Series,Diesel,Car,10565.5507398127
-BMW,5 Series,Gasoline,Car,9469.438050451297
-BMW,5 Series,Hybrid Electric (HEV),Car,9413.453811358819
-BMW,IX,Battery Electric (BEV),CUV,5238.4837685118955
-BMW,X1,Gasoline,CUV,10028.998850509288
-BMW,X3,Diesel,CUV,10721.425862692548
-BMW,X3,Gasoline,CUV,9678.809472050783
-BMW,X3,Hybrid Electric (HEV),CUV,8197.45059659873
-BMW,X5,Diesel,CUV,10300.323373347925
-BMW,X5,Gasoline,CUV,9944.49348894826
-BMW,X5,Plug-In Hybrid Electric (PHEV),CUV,9354.517693418566
-BMW,X7,Gasoline,SUV,10101.095435713405
-BMW,XM,Plug-In Hybrid Electric (PHEV),CUV,5467.1918738822105
-BMW,i3,Battery Electric (BEV),Car,5870.050861729137
-BMW,i3,Hybrid Electric (HEV),Car,7130.559710237192
-BMW,i4,Battery Electric (BEV),Car,7251.547752294862
-BMW,i5,Battery Electric (BEV),Car,4133.829161347475
-BMW,i7,Battery Electric (BEV),Car,3584.258756902929
-BMW,i8,Plug-In Hybrid Electric (PHEV),Car,4322.763220793112
-Buick,Enclave,Gasoline,CUV,11382.201310252516
-Buick,Encore,Gasoline,CUV,10071.484297366314
-Buick,Encore Gx,Gasoline,CUV,8442.743614529854
-Buick,Envision,Gasoline,CUV,10254.391319410057
-Buick,Lacrosse,Flex Fuel (E85),Car,8219.72421356395
-Buick,Lacrosse,Hybrid Electric (HEV),Car,9025.864499609586
-Buick,Lucerne,Flex Fuel (E85),Car,4331.134858549608
-Buick,Regal,Flex Fuel (E85),Car,7214.6825809348275
-Buick,Verano,Flex Fuel (E85),Car,6947.426666574917
-Cadillac,ATS,Flex Fuel (E85),Car,8363.258090148369
-Cadillac,CTS Sedan,Flex Fuel (E85),Car,7948.225116787501
-Cadillac,ELR,Plug-In Hybrid Electric (PHEV),Car,6628.8108751904665
-Cadillac,Escalade,Diesel,SUV,13222.898545420503
-Cadillac,Escalade,Flex Fuel (E85),SUV,8910.86648945498
-Cadillac,Escalade,Gasoline,SUV,10888.122765149246
-Cadillac,Escalade,Hybrid Electric (HEV),SUV,5044.333101980284
-Cadillac,Escalade ESV,Diesel,SUV,14805.059103938742
-Cadillac,Escalade ESV,Flex Fuel (E85),SUV,9645.31279711604
-Cadillac,Escalade ESV,Gasoline,SUV,11839.385429239814
-Cadillac,Lyriq,Battery Electric (BEV),CUV,5089.166339830377
-Cadillac,SRX,Flex Fuel (E85),CUV,7795.851428422933
-Cadillac,SRX,Gasoline,CUV,9194.076528927377
-Cadillac,Xt5,Gasoline,CUV,9432.781745654744
-Chevrolet,Avalanche,Flex Fuel (E85),Pickup,8264.406753426641
-Chevrolet,Avalanche,Gasoline,Pickup,7126.939256426209
-Chevrolet,Blazer,Flex Fuel (E85),CUV,11487.801577889764
-Chevrolet,Blazer,Gasoline,CUV,10156.477870764837
-Chevrolet,Blazer EV,Battery Electric (BEV),CUV,3221.6113919279396
-Chevrolet,Bolt EUV,Battery Electric (BEV),CUV,8680.743882310995
-Chevrolet,Bolt EV,Battery Electric (BEV),Car,4237.628015106418
-Chevrolet,Camaro,Gasoline,Car,7171.047037505504
-Chevrolet,Captiva Sport,Flex Fuel (E85),CUV,7117.674594553045
-Chevrolet,Colorado,Diesel,Pickup,13198.451422046572
-Chevrolet,Colorado,Gasoline,Pickup,10007.292174248369
-Chevrolet,Corvette,Gasoline,Car,3631.3270005337636
-Chevrolet,Cruze,Diesel,Car,11940.33814798482
-Chevrolet,Cruze,Gasoline,Car,10372.0623996932
-Chevrolet,Equinox,Diesel,CUV,12848.992419743587
-Chevrolet,Equinox,Flex Fuel (E85),CUV,10897.217436864312
-Chevrolet,Equinox,Gasoline,CUV,10404.536184782732
-Chevrolet,HHR,Flex Fuel (E85),Minivan,4432.950960303072
-Chevrolet,HHR,Gasoline,Minivan,4561.677794501817
-Chevrolet,Impala,Flex Fuel (E85),Car,9149.7503015519
-Chevrolet,Impala,Gasoline,Car,8799.212184320355
-Chevrolet,Impala Limited,Flex Fuel (E85),Car,8503.487167410412
-Chevrolet,Malibu,Flex Fuel (E85),Car,8497.407598999802
-Chevrolet,Malibu,Gasoline,Car,9399.845397629377
-Chevrolet,Malibu,Hybrid Electric (HEV),Car,9239.53919332572
-Chevrolet,Silverado 1500,Diesel,Pickup,16631.32691844248
-Chevrolet,Silverado 1500,Flex Fuel (E85),Pickup,10472.994417283951
-Chevrolet,Silverado 1500,Gasoline,Pickup,11783.512568343769
-Chevrolet,Silverado 1500,Hybrid Electric (HEV),Pickup,7443.024832438478
-Chevrolet,Silverado 1500 LD,Gasoline,Pickup,11510.363510299747
-Chevrolet,Silverado 1500 Limited,Gasoline,Pickup,15473.160236969075
-Chevrolet,Silverado 2500hd,Diesel,Pickup,12427.538796929508
-Chevrolet,Silverado 2500hd,Flex Fuel (E85),Pickup,13060.171268147444
-Chevrolet,Silverado 2500hd,Gasoline,Pickup,10404.849816175934
-Chevrolet,Silverado 3500,Diesel,Pickup,9083.897947492784
-Chevrolet,Silverado 3500hd,Diesel,Pickup,13486.02364125831
-Chevrolet,Silverado 3500hd,Flex Fuel (E85),Pickup,9939.55572605798
-Chevrolet,Silverado Classic 2500hd,Diesel,Pickup,8785.556611716695
-Chevrolet,Sonic,Gasoline,Car,8750.84936027751
-Chevrolet,Spark,Battery Electric (BEV),Car,5136.353309321027
-Chevrolet,Suburban,Diesel,SUV,11862.403031798822
-Chevrolet,Suburban,Flex Fuel (E85),SUV,11655.775348384424
-Chevrolet,Suburban,Gasoline,SUV,12393.257818553626
-Chevrolet,Tahoe,Diesel,SUV,11425.410483765601
-Chevrolet,Tahoe,Flex Fuel (E85),SUV,10961.821344421543
-Chevrolet,Tahoe,Gasoline,SUV,12206.443286812455
-Chevrolet,Tahoe,Hybrid Electric (HEV),SUV,7389.80099696696
-Chevrolet,Trailblazer,Gasoline,CUV,10431.589016187141
-Chevrolet,Traverse,Gasoline,CUV,12237.803531479072
-Chevrolet,Trax,Flex Fuel (E85),CUV,9368.773881346277
-Chevrolet,Trax,Gasoline,CUV,11264.46785864623
-Chevrolet,Uplander,Flex Fuel (E85),Minivan,1851.3097722850498
-Chevrolet,Uplander,Gasoline,Minivan,4315.505697939189
-Chevrolet,Venture,Gasoline,Minivan,16719.51893777733
-Chevrolet,Volt,Plug-In Hybrid Electric (PHEV),Car,9376.073927680816
-Chrysler,200,Flex Fuel (E85),Car,8608.11499454924
-Chrysler,200,Gasoline,Car,10026.976270942427
-Chrysler,300,Flex Fuel (E85),Car,8745.26407282331
-Chrysler,300,Gasoline,Car,8978.84886746788
-Chrysler,PT Cruiser,Gasoline,Minivan,4393.247724161958
-Chrysler,Pacifica,Flex Fuel (E85),Minivan,11430.436212824032
-Chrysler,Pacifica,Gasoline,Minivan,10298.532405653703
-Chrysler,Pacifica Hybrid,Hybrid Electric (HEV),Minivan,10013.54954282567
-Chrysler,Town & Country,Flex Fuel (E85),Minivan,10274.56342618184
-Chrysler,Town & Country,Gasoline,Minivan,6790.395985253134
-Chrysler,Voyager,Gasoline,Minivan,11871.124456910055
-Dodge,Avenger,Flex Fuel (E85),Car,7718.992085953476
-Dodge,Avenger,Gasoline,Car,8261.104043091063
-Dodge,Caravan,Gasoline,Minivan,5577.547541196605
-Dodge,Challenger,Flex Fuel (E85),Car,7352.7536978641
-Dodge,Challenger,Gasoline,Car,7450.614146611681
-Dodge,Charger,Flex Fuel (E85),Car,9639.198479815299
-Dodge,Charger,Gasoline,Car,10864.145371011089
-Dodge,Dakota,Gasoline,Pickup,5892.736751527656
-Dodge,Dart,Gasoline,Car,9272.37415702324
-Dodge,Durango,Flex Fuel (E85),SUV,11836.37847766693
-Dodge,Durango,Gasoline,SUV,12173.220973928925
-Dodge,Grand Caravan,Flex Fuel (E85),Minivan,9598.142482341891
-Dodge,Grand Caravan,Gasoline,Minivan,7791.842347194343
-Dodge,Journey,Flex Fuel (E85),CUV,11230.89462799033
-Dodge,Journey,Gasoline,CUV,11262.712916061186
-Dodge,RAM 1500 Pickup,Flex Fuel (E85),Pickup,8379.93551005955
-Dodge,RAM 1500 Pickup,Gasoline,Pickup,7956.11095828875
-Dodge,RAM 1500 Pickup,Hybrid Electric (HEV),Pickup,5671.322189207583
-Dodge,RAM 2500 Pickup,Diesel,Pickup,9448.440901435672
-Dodge,RAM 2500 Pickup,Gasoline,Pickup,6494.788696753559
-Dodge,RAM 3500 Pickup,Diesel,Pickup,8744.935267508034
-Fiat,500e,Battery Electric (BEV),Car,5250.307194004619
-Fiat,500l,Gasoline,Minivan,8305.179788771575
-Ford,Bronco 4-Door,Gasoline,SUV,9167.825467342675
-Ford,Bronco Sport,Gasoline,CUV,12476.382274737673
-Ford,C-Max,Hybrid Electric (HEV),Minivan,9370.290916168715
-Ford,Crown Victoria,Flex Fuel (E85),Car,4168.755676605334
-Ford,Ecosport,Gasoline,CUV,9391.451288695967
-Ford,Edge,Gasoline,CUV,10801.021554177065
-Ford,Escape,Flex Fuel (E85),CUV,9628.306237160534
-Ford,Escape,Gasoline,CUV,10957.424861932423
-Ford,Escape,Hybrid Electric (HEV),CUV,9388.759311338492
-Ford,Escape,Plug-In Hybrid Electric (PHEV),CUV,7705.680648915657
-Ford,Excursion,Diesel,SUV,13410.880907397972
-Ford,Expedition,Flex Fuel (E85),SUV,9567.01154115637
-Ford,Expedition,Gasoline,SUV,12135.270846928246
-Ford,Explorer,Flex Fuel (E85),SUV,12344.722235980444
-Ford,Explorer,Gasoline,SUV,11576.785697645062
-Ford,Explorer,Hybrid Electric (HEV),SUV,11543.828169563627
-Ford,Explorer Sport Trac,Gasoline,Pickup,6889.184899040841
-Ford,F-150,Diesel,Pickup,15479.577224282102
-Ford,F-150,Flex Fuel (E85),Pickup,11379.04122325324
-Ford,F-150,Gasoline,Pickup,11911.599242726383
-Ford,F-150,Hybrid Electric (HEV),Pickup,19152.821519232726
-Ford,F-150 Lightning,Battery Electric (BEV),Pickup,8790.097262910567
-Ford,F-250 Super Duty,Diesel,Pickup,12410.424239174361
-Ford,F-250 Super Duty,Flex Fuel (E85),Pickup,11272.25254815434
-Ford,F-250 Super Duty,Gasoline,Pickup,9577.199791857796
-Ford,F-350 Super Duty,Diesel,Pickup,11668.238201005666
-Ford,F-350 Super Duty,Flex Fuel (E85),Pickup,10403.425119090563
-Ford,F-350 Super Duty,Gasoline,Pickup,9403.982627804171
-Ford,F-450 Super Duty,Diesel,Pickup,9955.918324574077
-Ford,Fiesta,Gasoline,Car,8701.852119816464
-Ford,Flex,Flex Fuel (E85),CUV,11454.498466318682
-Ford,Focus,Battery Electric (BEV),Car,4692.33994797034
-Ford,Focus,Flex Fuel (E85),Car,9041.76114774508
-Ford,Focus,Gasoline,Car,9246.086217028826
-Ford,Freestar,Gasoline,Minivan,1163.704257517527
-Ford,Fusion,Flex Fuel (E85),Car,6259.53957026398
-Ford,Fusion,Gasoline,Car,10194.250223188561
-Ford,Fusion,Hybrid Electric (HEV),Car,6796.57441724611
-Ford,Fusion Energi,Plug-In Hybrid Electric (PHEV),Car,11051.430308530515
-Ford,Fusion Hybrid,Hybrid Electric (HEV),Car,11327.90235640507
-Ford,Maverick,Gasoline,Pickup,12612.586575426707
-Ford,Mustang,Gasoline,Car,7001.057622760576
-Ford,Mustang Mach-E,Battery Electric (BEV),CUV,10696.85413140253
-Ford,Ranger,Gasoline,Pickup,8497.60145358353
-Ford,Taurus,Flex Fuel (E85),Car,11112.405178077275
-Ford,Taurus,Gasoline,Car,8853.910976916814
-Ford,Transit Connect,Gasoline,Minivan,11395.107536986492
-GMC,Acadia,Gasoline,CUV,11865.840929612954
-GMC,Canyon,Diesel,Pickup,12597.088170098139
-GMC,Canyon,Gasoline,Pickup,10167.33416316929
-GMC,Envoy,Gasoline,SUV,7090.086263636523
-GMC,Hummer EV,Battery Electric (BEV),Pickup,5013.504117923699
-GMC,Hummer EV,Battery Electric (BEV),SUV,3628.190100233249
-GMC,Sierra 1500,Diesel,Pickup,16592.72035957822
-GMC,Sierra 1500,Flex Fuel (E85),Pickup,10159.020658820999
-GMC,Sierra 1500,Gasoline,Pickup,11755.282748150472
-GMC,Sierra 1500,Hybrid Electric (HEV),Pickup,10796.451413017088
-GMC,Sierra 1500 Denali,Diesel,Pickup,15121.687050698947
-GMC,Sierra 1500 Denali,Gasoline,Pickup,12593.739198252877
-GMC,Sierra 2500 Denali HD,Diesel,Pickup,13407.70345081549
-GMC,Sierra 2500hd,Diesel,Pickup,12515.539391997407
-GMC,Sierra 2500hd,Flex Fuel (E85),Pickup,13187.304615852367
-GMC,Sierra 2500hd,Gasoline,Pickup,7853.010440651905
-GMC,Sierra 3500,Diesel,Pickup,8206.092577093132
-GMC,Sierra 3500 Denali HD,Diesel,Pickup,12831.108442879236
-GMC,Sierra 3500hd,Diesel,Pickup,15008.140128194835
-GMC,Sierra Denali,Flex Fuel (E85),Pickup,10622.74528425988
-GMC,Terrain,Diesel,CUV,13705.516490701573
-GMC,Terrain,Flex Fuel (E85),CUV,10928.001737830507
-GMC,Terrain,Gasoline,CUV,10773.165601472778
-GMC,Yukon,Diesel,SUV,12576.554609696164
-GMC,Yukon,Flex Fuel (E85),SUV,9884.793497387598
-GMC,Yukon,Gasoline,SUV,12398.793887140786
-GMC,Yukon,Hybrid Electric (HEV),SUV,8303.45525437838
-GMC,Yukon XL,Diesel,SUV,17673.463509184654
-GMC,Yukon XL,Flex Fuel (E85),SUV,9630.852226618172
-GMC,Yukon XL,Gasoline,SUV,12721.7767408511
-Honda,Accord,Gasoline,Car,10725.345737958121
-Honda,Accord,Hybrid Electric (HEV),Car,12267.996910494878
-Honda,CR-V,Gasoline,CUV,10839.232230423078
-Honda,CR-V,Hybrid Electric (HEV),CUV,11767.791682075644
-Honda,CR-Z,Hybrid Electric (HEV),Car,9137.214308390023
-Honda,Civic,Gasoline,Car,10291.050945945544
-Honda,Civic,Hybrid Electric (HEV),Car,9117.687248934564
-Honda,Civic Hatchback,Gasoline,Car,10977.357537739788
-Honda,Clarity,Hybrid Electric (HEV),Car,10400.54396025177
-Honda,FIT,Gasoline,Car,9380.388835196894
-Honda,HR-V,Gasoline,CUV,10235.098401930709
-Honda,Insight,Hybrid Electric (HEV),Car,9316.4024427117
-Honda,Odyssey,Gasoline,Minivan,11880.686892515365
-Honda,Passport,Gasoline,SUV,10649.591283173575
-Honda,Pilot,Gasoline,CUV,12554.572492603455
-Honda,Prologue,Battery Electric (BEV),CUV,3943.975894824141
-Honda,Ridgeline,Gasoline,Pickup,11328.550544306932
-Hummer,H2,Gasoline,SUV,4908.839151335113
-Hummer,H3,Gasoline,SUV,6916.438621989543
-Hyundai,Accent,Gasoline,Car,8078.4308408270135
-Hyundai,Elantra,Gasoline,Car,9271.894492636698
-Hyundai,Ioniq,Battery Electric (BEV),Car,8990.274797914235
-Hyundai,Ioniq,Hybrid Electric (HEV),Car,12495.888030970416
-Hyundai,Ioniq 5,Battery Electric (BEV),CUV,10983.151280386228
-Hyundai,Ioniq 6,Battery Electric (BEV),Car,6019.1384817461285
-Hyundai,Kona,Gasoline,CUV,9939.215120969797
-Hyundai,Kona EV,Battery Electric (BEV),CUV,7580.131093958974
-Hyundai,Nexo,Fuel Cell,CUV,7271.856845914244
-Hyundai,Palisade,Gasoline,CUV,13560.009192601125
-Hyundai,Santa Cruz,Gasoline,Pickup,11079.468977658664
-Hyundai,Santa Fe,Gasoline,CUV,10085.701757449802
-Hyundai,Santa Fe,Plug-In Hybrid Electric (PHEV),CUV,13190.659955894082
-Hyundai,Sonata,Gasoline,Car,10026.74048891633
-Hyundai,Sonata Hybrid,Hybrid Electric (HEV),Car,9332.624934727222
-Hyundai,Sonata Plug-In Hybrid,Plug-In Hybrid Electric (PHEV),Car,10984.575122661969
-Hyundai,Tucson,Gasoline,CUV,9966.044540610663
-Infiniti,Q50,Gasoline,Car,10377.39823126087
-Infiniti,Q50,Hybrid Electric (HEV),Car,10932.752644981616
-Infiniti,QX,Gasoline,SUV,9607.460378993455
-Infiniti,Qx60,Gasoline,CUV,12030.65764699133
-Infiniti,Qx60,Hybrid Electric (HEV),CUV,10319.982486213195
-Infiniti,Qx80,Gasoline,SUV,12456.227327066423
-Jaguar,F-Pace,Diesel,CUV,10948.665668302345
-Jaguar,I-Pace,Battery Electric (BEV),CUV,7443.7837281198135
-Jaguar,XE,Diesel,Car,10382.120574564071
-Jaguar,XF,Diesel,Car,10187.309898301904
-Jeep,ALL-New Wrangler Unlimited,Gasoline,SUV,10493.479169678109
-Jeep,Cherokee,Flex Fuel (E85),SUV,10598.5402008876
-Jeep,Cherokee,Gasoline,SUV,11280.304018285015
-Jeep,Commander,Gasoline,SUV,5955.451498238399
-Jeep,Compass,Gasoline,CUV,10295.327329903072
-Jeep,Gladiator,Gasoline,Pickup,11009.945011885313
-Jeep,Grand Cherokee,Diesel,SUV,11511.152455953534
-Jeep,Grand Cherokee,Flex Fuel (E85),SUV,11065.574711446592
-Jeep,Grand Cherokee,Gasoline,SUV,10720.88973079436
-Jeep,Grand Cherokee,Hybrid Electric (HEV),SUV,5021.280688961164
-Jeep,Grand Cherokee L,Gasoline,SUV,10847.824679653148
-Jeep,Grand Cherokee Wk,Gasoline,SUV,17267.85252880866
-Jeep,Liberty,Gasoline,SUV,6718.044860743103
-Jeep,Patriot,Gasoline,CUV,9624.849086921453
-Jeep,Renegade,Flex Fuel (E85),CUV,10371.412243097746
-Jeep,Renegade,Gasoline,CUV,10996.801413582929
-Jeep,Wagoneer,Gasoline,SUV,18869.47335717254
-Jeep,Wrangler,Gasoline,SUV,8236.071769328037
-Jeep,Wrangler 4-Door,Diesel,SUV,8131.4116351557905
-Jeep,Wrangler 4-Door,Gasoline,SUV,10778.708974204877
-Jeep,Wrangler 4xe,Plug-In Hybrid Electric (PHEV),SUV,9692.045338177593
-Jeep,Wrangler Jk Unlimited,Gasoline,SUV,10130.374499544263
-Jeep,Wrangler Unlimited,Diesel,SUV,10038.77568884245
-Jeep,Wrangler Unlimited,Gasoline,SUV,9890.060968823194
-Jeep,Wrangler Unlimited,Hybrid Electric (HEV),SUV,10202.95613534671
-Kia,Carnival,Gasoline,Minivan,12488.32485743371
-Kia,EV9,Battery Electric (BEV),CUV,7286.15201928374
-Kia,Ev6,Battery Electric (BEV),CUV,11008.766581454245
-Kia,Forte,Gasoline,Car,10747.800822890971
-Kia,K5,Gasoline,Car,12322.662254007053
-Kia,Niro,Battery Electric (BEV),CUV,5655.564654763099
-Kia,Niro,Hybrid Electric (HEV),CUV,12942.750316214804
-Kia,Niro,Plug-In Hybrid Electric (PHEV),CUV,11736.397089475875
-Kia,Optima,Gasoline,Car,10087.023728223467
-Kia,Optima,Hybrid Electric (HEV),Car,10931.819540388371
-Kia,Optima,Plug-In Hybrid Electric (PHEV),Car,10927.011615572226
-Kia,Rondo,Gasoline,Minivan,4532.7880407270995
-Kia,Sedona,Gasoline,Minivan,10418.837422331277
-Kia,Sorento,Gasoline,CUV,11013.050854554273
-Kia,Sorento,Hybrid Electric (HEV),CUV,12774.147248172347
-Kia,Sorento,Plug-In Hybrid Electric (PHEV),CUV,12134.765186176213
-Kia,Soul,Battery Electric (BEV),Car,5834.976365448206
-Kia,Soul,Gasoline,Car,9523.040864479552
-Kia,Sportage,Gasoline,CUV,9840.51933133588
-Kia,Sportage,Hybrid Electric (HEV),CUV,11328.14155025582
-Kia,Telluride,Gasoline,CUV,15107.917840822858
-Land Rover,Defender,Gasoline,SUV,8791.591637951118
-Land Rover,Discovery,Diesel,CUV,11601.844288896282
-Land Rover,LR4,Gasoline,SUV,9841.570573038329
-Land Rover,Range Rover,Diesel,SUV,10548.320776077135
-Land Rover,Range Rover,Gasoline,SUV,9443.839618453836
-Land Rover,Range Rover,Plug-In Hybrid Electric (PHEV),SUV,9368.492318163728
-Land Rover,Range Rover Evoque,Plug-In Hybrid Electric (PHEV),CUV,8078.188472354638
-Land Rover,Range Rover Sport,Diesel,SUV,11125.058732126423
-Land Rover,Range Rover Sport,Flex Fuel (E85),SUV,9191.046673357261
-Land Rover,Range Rover Sport,Gasoline,SUV,9444.388566824839
-Land Rover,Range Rover Sport,Hybrid Electric (HEV),SUV,8651.791612538816
-Land Rover,Range Rover Sport,Plug-In Hybrid Electric (PHEV),SUV,9276.979901525037
-Land Rover,Range Rover Velar,Diesel,CUV,10328.1348377746
-Lexus,CT,Hybrid Electric (HEV),Car,10630.629401215749
-Lexus,ES,Gasoline,Car,9578.994433734226
-Lexus,ES Hybrid,Hybrid Electric (HEV),Car,9690.473943374767
-Lexus,GX,Gasoline,SUV,11603.683621792325
-Lexus,HS,Hybrid Electric (HEV),Car,7361.509258686533
-Lexus,IS,Gasoline,Car,9736.606554216158
-Lexus,LX,Gasoline,SUV,11496.630509762595
-Lexus,NX,Gasoline,CUV,9950.111954030244
-Lexus,NX Hybrid,Hybrid Electric (HEV),CUV,9029.657783848814
-Lexus,NX PHEV,Plug-In Hybrid Electric (PHEV),CUV,7306.377094781004
-Lexus,RX,Gasoline,CUV,10514.201556251817
-Lexus,RX,Hybrid Electric (HEV),CUV,10665.878586732868
-Lexus,RX Hybrid,Hybrid Electric (HEV),CUV,10175.768821929205
-Lexus,RX PHEV,Plug-In Hybrid Electric (PHEV),CUV,6403.802423584692
-Lexus,RZ,Battery Electric (BEV),CUV,3828.420753093831
-Lexus,TX Hybrid,Hybrid Electric (HEV),CUV,7951.9089420561595
-Lexus,UX Hybrid,Hybrid Electric (HEV),CUV,8465.805886011374
-Lincoln,Aviator,Plug-In Hybrid Electric (PHEV),CUV,9813.315961222668
-Lincoln,MKC,Gasoline,CUV,10859.105413567831
-Lincoln,MKX,Gasoline,CUV,10844.067645523004
-Lincoln,MKZ,Gasoline,Car,9404.903626706262
-Lincoln,MKZ,Hybrid Electric (HEV),Car,10057.992578304511
-Lincoln,Navigator,Flex Fuel (E85),SUV,9578.140916528757
-Lincoln,Navigator,Gasoline,SUV,11825.299181648736
-Lincoln,Town Car,Flex Fuel (E85),Car,2761.611148945141
-MINI,Cooper,Gasoline,Car,7206.106395511445
-MINI,Countryman,Gasoline,CUV,8732.020167069973
-MINI,Countryman,Plug-In Hybrid Electric (PHEV),CUV,8961.301808975282
-MINI,Hardtop 2 Door,Battery Electric (BEV),Car,5715.839154121161
-Mazda,CX-30,Diesel,CUV,8812.35488934262
-Mazda,CX-30,Gasoline,CUV,9878.825675749835
-Mazda,CX-5,Diesel,CUV,11223.632421044773
-Mazda,CX-5,Gasoline,CUV,11202.796051770378
-Mazda,CX-9,Gasoline,CUV,11335.560553192483
-Mazda,CX-90,Plug-In Hybrid Electric (PHEV),CUV,6236.128480647652
-Mazda,Mazda3,Gasoline,Car,10043.650966838175
-Mazda,Mazda5,Gasoline,Minivan,7496.829541429931
-Mazda,Mazda6,Gasoline,Car,10570.887387861063
-Mercedes-Benz,B-Class,Battery Electric (BEV),Minivan,5674.604027639758
-Mercedes-Benz,C-Class,Flex Fuel (E85),Car,5968.194961295476
-Mercedes-Benz,C-Class,Gasoline,Car,9141.232569393056
-Mercedes-Benz,C-Class,Plug-In Hybrid Electric (PHEV),Car,8672.925521440207
-Mercedes-Benz,C-Class Sedan,Gasoline,Car,8742.343726806374
-Mercedes-Benz,E-Class,Diesel,Car,8722.062579831601
-Mercedes-Benz,E-Class,Flex Fuel (E85),Car,8271.328571362292
-Mercedes-Benz,E-Class,Gasoline,Car,8628.59667739282
-Mercedes-Benz,E-Class,Hybrid Electric (HEV),Car,8767.660229467074
-Mercedes-Benz,EQB,Battery Electric (BEV),CUV,5739.356418349109
-Mercedes-Benz,EQE,Battery Electric (BEV),Car,6947.136119614893
-Mercedes-Benz,EQE SUV,Battery Electric (BEV),CUV,5092.442605798839
-Mercedes-Benz,EQS,Battery Electric (BEV),CUV,7225.456142380854
-Mercedes-Benz,G-Class,Gasoline,SUV,7204.56756255003
-Mercedes-Benz,GL-Class,Diesel,CUV,8547.233374562122
-Mercedes-Benz,GL-Class,Gasoline,CUV,9153.19893266004
-Mercedes-Benz,GLA-Class,Gasoline,CUV,9222.768532113088
-Mercedes-Benz,GLC,Gasoline,CUV,10020.087904354887
-Mercedes-Benz,GLC,Plug-In Hybrid Electric (PHEV),CUV,9127.688877642648
-Mercedes-Benz,GLC-Class,Gasoline,CUV,9261.633351845496
-Mercedes-Benz,GLC-Class,Plug-In Hybrid Electric (PHEV),CUV,8665.422116840375
-Mercedes-Benz,GLE,Gasoline,CUV,10144.189166278447
-Mercedes-Benz,GLE,Plug-In Hybrid Electric (PHEV),CUV,5821.288271439378
-Mercedes-Benz,GLE-Class,Diesel,CUV,11472.141943160937
-Mercedes-Benz,GLE-Class,Gasoline,CUV,10047.557302129802
-Mercedes-Benz,GLE-Class,Plug-In Hybrid Electric (PHEV),CUV,9779.033159196593
-Mercedes-Benz,GLK-Class,Diesel,CUV,8500.867684098936
-Mercedes-Benz,GLK-Class,Gasoline,CUV,8524.108521743407
-Mercedes-Benz,M-Class,Diesel,CUV,7663.405191039543
-Mercedes-Benz,M-Class,Gasoline,CUV,8829.226031307317
-Mercedes-Benz,R-Class,Diesel,CUV,8880.260217141822
-Mercedes-Benz,R-Class,Diesel,Minivan,5344.7444587990485
-Mercedes-Benz,R-Class,Gasoline,Minivan,5928.288023105405
-Mercedes-Benz,S-Class,Diesel,Car,5037.587021735033
-Mercedes-Benz,S-Class,Gasoline,Car,8266.517496310124
-Mercury,Grand Marquis,Flex Fuel (E85),Car,2915.1610275892385
-Mercury,Mariner,Hybrid Electric (HEV),CUV,5244.034931565979
-Mercury,Mountaineer,Gasoline,SUV,6602.947633974802
-Mitsubishi,Outlander,Gasoline,CUV,10413.210809413029
-Mitsubishi,Outlander,Hybrid Electric (HEV),CUV,11585.671609151468
-Mitsubishi,Outlander PHEV,Plug-In Hybrid Electric (PHEV),CUV,17412.964723901434
-Mitsubishi,Outlander Plug-In Hybrid,Plug-In Hybrid Electric (PHEV),CUV,9225.20100189367
-Mitsubishi,Outlander Sport,Gasoline,CUV,9843.731483374751
-Mitsubishi,i-MiEV,Battery Electric (BEV),Car,3269.2388047848044
-Nissan,Altima,Gasoline,Car,10093.05842376819
-Nissan,Altima Sedan,Gasoline,Car,8767.388968908808
-Nissan,Ariya,Battery Electric (BEV),CUV,6579.677394907596
-Nissan,Armada,Gasoline,SUV,11529.187136462766
-Nissan,Cube,Gasoline,Minivan,7138.017259691283
-Nissan,Frontier,Gasoline,Pickup,10273.113849265028
-Nissan,Juke,Gasoline,CUV,8979.246175199489
-Nissan,Kicks,Gasoline,CUV,11712.197346158873
-Nissan,Leaf,Battery Electric (BEV),Car,5594.452758613777
-Nissan,Maxima,Gasoline,Car,10274.429522823928
-Nissan,Murano,Gasoline,CUV,10379.832153737225
-Nissan,Pathfinder,Gasoline,CUV,11384.2436439847
-Nissan,Pathfinder Hybrid,Hybrid Electric (HEV),CUV,9460.997063566394
-Nissan,Quest,Gasoline,Minivan,9056.798162488214
-Nissan,Rogue,Gasoline,CUV,10198.780526660426
-Nissan,Rogue,Hybrid Electric (HEV),CUV,12054.50187713734
-Nissan,Rogue Select,Gasoline,CUV,10860.936656211135
-Nissan,Rogue Sport,Gasoline,CUV,10149.339929998561
-Nissan,Sentra,Gasoline,Car,9945.167362077329
-Nissan,Titan,Flex Fuel (E85),Pickup,6521.048813830657
-Nissan,Titan,Gasoline,Pickup,11106.04983502128
-Nissan,Titan XD,Diesel,Pickup,12223.3808736615
-Nissan,Versa Note,Gasoline,Car,9015.44873777455
-Nissan,Versa Sedan,Gasoline,Car,9868.240169129596
-Nissan,Xterra,Gasoline,SUV,9106.424571701926
-Polestar,2,Battery Electric (BEV),Car,3458.3696423006304
-Porsche,Cayenne,Diesel,CUV,11147.528037080769
-Porsche,Cayenne,Hybrid Electric (HEV),CUV,9275.914390736718
-Porsche,Cayenne,Plug-In Hybrid Electric (PHEV),CUV,10422.650969499962
-Porsche,Macan,Gasoline,CUV,9177.327195716216
-Porsche,Panamera,Hybrid Electric (HEV),Car,7642.570122105244
-Porsche,Taycan,Battery Electric (BEV),Car,5890.227665008506
-RAM,RAM 1500,Gasoline,Pickup,11620.375307095183
-RAM,RAM 1500,Hybrid Electric (HEV),Pickup,12167.37495953278
-RAM,RAM 1500 Classic,Flex Fuel (E85),Pickup,14741.18500250608
-RAM,RAM 1500 Classic,Gasoline,Pickup,13308.861655160605
-RAM,RAM 1500 Pickup,Diesel,Pickup,14351.990607648415
-RAM,RAM 1500 Pickup,Flex Fuel (E85),Pickup,10917.294078789786
-RAM,RAM 1500 Pickup,Gasoline,Pickup,12602.64937262857
-RAM,RAM 1500 Pickup,Hybrid Electric (HEV),Pickup,14332.272240134265
-RAM,RAM 2500 Pickup,Diesel,Pickup,13347.607896594178
-RAM,RAM 2500 Pickup,Gasoline,Pickup,12163.061041684106
-RAM,RAM 3500 Pickup,Diesel,Pickup,12887.778079935551
-Rivian,R1s,Battery Electric (BEV),SUV,7303.840790889181
-Rivian,R1t,Battery Electric (BEV),Pickup,8826.567311216457
-Saturn,VUE,Gasoline,CUV,5561.251251569837
-Saturn,VUE,Hybrid Electric (HEV),CUV,5735.777004696848
-Smart,Fortwo,Battery Electric (BEV),Car,3620.4572963353044
-Subaru,Ascent,Gasoline,CUV,13048.210713685887
-Subaru,Crosstrek,Gasoline,CUV,11400.792305555671
-Subaru,Crosstrek,Hybrid Electric (HEV),CUV,11866.980862663238
-Subaru,Forester,Gasoline,CUV,10423.166083716433
-Subaru,Impreza,Gasoline,Car,9801.341502148383
-Subaru,Legacy,Gasoline,Car,10435.669847775189
-Subaru,Outback,Gasoline,Car,11340.830930033319
-Subaru,Solterra,Battery Electric (BEV),CUV,9975.255591289171
-Subaru,WRX,Gasoline,Car,11338.557436574096
-Subaru,XV Crosstrek,Gasoline,CUV,10497.835576315723
-Subaru,XV Crosstrek,Hybrid Electric (HEV),CUV,9641.49769020478
-Tesla,Cybertruck,Battery Electric (BEV),Pickup,6195.021877802392
-Tesla,Model 3,Battery Electric (BEV),Car,7505.424980571817
-Tesla,Model S,Battery Electric (BEV),Car,8796.122451991594
-Tesla,Model X,Battery Electric (BEV),CUV,9375.688322168218
-Tesla,Model Y,Battery Electric (BEV),CUV,10483.4687529068
-Toyota,4runner,Gasoline,SUV,11915.538909902421
-Toyota,Avalon,Gasoline,Car,9382.54916973299
-Toyota,Avalon,Hybrid Electric (HEV),Car,10532.606007824801
-Toyota,C-Hr,Gasoline,CUV,12290.178484035783
-Toyota,Camry,Gasoline,Car,10171.52754848281
-Toyota,Camry,Hybrid Electric (HEV),Car,9832.410608567385
-Toyota,Corolla,Gasoline,Car,9375.559733760772
-Toyota,Corolla,Hybrid Electric (HEV),Car,14197.989143097637
-Toyota,FJ Cruiser,Gasoline,SUV,10230.89590756527
-Toyota,Highlander,Gasoline,CUV,11640.04996571202
-Toyota,Highlander,Hybrid Electric (HEV),CUV,11700.570009945697
-Toyota,Mirai,Fuel Cell,Car,9011.408822376741
-Toyota,Prius,Hybrid Electric (HEV),Car,10147.442654998453
-Toyota,Prius C,Hybrid Electric (HEV),Car,9719.231936092157
-Toyota,Prius Plug-In,Plug-In Hybrid Electric (PHEV),Car,8685.73467372459
-Toyota,Prius Prime,Plug-In Hybrid Electric (PHEV),Car,10540.930214198854
-Toyota,Prius V,Hybrid Electric (HEV),Car,12881.758673487435
-Toyota,Prius V,Hybrid Electric (HEV),Minivan,10695.03587974724
-Toyota,RAV4,Battery Electric (BEV),CUV,5685.235823812819
-Toyota,RAV4,Gasoline,CUV,10263.927425933976
-Toyota,RAV4,Hybrid Electric (HEV),CUV,11852.820552998743
-Toyota,Sequoia,Flex Fuel (E85),SUV,13821.502730167475
-Toyota,Sequoia,Gasoline,SUV,12720.498354967618
-Toyota,Sienna,Gasoline,Minivan,11001.027729387182
-Toyota,Sienna,Hybrid Electric (HEV),Minivan,14364.86345612371
-Toyota,Tacoma,Gasoline,Pickup,11178.252365064818
-Toyota,Tundra,Flex Fuel (E85),Pickup,12635.53990239179
-Toyota,Tundra,Gasoline,Pickup,11503.65673752694
-Toyota,Venza,Gasoline,CUV,9390.535195629895
-Toyota,Venza,Hybrid Electric (HEV),CUV,10549.617308870987
-Toyota,bZ4X,Battery Electric (BEV),CUV,6623.087965530073
-Volkswagen,Atlas,Gasoline,CUV,11896.68346372829
-Volkswagen,Beetle,Diesel,Car,8440.312454138133
-Volkswagen,E-Golf,Battery Electric (BEV),Car,6335.269470810928
-Volkswagen,Golf,Diesel,Car,9192.468301073603
-Volkswagen,Golf Sportwagen,Diesel,Car,11755.968039078278
-Volkswagen,ID.4,Battery Electric (BEV),CUV,9596.751045186229
-Volkswagen,Jetta,Diesel,Car,11515.934754368862
-Volkswagen,Jetta,Gasoline,Car,10113.400640214333
-Volkswagen,Jetta,Hybrid Electric (HEV),Car,7849.3421824481775
-Volkswagen,Jetta Sportwagen,Diesel,Car,10601.204528187114
-Volkswagen,Passat,Diesel,Car,10471.470812653639
-Volkswagen,Passat,Gasoline,Car,10092.109503559086
-Volkswagen,Routan,Flex Fuel (E85),Minivan,7365.706644578826
-Volkswagen,Routan,Gasoline,Minivan,6110.2457522877085
-Volkswagen,Taos,Gasoline,CUV,11305.018299476722
-Volkswagen,Tiguan,Gasoline,CUV,9626.728998202781
-Volkswagen,Touareg,Diesel,SUV,10865.012763474886
-Volkswagen,Touareg,Hybrid Electric (HEV),SUV,9931.802341976521
-Volkswagen,Touareg 2,Diesel,SUV,6526.687741875372
-Volkswagen,Touareg 2,Hybrid Electric (HEV),SUV,8898.920861620889
-Volvo,C40,Battery Electric (BEV),CUV,10070.09948088578
-Volvo,Xc40,Battery Electric (BEV),CUV,8356.62245878692
-Volvo,Xc60,Gasoline,CUV,10654.344819776912
-Volvo,Xc60,Hybrid Electric (HEV),CUV,8363.549748951416
-Volvo,Xc90,Gasoline,CUV,11020.407585380948
-Volvo,Xc90,Hybrid Electric (HEV),CUV,10150.903344353785
+Acura,MDX,Gasoline,CUV,11334.421334442852
+Acura,RDX,Gasoline,CUV,10640.250403805645
+Acura,TL,Gasoline,Car,8155.314969560939
+Acura,TLX,Gasoline,Car,11107.978004156856
+Alfa Romeo,Tonale,Plug-In Hybrid Electric (PHEV),CUV,7538.851755853624
+Audi,A3,Diesel,Car,8582.208720654271
+Audi,A3 Sedan,Diesel,Car,10542.386653007296
+Audi,A3 Sportback e-tron,Plug-In Hybrid Electric (PHEV),Car,8538.214920823948
+Audi,A4,Flex Fuel (E85),Car,9182.229740745157
+Audi,A4,Gasoline,Car,9070.911207143412
+Audi,A5,Flex Fuel (E85),Car,8032.276655446883
+Audi,A5 Cabriolet,Flex Fuel (E85),Car,6814.5495847068605
+Audi,A5 Coupe,Flex Fuel (E85),Car,9334.362640497331
+Audi,A6,Diesel,Car,10496.193155237579
+Audi,A7,Diesel,Car,8872.741215637265
+Audi,A8,Diesel,Car,10029.726918570426
+Audi,Allroad,Flex Fuel (E85),Car,9482.74776353522
+Audi,Q3,Gasoline,CUV,9900.509851405588
+Audi,Q4 e-tron,Battery Electric (BEV),CUV,8432.481509771707
+Audi,Q5,Diesel,CUV,10930.555521986684
+Audi,Q5,Flex Fuel (E85),CUV,9364.199183085235
+Audi,Q5,Gasoline,CUV,9837.982408385727
+Audi,Q5,Hybrid Electric (HEV),CUV,9869.746725725141
+Audi,Q7,Diesel,CUV,9517.778638416428
+Audi,Q7,Gasoline,CUV,10786.74542842281
+Audi,Q8 e-tron,Battery Electric (BEV),CUV,7229.527166631946
+Audi,e-tron,Battery Electric (BEV),CUV,7204.207836165374
+Audi,e-tron Gt,Battery Electric (BEV),Car,6699.1947469672705
+Audi,e-tron Sportback,Battery Electric (BEV),CUV,7126.379328758302
+BMW,3 Series,Diesel,Car,10079.677544869575
+BMW,3 Series,Gasoline,Car,8541.106647655077
+BMW,3 Series,Hybrid Electric (HEV),Car,8824.92938546848
+BMW,4 Series,Gasoline,Car,8355.434049762018
+BMW,5 Series,Diesel,Car,9880.817502943275
+BMW,5 Series,Gasoline,Car,9275.70231717912
+BMW,5 Series,Hybrid Electric (HEV),Car,9543.191413447415
+BMW,IX,Battery Electric (BEV),CUV,7666.862447811142
+BMW,X1,Gasoline,CUV,9647.875406081628
+BMW,X3,Diesel,CUV,10244.022190311754
+BMW,X3,Gasoline,CUV,9564.839569390018
+BMW,X3,Hybrid Electric (HEV),CUV,8841.440990045867
+BMW,X5,Diesel,CUV,10000.543997307921
+BMW,X5,Gasoline,CUV,9763.910215430693
+BMW,X5,Plug-In Hybrid Electric (PHEV),CUV,9100.845383743217
+BMW,X7,Gasoline,SUV,10279.703790625941
+BMW,XM,Plug-In Hybrid Electric (PHEV),CUV,6485.121253097012
+BMW,i3,Battery Electric (BEV),Car,5551.9530630911595
+BMW,i3,Hybrid Electric (HEV),Car,6814.858512922612
+BMW,i4,Battery Electric (BEV),Car,8871.389146602898
+BMW,i5,Battery Electric (BEV),Car,5332.51278203168
+BMW,i7,Battery Electric (BEV),Car,6514.654715057076
+BMW,i8,Plug-In Hybrid Electric (PHEV),Car,4196.999355887125
+Bentley,Bentayga,Hybrid Electric (HEV),SUV,7175.519836079686
+Buick,Enclave,Gasoline,CUV,11198.731089740228
+Buick,Encore,Gasoline,CUV,9747.753129976452
+Buick,Encore Gx,Flex Fuel (E85),CUV,18440.72263903106
+Buick,Encore Gx,Gasoline,CUV,8633.323811342427
+Buick,Envision,Gasoline,CUV,10073.246612509285
+Buick,Envista,Flex Fuel (E85),CUV,16391.43982026177
+Buick,Lacrosse,Flex Fuel (E85),Car,7828.70966369513
+Buick,Lacrosse,Hybrid Electric (HEV),Car,8615.923715957517
+Buick,Lucerne,Flex Fuel (E85),Car,4302.358770702119
+Buick,Regal,Flex Fuel (E85),Car,6643.2267524270355
+Buick,Verano,Flex Fuel (E85),Car,6632.341996499923
+Cadillac,ATS,Flex Fuel (E85),Car,7853.640416225197
+Cadillac,CTS Sedan,Flex Fuel (E85),Car,7743.870403883444
+Cadillac,ELR,Plug-In Hybrid Electric (PHEV),Car,6607.550630860574
+Cadillac,Escalade,Diesel,SUV,13930.8764455884
+Cadillac,Escalade,Flex Fuel (E85),SUV,8678.926489528707
+Cadillac,Escalade,Gasoline,SUV,10918.05289025649
+Cadillac,Escalade,Hybrid Electric (HEV),SUV,5030.839158697695
+Cadillac,Escalade ESV,Diesel,SUV,16397.354265530303
+Cadillac,Escalade ESV,Flex Fuel (E85),SUV,9395.883063420431
+Cadillac,Escalade ESV,Gasoline,SUV,11917.860521698689
+Cadillac,Escalade Iq,Battery Electric (BEV),SUV,5357.671681994323
+Cadillac,Lyriq,Battery Electric (BEV),CUV,7825.345418343129
+Cadillac,SRX,Flex Fuel (E85),CUV,7382.87300962012
+Cadillac,SRX,Gasoline,CUV,9013.985965997366
+Cadillac,Xt5,Gasoline,CUV,9619.233470753006
+Chevrolet,Avalanche,Flex Fuel (E85),Pickup,8060.582133282609
+Chevrolet,Avalanche,Gasoline,Pickup,7169.260518145717
+Chevrolet,Blazer,Flex Fuel (E85),CUV,11487.915954963242
+Chevrolet,Blazer,Gasoline,CUV,10988.014621827719
+Chevrolet,Blazer EV,Battery Electric (BEV),CUV,6530.4743739953155
+Chevrolet,Bolt EUV,Battery Electric (BEV),CUV,8908.452135164767
+Chevrolet,Bolt EV,Battery Electric (BEV),Car,4440.604438299946
+Chevrolet,Camaro,Gasoline,Car,7095.3977393019795
+Chevrolet,Captiva Sport,Flex Fuel (E85),CUV,6782.183922317206
+Chevrolet,Colorado,Diesel,Pickup,12606.695355174144
+Chevrolet,Colorado,Gasoline,Pickup,10040.73438707638
+Chevrolet,Corvette,Gasoline,Car,3593.452858073683
+Chevrolet,Cruze,Diesel,Car,11332.344597468407
+Chevrolet,Cruze,Gasoline,Car,9957.954350302201
+Chevrolet,Equinox,Diesel,CUV,12402.885675277299
+Chevrolet,Equinox,Flex Fuel (E85),CUV,10354.092405314484
+Chevrolet,Equinox,Gasoline,CUV,10476.303615628396
+Chevrolet,Equinox EV,Battery Electric (BEV),CUV,4204.9488369751
+Chevrolet,HHR,Flex Fuel (E85),Minivan,4426.018914229953
+Chevrolet,HHR,Gasoline,Minivan,4553.603527094185
+Chevrolet,Impala,Flex Fuel (E85),Car,9046.093111848519
+Chevrolet,Impala,Gasoline,Car,8814.24851697004
+Chevrolet,Impala Limited,Flex Fuel (E85),Car,7922.037560707228
+Chevrolet,Malibu,Flex Fuel (E85),Car,7913.032257841528
+Chevrolet,Malibu,Gasoline,Car,9238.707942138597
+Chevrolet,Malibu,Hybrid Electric (HEV),Car,8848.034057747453
+Chevrolet,Silverado 1500,Diesel,Pickup,16553.65406227292
+Chevrolet,Silverado 1500,Flex Fuel (E85),Pickup,10162.675216938205
+Chevrolet,Silverado 1500,Gasoline,Pickup,11844.185637490446
+Chevrolet,Silverado 1500,Hybrid Electric (HEV),Pickup,7340.624713693174
+Chevrolet,Silverado 1500 LD,Gasoline,Pickup,11986.946499726388
+Chevrolet,Silverado 1500 Limited,Gasoline,Pickup,15055.706799488724
+Chevrolet,Silverado 2500hd,Diesel,Pickup,12352.979275928425
+Chevrolet,Silverado 2500hd,Flex Fuel (E85),Pickup,12183.648566494581
+Chevrolet,Silverado 2500hd,Gasoline,Pickup,10265.763725515268
+Chevrolet,Silverado 3500,Diesel,Pickup,8884.804620879342
+Chevrolet,Silverado 3500hd,Diesel,Pickup,12992.18262921464
+Chevrolet,Silverado 3500hd,Flex Fuel (E85),Pickup,9619.649433003327
+Chevrolet,Silverado Classic 2500hd,Diesel,Pickup,8794.114487632629
+Chevrolet,Silverado EV,Battery Electric (BEV),Pickup,5352.442020862464
+Chevrolet,Sonic,Gasoline,Car,8363.7687303087
+Chevrolet,Spark,Battery Electric (BEV),Car,4789.790222960875
+Chevrolet,Suburban,Diesel,SUV,17996.357301541757
+Chevrolet,Suburban,Flex Fuel (E85),SUV,11514.358543005765
+Chevrolet,Suburban,Gasoline,SUV,12618.669784938917
+Chevrolet,Tahoe,Diesel,SUV,16226.120112326
+Chevrolet,Tahoe,Flex Fuel (E85),SUV,10832.50891856261
+Chevrolet,Tahoe,Gasoline,SUV,12247.966403031049
+Chevrolet,Tahoe,Hybrid Electric (HEV),SUV,7244.104607606093
+Chevrolet,Trailblazer,Flex Fuel (E85),CUV,16129.222572522607
+Chevrolet,Trailblazer,Gasoline,CUV,10442.74715172046
+Chevrolet,Traverse,Gasoline,CUV,12088.51528648056
+Chevrolet,Trax,Flex Fuel (E85),CUV,11864.700266340204
+Chevrolet,Trax,Gasoline,CUV,10819.234011742612
+Chevrolet,Uplander,Flex Fuel (E85),Minivan,1798.440796157213
+Chevrolet,Uplander,Gasoline,Minivan,4316.918033158481
+Chevrolet,Venture,Gasoline,Minivan,16216.917746989984
+Chevrolet,Volt,Plug-In Hybrid Electric (PHEV),Car,9067.665359008959
+Chrysler,200,Flex Fuel (E85),Car,8214.017737721962
+Chrysler,200,Gasoline,Car,9598.036334478998
+Chrysler,300,Flex Fuel (E85),Car,8314.319067914414
+Chrysler,300,Gasoline,Car,9014.913814859354
+Chrysler,PT Cruiser,Gasoline,Minivan,4388.961834271264
+Chrysler,Pacifica,Flex Fuel (E85),Minivan,11430.436212824085
+Chrysler,Pacifica,Gasoline,Minivan,10323.287125513329
+Chrysler,Pacifica Hybrid,Hybrid Electric (HEV),Minivan,9307.145249140127
+Chrysler,Pacifica PHEV,Plug-In Hybrid Electric (PHEV),Minivan,28822.058300261313
+Chrysler,Town & Country,Flex Fuel (E85),Minivan,9869.720806671803
+Chrysler,Town & Country,Gasoline,Minivan,6782.48575435885
+Chrysler,Voyager,Gasoline,Minivan,11304.443743672537
+Dodge,Avenger,Flex Fuel (E85),Car,7413.561607697262
+Dodge,Avenger,Gasoline,Car,8017.159080529921
+Dodge,Caravan,Gasoline,Minivan,5577.547541194495
+Dodge,Challenger,Flex Fuel (E85),Car,7040.390110617317
+Dodge,Challenger,Gasoline,Car,7439.741745067605
+Dodge,Charger,Flex Fuel (E85),Car,9269.588822842949
+Dodge,Charger,Gasoline,Car,10683.135369862419
+Dodge,Dakota,Gasoline,Pickup,5897.28485024266
+Dodge,Dart,Gasoline,Car,8954.627838604112
+Dodge,Durango,Flex Fuel (E85),SUV,11446.456731090251
+Dodge,Durango,Gasoline,SUV,11990.832575816512
+Dodge,Grand Caravan,Flex Fuel (E85),Minivan,9381.431592787845
+Dodge,Grand Caravan,Gasoline,Minivan,7760.063994830503
+Dodge,Journey,Flex Fuel (E85),CUV,10966.184904289572
+Dodge,Journey,Gasoline,CUV,11119.176328839192
+Dodge,RAM 1500 Pickup,Flex Fuel (E85),Pickup,8382.269396427751
+Dodge,RAM 1500 Pickup,Gasoline,Pickup,7959.425708917727
+Dodge,RAM 1500 Pickup,Hybrid Electric (HEV),Pickup,5671.322189207667
+Dodge,RAM 2500 Pickup,Diesel,Pickup,9435.36023486169
+Dodge,RAM 2500 Pickup,Gasoline,Pickup,6494.267947826926
+Dodge,RAM 3500 Pickup,Diesel,Pickup,8744.494543544355
+Fiat,500e,Battery Electric (BEV),Car,5093.504575964583
+Fiat,500l,Gasoline,Minivan,7623.456823240771
+Fisker,Karma,Plug-In Hybrid Electric (PHEV),Car,410.1084544356536
+Ford,Bronco 4-Door,Gasoline,SUV,10215.509626719982
+Ford,Bronco Sport,Gasoline,CUV,12622.19180900268
+Ford,C-Max,Hybrid Electric (HEV),Minivan,8807.932827825545
+Ford,Crown Victoria,Flex Fuel (E85),Car,3662.6645475220653
+Ford,Ecosport,Gasoline,CUV,9405.900971715659
+Ford,Edge,Gasoline,CUV,10393.875912470192
+Ford,Escape,Flex Fuel (E85),CUV,9391.303761753303
+Ford,Escape,Gasoline,CUV,10687.564280542718
+Ford,Escape,Hybrid Electric (HEV),CUV,9300.089475714538
+Ford,Escape,Plug-In Hybrid Electric (PHEV),CUV,9928.128678551302
+Ford,Excursion,Diesel,SUV,13410.880907378429
+Ford,Expedition,Flex Fuel (E85),SUV,9303.269800839355
+Ford,Expedition,Gasoline,SUV,12225.681342355647
+Ford,Explorer,Flex Fuel (E85),SUV,11787.849462896951
+Ford,Explorer,Gasoline,SUV,11523.31292850137
+Ford,Explorer,Hybrid Electric (HEV),SUV,12499.442731810475
+Ford,Explorer Sport Trac,Gasoline,Pickup,6885.817674778423
+Ford,F-150,Diesel,Pickup,14973.229082668255
+Ford,F-150,Flex Fuel (E85),Pickup,11165.261292956058
+Ford,F-150,Gasoline,Pickup,11867.82612265176
+Ford,F-150,Hybrid Electric (HEV),Pickup,14086.780750909584
+Ford,F-150 Lightning,Battery Electric (BEV),Pickup,10562.837945224695
+Ford,F-250 Super Duty,Diesel,Pickup,12490.451921332347
+Ford,F-250 Super Duty,Flex Fuel (E85),Pickup,10690.200807951382
+Ford,F-250 Super Duty,Gasoline,Pickup,9675.558143549493
+Ford,F-350 Super Duty,Diesel,Pickup,11699.274341979533
+Ford,F-350 Super Duty,Flex Fuel (E85),Pickup,9829.872125286374
+Ford,F-350 Super Duty,Gasoline,Pickup,9529.976525244763
+Ford,F-450 Super Duty,Diesel,Pickup,10180.597190128155
+Ford,Fiesta,Gasoline,Car,8432.47573481432
+Ford,Flex,Flex Fuel (E85),CUV,11208.563287230487
+Ford,Focus,Battery Electric (BEV),Car,4337.389639221657
+Ford,Focus,Flex Fuel (E85),Car,8659.550092476133
+Ford,Focus,Gasoline,Car,9088.538511857756
+Ford,Freestar,Gasoline,Minivan,1157.294569912383
+Ford,Fusion,Flex Fuel (E85),Car,6070.371474655906
+Ford,Fusion,Gasoline,Car,9989.799364123428
+Ford,Fusion,Hybrid Electric (HEV),Car,6754.5714400196
+Ford,Fusion Energi,Plug-In Hybrid Electric (PHEV),Car,10634.555807509963
+Ford,Fusion Hybrid,Hybrid Electric (HEV),Car,10660.588495940452
+Ford,Maverick,Gasoline,Pickup,13103.923214449667
+Ford,Mustang,Gasoline,Car,6914.689944229168
+Ford,Mustang Mach-E,Battery Electric (BEV),CUV,10869.334680409656
+Ford,Ranger,Gasoline,Pickup,8514.782314538501
+Ford,Taurus,Flex Fuel (E85),Car,10584.081509315973
+Ford,Taurus,Gasoline,Car,8730.607048919457
+Ford,Transit Connect,Gasoline,Minivan,11390.791677549978
+GMC,Acadia,Gasoline,CUV,11716.724127279682
+GMC,Canyon,Diesel,Pickup,12283.875682680353
+GMC,Canyon,Gasoline,Pickup,10234.149671255262
+GMC,Envoy,Gasoline,SUV,7099.189383231604
+GMC,Hummer EV,Battery Electric (BEV),Pickup,5179.364491233149
+GMC,Hummer EV,Battery Electric (BEV),SUV,5428.575391654626
+GMC,Sierra 1500,Diesel,Pickup,16455.65478932037
+GMC,Sierra 1500,Flex Fuel (E85),Pickup,9874.99126102044
+GMC,Sierra 1500,Gasoline,Pickup,11818.163221122759
+GMC,Sierra 1500,Hybrid Electric (HEV),Pickup,10703.686657297045
+GMC,Sierra 1500 Denali,Diesel,Pickup,15264.627397286064
+GMC,Sierra 1500 Denali,Gasoline,Pickup,12396.602426624378
+GMC,Sierra 2500 Denali HD,Diesel,Pickup,13057.045543126102
+GMC,Sierra 2500hd,Diesel,Pickup,12559.786639777085
+GMC,Sierra 2500hd,Flex Fuel (E85),Pickup,12497.911546265419
+GMC,Sierra 2500hd,Gasoline,Pickup,7943.916951294601
+GMC,Sierra 3500,Diesel,Pickup,8014.713000484452
+GMC,Sierra 3500 Denali HD,Diesel,Pickup,12447.460712908254
+GMC,Sierra 3500hd,Diesel,Pickup,14594.305739968499
+GMC,Sierra Denali,Flex Fuel (E85),Pickup,10615.776910838453
+GMC,Sierra EV,Battery Electric (BEV),Pickup,3210.2913993620546
+GMC,Terrain,Diesel,CUV,12907.053009893278
+GMC,Terrain,Flex Fuel (E85),CUV,10401.152198832526
+GMC,Terrain,Gasoline,CUV,10691.729611165265
+GMC,Yukon,Diesel,SUV,16428.686285560867
+GMC,Yukon,Flex Fuel (E85),SUV,9667.41183915921
+GMC,Yukon,Gasoline,SUV,12410.07066868671
+GMC,Yukon,Hybrid Electric (HEV),SUV,8005.055132105286
+GMC,Yukon XL,Diesel,SUV,18536.0720154034
+GMC,Yukon XL,Flex Fuel (E85),SUV,9508.295498444295
+GMC,Yukon XL,Gasoline,SUV,12858.818304454224
+Honda,Accord,Gasoline,Car,10590.698473787266
+Honda,Accord,Hybrid Electric (HEV),Car,12031.974528404342
+Honda,CR-V,Gasoline,CUV,10614.543351080516
+Honda,CR-V,Hybrid Electric (HEV),CUV,12549.27432106053
+Honda,CR-Z,Hybrid Electric (HEV),Car,8734.100476567668
+Honda,Civic,Gasoline,Car,10115.15009848955
+Honda,Civic,Hybrid Electric (HEV),Car,8934.197509831123
+Honda,Civic Hatchback,Gasoline,Car,10882.207988375245
+Honda,Clarity,Hybrid Electric (HEV),Car,10449.129811391847
+Honda,FIT,Gasoline,Car,9184.829297964885
+Honda,HR-V,Gasoline,CUV,10093.019260701298
+Honda,Insight,Hybrid Electric (HEV),Car,9192.893408536367
+Honda,Odyssey,Gasoline,Minivan,11713.934489706638
+Honda,Passport,Gasoline,SUV,10925.287073221309
+Honda,Pilot,Gasoline,CUV,12397.753229242313
+Honda,Prologue,Battery Electric (BEV),CUV,7813.139644502333
+Honda,Ridgeline,Gasoline,Pickup,11286.805391536389
+Hummer,H2,Gasoline,SUV,4922.732272172776
+Hummer,H3,Gasoline,SUV,6906.28712482734
+Hyundai,Accent,Gasoline,Car,7969.216748937229
+Hyundai,Elantra,Gasoline,Car,9215.96866980508
+Hyundai,Ioniq,Battery Electric (BEV),Car,8866.750439112257
+Hyundai,Ioniq,Hybrid Electric (HEV),Car,11979.942191745522
+Hyundai,Ioniq 5,Battery Electric (BEV),CUV,11142.605682405152
+Hyundai,Ioniq 6,Battery Electric (BEV),Car,8472.168763361185
+Hyundai,Kona,Gasoline,CUV,10018.559279910785
+Hyundai,Kona EV,Battery Electric (BEV),CUV,8060.362965716114
+Hyundai,Nexo,Fuel Cell,CUV,6772.594456003308
+Hyundai,Palisade,Gasoline,CUV,13825.009526163365
+Hyundai,Santa Cruz,Gasoline,Pickup,11783.604998146135
+Hyundai,Santa Fe,Gasoline,CUV,9978.648485220174
+Hyundai,Santa Fe,Plug-In Hybrid Electric (PHEV),CUV,13667.315803745852
+Hyundai,Sonata,Gasoline,Car,9807.275578370643
+Hyundai,Sonata Hybrid,Hybrid Electric (HEV),Car,9203.745760229904
+Hyundai,Sonata Plug-In Hybrid,Plug-In Hybrid Electric (PHEV),Car,10219.948276661918
+Hyundai,Tucson,Gasoline,CUV,9704.175562023494
+Hyundai,Tucson,Hybrid Electric (HEV),CUV,8489.868517446273
+Infiniti,Q50,Gasoline,Car,10210.941294203938
+Infiniti,Q50,Hybrid Electric (HEV),Car,10235.181147026971
+Infiniti,QX,Gasoline,SUV,9294.907437952246
+Infiniti,Qx60,Gasoline,CUV,11787.077773359748
+Infiniti,Qx60,Hybrid Electric (HEV),CUV,9454.28186315996
+Infiniti,Qx80,Gasoline,SUV,12332.244477239454
+Jaguar,F-Pace,Diesel,CUV,10614.09091498855
+Jaguar,I-Pace,Battery Electric (BEV),CUV,7416.8763516757
+Jaguar,XE,Diesel,Car,9902.999089047415
+Jaguar,XF,Diesel,Car,10175.949907776838
+Jeep,ALL-New Wrangler Unlimited,Gasoline,SUV,10579.570243948181
+Jeep,Cherokee,Flex Fuel (E85),SUV,10309.358005879187
+Jeep,Cherokee,Gasoline,SUV,10939.343047422995
+Jeep,Commander,Gasoline,SUV,5955.533586077307
+Jeep,Compass,Gasoline,CUV,10079.038749255677
+Jeep,Gladiator,Gasoline,Pickup,10942.540394254302
+Jeep,Grand Cherokee,Diesel,SUV,10931.311695135559
+Jeep,Grand Cherokee,Flex Fuel (E85),SUV,10535.432661348512
+Jeep,Grand Cherokee,Gasoline,SUV,10765.656764875504
+Jeep,Grand Cherokee,Hybrid Electric (HEV),SUV,6061.652008430714
+Jeep,Grand Cherokee L,Gasoline,SUV,10186.871409846333
+Jeep,Liberty,Gasoline,SUV,6605.448839505139
+Jeep,Patriot,Gasoline,CUV,9395.44150817622
+Jeep,Renegade,Flex Fuel (E85),CUV,10067.40963968816
+Jeep,Renegade,Gasoline,CUV,10692.14824482877
+Jeep,Wagoneer,Gasoline,SUV,16118.869699344137
+Jeep,Wagoneer S,Battery Electric (BEV),SUV,1898.8579194484787
+Jeep,Wrangler,Gasoline,SUV,8159.896314665831
+Jeep,Wrangler 4-Door,Diesel,SUV,8935.486217947504
+Jeep,Wrangler 4-Door,Gasoline,SUV,10992.177307168147
+Jeep,Wrangler 4xe,Plug-In Hybrid Electric (PHEV),SUV,15602.681952240095
+Jeep,Wrangler Jk Unlimited,Gasoline,SUV,10073.182145681561
+Jeep,Wrangler Unlimited,Diesel,SUV,10545.9352152608
+Jeep,Wrangler Unlimited,Gasoline,SUV,9716.65070822073
+Jeep,Wrangler Unlimited,Hybrid Electric (HEV),SUV,10038.631503499151
+Kia,Carnival,Gasoline,Minivan,13721.817740354745
+Kia,EV9,Battery Electric (BEV),CUV,8481.118516990622
+Kia,Ev6,Battery Electric (BEV),CUV,11176.009389725952
+Kia,Forte,Gasoline,Car,10492.920365108163
+Kia,K5,Gasoline,Car,12627.247655741328
+Kia,Niro,Battery Electric (BEV),CUV,6878.6345099582395
+Kia,Niro,Hybrid Electric (HEV),CUV,12257.663677337727
+Kia,Niro,Plug-In Hybrid Electric (PHEV),CUV,11542.223237992108
+Kia,Optima,Gasoline,Car,9843.729414739884
+Kia,Optima,Hybrid Electric (HEV),Car,10477.32330758009
+Kia,Optima,Plug-In Hybrid Electric (PHEV),Car,10942.932730618613
+Kia,Rondo,Gasoline,Minivan,4519.348390079319
+Kia,Sedona,Gasoline,Minivan,10321.853779566252
+Kia,Sorento,Gasoline,CUV,10804.059764120984
+Kia,Sorento,Hybrid Electric (HEV),CUV,13420.99778503744
+Kia,Sorento,Plug-In Hybrid Electric (PHEV),CUV,12364.645660003127
+Kia,Soul,Battery Electric (BEV),Car,5609.333873547529
+Kia,Soul,Gasoline,Car,9219.796300537873
+Kia,Sportage,Gasoline,CUV,9780.379927458835
+Kia,Sportage,Hybrid Electric (HEV),CUV,11982.904695143068
+Kia,Telluride,Gasoline,CUV,15576.090423656104
+Land Rover,Defender,Gasoline,SUV,9426.726496593205
+Land Rover,Discovery,Diesel,CUV,11412.495686875895
+Land Rover,LR4,Gasoline,SUV,9428.297256843958
+Land Rover,Range Rover,Diesel,SUV,10273.832712742356
+Land Rover,Range Rover,Gasoline,SUV,9277.31231698696
+Land Rover,Range Rover,Plug-In Hybrid Electric (PHEV),SUV,9715.755493649202
+Land Rover,Range Rover Evoque,Plug-In Hybrid Electric (PHEV),CUV,8699.195703170913
+Land Rover,Range Rover Sport,Diesel,SUV,10846.20258180638
+Land Rover,Range Rover Sport,Flex Fuel (E85),SUV,8767.344365293862
+Land Rover,Range Rover Sport,Gasoline,SUV,9285.193708263922
+Land Rover,Range Rover Sport,Hybrid Electric (HEV),SUV,8257.780943038582
+Land Rover,Range Rover Sport,Plug-In Hybrid Electric (PHEV),SUV,9863.3527820004
+Land Rover,Range Rover Velar,Diesel,CUV,10192.546744325215
+Lexus,CT,Hybrid Electric (HEV),Car,10188.876956737608
+Lexus,ES,Gasoline,Car,9453.288225875536
+Lexus,ES Hybrid,Hybrid Electric (HEV),Car,10020.002220297276
+Lexus,GX,Gasoline,SUV,11560.433338354153
+Lexus,HS,Hybrid Electric (HEV),Car,7207.612658570712
+Lexus,IS,Gasoline,Car,9658.137489421686
+Lexus,LX,Gasoline,SUV,11337.161722619538
+Lexus,NX,Gasoline,CUV,9827.384786773713
+Lexus,NX Hybrid,Hybrid Electric (HEV),CUV,9285.399488578878
+Lexus,NX PHEV,Plug-In Hybrid Electric (PHEV),CUV,8537.845501577347
+Lexus,RX,Gasoline,CUV,10345.951964842068
+Lexus,RX,Hybrid Electric (HEV),CUV,10660.695854721549
+Lexus,RX Hybrid,Hybrid Electric (HEV),CUV,10348.026668898254
+Lexus,RX PHEV,Plug-In Hybrid Electric (PHEV),CUV,7829.485297105905
+Lexus,RZ,Battery Electric (BEV),CUV,6415.426710656172
+Lexus,TX Hybrid,Hybrid Electric (HEV),CUV,11172.596987810997
+Lexus,UX Hybrid,Hybrid Electric (HEV),CUV,8794.132792897864
+Lincoln,Aviator,Plug-In Hybrid Electric (PHEV),CUV,10831.886692407224
+Lincoln,MKC,Gasoline,CUV,10507.088846216835
+Lincoln,MKX,Gasoline,CUV,10633.448561441774
+Lincoln,MKZ,Gasoline,Car,9290.06048692125
+Lincoln,MKZ,Hybrid Electric (HEV),Car,9666.610596563502
+Lincoln,Navigator,Flex Fuel (E85),SUV,9327.835523214733
+Lincoln,Navigator,Gasoline,SUV,11980.228470448757
+Lincoln,Town Car,Flex Fuel (E85),Car,2789.4200655356813
+MINI,Cooper,Gasoline,Car,7052.98627348931
+MINI,Countryman,Gasoline,CUV,8479.594781230468
+MINI,Countryman,Plug-In Hybrid Electric (PHEV),CUV,9027.865311261694
+MINI,Hardtop 2 Door,Battery Electric (BEV),Car,5810.414362259827
+Mazda,CX-30,Diesel,CUV,8817.757140795973
+Mazda,CX-30,Gasoline,CUV,9427.313703096976
+Mazda,CX-5,Diesel,CUV,11455.42586391962
+Mazda,CX-5,Gasoline,CUV,10782.361445573692
+Mazda,CX-9,Gasoline,CUV,11122.195812702503
+Mazda,CX-90,Hybrid Electric (HEV),CUV,12682.715799850845
+Mazda,CX-90,Plug-In Hybrid Electric (PHEV),CUV,5858.025169941606
+Mazda,Mazda3,Gasoline,Car,9833.767820414332
+Mazda,Mazda5,Gasoline,Minivan,7256.931691665774
+Mazda,Mazda6,Gasoline,Car,10390.822736400172
+Mercedes-Benz,B-Class,Battery Electric (BEV),Minivan,5433.980546992007
+Mercedes-Benz,C-Class,Flex Fuel (E85),Car,5863.591868917322
+Mercedes-Benz,C-Class,Gasoline,Car,8801.114652303437
+Mercedes-Benz,C-Class,Plug-In Hybrid Electric (PHEV),Car,8379.190976948177
+Mercedes-Benz,C-Class Sedan,Gasoline,Car,8942.944121185701
+Mercedes-Benz,E-Class,Diesel,Car,8393.94116021914
+Mercedes-Benz,E-Class,Flex Fuel (E85),Car,7797.692948504947
+Mercedes-Benz,E-Class,Gasoline,Car,8493.452025579589
+Mercedes-Benz,E-Class,Hybrid Electric (HEV),Car,8386.049079812046
+Mercedes-Benz,EQB,Battery Electric (BEV),CUV,8986.531214285154
+Mercedes-Benz,EQE,Battery Electric (BEV),Car,8835.386386152135
+Mercedes-Benz,EQE SUV,Battery Electric (BEV),CUV,7947.617129152261
+Mercedes-Benz,EQS,Battery Electric (BEV),CUV,8585.956637396206
+Mercedes-Benz,EQS SUV,Battery Electric (BEV),CUV,10779.742617421549
+Mercedes-Benz,G-Class,Battery Electric (BEV),SUV,5650.352778506672
+Mercedes-Benz,G-Class,Gasoline,SUV,7163.790816577369
+Mercedes-Benz,GL-Class,Diesel,CUV,8401.431529866086
+Mercedes-Benz,GL-Class,Gasoline,CUV,8905.598017207956
+Mercedes-Benz,GLA-Class,Gasoline,CUV,9055.401684578628
+Mercedes-Benz,GLC,Gasoline,CUV,9838.364246370225
+Mercedes-Benz,GLC,Plug-In Hybrid Electric (PHEV),CUV,9235.900811058831
+Mercedes-Benz,GLC-Class,Gasoline,CUV,9218.926113476153
+Mercedes-Benz,GLC-Class,Plug-In Hybrid Electric (PHEV),CUV,8711.848234022498
+Mercedes-Benz,GLE,Gasoline,CUV,10270.843977300381
+Mercedes-Benz,GLE,Plug-In Hybrid Electric (PHEV),CUV,11179.492684736904
+Mercedes-Benz,GLE-Class,Diesel,CUV,10900.469977194509
+Mercedes-Benz,GLE-Class,Gasoline,CUV,9831.056788142367
+Mercedes-Benz,GLE-Class,Plug-In Hybrid Electric (PHEV),CUV,9163.546959934323
+Mercedes-Benz,GLK-Class,Diesel,CUV,7992.218355518672
+Mercedes-Benz,GLK-Class,Gasoline,CUV,8260.48560692856
+Mercedes-Benz,M-Class,Diesel,CUV,7477.401479256141
+Mercedes-Benz,M-Class,Gasoline,CUV,8606.055988895449
+Mercedes-Benz,R-Class,Diesel,CUV,8824.492163492905
+Mercedes-Benz,R-Class,Diesel,Minivan,4541.133612809694
+Mercedes-Benz,R-Class,Gasoline,Minivan,5775.95018943328
+Mercedes-Benz,S-Class,Diesel,Car,5075.321964933524
+Mercedes-Benz,S-Class,Gasoline,Car,8123.5242494935665
+Mercury,Grand Marquis,Flex Fuel (E85),Car,2969.8142254922964
+Mercury,Mariner,Hybrid Electric (HEV),CUV,5395.8044320698955
+Mercury,Mountaineer,Gasoline,SUV,6603.432617245283
+Mitsubishi,Outlander,Gasoline,CUV,10436.909009831588
+Mitsubishi,Outlander,Hybrid Electric (HEV),CUV,10995.591481900634
+Mitsubishi,Outlander PHEV,Plug-In Hybrid Electric (PHEV),CUV,11640.105342090457
+Mitsubishi,Outlander Plug-In Hybrid,Plug-In Hybrid Electric (PHEV),CUV,13571.522039069201
+Mitsubishi,Outlander Sport,Gasoline,CUV,9668.619491690655
+Mitsubishi,i-MiEV,Battery Electric (BEV),Car,3131.957233543111
+Nissan,Altima,Gasoline,Car,10015.31044990758
+Nissan,Altima Sedan,Gasoline,Car,8390.884091724696
+Nissan,Ariya,Battery Electric (BEV),CUV,6904.037321048727
+Nissan,Armada,Gasoline,SUV,11538.752263934944
+Nissan,Cube,Gasoline,Minivan,6945.235064179108
+Nissan,Frontier,Gasoline,Pickup,10156.36321913891
+Nissan,Juke,Gasoline,CUV,8454.538550959354
+Nissan,Kicks,Gasoline,CUV,11369.343389253678
+Nissan,Leaf,Battery Electric (BEV),Car,5498.286050401915
+Nissan,Maxima,Gasoline,Car,10162.156405100797
+Nissan,Murano,Gasoline,CUV,10149.625440984868
+Nissan,Pathfinder,Gasoline,CUV,11295.433246480503
+Nissan,Pathfinder Hybrid,Hybrid Electric (HEV),CUV,8763.49584940116
+Nissan,Quest,Gasoline,Minivan,8840.38882794622
+Nissan,Rogue,Gasoline,CUV,9941.112539931819
+Nissan,Rogue,Hybrid Electric (HEV),CUV,12054.501877137573
+Nissan,Rogue Select,Gasoline,CUV,10047.228328306905
+Nissan,Rogue Sport,Gasoline,CUV,10290.516114088688
+Nissan,Sentra,Gasoline,Car,9789.322824118472
+Nissan,Titan,Flex Fuel (E85),Pickup,6527.778185100762
+Nissan,Titan,Gasoline,Pickup,11054.974774245406
+Nissan,Titan XD,Diesel,Pickup,11544.008219042567
+Nissan,Versa Note,Gasoline,Car,8608.348378026882
+Nissan,Versa Sedan,Gasoline,Car,9686.213559527947
+Nissan,Xterra,Gasoline,SUV,8920.150740390744
+Polestar,2,Battery Electric (BEV),Car,5479.702483681709
+Porsche,Cayenne,Diesel,CUV,10751.540841482154
+Porsche,Cayenne,Hybrid Electric (HEV),CUV,8951.062166392705
+Porsche,Cayenne,Plug-In Hybrid Electric (PHEV),CUV,9951.560380065346
+Porsche,Macan,Battery Electric (BEV),CUV,581.8147717689268
+Porsche,Macan,Gasoline,CUV,8983.611322847833
+Porsche,Panamera,Hybrid Electric (HEV),Car,7275.896624323591
+Porsche,Taycan,Battery Electric (BEV),Car,6182.716033394667
+RAM,RAM 1500,Gasoline,Pickup,11312.779933208401
+RAM,RAM 1500,Hybrid Electric (HEV),Pickup,11543.353285304876
+RAM,RAM 1500 Classic,Flex Fuel (E85),Pickup,14404.280241198025
+RAM,RAM 1500 Classic,Gasoline,Pickup,12983.666625728483
+RAM,RAM 1500 Pickup,Diesel,Pickup,13592.910674541426
+RAM,RAM 1500 Pickup,Flex Fuel (E85),Pickup,10623.165333354375
+RAM,RAM 1500 Pickup,Gasoline,Pickup,12282.623925412738
+RAM,RAM 1500 Pickup,Hybrid Electric (HEV),Pickup,14143.432224673485
+RAM,RAM 2500 Pickup,Diesel,Pickup,13044.622447959908
+RAM,RAM 2500 Pickup,Gasoline,Pickup,11925.641734358454
+RAM,RAM 3500 Pickup,Diesel,Pickup,12541.829802846687
+Rivian,R1s,Battery Electric (BEV),SUV,8032.56174006688
+Rivian,R1t,Battery Electric (BEV),Pickup,10246.964421680581
+Saturn,VUE,Gasoline,CUV,5563.170232119839
+Saturn,VUE,Hybrid Electric (HEV),CUV,5735.7770046960295
+Smart,Fortwo,Battery Electric (BEV),Car,3459.899142701189
+Subaru,Ascent,Gasoline,CUV,13348.130445365954
+Subaru,Crosstrek,Gasoline,CUV,11374.748294644609
+Subaru,Crosstrek,Hybrid Electric (HEV),CUV,11369.206985810373
+Subaru,Forester,Gasoline,CUV,10282.810443249777
+Subaru,Impreza,Gasoline,Car,9604.851735049357
+Subaru,Legacy,Gasoline,Car,10269.263556125034
+Subaru,Outback,Gasoline,Car,11139.895346081737
+Subaru,Solterra,Battery Electric (BEV),CUV,8547.62519928077
+Subaru,WRX,Gasoline,Car,10997.737981996934
+Subaru,XV Crosstrek,Gasoline,CUV,9719.288054454086
+Subaru,XV Crosstrek,Hybrid Electric (HEV),CUV,8779.507749558585
+Tesla,Cybertruck,Battery Electric (BEV),Pickup,8118.113960334164
+Tesla,Model 3,Battery Electric (BEV),Car,8347.39283316713
+Tesla,Model S,Battery Electric (BEV),Car,8664.361449366977
+Tesla,Model X,Battery Electric (BEV),CUV,9311.823868821104
+Tesla,Model Y,Battery Electric (BEV),CUV,11217.684536403212
+Toyota,4runner,Gasoline,SUV,11889.987778083274
+Toyota,Avalon,Gasoline,Car,9218.266449765051
+Toyota,Avalon,Hybrid Electric (HEV),Car,10050.965975949923
+Toyota,C-Hr,Gasoline,CUV,12117.266458415044
+Toyota,Camry,Gasoline,Car,10007.252738015586
+Toyota,Camry,Hybrid Electric (HEV),Car,9540.428771298462
+Toyota,Corolla,Gasoline,Car,9320.265253895977
+Toyota,Corolla,Hybrid Electric (HEV),Car,14185.079452939113
+Toyota,FJ Cruiser,Gasoline,SUV,9956.774743967082
+Toyota,Highlander,Gasoline,CUV,11477.27812598441
+Toyota,Highlander,Hybrid Electric (HEV),CUV,11599.32554830478
+Toyota,Mirai,Fuel Cell,Car,8357.549264407895
+Toyota,Prius,Hybrid Electric (HEV),Car,10030.531430354702
+Toyota,Prius C,Hybrid Electric (HEV),Car,9100.046841246567
+Toyota,Prius Plug-In,Plug-In Hybrid Electric (PHEV),Car,8102.197635223137
+Toyota,Prius Prime,Plug-In Hybrid Electric (PHEV),Car,10390.59036438808
+Toyota,Prius V,Hybrid Electric (HEV),Car,12886.537322850585
+Toyota,Prius V,Hybrid Electric (HEV),Minivan,9864.083676115923
+Toyota,RAV4,Battery Electric (BEV),CUV,5256.277770719685
+Toyota,RAV4,Gasoline,CUV,10139.453501839997
+Toyota,RAV4,Hybrid Electric (HEV),CUV,11627.187626868552
+Toyota,Sequoia,Flex Fuel (E85),SUV,13528.343220332266
+Toyota,Sequoia,Gasoline,SUV,12788.785116150379
+Toyota,Sienna,Gasoline,Minivan,10855.640294430996
+Toyota,Sienna,Hybrid Electric (HEV),Minivan,14389.855189923643
+Toyota,Tacoma,Gasoline,Pickup,11113.842222229563
+Toyota,Tundra,Flex Fuel (E85),Pickup,12423.697970279789
+Toyota,Tundra,Gasoline,Pickup,11464.563055007366
+Toyota,Venza,Gasoline,CUV,9192.59767090037
+Toyota,Venza,Hybrid Electric (HEV),CUV,11473.514146395295
+Toyota,bZ4X,Battery Electric (BEV),CUV,10042.846784490495
+Volkswagen,Atlas,Gasoline,CUV,12033.866746490185
+Volkswagen,Beetle,Diesel,Car,8262.054303647787
+Volkswagen,E-Golf,Battery Electric (BEV),Car,6258.51529482123
+Volkswagen,Golf,Diesel,Car,9302.9235389628775
+Volkswagen,Golf Sportwagen,Diesel,Car,11766.69370591146
+Volkswagen,ID.4,Battery Electric (BEV),CUV,8946.301890442912
+Volkswagen,Id. Buzz,Battery Electric (BEV),Minivan,5610.900075316421
+Volkswagen,Jetta,Diesel,Car,11462.28620667354
+Volkswagen,Jetta,Gasoline,Car,9935.912027637334
+Volkswagen,Jetta,Hybrid Electric (HEV),Car,7390.930973766556
+Volkswagen,Jetta Sportwagen,Diesel,Car,10532.763296449877
+Volkswagen,Passat,Diesel,Car,10529.389239740749
+Volkswagen,Passat,Gasoline,Car,9878.961810012248
+Volkswagen,Routan,Flex Fuel (E85),Minivan,7118.836024929415
+Volkswagen,Routan,Gasoline,Minivan,6109.605347828017
+Volkswagen,Taos,Gasoline,CUV,10975.156263189676
+Volkswagen,Tiguan,Gasoline,CUV,9533.984080638527
+Volkswagen,Touareg,Diesel,SUV,10629.521850426368
+Volkswagen,Touareg,Hybrid Electric (HEV),SUV,9407.844703166931
+Volkswagen,Touareg 2,Diesel,SUV,6526.53080586087
+Volkswagen,Touareg 2,Hybrid Electric (HEV),SUV,8898.920861619
+Volvo,C40,Battery Electric (BEV),CUV,8745.606483340109
+Volvo,Xc40,Battery Electric (BEV),CUV,8805.876023013856
+Volvo,Xc60,Gasoline,CUV,10387.529582092673
+Volvo,Xc60,Hybrid Electric (HEV),CUV,8363.54974895155
+Volvo,Xc90,Gasoline,CUV,10992.443198806335
+Volvo,Xc90,Hybrid Electric (HEV),CUV,10078.050671798555

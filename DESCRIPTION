@@ -1,6 +1,6 @@
 Package: vehicletrends
 Title: Data on Vehicle Trends in the USA
-Version: 0.0.1
+Version: 0.0.2
 Maintainer: John Helveston <john.helveston@gmail.com>
 Authors@R: c(
     person(given   = "John",

@@ -1,56 +1,56 @@
 inventory_type,powertrain,vehicle_type,n
-new,BEV,CUV,878374
-new,BEV,Car,295929
-new,BEV,Minivan,965
-new,BEV,Pickup,65299
-new,BEV,SUV,12200
-new,Conventional,CUV,25610437
-new,Conventional,Car,13580820
-new,Conventional,Minivan,882878
-new,Conventional,Pickup,10708928
-new,Conventional,SUV,6777427
-new,Flex Fuel,CUV,275731
-new,Flex Fuel,Car,70081
-new,Flex Fuel,Minivan,61740
-new,Flex Fuel,Pickup,1062172
-new,Flex Fuel,SUV,135152
-new,Fuel Cell EV,CUV,319
-new,Fuel Cell EV,Car,1696
-new,Hybrid,CUV,986801
-new,Hybrid,Car,843052
-new,Hybrid,Minivan,320859
-new,Hybrid,Pickup,44348
-new,Hybrid,SUV,98590
-new,PHEV,CUV,59299
-new,PHEV,Car,115932
-used,BEV,CUV,249233
-used,BEV,Car,482198
-used,BEV,Minivan,1867
-used,BEV,Pickup,10692
-used,BEV,SUV,2777
-used,Conventional,CUV,23497780
-used,Conventional,Car,24537412
-used,Conventional,Minivan,1582106
-used,Conventional,Pickup,9254198
-used,Conventional,SUV,7924548
-used,Diesel,CUV,81734
-used,Diesel,Car,241613
-used,Diesel,Minivan,471
-used,Diesel,Pickup,2038671
-used,Diesel,SUV,73644
-used,Flex Fuel,CUV,1358229
-used,Flex Fuel,Car,1382802
-used,Flex Fuel,Minivan,751325
-used,Flex Fuel,Pickup,2951345
-used,Flex Fuel,SUV,1707008
-used,Fuel Cell EV,CUV,352
-used,Fuel Cell EV,Car,4371
-used,Hybrid,CUV,353676
-used,Hybrid,Car,1098501
-used,Hybrid,Minivan,153878
-used,Hybrid,Pickup,88490
-used,Hybrid,SUV,35441
-used,PHEV,CUV,65353
-used,PHEV,Car,176987
-used,PHEV,Minivan,90
-used,PHEV,SUV,25319
+new,Battery Electric (BEV),CUV,1251117
+new,Battery Electric (BEV),Car,353771
+new,Battery Electric (BEV),Minivan,7080
+new,Battery Electric (BEV),Pickup,116308
+new,Battery Electric (BEV),SUV,41337
+new,Flex Fuel (E85),CUV,538634
+new,Flex Fuel (E85),Car,70128
+new,Flex Fuel (E85),Minivan,61750
+new,Flex Fuel (E85),Pickup,1100139
+new,Flex Fuel (E85),SUV,135183
+new,Fuel Cell,CUV,319
+new,Fuel Cell,Car,1696
+new,Gasoline,CUV,30376331
+new,Gasoline,Car,15547728
+new,Gasoline,Minivan,1049050
+new,Gasoline,Pickup,13141856
+new,Gasoline,SUV,8063573
+new,Hybrid Electric (HEV),CUV,1229981
+new,Hybrid Electric (HEV),Car,1001847
+new,Hybrid Electric (HEV),Minivan,462302
+new,Hybrid Electric (HEV),Pickup,45967
+new,Hybrid Electric (HEV),SUV,107338
+new,Plug-In Hybrid Electric (PHEV),CUV,70657
+new,Plug-In Hybrid Electric (PHEV),Car,119909
+used,Battery Electric (BEV),CUV,458153
+used,Battery Electric (BEV),Car,658343
+used,Battery Electric (BEV),Minivan,2191
+used,Battery Electric (BEV),Pickup,25024
+used,Battery Electric (BEV),SUV,8569
+used,Diesel,CUV,89344
+used,Diesel,Car,252636
+used,Diesel,Minivan,523
+used,Diesel,Pickup,2452768
+used,Diesel,SUV,86542
+used,Flex Fuel (E85),CUV,1516495
+used,Flex Fuel (E85),Car,1488824
+used,Flex Fuel (E85),Minivan,809125
+used,Flex Fuel (E85),Pickup,3296743
+used,Flex Fuel (E85),SUV,1863025
+used,Fuel Cell,CUV,393
+used,Fuel Cell,Car,4681
+used,Gasoline,CUV,28635223
+used,Gasoline,Car,27986167
+used,Gasoline,Minivan,1818803
+used,Gasoline,Pickup,11199384
+used,Gasoline,SUV,9557299
+used,Hybrid Electric (HEV),CUV,461398
+used,Hybrid Electric (HEV),Car,1267905
+used,Hybrid Electric (HEV),Minivan,205209
+used,Hybrid Electric (HEV),Pickup,108066
+used,Hybrid Electric (HEV),SUV,65904
+used,Plug-In Hybrid Electric (PHEV),CUV,90913
+used,Plug-In Hybrid Electric (PHEV),Car,201103
+used,Plug-In Hybrid Electric (PHEV),Minivan,953
+used,Plug-In Hybrid Electric (PHEV),SUV,46958
