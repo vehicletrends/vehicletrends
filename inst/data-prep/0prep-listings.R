@@ -114,4 +114,4 @@ ds <- ds %>%
 
 # Write the "data/listings.parquet" file
 ds %>%
-  write_parquet(here::here('data-raw', 'listings.parquet'))
+  write_parquet(here::here('data-local', 'listings.parquet'))

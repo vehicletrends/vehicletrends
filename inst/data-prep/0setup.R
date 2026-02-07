@@ -93,7 +93,7 @@ us_states <- c(
 
 raw_data_filters <- function(ds) {
   ds %>%
-    filter(listing_year < 2025) %>%
+    filter(listing_year < 2026) %>%
     filter(listing_year >= 2018) %>%
     filter(powertrain != 'cng') %>%
     filter(!vehicle_type %in% c('truck', 'van')) %>%
