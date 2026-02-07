@@ -39,10 +39,10 @@ head(vmt_age)
 #> # A tibble: 6 × 5
 #>   age_bin powertrain vehicle_type quantile   miles
 #>     <dbl> <chr>      <chr>           <dbl>   <dbl>
-#> 1     1.5 All        All                25    6.66
-#> 2     1.5 All        All                50  106.  
-#> 3     1.5 All        All                75 1413.  
-#> 4     4.5 All        All                25   16.5 
-#> 5     4.5 All        All                50  782.  
-#> 6     4.5 All        All                75 3222.  
+#> 1     1.5 All        All                25    7.49
+#> 2     1.5 All        All                50  127.  
+#> 3     1.5 All        All                75 1422.  
+#> 4     4.5 All        All                25   19.4 
+#> 5     4.5 All        All                50  803.  
+#> 6     4.5 All        All                75 3162.  
 ```

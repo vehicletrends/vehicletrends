@@ -36,10 +36,10 @@ data(dep_annual_type)
 
 head(dep_annual_type)
 #>               powertrain vehicle_type dep_annual
-#> 1 Battery Electric (BEV)          CUV 0.09482215
-#> 2 Battery Electric (BEV)          Car 0.10086081
-#> 3 Battery Electric (BEV)      Minivan 0.05807725
-#> 4 Battery Electric (BEV)       Pickup 0.04463694
-#> 5 Battery Electric (BEV)          SUV 0.02958732
-#> 6        Flex Fuel (E85)          CUV 0.06405950
+#> 1 Battery Electric (BEV)          CUV 0.10402026
+#> 2 Battery Electric (BEV)          Car 0.10233225
+#> 3 Battery Electric (BEV)      Minivan 0.06215965
+#> 4 Battery Electric (BEV)       Pickup 0.05573484
+#> 5 Battery Electric (BEV)          SUV 0.02428713
+#> 6        Flex Fuel (E85)          CUV 0.06586182
 ```

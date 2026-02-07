@@ -22,16 +22,16 @@ groupings of powertrain and vehicle type.
 ``` r
 head(vmt_age, 10)
 #>    age_bin powertrain vehicle_type quantile       miles
-#> 1      1.5        All          All       25    6.661913
-#> 2      1.5        All          All       50  105.955773
-#> 3      1.5        All          All       75 1413.149703
-#> 4      4.5        All          All       25   16.534734
-#> 5      4.5        All          All       50  782.400927
-#> 6      4.5        All          All       75 3222.299469
-#> 7      7.5        All          All       25  319.801939
-#> 8      7.5        All          All       50 2363.317418
-#> 9      7.5        All          All       75 4982.525678
-#> 10    10.5        All          All       25 1402.481325
+#> 1      1.5        All          All       25    7.487188
+#> 2      1.5        All          All       50  127.162159
+#> 3      1.5        All          All       75 1422.437125
+#> 4      4.5        All          All       25   19.418350
+#> 5      4.5        All          All       50  803.475768
+#> 6      4.5        All          All       75 3162.262634
+#> 7      7.5        All          All       25  300.481568
+#> 8      7.5        All          All       50 2326.992600
+#> 9      7.5        All          All       75 4963.841562
+#> 10    10.5        All          All       25 1306.355234
 ```
 
 ## `vmt_daily`
@@ -52,16 +52,16 @@ vehicle type.
 ``` r
 head(vmt_daily, 10)
 #>    powertrain vehicle_type quantile     miles
-#> 1         All          All        1  2.744988
-#> 2         All          All        2  4.737732
-#> 3         All          All        3  6.107311
-#> 4         All          All        4  7.260857
-#> 5         All          All        5  8.264062
-#> 6         All          All        6  9.157538
-#> 7         All          All        7  9.957316
-#> 8         All          All        8 10.702454
-#> 9         All          All        9 11.360159
-#> 10        All          All       10 11.970550
+#> 1         All          All        1  2.719209
+#> 2         All          All        2  4.637514
+#> 3         All          All        3  6.048788
+#> 4         All          All        4  7.249902
+#> 5         All          All        5  8.233122
+#> 6         All          All        6  9.068620
+#> 7         All          All        7  9.872219
+#> 8         All          All        8 10.630848
+#> 9         All          All        9 11.298499
+#> 10        All          All       10 11.929582
 ```
 
 ## `vmt_annual_type`
@@ -80,16 +80,16 @@ listings; the slope coefficient represents the estimated annual VMT.
 ``` r
 head(vmt_annual_type, 10)
 #>                powertrain vehicle_type vmt_annual
-#> 1  Battery Electric (BEV)          CUV   9254.098
-#> 2  Battery Electric (BEV)          Car   6311.074
-#> 3  Battery Electric (BEV)      Minivan   5675.074
-#> 4  Battery Electric (BEV)       Pickup   8346.890
-#> 5  Battery Electric (BEV)          SUV   6173.904
-#> 6                  Diesel          CUV  10350.614
-#> 7                  Diesel          Car  10157.129
-#> 8                  Diesel      Minivan   5641.567
-#> 9                  Diesel       Pickup  12510.755
-#> 10                 Diesel          SUV  11291.680
+#> 1  Battery Electric (BEV)          CUV   9805.068
+#> 2  Battery Electric (BEV)          Car   6710.569
+#> 3  Battery Electric (BEV)      Minivan   5523.487
+#> 4  Battery Electric (BEV)       Pickup   9538.308
+#> 5  Battery Electric (BEV)          SUV   7433.105
+#> 6                  Diesel          CUV  10124.972
+#> 7                  Diesel          Car  10112.002
+#> 8                  Diesel      Minivan   4841.334
+#> 9                  Diesel       Pickup  12466.379
+#> 10                 Diesel          SUV  10947.811
 ```
 
 ## `vmt_annual_model`
@@ -123,16 +123,16 @@ head(vmt_annual_model, 10)
 #> 9        Audi                  A4                Flex Fuel (E85)          Car
 #> 10       Audi                  A4                       Gasoline          Car
 #>    vmt_annual
-#> 1   11439.057
-#> 2   10757.562
-#> 3    8313.543
-#> 4   11357.799
-#> 5    2678.829
-#> 6    9029.751
-#> 7   10771.148
-#> 8    8687.849
-#> 9    9907.146
-#> 10   9203.896
+#> 1   11334.421
+#> 2   10640.250
+#> 3    8155.315
+#> 4   11107.978
+#> 5    7538.852
+#> 6    8582.209
+#> 7   10542.387
+#> 8    8538.215
+#> 9    9182.230
+#> 10   9070.911
 ```
 
 ## `depreciation`
@@ -155,16 +155,16 @@ type.
 ``` r
 head(depreciation, 10)
 #>    age_bin powertrain vehicle_type quantile        rr
-#> 1     13.5        All          All       25 0.8073291
-#> 2     13.5        All          All       50 0.9427215
-#> 3     13.5        All          All       75 1.0860465
-#> 4     16.5        All          All       25 0.7600114
-#> 5     16.5        All          All       50 0.9012899
-#> 6     16.5        All          All       75 1.0452036
-#> 7     19.5        All          All       25 0.6969381
-#> 8     19.5        All          All       50 0.8365147
-#> 9     19.5        All          All       75 1.0007048
-#> 10    22.5        All          All       25 0.6918902
+#> 1     13.5        All          All       25 0.8077305
+#> 2     13.5        All          All       50 0.9425665
+#> 3     13.5        All          All       75 1.0857731
+#> 4     16.5        All          All       25 0.7602528
+#> 5     16.5        All          All       50 0.9009337
+#> 6     16.5        All          All       75 1.0469076
+#> 7     19.5        All          All       25 0.7075987
+#> 8     19.5        All          All       50 0.8456087
+#> 9     19.5        All          All       75 0.9995060
+#> 10    22.5        All          All       25 0.7011685
 ```
 
 ## `dep_annual_type`
@@ -185,16 +185,16 @@ MSRP values are included.
 ``` r
 head(dep_annual_type, 10)
 #>                powertrain vehicle_type dep_annual
-#> 1  Battery Electric (BEV)          CUV 0.09482215
-#> 2  Battery Electric (BEV)          Car 0.10086081
-#> 3  Battery Electric (BEV)      Minivan 0.05807725
-#> 4  Battery Electric (BEV)       Pickup 0.04463694
-#> 5  Battery Electric (BEV)          SUV 0.02958732
-#> 6         Flex Fuel (E85)          CUV 0.06405950
-#> 7         Flex Fuel (E85)          Car 0.05714146
-#> 8         Flex Fuel (E85)      Minivan 0.07145816
-#> 9         Flex Fuel (E85)       Pickup 0.04531542
-#> 10        Flex Fuel (E85)          SUV 0.09706353
+#> 1  Battery Electric (BEV)          CUV 0.10402026
+#> 2  Battery Electric (BEV)          Car 0.10233225
+#> 3  Battery Electric (BEV)      Minivan 0.06215965
+#> 4  Battery Electric (BEV)       Pickup 0.05573484
+#> 5  Battery Electric (BEV)          SUV 0.02428713
+#> 6         Flex Fuel (E85)          CUV 0.06586182
+#> 7         Flex Fuel (E85)          Car 0.05712966
+#> 8         Flex Fuel (E85)      Minivan 0.07188022
+#> 9         Flex Fuel (E85)       Pickup 0.04602709
+#> 10        Flex Fuel (E85)          SUV 0.09711303
 ```
 
 ## `dep_annual_model`
@@ -219,16 +219,16 @@ rates only.
 ``` r
 head(dep_annual_model, 10)
 #>     make        model      powertrain vehicle_type dep_annual
-#> 1  Acura          MDX        Gasoline          CUV 0.11100674
-#> 2  Acura          RDX        Gasoline          CUV 0.09427202
-#> 3  Acura           TL        Gasoline          Car 0.07883295
-#> 4  Acura          TLX        Gasoline          Car 0.07436195
-#> 5   Audi           A4 Flex Fuel (E85)          Car 0.06927778
-#> 6   Audi           A4        Gasoline          Car 0.09856575
-#> 7   Audi           A5 Flex Fuel (E85)          Car 0.05353769
-#> 8   Audi A5 Cabriolet Flex Fuel (E85)          Car 0.07067091
-#> 9   Audi     A5 Coupe Flex Fuel (E85)          Car 0.06737299
-#> 10  Audi      Allroad Flex Fuel (E85)          Car 0.08653034
+#> 1  Acura          MDX        Gasoline          CUV 0.11083871
+#> 2  Acura          RDX        Gasoline          CUV 0.09383736
+#> 3  Acura           TL        Gasoline          Car 0.07885553
+#> 4  Acura          TLX        Gasoline          Car 0.07452962
+#> 5   Audi           A4 Flex Fuel (E85)          Car 0.07030819
+#> 6   Audi           A4        Gasoline          Car 0.09650968
+#> 7   Audi           A5 Flex Fuel (E85)          Car 0.05352090
+#> 8   Audi A5 Cabriolet Flex Fuel (E85)          Car 0.07388719
+#> 9   Audi     A5 Coupe Flex Fuel (E85)          Car 0.07335039
+#> 10  Audi      Allroad Flex Fuel (E85)          Car 0.08773891
 ```
 
 ## `percent_market`
@@ -254,27 +254,27 @@ vehicle type.
 ``` r
 head(percent_market, 10)
 #>    listing_year inventory_type  group_var            group_level category_var
-#> 1          2023            New powertrain Battery Electric (BEV) vehicle_type
-#> 2          2024            New powertrain Battery Electric (BEV) vehicle_type
-#> 3          2022            New powertrain Battery Electric (BEV) vehicle_type
+#> 1          2019            New powertrain Battery Electric (BEV) vehicle_type
+#> 2          2020            New powertrain Battery Electric (BEV) vehicle_type
+#> 3          2021            New powertrain Battery Electric (BEV) vehicle_type
 #> 4          2018            New powertrain Battery Electric (BEV) vehicle_type
-#> 5          2023            New powertrain Battery Electric (BEV) vehicle_type
-#> 6          2024            New powertrain Battery Electric (BEV) vehicle_type
-#> 7          2023            New powertrain Battery Electric (BEV) vehicle_type
-#> 8          2024            New powertrain Battery Electric (BEV) vehicle_type
+#> 5          2018            New powertrain Battery Electric (BEV) vehicle_type
+#> 6          2021            New powertrain Battery Electric (BEV) vehicle_type
+#> 7          2020            New powertrain Battery Electric (BEV) vehicle_type
+#> 8          2019            New powertrain Battery Electric (BEV) vehicle_type
 #> 9          2022            New powertrain Battery Electric (BEV) vehicle_type
-#> 10         2021            New powertrain               Gasoline vehicle_type
-#>    category_level       n           p
-#> 1             CUV  266235 0.754818351
-#> 2             CUV  395155 0.765348911
-#> 3             CUV  138423 0.784853261
-#> 4         Minivan      31 0.001001421
-#> 5             SUV    1340 0.003799112
-#> 6             SUV   10860 0.021033997
-#> 7          Pickup   19499 0.055282750
-#> 8          Pickup   38114 0.073820421
-#> 9          Pickup    7686 0.043579334
-#> 10            Car 1568596 0.222999993
+#> 10         2024            New powertrain Battery Electric (BEV) vehicle_type
+#>    category_level     n           p
+#> 1             Car 32849 0.809427593
+#> 2             Car 27343 0.683028577
+#> 3             Car 38370 0.398029046
+#> 4             Car 30747 0.992991862
+#> 5         Minivan    31 0.001001163
+#> 6             CUV 58030 0.601970954
+#> 7             CUV 12689 0.316971423
+#> 8             CUV  7733 0.190547766
+#> 9          Pickup  7685 0.043135384
+#> 10         Pickup 38112 0.073538237
 ```
 
 ## `percent_dealers`
@@ -297,28 +297,28 @@ price bin.
 
 ``` r
 head(percent_dealers, 10)
-#>    listing_year inventory_type  group_var group_level category_var
-#> 1          2018           Used powertrain    Gasoline vehicle_type
-#> 2          2021           Used powertrain    Gasoline vehicle_type
-#> 3          2019           Used powertrain    Gasoline vehicle_type
-#> 4          2020           Used powertrain    Gasoline vehicle_type
-#> 5          2020           Used powertrain    Gasoline vehicle_type
-#> 6          2019           Used powertrain    Gasoline vehicle_type
-#> 7          2021           Used powertrain    Gasoline vehicle_type
-#> 8          2018           Used powertrain    Gasoline vehicle_type
-#> 9          2018           Used powertrain    Gasoline vehicle_type
-#> 10         2020           Used powertrain    Gasoline vehicle_type
-#>    category_level         p
-#> 1          Pickup 0.8387126
-#> 2          Pickup 0.7811082
-#> 3          Pickup 0.8406557
-#> 4          Pickup 0.8123635
-#> 5             Car 0.9530050
-#> 6             Car 0.9492858
-#> 7             Car 0.9410631
-#> 8             Car 0.9576325
-#> 9             CUV 0.9225687
-#> 10            CUV 0.9220349
+#>    listing_year inventory_type  group_var            group_level category_var
+#> 1          2019            New powertrain Battery Electric (BEV) vehicle_type
+#> 2          2020            New powertrain Battery Electric (BEV) vehicle_type
+#> 3          2021            New powertrain Battery Electric (BEV) vehicle_type
+#> 4          2018            New powertrain Battery Electric (BEV) vehicle_type
+#> 5          2018            New powertrain Battery Electric (BEV) vehicle_type
+#> 6          2021            New powertrain Battery Electric (BEV) vehicle_type
+#> 7          2020            New powertrain Battery Electric (BEV) vehicle_type
+#> 8          2019            New powertrain Battery Electric (BEV) vehicle_type
+#> 9          2022            New powertrain Battery Electric (BEV) vehicle_type
+#> 10         2024            New powertrain Battery Electric (BEV) vehicle_type
+#>    category_level           p
+#> 1             Car 0.146704506
+#> 2             Car 0.158801921
+#> 3             Car 0.191919192
+#> 4             Car 0.151886245
+#> 5         Minivan 0.001160766
+#> 6             CUV 0.318823595
+#> 7             CUV 0.064255439
+#> 8             CUV 0.054558091
+#> 9          Pickup 0.110011107
+#> 10         Pickup 0.215214411
 ```
 
 ## `registrations`

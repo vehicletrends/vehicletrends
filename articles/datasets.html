@@ -25,7 +25,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">vehicletrends</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.2</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -113,16 +113,16 @@ Electric (BEV)”, “BEV (Tesla)”, “BEV (Non-Tesla)”, “Hybrid Electric
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">vmt_age</span>, <span class="fl">10</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    age_bin powertrain vehicle_type quantile       miles</span></span>
-<span><span class="co">#&gt; 1      1.5        All          All       25    6.661913</span></span>
-<span><span class="co">#&gt; 2      1.5        All          All       50  105.955773</span></span>
-<span><span class="co">#&gt; 3      1.5        All          All       75 1413.149703</span></span>
-<span><span class="co">#&gt; 4      4.5        All          All       25   16.534734</span></span>
-<span><span class="co">#&gt; 5      4.5        All          All       50  782.400927</span></span>
-<span><span class="co">#&gt; 6      4.5        All          All       75 3222.299469</span></span>
-<span><span class="co">#&gt; 7      7.5        All          All       25  319.801939</span></span>
-<span><span class="co">#&gt; 8      7.5        All          All       50 2363.317418</span></span>
-<span><span class="co">#&gt; 9      7.5        All          All       75 4982.525678</span></span>
-<span><span class="co">#&gt; 10    10.5        All          All       25 1402.481325</span></span></code></pre></div>
+<span><span class="co">#&gt; 1      1.5        All          All       25    7.487188</span></span>
+<span><span class="co">#&gt; 2      1.5        All          All       50  127.162159</span></span>
+<span><span class="co">#&gt; 3      1.5        All          All       75 1422.437125</span></span>
+<span><span class="co">#&gt; 4      4.5        All          All       25   19.418350</span></span>
+<span><span class="co">#&gt; 5      4.5        All          All       50  803.475768</span></span>
+<span><span class="co">#&gt; 6      4.5        All          All       75 3162.262634</span></span>
+<span><span class="co">#&gt; 7      7.5        All          All       25  300.481568</span></span>
+<span><span class="co">#&gt; 8      7.5        All          All       50 2326.992600</span></span>
+<span><span class="co">#&gt; 9      7.5        All          All       75 4963.841562</span></span>
+<span><span class="co">#&gt; 10    10.5        All          All       25 1306.355234</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="vmt_daily">
@@ -168,16 +168,16 @@ Electric (BEV)”, “BEV (Tesla)”, “BEV (Non-Tesla)”, “Hybrid Electric
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">vmt_daily</span>, <span class="fl">10</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    powertrain vehicle_type quantile     miles</span></span>
-<span><span class="co">#&gt; 1         All          All        1  2.744988</span></span>
-<span><span class="co">#&gt; 2         All          All        2  4.737732</span></span>
-<span><span class="co">#&gt; 3         All          All        3  6.107311</span></span>
-<span><span class="co">#&gt; 4         All          All        4  7.260857</span></span>
-<span><span class="co">#&gt; 5         All          All        5  8.264062</span></span>
-<span><span class="co">#&gt; 6         All          All        6  9.157538</span></span>
-<span><span class="co">#&gt; 7         All          All        7  9.957316</span></span>
-<span><span class="co">#&gt; 8         All          All        8 10.702454</span></span>
-<span><span class="co">#&gt; 9         All          All        9 11.360159</span></span>
-<span><span class="co">#&gt; 10        All          All       10 11.970550</span></span></code></pre></div>
+<span><span class="co">#&gt; 1         All          All        1  2.719209</span></span>
+<span><span class="co">#&gt; 2         All          All        2  4.637514</span></span>
+<span><span class="co">#&gt; 3         All          All        3  6.048788</span></span>
+<span><span class="co">#&gt; 4         All          All        4  7.249902</span></span>
+<span><span class="co">#&gt; 5         All          All        5  8.233122</span></span>
+<span><span class="co">#&gt; 6         All          All        6  9.068620</span></span>
+<span><span class="co">#&gt; 7         All          All        7  9.872219</span></span>
+<span><span class="co">#&gt; 8         All          All        8 10.630848</span></span>
+<span><span class="co">#&gt; 9         All          All        9 11.298499</span></span>
+<span><span class="co">#&gt; 10        All          All       10 11.929582</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="vmt_annual_type">
@@ -217,16 +217,16 @@ listings; the slope coefficient represents the estimated annual VMT.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">vmt_annual_type</span>, <span class="fl">10</span><span class="op">)</span></span>
 <span><span class="co">#&gt;                powertrain vehicle_type vmt_annual</span></span>
-<span><span class="co">#&gt; 1  Battery Electric (BEV)          CUV   9254.098</span></span>
-<span><span class="co">#&gt; 2  Battery Electric (BEV)          Car   6311.074</span></span>
-<span><span class="co">#&gt; 3  Battery Electric (BEV)      Minivan   5675.074</span></span>
-<span><span class="co">#&gt; 4  Battery Electric (BEV)       Pickup   8346.890</span></span>
-<span><span class="co">#&gt; 5  Battery Electric (BEV)          SUV   6173.904</span></span>
-<span><span class="co">#&gt; 6                  Diesel          CUV  10350.614</span></span>
-<span><span class="co">#&gt; 7                  Diesel          Car  10157.129</span></span>
-<span><span class="co">#&gt; 8                  Diesel      Minivan   5641.567</span></span>
-<span><span class="co">#&gt; 9                  Diesel       Pickup  12510.755</span></span>
-<span><span class="co">#&gt; 10                 Diesel          SUV  11291.680</span></span></code></pre></div>
+<span><span class="co">#&gt; 1  Battery Electric (BEV)          CUV   9805.068</span></span>
+<span><span class="co">#&gt; 2  Battery Electric (BEV)          Car   6710.569</span></span>
+<span><span class="co">#&gt; 3  Battery Electric (BEV)      Minivan   5523.487</span></span>
+<span><span class="co">#&gt; 4  Battery Electric (BEV)       Pickup   9538.308</span></span>
+<span><span class="co">#&gt; 5  Battery Electric (BEV)          SUV   7433.105</span></span>
+<span><span class="co">#&gt; 6                  Diesel          CUV  10124.972</span></span>
+<span><span class="co">#&gt; 7                  Diesel          Car  10112.002</span></span>
+<span><span class="co">#&gt; 8                  Diesel      Minivan   4841.334</span></span>
+<span><span class="co">#&gt; 9                  Diesel       Pickup  12466.379</span></span>
+<span><span class="co">#&gt; 10                 Diesel          SUV  10947.811</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="vmt_annual_model">
@@ -289,16 +289,16 @@ filtered to positive annual VMT values only.</p>
 <span><span class="co">#&gt; 9        Audi                  A4                Flex Fuel (E85)          Car</span></span>
 <span><span class="co">#&gt; 10       Audi                  A4                       Gasoline          Car</span></span>
 <span><span class="co">#&gt;    vmt_annual</span></span>
-<span><span class="co">#&gt; 1   11439.057</span></span>
-<span><span class="co">#&gt; 2   10757.562</span></span>
-<span><span class="co">#&gt; 3    8313.543</span></span>
-<span><span class="co">#&gt; 4   11357.799</span></span>
-<span><span class="co">#&gt; 5    2678.829</span></span>
-<span><span class="co">#&gt; 6    9029.751</span></span>
-<span><span class="co">#&gt; 7   10771.148</span></span>
-<span><span class="co">#&gt; 8    8687.849</span></span>
-<span><span class="co">#&gt; 9    9907.146</span></span>
-<span><span class="co">#&gt; 10   9203.896</span></span></code></pre></div>
+<span><span class="co">#&gt; 1   11334.421</span></span>
+<span><span class="co">#&gt; 2   10640.250</span></span>
+<span><span class="co">#&gt; 3    8155.315</span></span>
+<span><span class="co">#&gt; 4   11107.978</span></span>
+<span><span class="co">#&gt; 5    7538.852</span></span>
+<span><span class="co">#&gt; 6    8582.209</span></span>
+<span><span class="co">#&gt; 7   10542.387</span></span>
+<span><span class="co">#&gt; 8    8538.215</span></span>
+<span><span class="co">#&gt; 9    9182.230</span></span>
+<span><span class="co">#&gt; 10   9070.911</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="depreciation">
@@ -351,16 +351,16 @@ quantile</td>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">depreciation</span>, <span class="fl">10</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    age_bin powertrain vehicle_type quantile        rr</span></span>
-<span><span class="co">#&gt; 1     13.5        All          All       25 0.8073291</span></span>
-<span><span class="co">#&gt; 2     13.5        All          All       50 0.9427215</span></span>
-<span><span class="co">#&gt; 3     13.5        All          All       75 1.0860465</span></span>
-<span><span class="co">#&gt; 4     16.5        All          All       25 0.7600114</span></span>
-<span><span class="co">#&gt; 5     16.5        All          All       50 0.9012899</span></span>
-<span><span class="co">#&gt; 6     16.5        All          All       75 1.0452036</span></span>
-<span><span class="co">#&gt; 7     19.5        All          All       25 0.6969381</span></span>
-<span><span class="co">#&gt; 8     19.5        All          All       50 0.8365147</span></span>
-<span><span class="co">#&gt; 9     19.5        All          All       75 1.0007048</span></span>
-<span><span class="co">#&gt; 10    22.5        All          All       25 0.6918902</span></span></code></pre></div>
+<span><span class="co">#&gt; 1     13.5        All          All       25 0.8077305</span></span>
+<span><span class="co">#&gt; 2     13.5        All          All       50 0.9425665</span></span>
+<span><span class="co">#&gt; 3     13.5        All          All       75 1.0857731</span></span>
+<span><span class="co">#&gt; 4     16.5        All          All       25 0.7602528</span></span>
+<span><span class="co">#&gt; 5     16.5        All          All       50 0.9009337</span></span>
+<span><span class="co">#&gt; 6     16.5        All          All       75 1.0469076</span></span>
+<span><span class="co">#&gt; 7     19.5        All          All       25 0.7075987</span></span>
+<span><span class="co">#&gt; 8     19.5        All          All       50 0.8456087</span></span>
+<span><span class="co">#&gt; 9     19.5        All          All       75 0.9995060</span></span>
+<span><span class="co">#&gt; 10    22.5        All          All       25 0.7011685</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="dep_annual_type">
@@ -403,16 +403,16 @@ years with valid price and MSRP values are included.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dep_annual_type</span>, <span class="fl">10</span><span class="op">)</span></span>
 <span><span class="co">#&gt;                powertrain vehicle_type dep_annual</span></span>
-<span><span class="co">#&gt; 1  Battery Electric (BEV)          CUV 0.09482215</span></span>
-<span><span class="co">#&gt; 2  Battery Electric (BEV)          Car 0.10086081</span></span>
-<span><span class="co">#&gt; 3  Battery Electric (BEV)      Minivan 0.05807725</span></span>
-<span><span class="co">#&gt; 4  Battery Electric (BEV)       Pickup 0.04463694</span></span>
-<span><span class="co">#&gt; 5  Battery Electric (BEV)          SUV 0.02958732</span></span>
-<span><span class="co">#&gt; 6         Flex Fuel (E85)          CUV 0.06405950</span></span>
-<span><span class="co">#&gt; 7         Flex Fuel (E85)          Car 0.05714146</span></span>
-<span><span class="co">#&gt; 8         Flex Fuel (E85)      Minivan 0.07145816</span></span>
-<span><span class="co">#&gt; 9         Flex Fuel (E85)       Pickup 0.04531542</span></span>
-<span><span class="co">#&gt; 10        Flex Fuel (E85)          SUV 0.09706353</span></span></code></pre></div>
+<span><span class="co">#&gt; 1  Battery Electric (BEV)          CUV 0.10402026</span></span>
+<span><span class="co">#&gt; 2  Battery Electric (BEV)          Car 0.10233225</span></span>
+<span><span class="co">#&gt; 3  Battery Electric (BEV)      Minivan 0.06215965</span></span>
+<span><span class="co">#&gt; 4  Battery Electric (BEV)       Pickup 0.05573484</span></span>
+<span><span class="co">#&gt; 5  Battery Electric (BEV)          SUV 0.02428713</span></span>
+<span><span class="co">#&gt; 6         Flex Fuel (E85)          CUV 0.06586182</span></span>
+<span><span class="co">#&gt; 7         Flex Fuel (E85)          Car 0.05712966</span></span>
+<span><span class="co">#&gt; 8         Flex Fuel (E85)      Minivan 0.07188022</span></span>
+<span><span class="co">#&gt; 9         Flex Fuel (E85)       Pickup 0.04602709</span></span>
+<span><span class="co">#&gt; 10        Flex Fuel (E85)          SUV 0.09711303</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="dep_annual_model">
@@ -467,16 +467,16 @@ filtered to positive depreciation rates only.</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dep_annual_model</span>, <span class="fl">10</span><span class="op">)</span></span>
 <span><span class="co">#&gt;     make        model      powertrain vehicle_type dep_annual</span></span>
-<span><span class="co">#&gt; 1  Acura          MDX        Gasoline          CUV 0.11100674</span></span>
-<span><span class="co">#&gt; 2  Acura          RDX        Gasoline          CUV 0.09427202</span></span>
-<span><span class="co">#&gt; 3  Acura           TL        Gasoline          Car 0.07883295</span></span>
-<span><span class="co">#&gt; 4  Acura          TLX        Gasoline          Car 0.07436195</span></span>
-<span><span class="co">#&gt; 5   Audi           A4 Flex Fuel (E85)          Car 0.06927778</span></span>
-<span><span class="co">#&gt; 6   Audi           A4        Gasoline          Car 0.09856575</span></span>
-<span><span class="co">#&gt; 7   Audi           A5 Flex Fuel (E85)          Car 0.05353769</span></span>
-<span><span class="co">#&gt; 8   Audi A5 Cabriolet Flex Fuel (E85)          Car 0.07067091</span></span>
-<span><span class="co">#&gt; 9   Audi     A5 Coupe Flex Fuel (E85)          Car 0.06737299</span></span>
-<span><span class="co">#&gt; 10  Audi      Allroad Flex Fuel (E85)          Car 0.08653034</span></span></code></pre></div>
+<span><span class="co">#&gt; 1  Acura          MDX        Gasoline          CUV 0.11083871</span></span>
+<span><span class="co">#&gt; 2  Acura          RDX        Gasoline          CUV 0.09383736</span></span>
+<span><span class="co">#&gt; 3  Acura           TL        Gasoline          Car 0.07885553</span></span>
+<span><span class="co">#&gt; 4  Acura          TLX        Gasoline          Car 0.07452962</span></span>
+<span><span class="co">#&gt; 5   Audi           A4 Flex Fuel (E85)          Car 0.07030819</span></span>
+<span><span class="co">#&gt; 6   Audi           A4        Gasoline          Car 0.09650968</span></span>
+<span><span class="co">#&gt; 7   Audi           A5 Flex Fuel (E85)          Car 0.05352090</span></span>
+<span><span class="co">#&gt; 8   Audi A5 Cabriolet Flex Fuel (E85)          Car 0.07388719</span></span>
+<span><span class="co">#&gt; 9   Audi     A5 Coupe Flex Fuel (E85)          Car 0.07335039</span></span>
+<span><span class="co">#&gt; 10  Audi      Allroad Flex Fuel (E85)          Car 0.08773891</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="percent_market">
@@ -540,27 +540,27 @@ within each listing year, inventory type, and group level)</td>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">percent_market</span>, <span class="fl">10</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    listing_year inventory_type  group_var            group_level category_var</span></span>
-<span><span class="co">#&gt; 1          2023            New powertrain Battery Electric (BEV) vehicle_type</span></span>
-<span><span class="co">#&gt; 2          2024            New powertrain Battery Electric (BEV) vehicle_type</span></span>
-<span><span class="co">#&gt; 3          2022            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 1          2019            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 2          2020            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 3          2021            New powertrain Battery Electric (BEV) vehicle_type</span></span>
 <span><span class="co">#&gt; 4          2018            New powertrain Battery Electric (BEV) vehicle_type</span></span>
-<span><span class="co">#&gt; 5          2023            New powertrain Battery Electric (BEV) vehicle_type</span></span>
-<span><span class="co">#&gt; 6          2024            New powertrain Battery Electric (BEV) vehicle_type</span></span>
-<span><span class="co">#&gt; 7          2023            New powertrain Battery Electric (BEV) vehicle_type</span></span>
-<span><span class="co">#&gt; 8          2024            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 5          2018            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 6          2021            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 7          2020            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 8          2019            New powertrain Battery Electric (BEV) vehicle_type</span></span>
 <span><span class="co">#&gt; 9          2022            New powertrain Battery Electric (BEV) vehicle_type</span></span>
-<span><span class="co">#&gt; 10         2021            New powertrain               Gasoline vehicle_type</span></span>
-<span><span class="co">#&gt;    category_level       n           p</span></span>
-<span><span class="co">#&gt; 1             CUV  266235 0.754818351</span></span>
-<span><span class="co">#&gt; 2             CUV  395155 0.765348911</span></span>
-<span><span class="co">#&gt; 3             CUV  138423 0.784853261</span></span>
-<span><span class="co">#&gt; 4         Minivan      31 0.001001421</span></span>
-<span><span class="co">#&gt; 5             SUV    1340 0.003799112</span></span>
-<span><span class="co">#&gt; 6             SUV   10860 0.021033997</span></span>
-<span><span class="co">#&gt; 7          Pickup   19499 0.055282750</span></span>
-<span><span class="co">#&gt; 8          Pickup   38114 0.073820421</span></span>
-<span><span class="co">#&gt; 9          Pickup    7686 0.043579334</span></span>
-<span><span class="co">#&gt; 10            Car 1568596 0.222999993</span></span></code></pre></div>
+<span><span class="co">#&gt; 10         2024            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt;    category_level     n           p</span></span>
+<span><span class="co">#&gt; 1             Car 32849 0.809427593</span></span>
+<span><span class="co">#&gt; 2             Car 27343 0.683028577</span></span>
+<span><span class="co">#&gt; 3             Car 38370 0.398029046</span></span>
+<span><span class="co">#&gt; 4             Car 30747 0.992991862</span></span>
+<span><span class="co">#&gt; 5         Minivan    31 0.001001163</span></span>
+<span><span class="co">#&gt; 6             CUV 58030 0.601970954</span></span>
+<span><span class="co">#&gt; 7             CUV 12689 0.316971423</span></span>
+<span><span class="co">#&gt; 8             CUV  7733 0.190547766</span></span>
+<span><span class="co">#&gt; 9          Pickup  7685 0.043135384</span></span>
+<span><span class="co">#&gt; 10         Pickup 38112 0.073538237</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="percent_dealers">
@@ -617,28 +617,28 @@ group-category combination</td>
 </table>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">percent_dealers</span>, <span class="fl">10</span><span class="op">)</span></span>
-<span><span class="co">#&gt;    listing_year inventory_type  group_var group_level category_var</span></span>
-<span><span class="co">#&gt; 1          2018           Used powertrain    Gasoline vehicle_type</span></span>
-<span><span class="co">#&gt; 2          2021           Used powertrain    Gasoline vehicle_type</span></span>
-<span><span class="co">#&gt; 3          2019           Used powertrain    Gasoline vehicle_type</span></span>
-<span><span class="co">#&gt; 4          2020           Used powertrain    Gasoline vehicle_type</span></span>
-<span><span class="co">#&gt; 5          2020           Used powertrain    Gasoline vehicle_type</span></span>
-<span><span class="co">#&gt; 6          2019           Used powertrain    Gasoline vehicle_type</span></span>
-<span><span class="co">#&gt; 7          2021           Used powertrain    Gasoline vehicle_type</span></span>
-<span><span class="co">#&gt; 8          2018           Used powertrain    Gasoline vehicle_type</span></span>
-<span><span class="co">#&gt; 9          2018           Used powertrain    Gasoline vehicle_type</span></span>
-<span><span class="co">#&gt; 10         2020           Used powertrain    Gasoline vehicle_type</span></span>
-<span><span class="co">#&gt;    category_level         p</span></span>
-<span><span class="co">#&gt; 1          Pickup 0.8387126</span></span>
-<span><span class="co">#&gt; 2          Pickup 0.7811082</span></span>
-<span><span class="co">#&gt; 3          Pickup 0.8406557</span></span>
-<span><span class="co">#&gt; 4          Pickup 0.8123635</span></span>
-<span><span class="co">#&gt; 5             Car 0.9530050</span></span>
-<span><span class="co">#&gt; 6             Car 0.9492858</span></span>
-<span><span class="co">#&gt; 7             Car 0.9410631</span></span>
-<span><span class="co">#&gt; 8             Car 0.9576325</span></span>
-<span><span class="co">#&gt; 9             CUV 0.9225687</span></span>
-<span><span class="co">#&gt; 10            CUV 0.9220349</span></span></code></pre></div>
+<span><span class="co">#&gt;    listing_year inventory_type  group_var            group_level category_var</span></span>
+<span><span class="co">#&gt; 1          2019            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 2          2020            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 3          2021            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 4          2018            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 5          2018            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 6          2021            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 7          2020            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 8          2019            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 9          2022            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 10         2024            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt;    category_level           p</span></span>
+<span><span class="co">#&gt; 1             Car 0.146704506</span></span>
+<span><span class="co">#&gt; 2             Car 0.158801921</span></span>
+<span><span class="co">#&gt; 3             Car 0.191919192</span></span>
+<span><span class="co">#&gt; 4             Car 0.151886245</span></span>
+<span><span class="co">#&gt; 5         Minivan 0.001160766</span></span>
+<span><span class="co">#&gt; 6             CUV 0.318823595</span></span>
+<span><span class="co">#&gt; 7             CUV 0.064255439</span></span>
+<span><span class="co">#&gt; 8             CUV 0.054558091</span></span>
+<span><span class="co">#&gt; 9          Pickup 0.110011107</span></span>
+<span><span class="co">#&gt; 10         Pickup 0.215214411</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="registrations">

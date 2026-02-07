@@ -38,10 +38,10 @@ head(vmt_daily)
 #> # A tibble: 6 × 4
 #>   powertrain vehicle_type quantile miles
 #>   <chr>      <chr>           <dbl> <dbl>
-#> 1 All        All                 1  2.74
-#> 2 All        All                 2  4.74
-#> 3 All        All                 3  6.11
-#> 4 All        All                 4  7.26
-#> 5 All        All                 5  8.26
-#> 6 All        All                 6  9.16
+#> 1 All        All                 1  2.72
+#> 2 All        All                 2  4.64
+#> 3 All        All                 3  6.05
+#> 4 All        All                 4  7.25
+#> 5 All        All                 5  8.23
+#> 6 All        All                 6  9.07
 ```

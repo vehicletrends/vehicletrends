@@ -34,10 +34,10 @@ data(vmt_annual_type)
 
 head(vmt_annual_type)
 #>               powertrain vehicle_type vmt_annual
-#> 1 Battery Electric (BEV)          CUV   9254.098
-#> 2 Battery Electric (BEV)          Car   6311.074
-#> 3 Battery Electric (BEV)      Minivan   5675.074
-#> 4 Battery Electric (BEV)       Pickup   8346.890
-#> 5 Battery Electric (BEV)          SUV   6173.904
-#> 6                 Diesel          CUV  10350.614
+#> 1 Battery Electric (BEV)          CUV   9805.068
+#> 2 Battery Electric (BEV)          Car   6710.569
+#> 3 Battery Electric (BEV)      Minivan   5523.487
+#> 4 Battery Electric (BEV)       Pickup   9538.308
+#> 5 Battery Electric (BEV)          SUV   7433.105
+#> 6                 Diesel          CUV  10124.972
 ```

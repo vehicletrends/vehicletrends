@@ -40,7 +40,7 @@ head(depreciation)
 #> # A tibble: 6 × 5
 #>   age_bin powertrain vehicle_type quantile    rr
 #>     <dbl> <chr>      <chr>           <dbl> <dbl>
-#> 1    13.5 All        All                25 0.807
+#> 1    13.5 All        All                25 0.808
 #> 2    13.5 All        All                50 0.943
 #> 3    13.5 All        All                75 1.09 
 #> 4    16.5 All        All                25 0.760

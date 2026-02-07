@@ -38,10 +38,10 @@ data(vmt_annual_model)
 
 head(vmt_annual_model)
 #>         make  model                     powertrain vehicle_type vmt_annual
-#> 1      Acura    MDX                       Gasoline          CUV  11439.057
-#> 2      Acura    RDX                       Gasoline          CUV  10757.562
-#> 3      Acura     TL                       Gasoline          Car   8313.543
-#> 4      Acura    TLX                       Gasoline          Car  11357.799
-#> 5 Alfa Romeo Tonale Plug-In Hybrid Electric (PHEV)          CUV   2678.829
-#> 6       Audi     A3                         Diesel          Car   9029.751
+#> 1      Acura    MDX                       Gasoline          CUV  11334.421
+#> 2      Acura    RDX                       Gasoline          CUV  10640.250
+#> 3      Acura     TL                       Gasoline          Car   8155.315
+#> 4      Acura    TLX                       Gasoline          Car  11107.978
+#> 5 Alfa Romeo Tonale Plug-In Hybrid Electric (PHEV)          CUV   7538.852
+#> 6       Audi     A3                         Diesel          Car   8582.209
 ```

@@ -41,11 +41,11 @@ head(percent_dealers)
 #> # A tibble: 6 × 7
 #>   listing_year inventory_type group_var  group_level category_var category_level
 #>          <dbl> <chr>          <chr>      <chr>       <chr>        <chr>         
-#> 1         2018 Used           powertrain Gasoline    vehicle_type Pickup        
-#> 2         2021 Used           powertrain Gasoline    vehicle_type Pickup        
-#> 3         2019 Used           powertrain Gasoline    vehicle_type Pickup        
-#> 4         2020 Used           powertrain Gasoline    vehicle_type Pickup        
-#> 5         2020 Used           powertrain Gasoline    vehicle_type Car           
-#> 6         2019 Used           powertrain Gasoline    vehicle_type Car           
+#> 1         2019 New            powertrain Battery El… vehicle_type Car           
+#> 2         2020 New            powertrain Battery El… vehicle_type Car           
+#> 3         2021 New            powertrain Battery El… vehicle_type Car           
+#> 4         2018 New            powertrain Battery El… vehicle_type Car           
+#> 5         2018 New            powertrain Battery El… vehicle_type Minivan       
+#> 6         2021 New            powertrain Battery El… vehicle_type CUV           
 #> # ℹ 1 more variable: p <dbl>
 ```
