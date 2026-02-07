@@ -164,7 +164,7 @@ process_tract <- function(i, p = NULL) {
         dealer_id = nearby_dealers
       ) %>%
         write_dataset(
-          here('data', paste0('dealers_in_', time_thresholds[j], '_min')),
+          here('data-local', paste0('dealers_in_', time_thresholds[j], '_min')),
           partitioning = 'GEOID'
         )
     }

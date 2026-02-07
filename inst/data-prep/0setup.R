@@ -442,5 +442,5 @@ get_coords_dealer <- function() {
 }
 
 get_coords_tract <- function() {
-  return(read_parquet(here::here('data', 'tract_dt.parquet')))
+  return(read_csv(here::here('data-raw', 'tract_centroids.csv')))
 }
