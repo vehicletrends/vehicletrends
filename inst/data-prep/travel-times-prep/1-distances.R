@@ -2,24 +2,6 @@ tictoc::tic() # Start timer
 
 source(here::here('code', '0-setup.R'))
 
-#caculate linear distance using lat and lng
-linear_dist <- function(lat1, lon1, lat2, lon2) {
-  R <- 6371 # Earth's radius in kilometers
-  # Convert degrees to radians
-  lat1 <- lat1 * pi / 180
-  lon1 <- lon1 * pi / 180
-  lat2 <- lat2 * pi / 180
-  lon2 <- lon2 * pi / 180
-
-  # Haversine formula
-  dlat <- lat2 - lat1
-  dlon <- lon2 - lon1
-  a <- sin(dlat / 2)^2 + cos(lat1) * cos(lat2) * sin(dlon / 2)^2
-  c <- 2 * atan2(sqrt(a), sqrt(1 - a))
-  # Distance in kilometers
-  return(R * c) # Distance in kilometers
-}
-
 # For a given census tract, find the distances to all the dealerships
 get_distances <- function(tract, dealer_counts) {
   temp <- copy(dealer_counts)
@@ -71,7 +53,7 @@ dealer_counts <- open_dataset(here::here('data', 'listings_2024.parquet')) %>%
       price >= 60000 ~ "$60k+",
       TRUE ~ "Other"
     )
-  ) %>% 
+  ) %>%
   count(
     dealer_id,
     inventory_type,
@@ -91,7 +73,7 @@ counts_tesla <- read_parquet(here::here('data', 'tesla.parquet')) %>%
     inventory_type = 'new',
     powertrain = 'bev',
     n = 2,
-    vehicle_type = 'car', 
+    vehicle_type = 'car',
     price_bin = "$50k-$60k"
   )
 counts_tesla <- rbind(

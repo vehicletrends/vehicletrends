@@ -444,3 +444,21 @@ get_coords_dealer <- function() {
 get_coords_tract <- function() {
   return(read_csv(here::here('data-raw', 'tract_centroids.csv')))
 }
+
+#caculate linear distance using lat and lng
+linear_dist <- function(lat1, lon1, lat2, lon2) {
+  R <- 6371 # Earth's radius in kilometers
+  # Convert degrees to radians
+  lat1 <- lat1 * pi / 180
+  lon1 <- lon1 * pi / 180
+  lat2 <- lat2 * pi / 180
+  lon2 <- lon2 * pi / 180
+
+  # Haversine formula
+  dlat <- lat2 - lat1
+  dlon <- lon2 - lon1
+  a <- sin(dlat / 2)^2 + cos(lat1) * cos(lat2) * sin(dlon / 2)^2
+  c <- 2 * atan2(sqrt(a), sqrt(1 - a))
+  # Distance in kilometers
+  return(R * c) # Distance in kilometers
+}
