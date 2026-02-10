@@ -6,17 +6,12 @@ col_blue <- "#0000FF"
 
 # Import counts data to compute HHI
 
-counts_total_18 <- open_dataset(here(
-  'data-raw',
-  'counts-2018',
-  'counts_30.parquet'
-))
+counts_root <- 'data-local'
+counts_dir_30 <- file.path(counts_root, "counts_30")
+counts_dir_60 <- file.path(counts_root, "counts_60")
+counts_dir_90 <- file.path(counts_root, "counts_60")
 
-counts_total_24 <- open_dataset(here(
-  'data-raw',
-  'counts-2024',
-  'counts_30.parquet'
-))
+counts_ds <- open_dataset(counts_dir_30)
 
 get_hhi <- function(counts, var) {
   result <- counts %>%
@@ -51,8 +46,12 @@ summarise_hhi <- function(hhi) {
 
 # Compute HHIs
 
+temp <- counts_ds %>%
+  filter(listing_year == 2018) %>%
+  get_hhi(make)
+
 hhi_make <- bind_rows(
-  get_hhi(counts_total_18, make) %>%
+  get_hhi(counts_total, make) %>%
     mutate(year = "2018"),
   get_hhi(counts_total_24, make) %>%
     mutate(year = "2024")

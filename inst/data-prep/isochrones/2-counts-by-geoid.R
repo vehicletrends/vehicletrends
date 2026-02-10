@@ -19,7 +19,7 @@ setDT(dealer_counts, key = 'dealer_id')
 dealer_counts <- dealer_counts[listing_year %in% c(2018, 2025), ]
 
 # Create output directory if it doesn't exist
-counts_root <- '/Volumes/maxone/counts'
+counts_root <- 'data-local'
 output_dir_30 <- file.path(counts_root, "counts_30")
 output_dir_60 <- file.path(counts_root, "counts_60")
 output_dir_90 <- file.path(counts_root, "counts_90")
@@ -127,8 +127,8 @@ cat("Total time:", elapsed_time, "seconds\n")
 # Merge into single parquet files
 
 open_dataset(output_dir_30) %>%
-  write_parquet(here::here("data-local", "counts_30.parquet"))
+  write_parquet(file.path(counts_root, "counts_30.parquet"))
 open_dataset(output_dir_60) %>%
-  write_parquet(here::here("data-local", "counts_60.parquet"))
+  write_parquet(file.path(counts_root, "counts_60.parquet"))
 open_dataset(output_dir_90) %>%
-  write_parquet(here::here("data-local", "counts_90.parquet"))
+  write_parquet(file.path(counts_root, "counts_90.parquet"))
