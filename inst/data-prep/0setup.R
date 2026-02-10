@@ -462,3 +462,9 @@ linear_dist <- function(lat1, lon1, lat2, lon2) {
   # Distance in kilometers
   return(R * c) # Distance in kilometers
 }
+
+make_dir <- function(dir) {
+  if (!dir.exists(dir)) {
+    dir.create(dir, recursive = TRUE)
+  }
+}
