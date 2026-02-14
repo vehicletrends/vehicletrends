@@ -16,16 +16,38 @@ dealer_counts <- read_parquet(here::here(
 setDT(dealer_counts, key = 'dealer_id')
 
 # Keep only the first and last years for size
-dealer_counts <- dealer_counts[listing_year %in% c(2018, 2025), ]
+# dealer_counts <- dealer_counts[listing_year %in% c(2018, 2025), ]
 
 # Create output directory if it doesn't exist
 counts_root <- 'data-local'
-output_dir_30 <- file.path(counts_root, "counts_30")
-output_dir_60 <- file.path(counts_root, "counts_60")
-output_dir_90 <- file.path(counts_root, "counts_90")
+output_dir_30 <- file.path(counts_root, "hhi_30")
+output_dir_60 <- file.path(counts_root, "hhi_60")
+output_dir_90 <- file.path(counts_root, "hhi_90")
 make_dir(output_dir_30)
 make_dir(output_dir_60)
 make_dir(output_dir_90)
+
+# Compute HHI for a given variable from a data.table of counts
+# dt must have columns: powertrain, listing_year, n, and the column named by `var`
+get_hhi <- function(dt, var) {
+  counts <- dt[, .(n = sum(n)), by = c("powertrain", "listing_year", var)]
+  counts[, total := sum(n), by = .(powertrain, listing_year)]
+  counts[, .(hhi = sum((n / total)^2)), by = .(powertrain, listing_year)]
+}
+
+# Compute all three HHI types and merge into a single data.table
+compute_hhi <- function(dt, geoid) {
+  hhi_make <- get_hhi(dt, "make")
+  setnames(hhi_make, "hhi", "hhi_make")
+  hhi_type <- get_hhi(dt, "vehicle_type")
+  setnames(hhi_type, "hhi", "hhi_type")
+  hhi_price <- get_hhi(dt, "price_bin")
+  setnames(hhi_price, "hhi", "hhi_price")
+  hhi <- hhi_make[hhi_type, on = .(powertrain, listing_year)]
+  hhi <- hhi[hhi_price, on = .(powertrain, listing_year)]
+  hhi[, GEOID := geoid]
+  return(hhi)
+}
 
 # Load in datasets (keep these as datasets, don't collect)
 dealers_ds_30 <- open_dataset(here::here(
@@ -75,7 +97,7 @@ if (!force_reprocess && dir.exists(output_dir_90)) {
 total_geoids <- length(geoids)
 cat('N geoids left:', length(remaining_geoids))
 
-# remaining_geoids <- sample(remaining_geoids, 1000)
+# remaining_geoids <- sample(remaining_geoids, 100)
 
 start <- Sys.time()
 for (i in seq_along(remaining_geoids)) {
@@ -92,30 +114,28 @@ for (i in seq_along(remaining_geoids)) {
     filter(GEOID == geoid) %>%
     pull(dealer_id, as_vector = TRUE)
 
-  temp <- dealer_counts[dealer_id %in% dealer_ids_30, ]
-  temp$GEOID <- geoid
+  temp_30 <- dealer_counts[dealer_id %in% dealer_ids_30, ]
   write_parquet(
-    temp,
+    compute_hhi(temp_30, geoid),
     file.path(output_dir_30, paste0(geoid, '.parquet'))
   )
 
-  temp <- dealer_counts[dealer_id %in% dealer_ids_60, ]
-  temp$GEOID <- geoid
+  temp_60 <- dealer_counts[dealer_id %in% dealer_ids_60, ]
   write_parquet(
-    temp,
+    compute_hhi(temp_60, geoid),
     file.path(output_dir_60, paste0(geoid, '.parquet'))
   )
 
-  temp <- dealer_counts[dealer_id %in% dealer_ids_90, ]
-  temp$GEOID <- geoid
+  temp_90 <- dealer_counts[dealer_id %in% dealer_ids_90, ]
   write_parquet(
-    temp,
+    compute_hhi(temp_90, geoid),
     file.path(output_dir_90, paste0(geoid, '.parquet'))
   )
-
-  # Write total counts for GEOID
 }
 stop <- Sys.time()
+
+# 29567.49 seconds
+# ~8-10 hours
 
 # Print elapsed time
 elapsed_time <- as.numeric(stop - start, units = "secs")
@@ -127,8 +147,8 @@ cat("Total time:", elapsed_time, "seconds\n")
 # Merge into single parquet files
 
 open_dataset(output_dir_30) %>%
-  write_parquet(file.path(counts_root, "counts_30.parquet"))
+  write_parquet(file.path(counts_root, "hhi_30.parquet"))
 open_dataset(output_dir_60) %>%
-  write_parquet(file.path(counts_root, "counts_60.parquet"))
+  write_parquet(file.path(counts_root, "hhi_60.parquet"))
 open_dataset(output_dir_90) %>%
-  write_parquet(file.path(counts_root, "counts_90.parquet"))
+  write_parquet(file.path(counts_root, "hhi_90.parquet"))
