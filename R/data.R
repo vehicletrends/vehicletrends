@@ -292,6 +292,52 @@
 #' head(dep_annual_model)
 "dep_annual_model"
 
+#' Herfindahl-Hirschman Index (HHI) summary statistics by census tract
+#'
+#' Summary statistics of the Herfindahl-Hirschman Index (HHI) across US census
+#' tracts, measuring market concentration for different vehicle market
+#' dimensions. HHI values are computed per census tract based on dealers
+#' reachable within a 60-minute drive time isochrone, then summarized across
+#' tracts. Higher HHI values indicate greater market concentration (less
+#' diversity). Nine grouping-variable combinations are included: for each
+#' grouping variable (powertrain, vehicle type, price bin), HHI is computed
+#' over the other three variables (make, and the two remaining grouping
+#' variables).
+#'
+#' Census-tract-level HHI values (before summarization) are available as
+#' parquet files on GitHub. See
+#' \code{TODO_UPDATE_WITH_GITHUB_RELEASE_URL}.
+#'
+#' @format A tibble with 10 variables:
+#'
+#' Variable | Description
+#' -------- | -------------------------------------------
+#' `group_var`    | Grouping variable: "powertrain", "vehicle_type", or "price_bin"
+#' `group_level`  | Level of the grouping variable (e.g., "cv", "car", "$30k-$40k")
+#' `hhi_var`      | Variable over which HHI is computed: "make", "powertrain", "vehicle_type", or "price_bin"
+#' `listing_year` | Year of the vehicle listing
+#' `median`       | Median HHI across census tracts
+#' `q25`          | 25th percentile HHI across census tracts
+#' `q75`          | 75th percentile HHI across census tracts
+#' `IQR`          | Interquartile range of HHI across census tracts
+#' `upper`        | Upper whisker bound (q75 + 1.5 * IQR)
+#' `lower`        | Lower whisker bound (q25 - 1.5 * IQR)
+#'
+#' @docType data
+#'
+#' @usage data(hhi)
+#'
+#' @keywords datasets
+#'
+#' @source Computed from vehicle listings data from
+#' \href{https://www.marketcheck.com/}{Marketcheck}.
+#'
+#' @examples
+#' data(hhi)
+#'
+#' head(hhi)
+"hhi"
+
 #' Percentage of dealers with at least one listing by variable pairs
 #'
 #' Percentage of dealers that have at least one listing for each combination of

@@ -18,6 +18,9 @@ library(ggplot2)
 
 path_raw_data <- '/Volumes/SSK SSD/marketcheck/db/clean/db'
 
+# Isochrone travel time threshold (minutes) used for HHI calculations
+isochrone_min <- 60 # Also can use 30 or 90
+
 options(arrow.unsafe_metadata = TRUE)
 options(dplyr.width = Inf)
 

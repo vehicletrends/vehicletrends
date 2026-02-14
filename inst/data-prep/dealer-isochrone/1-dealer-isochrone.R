@@ -212,6 +212,15 @@ process_tract <- function(i) {
 # Threshold settings
 time_thresholds <- c(30, 60, 90) # minutes
 distance_filters <- time_thresholds * 1.6 * 1.5
+if (!isochrone_min %in% time_thresholds) {
+  stop(
+    "isochrone_min (",
+    isochrone_min,
+    ") is not in time_thresholds (",
+    paste(time_thresholds, collapse = ", "),
+    "). Add it to time_thresholds and re-run."
+  )
+}
 
 # Get coordinates for dealers and census tracts
 coords_dealer <- get_coords_dealer()
