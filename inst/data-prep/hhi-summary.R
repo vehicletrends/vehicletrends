@@ -15,12 +15,13 @@ hhi_pb <- read_parquet(here(hhi_root, paste0("hhi_pb_", iso, ".parquet")))
 summarise_hhi <- function(dt, col, by_cols) {
   dt[,
     .(
+      mean = mean(get(col)),
       median = median(get(col)),
       q25 = quantile(get(col), 0.25),
       q75 = quantile(get(col), 0.75),
       IQR = IQR(get(col)),
-      upper = quantile(get(col), 0.75) + 1.5 * IQR(get(col)),
-      lower = quantile(get(col), 0.25) - 1.5 * IQR(get(col))
+      lower = quantile(get(col), 0.25) - 1.5 * IQR(get(col)),
+      upper = quantile(get(col), 0.75) + 1.5 * IQR(get(col))
     ),
     by = by_cols
   ]
@@ -53,10 +54,45 @@ hhi <- rbindlist(list(
 ))
 
 # Reorder columns
-setcolorder(hhi, c(
-  "group_var", "group_level", "hhi_var", "listing_year",
-  "median", "q25", "q75", "IQR", "upper", "lower"
-))
+setcolorder(
+  hhi,
+  c(
+    "group_var",
+    "group_level",
+    "hhi_var",
+    "listing_year",
+    "mean",
+    "median",
+    "q25",
+    "q75",
+    "IQR",
+    "upper",
+    "lower"
+  )
+)
+
+# Format group_level labels based on group_var
+powertrain_labels <- c(
+  "cv" = "Gasoline",
+  "diesel" = "Diesel",
+  "flex" = "Flex Fuel (E85)",
+  "hev" = "Hybrid Electric (HEV)",
+  "phev" = "Plug-In Hybrid Electric (PHEV)",
+  "bev" = "Battery Electric (BEV)",
+  "fcev" = "Fuel Cell"
+)
+vehicle_type_labels <- c(
+  "car" = "Car",
+  "cuv" = "CUV",
+  "suv" = "SUV",
+  "pickup" = "Pickup",
+  "minivan" = "Minivan"
+)
+hhi[group_var == "powertrain", group_level := powertrain_labels[group_level]]
+hhi[
+  group_var == "vehicle_type",
+  group_level := vehicle_type_labels[group_level]
+]
 
 # Save CSV to data-raw
 write_csv(hhi, here('data-raw', 'hhi.csv'))
@@ -67,242 +103,43 @@ usethis::use_data(hhi, overwrite = TRUE)
 
 # ggplots ----
 
-# By powertrain
+hhi_plot <- function(data, group_name, y_label) {
+  data %>%
+    filter(group_var == group_name) %>%
+    mutate(
+      listing_year = factor(listing_year),
+      group_level = str_wrap(group_level, width = 15)
+    ) %>%
+    ggplot(aes(
+      x = median,
+      y = group_level,
+      color = listing_year
+    )) +
+    geom_pointrange(
+      aes(xmin = q25, xmax = q75),
+      position = position_dodge(width = 0.5),
+      size = 0.4
+    ) +
+    scale_x_continuous(breaks = seq(0, 1, 0.2), limits = c(0, 1)) +
+    facet_wrap(vars(hhi_var), scales = "free_y") +
+    guides(color = guide_legend(reverse = TRUE)) +
+    theme_minimal_vgrid(font_family = font, font_size = 16) +
+    theme(
+      strip.background = element_rect("grey80"),
+      plot.title.position = "plot",
+      panel.background = element_rect(fill = 'white', color = NA),
+      plot.background = element_rect(fill = 'white', color = NA)
+    ) +
+    scale_color_viridis_d() +
+    panel_border() +
+    labs(
+      x = 'HHI (median with IQR)',
+      y = y_label,
+      color = 'Listing Year',
+      subtitle = 'Higher number indicates greater concentration'
+    )
+}
 
-hhi_pt %>%
-  ggplot() +
-  geom_boxplot(
-    aes(x = hhi_make, y = powertrain, fill = listing_year),
-    width = 0.5,
-    outlier.shape = NA
-  ) +
-  scale_x_continuous(breaks = seq(0, 1, 0.2), limits = c(0, 1)) +
-  guides(fill = guide_legend(reverse = TRUE)) +
-  theme_minimal_vgrid(font_family = font, font_size = 16) +
-  theme(
-    strip.background = element_rect("grey80"),
-    plot.title.position = "plot",
-    panel.background = element_rect(fill = 'white', color = NA),
-    plot.background = element_rect(fill = 'white', color = NA)
-  ) +
-  scale_fill_manual(values = c(col_red, col_blue)) +
-  panel_border() +
-  labs(
-    x = 'HHI',
-    y = 'Powertrain',
-    fill = 'Listing Year',
-    title = 'Vehicle brand HHI by powertrain',
-    subtitle = 'Higher number indicates greater concentration'
-  )
-
-hhi_pt %>%
-  ggplot() +
-  geom_boxplot(
-    aes(x = hhi_vehicle_type, y = powertrain, fill = listing_year),
-    width = 0.5,
-    outlier.shape = NA
-  ) +
-  scale_x_continuous(breaks = seq(0, 1, 0.2), limits = c(0, 1)) +
-  guides(fill = guide_legend(reverse = TRUE)) +
-  theme_minimal_vgrid(font_family = font, font_size = 16) +
-  theme(
-    strip.background = element_rect("grey80"),
-    plot.title.position = "plot",
-    panel.background = element_rect(fill = 'white', color = NA),
-    plot.background = element_rect(fill = 'white', color = NA)
-  ) +
-  scale_fill_manual(values = c(col_red, col_blue)) +
-  panel_border() +
-  labs(
-    x = 'HHI',
-    y = 'Powertrain',
-    fill = 'Listing Year',
-    title = 'Vehicle type HHI by powertrain',
-    subtitle = 'Higher number indicates greater concentration'
-  )
-
-hhi_pt %>%
-  ggplot() +
-  geom_boxplot(
-    aes(x = hhi_price_bin, y = powertrain, fill = listing_year),
-    width = 0.5,
-    outlier.shape = NA
-  ) +
-  scale_x_continuous(breaks = seq(0, 1, 0.2), limits = c(0, 1)) +
-  guides(fill = guide_legend(reverse = TRUE)) +
-  theme_minimal_vgrid(font_family = font, font_size = 16) +
-  theme(
-    strip.background = element_rect("grey80"),
-    plot.title.position = "plot",
-    panel.background = element_rect(fill = 'white', color = NA),
-    plot.background = element_rect(fill = 'white', color = NA)
-  ) +
-  scale_fill_manual(values = c(col_red, col_blue)) +
-  panel_border() +
-  labs(
-    x = 'HHI',
-    y = 'Powertrain',
-    fill = 'Listing Year',
-    title = 'Price bin HHI by powertrain',
-    subtitle = 'Higher number indicates greater concentration'
-  )
-
-# By vehicle_type
-
-hhi_vt %>%
-  ggplot() +
-  geom_boxplot(
-    aes(x = hhi_make, y = vehicle_type, fill = listing_year),
-    width = 0.5,
-    outlier.shape = NA
-  ) +
-  scale_x_continuous(breaks = seq(0, 1, 0.2), limits = c(0, 1)) +
-  guides(fill = guide_legend(reverse = TRUE)) +
-  theme_minimal_vgrid(font_family = font, font_size = 16) +
-  theme(
-    strip.background = element_rect("grey80"),
-    plot.title.position = "plot",
-    panel.background = element_rect(fill = 'white', color = NA),
-    plot.background = element_rect(fill = 'white', color = NA)
-  ) +
-  scale_fill_manual(values = c(col_red, col_blue)) +
-  panel_border() +
-  labs(
-    x = 'HHI',
-    y = 'Vehicle Type',
-    fill = 'Listing Year',
-    title = 'Vehicle brand HHI by vehicle type',
-    subtitle = 'Higher number indicates greater concentration'
-  )
-
-hhi_vt %>%
-  ggplot() +
-  geom_boxplot(
-    aes(x = hhi_powertrain, y = vehicle_type, fill = listing_year),
-    width = 0.5,
-    outlier.shape = NA
-  ) +
-  scale_x_continuous(breaks = seq(0, 1, 0.2), limits = c(0, 1)) +
-  guides(fill = guide_legend(reverse = TRUE)) +
-  theme_minimal_vgrid(font_family = font, font_size = 16) +
-  theme(
-    strip.background = element_rect("grey80"),
-    plot.title.position = "plot",
-    panel.background = element_rect(fill = 'white', color = NA),
-    plot.background = element_rect(fill = 'white', color = NA)
-  ) +
-  scale_fill_manual(values = c(col_red, col_blue)) +
-  panel_border() +
-  labs(
-    x = 'HHI',
-    y = 'Vehicle Type',
-    fill = 'Listing Year',
-    title = 'Powertrain HHI by vehicle type',
-    subtitle = 'Higher number indicates greater concentration'
-  )
-
-hhi_vt %>%
-  ggplot() +
-  geom_boxplot(
-    aes(x = hhi_price_bin, y = vehicle_type, fill = listing_year),
-    width = 0.5,
-    outlier.shape = NA
-  ) +
-  scale_x_continuous(breaks = seq(0, 1, 0.2), limits = c(0, 1)) +
-  guides(fill = guide_legend(reverse = TRUE)) +
-  theme_minimal_vgrid(font_family = font, font_size = 16) +
-  theme(
-    strip.background = element_rect("grey80"),
-    plot.title.position = "plot",
-    panel.background = element_rect(fill = 'white', color = NA),
-    plot.background = element_rect(fill = 'white', color = NA)
-  ) +
-  scale_fill_manual(values = c(col_red, col_blue)) +
-  panel_border() +
-  labs(
-    x = 'HHI',
-    y = 'Vehicle Type',
-    fill = 'Listing Year',
-    title = 'Price bin HHI by vehicle type',
-    subtitle = 'Higher number indicates greater concentration'
-  )
-
-# By price_bin
-
-hhi_pb %>%
-  ggplot() +
-  geom_boxplot(
-    aes(x = hhi_make, y = price_bin, fill = listing_year),
-    width = 0.5,
-    outlier.shape = NA
-  ) +
-  scale_x_continuous(breaks = seq(0, 1, 0.2), limits = c(0, 1)) +
-  guides(fill = guide_legend(reverse = TRUE)) +
-  theme_minimal_vgrid(font_family = font, font_size = 16) +
-  theme(
-    strip.background = element_rect("grey80"),
-    plot.title.position = "plot",
-    panel.background = element_rect(fill = 'white', color = NA),
-    plot.background = element_rect(fill = 'white', color = NA)
-  ) +
-  scale_fill_manual(values = c(col_red, col_blue)) +
-  panel_border() +
-  labs(
-    x = 'HHI',
-    y = 'Price Bin',
-    fill = 'Listing Year',
-    title = 'Vehicle brand HHI by price bin',
-    subtitle = 'Higher number indicates greater concentration'
-  )
-
-hhi_pb %>%
-  ggplot() +
-  geom_boxplot(
-    aes(x = hhi_powertrain, y = price_bin, fill = listing_year),
-    width = 0.5,
-    outlier.shape = NA
-  ) +
-  scale_x_continuous(breaks = seq(0, 1, 0.2), limits = c(0, 1)) +
-  guides(fill = guide_legend(reverse = TRUE)) +
-  theme_minimal_vgrid(font_family = font, font_size = 16) +
-  theme(
-    strip.background = element_rect("grey80"),
-    plot.title.position = "plot",
-    panel.background = element_rect(fill = 'white', color = NA),
-    plot.background = element_rect(fill = 'white', color = NA)
-  ) +
-  scale_fill_manual(values = c(col_red, col_blue)) +
-  panel_border() +
-  labs(
-    x = 'HHI',
-    y = 'Price Bin',
-    fill = 'Listing Year',
-    title = 'Powertrain HHI by price bin',
-    subtitle = 'Higher number indicates greater concentration'
-  )
-
-hhi_pb %>%
-  ggplot() +
-  geom_boxplot(
-    aes(x = hhi_vehicle_type, y = price_bin, fill = listing_year),
-    width = 0.5,
-    outlier.shape = NA
-  ) +
-  scale_x_continuous(breaks = seq(0, 1, 0.2), limits = c(0, 1)) +
-  guides(fill = guide_legend(reverse = TRUE)) +
-  theme_minimal_vgrid(font_family = font, font_size = 16) +
-  theme(
-    strip.background = element_rect("grey80"),
-    plot.title.position = "plot",
-    panel.background = element_rect(fill = 'white', color = NA),
-    plot.background = element_rect(fill = 'white', color = NA)
-  ) +
-  scale_fill_manual(values = c(col_red, col_blue)) +
-  panel_border() +
-  labs(
-    x = 'HHI',
-    y = 'Price Bin',
-    fill = 'Listing Year',
-    title = 'Vehicle type HHI by price bin',
-    subtitle = 'Higher number indicates greater concentration'
-  )
+hhi_plot(hhi, "powertrain", "Powertrain")
+hhi_plot(hhi, "vehicle_type", "Vehicle Type")
+hhi_plot(hhi, "price_bin", "Price Bin")

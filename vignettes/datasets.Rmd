@@ -168,6 +168,28 @@ Percentage of dealers that have at least one listing for each combination of two
 head(percent_dealers, 10)
 ```
 
+## `hhi`
+
+Herfindahl-Hirschman Index (HHI) summary statistics across US census tracts, measuring market concentration for different vehicle market dimensions. HHI values are computed per census tract based on dealers reachable within a 60-minute drive time isochrone, then summarized across tracts. Higher HHI values indicate greater market concentration (less diversity). Nine grouping-variable combinations are included: for each grouping variable (powertrain, vehicle type, price bin), HHI is computed over the other three variables (make, and the two remaining grouping variables). Census-tract-level HHI values (before summarization) are also available as parquet files on GitHub (TODO: add link).
+
+| Variable | Description |
+|:----------|:------------------------------------------------|
+| `group_var` | Grouping variable: "powertrain", "vehicle_type", or "price_bin" |
+| `group_level` | Level of the grouping variable (e.g., "Gasoline", "Car", "$30k-$40k") |
+| `hhi_var` | Variable over which HHI is computed: "make", "powertrain", "vehicle_type", or "price_bin" |
+| `listing_year` | Year of the vehicle listing |
+| `mean` | Mean HHI across census tracts |
+| `median` | Median HHI across census tracts |
+| `q25` | 25th percentile HHI across census tracts |
+| `q75` | 75th percentile HHI across census tracts |
+| `IQR` | Interquartile range of HHI across census tracts |
+| `upper` | Upper whisker bound (q75 + 1.5 * IQR) |
+| `lower` | Lower whisker bound (q25 - 1.5 * IQR) |
+
+```{r}
+head(hhi, 10)
+```
+
 ## `registrations`
 
 Annual vehicle registration counts by US state and powertrain type, scraped from the [Alternative Fuels Data Center (AFDC)](https://afdc.energy.gov/vehicle-registration) for years 2016 through 2024.

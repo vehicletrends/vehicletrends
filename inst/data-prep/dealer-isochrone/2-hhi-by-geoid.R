@@ -120,8 +120,7 @@ for (i in seq_along(remaining_geoids)) {
 }
 stop <- Sys.time()
 
-# 29567.49 seconds
-# ~8-10 hours
+# 5 hours
 
 # Print elapsed time
 elapsed_time <- as.numeric(stop - start, units = "secs")

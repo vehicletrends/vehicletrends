@@ -308,14 +308,15 @@
 #' parquet files on GitHub. See
 #' \code{TODO_UPDATE_WITH_GITHUB_RELEASE_URL}.
 #'
-#' @format A tibble with 10 variables:
+#' @format A tibble with 11 variables:
 #'
 #' Variable | Description
 #' -------- | -------------------------------------------
 #' `group_var`    | Grouping variable: "powertrain", "vehicle_type", or "price_bin"
-#' `group_level`  | Level of the grouping variable (e.g., "cv", "car", "$30k-$40k")
+#' `group_level`  | Level of the grouping variable (e.g., "Gasoline", "Car", "$30k-$40k")
 #' `hhi_var`      | Variable over which HHI is computed: "make", "powertrain", "vehicle_type", or "price_bin"
 #' `listing_year` | Year of the vehicle listing
+#' `mean`         | Mean HHI across census tracts
 #' `median`       | Median HHI across census tracts
 #' `q25`          | 25th percentile HHI across census tracts
 #' `q75`          | 75th percentile HHI across census tracts

@@ -1,4 +1,5 @@
 source(here::here("inst", "data-prep", "0setup.R"))
+library(osrm)
 
 # For a given census tract, find the distances to all the dealerships
 # Avoids copy() by building a new data.table from vectors

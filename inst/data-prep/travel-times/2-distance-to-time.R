@@ -1,6 +1,7 @@
 tictoc::tic() # Start timer
 
 source(here::here('code', '0-setup.R'))
+library(osrm)
 
 # Function to process a single GEOID
 process_geoid <- function(geoid, df, chunk_size = 100) {
