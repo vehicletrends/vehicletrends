@@ -48,4 +48,5 @@ for detailed data dictionaries.
 | `dep_annual_model` | Estimated annual depreciation rate by make and model |
 | `percent_market` | Market share proportions across powertrain, vehicle type, and price bin |
 | `percent_dealers` | Percentage of dealers with at least one listing by variable pairs |
+| `hhi` | HHI market concentration summary statistics across US census tracts |
 | `registrations` | Annual vehicle registration counts by US state and powertrain type (2016–2024) |

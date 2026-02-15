@@ -305,8 +305,8 @@
 #' variables).
 #'
 #' Census-tract-level HHI values (before summarization) are available as
-#' parquet files on GitHub. See
-#' \code{TODO_UPDATE_WITH_GITHUB_RELEASE_URL}.
+#' parquet files on GitHub at
+#' \url{https://github.com/vehicletrends/vehicletrends/releases/tag/data-v1}.
 #'
 #' @format A tibble with 11 variables:
 #'
