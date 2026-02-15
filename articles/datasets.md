@@ -321,6 +321,60 @@ head(percent_dealers, 10)
 #> 10         Pickup 0.215214411
 ```
 
+## `hhi`
+
+Herfindahl-Hirschman Index (HHI) summary statistics across US census
+tracts, measuring market concentration for different vehicle market
+dimensions. HHI values are computed per census tract based on dealers
+reachable within a 60-minute drive time isochrone, then summarized
+across tracts. Higher HHI values indicate greater market concentration
+(less diversity). Nine grouping-variable combinations are included: for
+each grouping variable (powertrain, vehicle type, price bin), HHI is
+computed over the other three variables (make, and the two remaining
+grouping variables). Census-tract-level HHI values (before
+summarization) are also available as parquet files on
+[GitHub](https://github.com/vehicletrends/vehicletrends/releases/tag/data-v1).
+
+| Variable       | Description                                                                               |
+|:---------------|:------------------------------------------------------------------------------------------|
+| `group_var`    | Grouping variable: “powertrain”, “vehicle_type”, or “price_bin”                           |
+| `group_level`  | Level of the grouping variable (e.g., “Gasoline”, “Car”, “\$30k-\$40k”)                   |
+| `hhi_var`      | Variable over which HHI is computed: “make”, “powertrain”, “vehicle_type”, or “price_bin” |
+| `listing_year` | Year of the vehicle listing                                                               |
+| `mean`         | Mean HHI across census tracts                                                             |
+| `median`       | Median HHI across census tracts                                                           |
+| `q25`          | 25th percentile HHI across census tracts                                                  |
+| `q75`          | 75th percentile HHI across census tracts                                                  |
+| `IQR`          | Interquartile range of HHI across census tracts                                           |
+| `upper`        | Upper whisker bound (q75 + 1.5 \* IQR)                                                    |
+| `lower`        | Lower whisker bound (q25 - 1.5 \* IQR)                                                    |
+
+``` r
+head(hhi, 10)
+#>     group_var                    group_level hhi_var listing_year       mean
+#> 1  powertrain         Battery Electric (BEV)    make         2022 0.20312602
+#> 2  powertrain         Battery Electric (BEV)    make         2023 0.15328833
+#> 3  powertrain         Battery Electric (BEV)    make         2024 0.15696601
+#> 4  powertrain         Battery Electric (BEV)    make         2025 0.16444612
+#> 5  powertrain                         Diesel    make         2022 0.21996845
+#> 6  powertrain Plug-In Hybrid Electric (PHEV)    make         2023 0.21815277
+#> 7  powertrain          Hybrid Electric (HEV)    make         2024 0.24772064
+#> 8  powertrain          Hybrid Electric (HEV)    make         2022 0.24089100
+#> 9  powertrain                       Gasoline    make         2022 0.09468131
+#> 10 powertrain                       Gasoline    make         2023 0.09733042
+#>        median        q25        q75        IQR     upper         lower
+#> 1  0.14537291 0.12569731 0.20665352 0.08095621 0.3280878  0.0042629983
+#> 2  0.10563205 0.09391663 0.14352344 0.04960681 0.2179337  0.0195064116
+#> 3  0.10964525 0.08868479 0.14803217 0.05934738 0.2370532 -0.0003362752
+#> 4  0.12047871 0.09665293 0.17031514 0.07366221 0.2808085 -0.0138403851
+#> 5  0.21260221 0.18776975 0.24389814 0.05612839 0.3280907  0.1035771613
+#> 6  0.17352926 0.14372901 0.22007527 0.07634626 0.3345947  0.0292096194
+#> 7  0.22115182 0.19967534 0.25606102 0.05638568 0.3406395  0.1150968290
+#> 8  0.21350351 0.19184023 0.25497530 0.06313507 0.3496779  0.0971376127
+#> 9  0.08149692 0.07339856 0.09731230 0.02391374 0.1331829  0.0375279508
+#> 10 0.08568870 0.07502934 0.09976942 0.02474007 0.1368795  0.0379192299
+```
+
 ## `registrations`
 
 Annual vehicle registration counts by US state and powertrain type,

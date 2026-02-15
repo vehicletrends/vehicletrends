@@ -25,7 +25,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">vehicletrends</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.2</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.3</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -641,6 +641,104 @@ group-category combination</td>
 <span><span class="co">#&gt; 10         Pickup 0.215214411</span></span></code></pre></div>
 </div>
 <div class="section level2">
+<h2 id="hhi">
+<code>hhi</code><a class="anchor" aria-label="anchor" href="#hhi"></a>
+</h2>
+<p>Herfindahl-Hirschman Index (HHI) summary statistics across US census
+tracts, measuring market concentration for different vehicle market
+dimensions. HHI values are computed per census tract based on dealers
+reachable within a 60-minute drive time isochrone, then summarized
+across tracts. Higher HHI values indicate greater market concentration
+(less diversity). Nine grouping-variable combinations are included: for
+each grouping variable (powertrain, vehicle type, price bin), HHI is
+computed over the other three variables (make, and the two remaining
+grouping variables). Census-tract-level HHI values (before
+summarization) are also available as parquet files on <a href="https://github.com/vehicletrends/vehicletrends/releases/tag/data-v1" class="external-link">GitHub</a>.</p>
+<table class="table">
+<colgroup>
+<col width="18%">
+<col width="81%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">Variable</th>
+<th align="left">Description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>group_var</code></td>
+<td align="left">Grouping variable: “powertrain”, “vehicle_type”, or
+“price_bin”</td>
+</tr>
+<tr class="even">
+<td align="left"><code>group_level</code></td>
+<td align="left">Level of the grouping variable (e.g., “Gasoline”,
+“Car”, “$30k-$40k”)</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>hhi_var</code></td>
+<td align="left">Variable over which HHI is computed: “make”,
+“powertrain”, “vehicle_type”, or “price_bin”</td>
+</tr>
+<tr class="even">
+<td align="left"><code>listing_year</code></td>
+<td align="left">Year of the vehicle listing</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>mean</code></td>
+<td align="left">Mean HHI across census tracts</td>
+</tr>
+<tr class="even">
+<td align="left"><code>median</code></td>
+<td align="left">Median HHI across census tracts</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>q25</code></td>
+<td align="left">25th percentile HHI across census tracts</td>
+</tr>
+<tr class="even">
+<td align="left"><code>q75</code></td>
+<td align="left">75th percentile HHI across census tracts</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>IQR</code></td>
+<td align="left">Interquartile range of HHI across census tracts</td>
+</tr>
+<tr class="even">
+<td align="left"><code>upper</code></td>
+<td align="left">Upper whisker bound (q75 + 1.5 * IQR)</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>lower</code></td>
+<td align="left">Lower whisker bound (q25 - 1.5 * IQR)</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">hhi</span>, <span class="fl">10</span><span class="op">)</span></span>
+<span><span class="co">#&gt;     group_var                    group_level hhi_var listing_year       mean</span></span>
+<span><span class="co">#&gt; 1  powertrain         Battery Electric (BEV)    make         2022 0.20312602</span></span>
+<span><span class="co">#&gt; 2  powertrain         Battery Electric (BEV)    make         2023 0.15328833</span></span>
+<span><span class="co">#&gt; 3  powertrain         Battery Electric (BEV)    make         2024 0.15696601</span></span>
+<span><span class="co">#&gt; 4  powertrain         Battery Electric (BEV)    make         2025 0.16444612</span></span>
+<span><span class="co">#&gt; 5  powertrain                         Diesel    make         2022 0.21996845</span></span>
+<span><span class="co">#&gt; 6  powertrain Plug-In Hybrid Electric (PHEV)    make         2023 0.21815277</span></span>
+<span><span class="co">#&gt; 7  powertrain          Hybrid Electric (HEV)    make         2024 0.24772064</span></span>
+<span><span class="co">#&gt; 8  powertrain          Hybrid Electric (HEV)    make         2022 0.24089100</span></span>
+<span><span class="co">#&gt; 9  powertrain                       Gasoline    make         2022 0.09468131</span></span>
+<span><span class="co">#&gt; 10 powertrain                       Gasoline    make         2023 0.09733042</span></span>
+<span><span class="co">#&gt;        median        q25        q75        IQR     upper         lower</span></span>
+<span><span class="co">#&gt; 1  0.14537291 0.12569731 0.20665352 0.08095621 0.3280878  0.0042629983</span></span>
+<span><span class="co">#&gt; 2  0.10563205 0.09391663 0.14352344 0.04960681 0.2179337  0.0195064116</span></span>
+<span><span class="co">#&gt; 3  0.10964525 0.08868479 0.14803217 0.05934738 0.2370532 -0.0003362752</span></span>
+<span><span class="co">#&gt; 4  0.12047871 0.09665293 0.17031514 0.07366221 0.2808085 -0.0138403851</span></span>
+<span><span class="co">#&gt; 5  0.21260221 0.18776975 0.24389814 0.05612839 0.3280907  0.1035771613</span></span>
+<span><span class="co">#&gt; 6  0.17352926 0.14372901 0.22007527 0.07634626 0.3345947  0.0292096194</span></span>
+<span><span class="co">#&gt; 7  0.22115182 0.19967534 0.25606102 0.05638568 0.3406395  0.1150968290</span></span>
+<span><span class="co">#&gt; 8  0.21350351 0.19184023 0.25497530 0.06313507 0.3496779  0.0971376127</span></span>
+<span><span class="co">#&gt; 9  0.08149692 0.07339856 0.09731230 0.02391374 0.1331829  0.0375279508</span></span>
+<span><span class="co">#&gt; 10 0.08568870 0.07502934 0.09976942 0.02474007 0.1368795  0.0379192299</span></span></code></pre></div>
+</div>
+<div class="section level2">
 <h2 id="registrations">
 <code>registrations</code><a class="anchor" aria-label="anchor" href="#registrations"></a>
 </h2>
@@ -678,7 +776,7 @@ Data Center (AFDC)</a> for years 2016 through 2024.</p>
 </tr>
 </tbody>
 </table>
-<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">registrations</span>, <span class="fl">10</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    year   state                     powertrain   count</span></span>
 <span><span class="co">#&gt; 1  2016 Alabama         Battery Electric (BEV)     500</span></span>

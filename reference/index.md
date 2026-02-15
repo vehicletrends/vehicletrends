@@ -22,5 +22,7 @@ Data frames contained in this package
   : Market share percentages by variable pairs
 - [`percent_dealers`](https://vehicletrends.github.io/vehicletrends/reference/percent_dealers.md)
   : Percentage of dealers with at least one listing by variable pairs
+- [`hhi`](https://vehicletrends.github.io/vehicletrends/reference/hhi.md)
+  : Herfindahl-Hirschman Index (HHI) summary statistics by census tract
 - [`registrations`](https://vehicletrends.github.io/vehicletrends/reference/registrations.md)
   : Alternative fuel vehicle registrations by state
