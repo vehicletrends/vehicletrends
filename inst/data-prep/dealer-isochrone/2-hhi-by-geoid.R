@@ -5,7 +5,15 @@ listings_ds <- load_ds_prices()
 # # Make initial count of all vehicles by dealer_id
 # # Do this only once then comment it out
 # listings_ds %>%
-#   count(dealer_id, listing_year, price_bin, powertrain, vehicle_type, make) %>%
+#   count(
+#     dealer_id,
+#     inventory_type,
+#     listing_year,
+#     price_bin,
+#     powertrain,
+#     vehicle_type,
+#     make
+#   ) %>%
 #   write_parquet(here::here("data-local", "dealer_counts.parquet"))
 
 # Make initial count of all vehicles by dealer_id
@@ -30,9 +38,9 @@ make_dir(output_dir_pb)
 
 # Compute HHI for a given grouping variable and diversity variable
 get_hhi <- function(dt, group, var) {
-  counts <- dt[, .(n = sum(n)), by = c(group, "listing_year", var)]
-  counts[, total := sum(n), by = c(group, "listing_year")]
-  counts[, .(hhi = sum((n / total)^2)), by = c(group, "listing_year")]
+  counts <- dt[, .(n = sum(n)), by = c(group, "inventory_type", "listing_year", var)]
+  counts[, total := sum(n), by = c(group, "inventory_type", "listing_year")]
+  counts[, .(hhi = sum((n / total)^2)), by = c(group, "inventory_type", "listing_year")]
 }
 
 # Compute HHI by a grouping variable (diversity of the other variables)
@@ -41,7 +49,7 @@ get_hhi <- function(dt, group, var) {
 all_vars <- c("make", "powertrain", "vehicle_type", "price_bin")
 compute_hhi <- function(dt, group, geoid) {
   vars <- setdiff(all_vars, group)
-  join_on <- c(group, "listing_year")
+  join_on <- c(group, "inventory_type", "listing_year")
   hhi <- get_hhi(dt, group, vars[1])
   setnames(hhi, "hhi", paste0("hhi_", vars[1]))
   for (v in vars[-1]) {
