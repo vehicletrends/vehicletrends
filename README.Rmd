@@ -58,3 +58,11 @@ Once loaded, all datasets are available directly by name. See the [datasets arti
 | `percent_dealers` | Percentage of dealers with at least one listing by variable pairs |
 | `hhi` | HHI market concentration summary statistics across US census tracts |
 | `registrations` | Annual vehicle registration counts by US state and powertrain type (2016--2024) |
+
+## Citation information
+
+If you use this package in a publication, please cite it! You can get the citation by typing `citation("vehicletrends")` into R:
+
+```{r}
+citation('vehicletrends')
+```

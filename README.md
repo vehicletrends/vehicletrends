@@ -50,3 +50,27 @@ for detailed data dictionaries.
 | `percent_dealers` | Percentage of dealers with at least one listing by variable pairs |
 | `hhi` | HHI market concentration summary statistics across US census tracts |
 | `registrations` | Annual vehicle registration counts by US state and powertrain type (2016–2024) |
+
+## Citation information
+
+If you use this package in a publication, please cite it! You can get
+the citation by typing `citation("vehicletrends")` into R:
+
+``` r
+citation('vehicletrends')
+#> To cite vehicletrends in publications use:
+#> 
+#>   John Paul Helveston (2026). vehicletrends: Data on Vehicle Trends in
+#>   the USA. R package version 0.0.3.
+#>   https://github.com/vehicletrends/vehicletrends
+#> 
+#> A BibTeX entry for LaTeX users is
+#> 
+#>   @Manual{,
+#>     title = {vehicletrends: Data on Vehicle Trends in the USA},
+#>     author = {John Paul Helveston},
+#>     year = {2026},
+#>     note = {R package version 0.0.3},
+#>     url = {https://github.com/vehicletrends/vehicletrends},
+#>   }
+```
