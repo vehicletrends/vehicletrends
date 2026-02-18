@@ -1,11 +1,11 @@
-citHeader("To cite oica in publications use:")
+citHeader("To cite vehicletrends in publications use:")
 
-citEntry(
-  entry    = "Manual",
-  title    = "oica: Data on Vehicle Production and Sales from the OICA",
+bibentry(
+  bibtype  = "Manual",
+  title    = "vehicletrends: Data on Vehicle Trends in the USA",
   author   = "John Paul Helveston",
-  year     = "2022",
-  note     = "R package version 0.0.1",
-  url      = "https://jhelvy.github.io/oica/",
-  textVersion = "John Paul Helveston (2022). oica: Data on Vehicle Production and Sales from the OICA."
+  year     = "2026",
+  note     = "R package version 0.0.3",
+  url      = "https://github.com/vehicletrends/vehicletrends",
+  textVersion = "John Paul Helveston (2026). vehicletrends: Data on Vehicle Trends in the USA. R package version 0.0.3. https://github.com/vehicletrends/vehicletrends"
 )
