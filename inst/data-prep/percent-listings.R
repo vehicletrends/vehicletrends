@@ -35,7 +35,36 @@ get_percent_listings <- function(var1, var2, var1_name, var2_name) {
     )
 }
 
-# Build unified dataset from all 6 combinations
+# Compute time trends for singular metrics
+# Returns a long data frame with columns:
+#   listing_year, inventory_type, group_var, group_level, n, p
+get_percent_listings_single <- function(var, var_name) {
+  ds %>%
+    count(listing_year, inventory_type, {{ var }}) %>%
+    collect() %>%
+    group_by(listing_year, inventory_type) %>%
+    mutate(p = n / sum(n)) %>%
+    ungroup() %>%
+    rename(group_level = {{ var }}) %>%
+    mutate(
+      group_var = var_name,
+      category_var = NA_character_,
+      group_level = as.character(group_level),
+      category_level = NA_character_
+    ) %>%
+    select(
+      listing_year,
+      inventory_type,
+      group_var,
+      group_level,
+      category_var,
+      category_level,
+      n,
+      p
+    )
+}
+
+# Build unified dataset from all 6 pairwise combinations + 3 singular metrics
 percent_listings <- bind_rows(
   get_percent_listings(
     powertrain,
@@ -72,6 +101,18 @@ percent_listings <- bind_rows(
     vehicle_type,
     "price_bin",
     "vehicle_type"
+  ),
+  get_percent_listings_single(
+    powertrain,
+    "powertrain"
+  ),
+  get_percent_listings_single(
+    vehicle_type,
+    "vehicle_type"
+  ),
+  get_percent_listings_single(
+    price_bin,
+    "price_bin"
   )
 )
 

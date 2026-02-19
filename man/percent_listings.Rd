@@ -3,7 +3,7 @@
 \docType{data}
 \name{percent_listings}
 \alias{percent_listings}
-\title{Share of listings by variable pairs}
+\title{Share of listings by variable pairs and singular variables}
 \format{
 A tibble with 8 variables:\tabular{ll}{
    Variable \tab Description \cr
@@ -11,8 +11,8 @@ A tibble with 8 variables:\tabular{ll}{
    \code{inventory_type} \tab Inventory type: "New" or "Used" \cr
    \code{group_var} \tab Name of the grouping variable: "powertrain", "vehicle_type", or "price_bin" \cr
    \code{group_level} \tab Level of the grouping variable (e.g., "Gasoline", "Car", "$30k-$40k") \cr
-   \code{category_var} \tab Name of the category variable: "powertrain", "vehicle_type", or "price_bin" \cr
-   \code{category_level} \tab Level of the category variable \cr
+   \code{category_var} \tab Name of the category variable: "powertrain", "vehicle_type", or "price_bin"; \code{NA} for singular time trends \cr
+   \code{category_level} \tab Level of the category variable; \code{NA} for singular time trends \cr
    \code{n} \tab Number of listings in this group-category combination \cr
    \code{p} \tab Proportion of listings within the group (sums to 1 within each listing year, inventory type, and group level) \cr
 }
@@ -25,11 +25,12 @@ Computed from vehicle listings data from
 data(percent_listings)
 }
 \description{
-Share of vehicle listings for each combination of two
-grouping variables, computed across all listing years and inventory types.
-Six variable-pair combinations are included: powertrain by vehicle type,
-powertrain by price bin, vehicle type by powertrain, vehicle type by price
-bin, price bin by powertrain, and price bin by vehicle type.
+Share of vehicle listings for combinations of grouping variables, computed
+across all listing years and inventory types. Includes six pairwise
+combinations (powertrain by vehicle type, powertrain by price bin, vehicle
+type by powertrain, vehicle type by price bin, price bin by powertrain, and
+price bin by vehicle type) plus three singular time trends for powertrain,
+vehicle type, and price bin individually.
 }
 \examples{
 data(percent_listings)
