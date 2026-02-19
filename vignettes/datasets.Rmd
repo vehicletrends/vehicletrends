@@ -131,9 +131,9 @@ Estimated annual depreciation rate for individual vehicle make/model combination
 head(dep_annual_model, 10)
 ```
 
-## `percent_market`
+## `percent_listings`
 
-Market share (proportion) of vehicle listings for each combination of two grouping variables, computed across all listing years and inventory types. Six variable-pair combinations are included: powertrain by vehicle type, powertrain by price bin, vehicle type by powertrain, vehicle type by price bin, price bin by powertrain, and price bin by vehicle type.
+Share of vehicle listings for each combination of two grouping variables, computed across all listing years and inventory types. Six variable-pair combinations are included: powertrain by vehicle type, powertrain by price bin, vehicle type by powertrain, vehicle type by price bin, price bin by powertrain, and price bin by vehicle type.
 
 | Variable | Description |
 |:----------|:------------------------------------------------|
@@ -147,7 +147,7 @@ Market share (proportion) of vehicle listings for each combination of two groupi
 | `p` | Proportion of listings within the group (sums to 1 within each listing year, inventory type, and group level) |
 
 ```{r}
-head(percent_market, 10)
+head(percent_listings, 10)
 ```
 
 ## `percent_dealers`

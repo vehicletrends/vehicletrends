@@ -6,7 +6,7 @@ ds <- load_ds_prices()
 # Returns a long data frame with columns:
 #   listing_year, inventory_type, group_var, group_level,
 #   category_var, category_level, n, p
-get_percent_market <- function(var1, var2, var1_name, var2_name) {
+get_percent_listings <- function(var1, var2, var1_name, var2_name) {
   ds %>%
     count(listing_year, inventory_type, {{ var1 }}, {{ var2 }}) %>%
     collect() %>%
@@ -36,38 +36,38 @@ get_percent_market <- function(var1, var2, var1_name, var2_name) {
 }
 
 # Build unified dataset from all 6 combinations
-percent_market <- bind_rows(
-  get_percent_market(
+percent_listings <- bind_rows(
+  get_percent_listings(
     powertrain,
     vehicle_type,
     "powertrain",
     "vehicle_type"
   ),
-  get_percent_market(
+  get_percent_listings(
     powertrain,
     price_bin,
     "powertrain",
     "price_bin"
   ),
-  get_percent_market(
+  get_percent_listings(
     vehicle_type,
     powertrain,
     "vehicle_type",
     "powertrain"
   ),
-  get_percent_market(
+  get_percent_listings(
     vehicle_type,
     price_bin,
     "vehicle_type",
     "price_bin"
   ),
-  get_percent_market(
+  get_percent_listings(
     price_bin,
     powertrain,
     "price_bin",
     "powertrain"
   ),
-  get_percent_market(
+  get_percent_listings(
     price_bin,
     vehicle_type,
     "price_bin",
@@ -105,7 +105,7 @@ format_level <- function(level, var) {
   )
 }
 
-percent_market <- percent_market %>%
+percent_listings <- percent_listings %>%
   mutate(
     inventory_type = str_to_title(inventory_type),
     group_level = format_level(group_level, group_var),
@@ -113,5 +113,5 @@ percent_market <- percent_market %>%
   )
 
 # Save
-write_csv(percent_market, here::here('data-raw', 'percent_market.csv'))
-usethis::use_data(percent_market, overwrite = TRUE)
+write_csv(percent_listings, here::here('data-raw', 'percent_listings.csv'))
+usethis::use_data(percent_listings, overwrite = TRUE)

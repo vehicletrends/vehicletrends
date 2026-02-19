@@ -11,7 +11,7 @@ An R data package containing tidy formatted summary data on vehicle
 trends in the United States. The primary data source is vehicle listings
 from [marketcheck.com](https://www.marketcheck.com/), which have been
 processed into summary statistics including depreciation curves, mileage
-accumulation, market concentration, and market share breakdowns.
+accumulation, market concentration, and share of listings breakdowns.
 
 For a live dashboard of the data, visit
 [vehicletrends.us](https://vehicletrends.us).
@@ -46,7 +46,7 @@ for detailed data dictionaries.
 | `depreciation` | Retention rate quantiles for used vehicles by age, powertrain, and vehicle type |
 | `dep_annual_type` | Estimated annual depreciation rate by powertrain and vehicle type |
 | `dep_annual_model` | Estimated annual depreciation rate by make and model |
-| `percent_market` | Market share proportions across powertrain, vehicle type, and price bin |
+| `percent_listings` | Share of vehicle listings across powertrain, vehicle type, and price bin |
 | `percent_dealers` | Percentage of dealers with at least one listing by variable pairs |
 | `hhi` | HHI market concentration summary statistics across US census tracts |
 | `registrations` | Annual vehicle registration counts by US state and powertrain type (2016–2024) |

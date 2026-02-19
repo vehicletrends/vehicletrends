@@ -188,9 +188,9 @@
 #' head(vmt_annual_model)
 "vmt_annual_model"
 
-#' Market share percentages by variable pairs
+#' Share of listings by variable pairs
 #'
-#' Market share (proportion) of vehicle listings for each combination of two
+#' Share of vehicle listings for each combination of two
 #' grouping variables, computed across all listing years and inventory types.
 #' Six variable-pair combinations are included: powertrain by vehicle type,
 #' powertrain by price bin, vehicle type by powertrain, vehicle type by price
@@ -211,7 +211,7 @@
 #'
 #' @docType data
 #'
-#' @usage data(percent_market)
+#' @usage data(percent_listings)
 #'
 #' @keywords datasets
 #'
@@ -219,10 +219,10 @@
 #' \href{https://www.marketcheck.com/}{Marketcheck}.
 #'
 #' @examples
-#' data(percent_market)
+#' data(percent_listings)
 #'
-#' head(percent_market)
-"percent_market"
+#' head(percent_listings)
+"percent_listings"
 
 #' Estimated annual depreciation rate by powertrain and vehicle type
 #'
