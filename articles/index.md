@@ -2,4 +2,4 @@
 
 ### All vignettes
 
-- [Datasets](https://vehicletrends.github.io/vehicletrends/articles/datasets.md):
+- [Datasets](https://pkg.vehicletrends.us/articles/datasets.md):

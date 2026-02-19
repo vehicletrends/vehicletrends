@@ -4,25 +4,25 @@
 
 Data frames contained in this package
 
-- [`vmt_age`](https://vehicletrends.github.io/vehicletrends/reference/vmt_age.md)
-  : Total vehicle miles traveled quantiles by age
-- [`vmt_daily`](https://vehicletrends.github.io/vehicletrends/reference/vmt_daily.md)
-  : Daily vehicle miles traveled quantiles
-- [`vmt_annual_type`](https://vehicletrends.github.io/vehicletrends/reference/vmt_annual_type.md)
+- [`vmt_age`](https://pkg.vehicletrends.us/reference/vmt_age.md) : Total
+  vehicle miles traveled quantiles by age
+- [`vmt_daily`](https://pkg.vehicletrends.us/reference/vmt_daily.md) :
+  Daily vehicle miles traveled quantiles
+- [`vmt_annual_type`](https://pkg.vehicletrends.us/reference/vmt_annual_type.md)
   : Estimated annual VMT by powertrain and vehicle type
-- [`vmt_annual_model`](https://vehicletrends.github.io/vehicletrends/reference/vmt_annual_model.md)
+- [`vmt_annual_model`](https://pkg.vehicletrends.us/reference/vmt_annual_model.md)
   : Estimated annual VMT by make and model
-- [`depreciation`](https://vehicletrends.github.io/vehicletrends/reference/depreciation.md)
+- [`depreciation`](https://pkg.vehicletrends.us/reference/depreciation.md)
   : Vehicle depreciation quantiles by age, powertrain, and vehicle type
-- [`dep_annual_type`](https://vehicletrends.github.io/vehicletrends/reference/dep_annual_type.md)
+- [`dep_annual_type`](https://pkg.vehicletrends.us/reference/dep_annual_type.md)
   : Estimated annual depreciation rate by powertrain and vehicle type
-- [`dep_annual_model`](https://vehicletrends.github.io/vehicletrends/reference/dep_annual_model.md)
+- [`dep_annual_model`](https://pkg.vehicletrends.us/reference/dep_annual_model.md)
   : Estimated annual depreciation rate by make and model
-- [`percent_market`](https://vehicletrends.github.io/vehicletrends/reference/percent_market.md)
-  : Market share percentages by variable pairs
-- [`percent_dealers`](https://vehicletrends.github.io/vehicletrends/reference/percent_dealers.md)
+- [`percent_listings`](https://pkg.vehicletrends.us/reference/percent_listings.md)
+  : Share of listings by variable pairs
+- [`percent_dealers`](https://pkg.vehicletrends.us/reference/percent_dealers.md)
   : Percentage of dealers with at least one listing by variable pairs
-- [`hhi`](https://vehicletrends.github.io/vehicletrends/reference/hhi.md)
-  : Herfindahl-Hirschman Index (HHI) summary statistics by census tract
-- [`registrations`](https://vehicletrends.github.io/vehicletrends/reference/registrations.md)
+- [`hhi`](https://pkg.vehicletrends.us/reference/hhi.md) :
+  Herfindahl-Hirschman Index (HHI) summary statistics by census tract
+- [`registrations`](https://pkg.vehicletrends.us/reference/registrations.md)
   : Alternative fuel vehicle registrations by state

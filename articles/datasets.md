@@ -231,14 +231,13 @@ head(dep_annual_model, 10)
 #> 10  Audi      Allroad Flex Fuel (E85)          Car 0.08773891
 ```
 
-## `percent_market`
+## `percent_listings`
 
-Market share (proportion) of vehicle listings for each combination of
-two grouping variables, computed across all listing years and inventory
-types. Six variable-pair combinations are included: powertrain by
-vehicle type, powertrain by price bin, vehicle type by powertrain,
-vehicle type by price bin, price bin by powertrain, and price bin by
-vehicle type.
+Share of vehicle listings for each combination of two grouping
+variables, computed across all listing years and inventory types. Six
+variable-pair combinations are included: powertrain by vehicle type,
+powertrain by price bin, vehicle type by powertrain, vehicle type by
+price bin, price bin by powertrain, and price bin by vehicle type.
 
 | Variable         | Description                                                                                                   |
 |:-----------------|:--------------------------------------------------------------------------------------------------------------|
@@ -252,29 +251,29 @@ vehicle type.
 | `p`              | Proportion of listings within the group (sums to 1 within each listing year, inventory type, and group level) |
 
 ``` r
-head(percent_market, 10)
+head(percent_listings, 10)
 #>    listing_year inventory_type  group_var            group_level category_var
-#> 1          2019            New powertrain Battery Electric (BEV) vehicle_type
-#> 2          2020            New powertrain Battery Electric (BEV) vehicle_type
-#> 3          2021            New powertrain Battery Electric (BEV) vehicle_type
-#> 4          2018            New powertrain Battery Electric (BEV) vehicle_type
-#> 5          2018            New powertrain Battery Electric (BEV) vehicle_type
-#> 6          2021            New powertrain Battery Electric (BEV) vehicle_type
-#> 7          2020            New powertrain Battery Electric (BEV) vehicle_type
-#> 8          2019            New powertrain Battery Electric (BEV) vehicle_type
-#> 9          2022            New powertrain Battery Electric (BEV) vehicle_type
-#> 10         2024            New powertrain Battery Electric (BEV) vehicle_type
-#>    category_level     n           p
-#> 1             Car 32849 0.809427593
-#> 2             Car 27343 0.683028577
-#> 3             Car 38370 0.398029046
-#> 4             Car 30747 0.992991862
-#> 5         Minivan    31 0.001001163
-#> 6             CUV 58030 0.601970954
-#> 7             CUV 12689 0.316971423
-#> 8             CUV  7733 0.190547766
-#> 9          Pickup  7685 0.043135384
-#> 10         Pickup 38112 0.073538237
+#> 1          2020            New powertrain               Gasoline vehicle_type
+#> 2          2019            New powertrain               Gasoline vehicle_type
+#> 3          2021            New powertrain               Gasoline vehicle_type
+#> 4          2018            New powertrain               Gasoline vehicle_type
+#> 5          2022            New powertrain Battery Electric (BEV) vehicle_type
+#> 6          2023            New powertrain Battery Electric (BEV) vehicle_type
+#> 7          2024            New powertrain Battery Electric (BEV) vehicle_type
+#> 8          2025            New powertrain Battery Electric (BEV) vehicle_type
+#> 9          2021            New powertrain Battery Electric (BEV) vehicle_type
+#> 10         2020            New powertrain Battery Electric (BEV) vehicle_type
+#>    category_level       n         p
+#> 1             Car 1772062 0.2409294
+#> 2             Car 2075664 0.2751979
+#> 3             Car 1569796 0.2230465
+#> 4             Car 2373330 0.3097330
+#> 5             Car   32007 0.1796531
+#> 6             Car   68007 0.1915021
+#> 7             Car   72997 0.1408499
+#> 8             Car   51451 0.1008667
+#> 9             CUV   58030 0.6019710
+#> 10            CUV   12689 0.3169714
 ```
 
 ## `percent_dealers`

@@ -18,7 +18,7 @@
 <script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Data on Vehicle Trends in the USA">
 <meta name="description" content="An R data package containing tidy formatted summary data on vehicle trends in the United States, including depreciation curves, mileage accumulation, market concentration, and market share breakdowns.">
 <meta property="og:description" content="An R data package containing tidy formatted summary data on vehicle trends in the United States, including depreciation curves, mileage accumulation, market concentration, and market share breakdowns.">
-<meta property="og:image" content="https://vehicletrends.github.io/vehicletrends/reference/figures/logo.png">
+<meta property="og:image" content="https://pkg.vehicletrends.us/reference/figures/logo.png">
 <meta property="og:image:alt" content="Logo for the vehicletrends package">
 </head>
 <body>
@@ -60,7 +60,7 @@
 </div>
 <!-- badges: start -->
 <!-- badges: end -->
-<p>An R data package containing tidy formatted summary data on vehicle trends in the United States. The primary data source is vehicle listings from <a href="https://www.marketcheck.com/" class="external-link">marketcheck.com</a>, which have been processed into summary statistics including depreciation curves, mileage accumulation, market concentration, and market share breakdowns.</p>
+<p>An R data package containing tidy formatted summary data on vehicle trends in the United States. The primary data source is vehicle listings from <a href="https://www.marketcheck.com/" class="external-link">marketcheck.com</a>, which have been processed into summary statistics including depreciation curves, mileage accumulation, market concentration, and share of listings breakdowns.</p>
 <p>For a live dashboard of the data, visit <a href="https://vehicletrends.us" class="external-link">vehicletrends.us</a>.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
@@ -75,7 +75,7 @@
 </h2>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/vehicletrends/vehicletrends" class="external-link">vehicletrends</a></span><span class="op">)</span></span></code></pre></div>
-<p>Once loaded, all datasets are available directly by name. See the <a href="https://pkg.vehicletrends.us/articles/datasets.html" class="external-link">datasets article</a> for detailed data dictionaries.</p>
+<p>Once loaded, all datasets are available directly by name. See the <a href="https://pkg.vehicletrends.us/articles/datasets.html">datasets article</a> for detailed data dictionaries.</p>
 </div>
 <div class="section level2">
 <h2 id="datasets">Datasets<a class="anchor" aria-label="anchor" href="#datasets"></a>
@@ -119,8 +119,8 @@
 <td align="left">Estimated annual depreciation rate by make and model</td>
 </tr>
 <tr class="even">
-<td align="left"><code>percent_market</code></td>
-<td align="left">Market share proportions across powertrain, vehicle type, and price bin</td>
+<td align="left"><code>percent_listings</code></td>
+<td align="left">Share of vehicle listings across powertrain, vehicle type, and price bin</td>
 </tr>
 <tr class="odd">
 <td align="left"><code>percent_dealers</code></td>

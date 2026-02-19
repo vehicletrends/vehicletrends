@@ -1,16 +1,15 @@
-# Market share percentages by variable pairs
+# Share of listings by variable pairs
 
-Market share (proportion) of vehicle listings for each combination of
-two grouping variables, computed across all listing years and inventory
-types. Six variable-pair combinations are included: powertrain by
-vehicle type, powertrain by price bin, vehicle type by powertrain,
-vehicle type by price bin, price bin by powertrain, and price bin by
-vehicle type.
+Share of vehicle listings for each combination of two grouping
+variables, computed across all listing years and inventory types. Six
+variable-pair combinations are included: powertrain by vehicle type,
+powertrain by price bin, vehicle type by powertrain, vehicle type by
+price bin, price bin by powertrain, and price bin by vehicle type.
 
 ## Usage
 
 ``` r
-data(percent_market)
+data(percent_listings)
 ```
 
 ## Format
@@ -37,17 +36,17 @@ Computed from vehicle listings data from
 ## Examples
 
 ``` r
-data(percent_market)
+data(percent_listings)
 
-head(percent_market)
+head(percent_listings)
 #> # A tibble: 6 × 8
 #>   listing_year inventory_type group_var  group_level category_var category_level
 #>          <dbl> <chr>          <chr>      <chr>       <chr>        <chr>         
-#> 1         2019 New            powertrain Battery El… vehicle_type Car           
-#> 2         2020 New            powertrain Battery El… vehicle_type Car           
-#> 3         2021 New            powertrain Battery El… vehicle_type Car           
-#> 4         2018 New            powertrain Battery El… vehicle_type Car           
-#> 5         2018 New            powertrain Battery El… vehicle_type Minivan       
-#> 6         2021 New            powertrain Battery El… vehicle_type CUV           
+#> 1         2020 New            powertrain Gasoline    vehicle_type Car           
+#> 2         2019 New            powertrain Gasoline    vehicle_type Car           
+#> 3         2021 New            powertrain Gasoline    vehicle_type Car           
+#> 4         2018 New            powertrain Gasoline    vehicle_type Car           
+#> 5         2022 New            powertrain Battery El… vehicle_type Car           
+#> 6         2023 New            powertrain Battery El… vehicle_type Car           
 #> # ℹ 2 more variables: n <int>, p <dbl>
 ```
