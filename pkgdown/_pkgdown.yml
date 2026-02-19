@@ -1,4 +1,4 @@
-url: https://vehicletrends.github.io/vehicletrends/
+url: https://pkg.vehicletrends.us/
 
 home:
   title: Data on Vehicle Trends in the USA
@@ -12,7 +12,7 @@ template:
     border-radius: 0.5rem
   opengraph:
     image:
-      src: https://vehicletrends.github.io/vehicletrends/reference/figures/logo.png
+      src: https://pkg.vehicletrends.us/reference/figures/logo.png
       alt: "Logo for the vehicletrends package"
   twitter:
     creator: "@JohnHelveston"
@@ -44,7 +44,7 @@ reference:
   - depreciation
   - dep_annual_type
   - dep_annual_model
-  - percent_market
+  - percent_listings
   - percent_dealers
   - hhi
   - registrations
