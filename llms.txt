@@ -89,7 +89,7 @@ Data frames contained in this package
 - [`dep_annual_model`](https://pkg.vehicletrends.us/reference/dep_annual_model.md)
   : Estimated annual depreciation rate by make and model
 - [`percent_listings`](https://pkg.vehicletrends.us/reference/percent_listings.md)
-  : Share of listings by variable pairs
+  : Share of listings by variable pairs and singular variables
 - [`percent_dealers`](https://pkg.vehicletrends.us/reference/percent_dealers.md)
   : Percentage of dealers with at least one listing by variable pairs
 - [`hhi`](https://pkg.vehicletrends.us/reference/hhi.md) :

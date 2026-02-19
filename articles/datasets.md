@@ -233,11 +233,12 @@ head(dep_annual_model, 10)
 
 ## `percent_listings`
 
-Share of vehicle listings for each combination of two grouping
-variables, computed across all listing years and inventory types. Six
-variable-pair combinations are included: powertrain by vehicle type,
-powertrain by price bin, vehicle type by powertrain, vehicle type by
-price bin, price bin by powertrain, and price bin by vehicle type.
+Share of vehicle listings for combinations of grouping variables,
+computed across all listing years and inventory types. Includes six
+pairwise combinations (powertrain by vehicle type, powertrain by price
+bin, vehicle type by powertrain, vehicle type by price bin, price bin by
+powertrain, and price bin by vehicle type) plus three singular time
+trends for powertrain, vehicle type, and price bin individually.
 
 | Variable         | Description                                                                                                   |
 |:-----------------|:--------------------------------------------------------------------------------------------------------------|
@@ -245,35 +246,35 @@ price bin, price bin by powertrain, and price bin by vehicle type.
 | `inventory_type` | Inventory type: “New” or “Used”                                                                               |
 | `group_var`      | Name of the grouping variable: “powertrain”, “vehicle_type”, or “price_bin”                                   |
 | `group_level`    | Level of the grouping variable (e.g., “Gasoline”, “Car”, “\$30k-\$40k”)                                       |
-| `category_var`   | Name of the category variable: “powertrain”, “vehicle_type”, or “price_bin”                                   |
-| `category_level` | Level of the category variable                                                                                |
+| `category_var`   | Name of the category variable: “powertrain”, “vehicle_type”, or “price_bin”; `NA` for singular time trends    |
+| `category_level` | Level of the category variable; `NA` for singular time trends                                                 |
 | `n`              | Number of listings in this group-category combination                                                         |
 | `p`              | Proportion of listings within the group (sums to 1 within each listing year, inventory type, and group level) |
 
 ``` r
 head(percent_listings, 10)
 #>    listing_year inventory_type  group_var            group_level category_var
-#> 1          2020            New powertrain               Gasoline vehicle_type
-#> 2          2019            New powertrain               Gasoline vehicle_type
-#> 3          2021            New powertrain               Gasoline vehicle_type
-#> 4          2018            New powertrain               Gasoline vehicle_type
-#> 5          2022            New powertrain Battery Electric (BEV) vehicle_type
-#> 6          2023            New powertrain Battery Electric (BEV) vehicle_type
-#> 7          2024            New powertrain Battery Electric (BEV) vehicle_type
-#> 8          2025            New powertrain Battery Electric (BEV) vehicle_type
-#> 9          2021            New powertrain Battery Electric (BEV) vehicle_type
-#> 10         2020            New powertrain Battery Electric (BEV) vehicle_type
-#>    category_level       n         p
-#> 1             Car 1772062 0.2409294
-#> 2             Car 2075664 0.2751979
-#> 3             Car 1569796 0.2230465
-#> 4             Car 2373330 0.3097330
-#> 5             Car   32007 0.1796531
-#> 6             Car   68007 0.1915021
-#> 7             Car   72997 0.1408499
-#> 8             Car   51451 0.1008667
-#> 9             CUV   58030 0.6019710
-#> 10            CUV   12689 0.3169714
+#> 1          2021            New powertrain Battery Electric (BEV) vehicle_type
+#> 2          2020            New powertrain Battery Electric (BEV) vehicle_type
+#> 3          2019            New powertrain Battery Electric (BEV) vehicle_type
+#> 4          2018            New powertrain Battery Electric (BEV) vehicle_type
+#> 5          2017            New powertrain Battery Electric (BEV) vehicle_type
+#> 6          2016            New powertrain Battery Electric (BEV) vehicle_type
+#> 7          2018            New powertrain Battery Electric (BEV) vehicle_type
+#> 8          2019            New powertrain Battery Electric (BEV) vehicle_type
+#> 9          2020            New powertrain Battery Electric (BEV) vehicle_type
+#> 10         2021            New powertrain Battery Electric (BEV) vehicle_type
+#>    category_level     n           p
+#> 1             CUV 57965 0.604545170
+#> 2             CUV 12684 0.317107928
+#> 3             CUV  7726 0.190572507
+#> 4             CUV   186 0.006008528
+#> 5             Car  9152 0.985888183
+#> 6             Car  3032 0.980595084
+#> 7             Car 30739 0.992990050
+#> 8             Car 32814 0.809402827
+#> 9             Car 27315 0.682892072
+#> 10            Car 37917 0.395454830
 ```
 
 ## `percent_dealers`

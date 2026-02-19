@@ -482,11 +482,12 @@ filtered to positive depreciation rates only.</p>
 <h2 id="percent_listings">
 <code>percent_listings</code><a class="anchor" aria-label="anchor" href="#percent_listings"></a>
 </h2>
-<p>Share of vehicle listings for each combination of two grouping
-variables, computed across all listing years and inventory types. Six
-variable-pair combinations are included: powertrain by vehicle type,
-powertrain by price bin, vehicle type by powertrain, vehicle type by
-price bin, price bin by powertrain, and price bin by vehicle type.</p>
+<p>Share of vehicle listings for combinations of grouping variables,
+computed across all listing years and inventory types. Includes six
+pairwise combinations (powertrain by vehicle type, powertrain by price
+bin, vehicle type by powertrain, vehicle type by price bin, price bin by
+powertrain, and price bin by vehicle type) plus three singular time
+trends for powertrain, vehicle type, and price bin individually.</p>
 <table class="table">
 <colgroup>
 <col width="18%">
@@ -518,11 +519,13 @@ price bin, price bin by powertrain, and price bin by vehicle type.</p>
 <tr class="odd">
 <td align="left"><code>category_var</code></td>
 <td align="left">Name of the category variable: “powertrain”,
-“vehicle_type”, or “price_bin”</td>
+“vehicle_type”, or “price_bin”; <code>NA</code> for singular time
+trends</td>
 </tr>
 <tr class="even">
 <td align="left"><code>category_level</code></td>
-<td align="left">Level of the category variable</td>
+<td align="left">Level of the category variable; <code>NA</code> for
+singular time trends</td>
 </tr>
 <tr class="odd">
 <td align="left"><code>n</code></td>
@@ -539,27 +542,27 @@ within each listing year, inventory type, and group level)</td>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">percent_listings</span>, <span class="fl">10</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    listing_year inventory_type  group_var            group_level category_var</span></span>
-<span><span class="co">#&gt; 1          2020            New powertrain               Gasoline vehicle_type</span></span>
-<span><span class="co">#&gt; 2          2019            New powertrain               Gasoline vehicle_type</span></span>
-<span><span class="co">#&gt; 3          2021            New powertrain               Gasoline vehicle_type</span></span>
-<span><span class="co">#&gt; 4          2018            New powertrain               Gasoline vehicle_type</span></span>
-<span><span class="co">#&gt; 5          2022            New powertrain Battery Electric (BEV) vehicle_type</span></span>
-<span><span class="co">#&gt; 6          2023            New powertrain Battery Electric (BEV) vehicle_type</span></span>
-<span><span class="co">#&gt; 7          2024            New powertrain Battery Electric (BEV) vehicle_type</span></span>
-<span><span class="co">#&gt; 8          2025            New powertrain Battery Electric (BEV) vehicle_type</span></span>
-<span><span class="co">#&gt; 9          2021            New powertrain Battery Electric (BEV) vehicle_type</span></span>
-<span><span class="co">#&gt; 10         2020            New powertrain Battery Electric (BEV) vehicle_type</span></span>
-<span><span class="co">#&gt;    category_level       n         p</span></span>
-<span><span class="co">#&gt; 1             Car 1772062 0.2409294</span></span>
-<span><span class="co">#&gt; 2             Car 2075664 0.2751979</span></span>
-<span><span class="co">#&gt; 3             Car 1569796 0.2230465</span></span>
-<span><span class="co">#&gt; 4             Car 2373330 0.3097330</span></span>
-<span><span class="co">#&gt; 5             Car   32007 0.1796531</span></span>
-<span><span class="co">#&gt; 6             Car   68007 0.1915021</span></span>
-<span><span class="co">#&gt; 7             Car   72997 0.1408499</span></span>
-<span><span class="co">#&gt; 8             Car   51451 0.1008667</span></span>
-<span><span class="co">#&gt; 9             CUV   58030 0.6019710</span></span>
-<span><span class="co">#&gt; 10            CUV   12689 0.3169714</span></span></code></pre></div>
+<span><span class="co">#&gt; 1          2021            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 2          2020            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 3          2019            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 4          2018            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 5          2017            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 6          2016            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 7          2018            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 8          2019            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 9          2020            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt; 10         2021            New powertrain Battery Electric (BEV) vehicle_type</span></span>
+<span><span class="co">#&gt;    category_level     n           p</span></span>
+<span><span class="co">#&gt; 1             CUV 57965 0.604545170</span></span>
+<span><span class="co">#&gt; 2             CUV 12684 0.317107928</span></span>
+<span><span class="co">#&gt; 3             CUV  7726 0.190572507</span></span>
+<span><span class="co">#&gt; 4             CUV   186 0.006008528</span></span>
+<span><span class="co">#&gt; 5             Car  9152 0.985888183</span></span>
+<span><span class="co">#&gt; 6             Car  3032 0.980595084</span></span>
+<span><span class="co">#&gt; 7             Car 30739 0.992990050</span></span>
+<span><span class="co">#&gt; 8             Car 32814 0.809402827</span></span>
+<span><span class="co">#&gt; 9             Car 27315 0.682892072</span></span>
+<span><span class="co">#&gt; 10            Car 37917 0.395454830</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="percent_dealers">
