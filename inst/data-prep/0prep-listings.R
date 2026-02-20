@@ -88,11 +88,11 @@ cpi <- read_csv(here::here('data-raw', 'inflation-cpi.csv')) %>%
     month = month(date)
   )
 
-# Adjust to 2024 as reference year
-cpi2024 <- cpi %>%
-  filter(year == 2024, month == 1) %>%
+# Adjust to 2025 as reference year
+cpi2025 <- cpi %>%
+  filter(year == 2025, month == 1) %>%
   pull(cpi)
-cpi$cpi <- cpi$cpi / cpi2024
+cpi$cpi <- cpi$cpi / cpi2025
 cpi <- cpi %>%
   filter(!is.na(cpi)) %>%
   rename(

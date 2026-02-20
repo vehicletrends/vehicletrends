@@ -103,23 +103,6 @@ raw_data_filters <- function(ds) {
     filter(!is.na(latitude)) %>%
     filter(!is.na(longitude)) %>%
     filter(age_years <= 15) %>%
-
-    # dealer_id "2202_2504_1102390" is a very large Tesla store in Illinois
-    # Since no other Tesla store sales are recorded in this dataset,
-    # we chose to filter out this one store as it accounts for a
-    # disproportionate number of PEV listings in IL in 2024:
-    # 36,425 listings, or 62.2% of all BEVs in IL in 2024.
-    # This can be confirmed by running this:
-    # ds %>%
-    #   filter(state == 'IL') %>%
-    #   filter(listing_year == 2024) %>%
-    #   filter(powertrain == 'bev') %>%
-    #   count(dealer_id) %>%
-    #   collect() %>%
-    #   arrange(desc(n)) %>%
-    #   mutate(p = n / sum(n))
-    filter(dealer_id != "2202_2504_1102390") %>%
-
     # Recode powertrain variable for "hybrid" and "conventional"
     mutate(
       powertrain = ifelse(
