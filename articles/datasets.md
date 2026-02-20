@@ -254,27 +254,27 @@ trends for powertrain, vehicle type, and price bin individually.
 ``` r
 head(percent_listings, 10)
 #>    listing_year inventory_type  group_var            group_level category_var
-#> 1          2021            New powertrain Battery Electric (BEV) vehicle_type
-#> 2          2020            New powertrain Battery Electric (BEV) vehicle_type
-#> 3          2019            New powertrain Battery Electric (BEV) vehicle_type
-#> 4          2018            New powertrain Battery Electric (BEV) vehicle_type
-#> 5          2017            New powertrain Battery Electric (BEV) vehicle_type
-#> 6          2016            New powertrain Battery Electric (BEV) vehicle_type
-#> 7          2018            New powertrain Battery Electric (BEV) vehicle_type
-#> 8          2019            New powertrain Battery Electric (BEV) vehicle_type
-#> 9          2020            New powertrain Battery Electric (BEV) vehicle_type
-#> 10         2021            New powertrain Battery Electric (BEV) vehicle_type
+#> 1          2018            New powertrain Battery Electric (BEV) vehicle_type
+#> 2          2025            New powertrain Battery Electric (BEV) vehicle_type
+#> 3          2024            New powertrain Battery Electric (BEV) vehicle_type
+#> 4          2024            New powertrain Battery Electric (BEV) vehicle_type
+#> 5          2025            New powertrain Battery Electric (BEV) vehicle_type
+#> 6          2023            New powertrain Battery Electric (BEV) vehicle_type
+#> 7          2022            New powertrain Battery Electric (BEV) vehicle_type
+#> 8          2023            New powertrain Battery Electric (BEV) vehicle_type
+#> 9          2024            New powertrain Battery Electric (BEV) vehicle_type
+#> 10         2025            New powertrain Battery Electric (BEV) vehicle_type
 #>    category_level     n           p
-#> 1             CUV 57965 0.604545170
-#> 2             CUV 12684 0.317107928
-#> 3             CUV  7726 0.190572507
-#> 4             CUV   186 0.006008528
-#> 5             Car  9152 0.985888183
-#> 6             Car  3032 0.980595084
-#> 7             Car 30739 0.992990050
-#> 8             Car 32814 0.809402827
-#> 9             Car 27315 0.682892072
-#> 10            Car 37917 0.395454830
+#> 1         Minivan    31 0.001001163
+#> 2         Minivan  6115 0.011988104
+#> 3         Minivan   933 0.001800251
+#> 4             SUV 10858 0.020950834
+#> 5             SUV 29138 0.057123365
+#> 6             SUV  1341 0.003776146
+#> 7          Pickup  7685 0.043135384
+#> 8          Pickup 19497 0.054901950
+#> 9          Pickup 38112 0.073538237
+#> 10         Pickup 51014 0.100009998
 ```
 
 ## `percent_dealers`
