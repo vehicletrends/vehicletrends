@@ -1,10 +1,8 @@
 source(here::here("inst", "data-prep", "0setup.R"))
 
-listings_ds <- load_ds_prices()
-
 # # Make initial count of all vehicles by dealer_id
 # # Do this only once then comment it out
-# listings_ds %>%
+# load_ds_prices() %>%
 #   count(
 #     dealer_id,
 #     inventory_type,
@@ -32,15 +30,27 @@ iso <- isochrone_min # Global var in 0setup.R
 output_dir_pt <- file.path(counts_root, paste0("hhi_pt_", iso))
 output_dir_vt <- file.path(counts_root, paste0("hhi_vt_", iso))
 output_dir_pb <- file.path(counts_root, paste0("hhi_pb_", iso))
+output_dir_p_pt <- file.path(counts_root, paste0("p_pt_", iso))
+output_dir_p_vt <- file.path(counts_root, paste0("p_vt_", iso))
+output_dir_p_pb <- file.path(counts_root, paste0("p_pb_", iso))
 make_dir(output_dir_pt)
 make_dir(output_dir_vt)
 make_dir(output_dir_pb)
+make_dir(output_dir_p_pt)
+make_dir(output_dir_p_vt)
+make_dir(output_dir_p_pb)
 
 # Compute HHI for a given grouping variable and diversity variable
 get_hhi <- function(dt, group, var) {
-  counts <- dt[, .(n = sum(n)), by = c(group, "inventory_type", "listing_year", var)]
+  counts <- dt[,
+    .(n = sum(n)),
+    by = c(group, "inventory_type", "listing_year", var)
+  ]
   counts[, total := sum(n), by = c(group, "inventory_type", "listing_year")]
-  counts[, .(hhi = sum((n / total)^2)), by = c(group, "inventory_type", "listing_year")]
+  counts[,
+    .(hhi = sum((n / total)^2)),
+    by = c(group, "inventory_type", "listing_year")
+  ]
 }
 
 # Compute HHI by a grouping variable (diversity of the other variables)
@@ -59,6 +69,19 @@ compute_hhi <- function(dt, group, geoid) {
   }
   hhi[, GEOID := geoid]
   return(hhi)
+}
+
+compute_p <- function(dt, group, geoid) {
+  counts <- dt[,
+    .(n = sum(n)),
+    by = c(group, "inventory_type", "listing_year")
+  ]
+  counts[, total := sum(n), by = c("inventory_type", "listing_year")]
+  counts[, p := (n / total)]
+  counts[, GEOID := geoid]
+  counts$n <- NULL
+  counts$total <- NULL
+  return(counts)
 }
 
 # Load dealer dataset for selected isochrone
@@ -113,6 +136,8 @@ for (i in seq_along(remaining_geoids)) {
     pull(dealer_id, as_vector = TRUE)
 
   temp <- dealer_counts[dealer_id %in% dealer_ids, ]
+
+  # Write HHI files
   write_parquet(
     compute_hhi(temp, "powertrain", geoid),
     file.path(output_dir_pt, paste0(geoid, '.parquet'))
@@ -124,6 +149,20 @@ for (i in seq_along(remaining_geoids)) {
   write_parquet(
     compute_hhi(temp, "price_bin", geoid),
     file.path(output_dir_pb, paste0(geoid, '.parquet'))
+  )
+
+  # Write proportion files
+  write_parquet(
+    compute_p(temp, 'powertrain', geoid),
+    file.path(output_dir_p_pt, paste0(geoid, '.parquet'))
+  )
+  write_parquet(
+    compute_p(temp, 'vehicle_type', geoid),
+    file.path(output_dir_p_vt, paste0(geoid, '.parquet'))
+  )
+  write_parquet(
+    compute_p(temp, 'price_bin', geoid),
+    file.path(output_dir_p_pb, paste0(geoid, '.parquet'))
   )
 }
 stop <- Sys.time()
@@ -139,6 +178,7 @@ cat("Total time:", elapsed_time, "seconds\n")
 
 # Merge into single parquet files
 
+# HHI files
 open_dataset(output_dir_pt) %>%
   write_parquet(file.path(counts_root, paste0("hhi_pt_", iso, ".parquet")))
 
@@ -147,3 +187,13 @@ open_dataset(output_dir_vt) %>%
 
 open_dataset(output_dir_pb) %>%
   write_parquet(file.path(counts_root, paste0("hhi_pb_", iso, ".parquet")))
+
+# Proportion files
+open_dataset(output_dir_p_pt) %>%
+  write_parquet(file.path(counts_root, paste0("p_pt_", iso, ".parquet")))
+
+open_dataset(output_dir_p_vt) %>%
+  write_parquet(file.path(counts_root, paste0("p_vt_", iso, ".parquet")))
+
+open_dataset(output_dir_p_pb) %>%
+  write_parquet(file.path(counts_root, paste0("p_pb_", iso, ".parquet")))
