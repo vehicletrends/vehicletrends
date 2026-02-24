@@ -27,26 +27,27 @@ setDT(dealer_counts, key = 'dealer_id')
 # Create output directories if they don't exist
 counts_root <- 'data-local'
 iso <- isochrone_min # Global var in 0setup.R
-output_dir_pt <- file.path(counts_root, paste0("hhi_pt_", iso))
-output_dir_vt <- file.path(counts_root, paste0("hhi_vt_", iso))
-output_dir_pb <- file.path(counts_root, paste0("hhi_pb_", iso))
+output_dir_hhi_pt <- file.path(counts_root, paste0("hhi_pt_", iso))
+output_dir_hhi_vt <- file.path(counts_root, paste0("hhi_vt_", iso))
+output_dir_hhi_pb <- file.path(counts_root, paste0("hhi_pb_", iso))
 output_dir_p_pt <- file.path(counts_root, paste0("p_pt_", iso))
 output_dir_p_vt <- file.path(counts_root, paste0("p_vt_", iso))
 output_dir_p_pb <- file.path(counts_root, paste0("p_pb_", iso))
-make_dir(output_dir_pt)
-make_dir(output_dir_vt)
-make_dir(output_dir_pb)
+make_dir(output_dir_hhi_pt)
+make_dir(output_dir_hhi_vt)
+make_dir(output_dir_hhi_pb)
 make_dir(output_dir_p_pt)
 make_dir(output_dir_p_vt)
 make_dir(output_dir_p_pb)
 
 # Compute HHI for a given grouping variable and diversity variable
-get_hhi <- function(dt, group, var) {
+# totals: precomputed dt[, .(total = sum(n)), by = c(group, "inventory_type", "listing_year")]
+get_hhi <- function(dt, group, var, totals) {
   counts <- dt[,
     .(n = sum(n)),
     by = c(group, "inventory_type", "listing_year", var)
   ]
-  counts[, total := sum(n), by = c(group, "inventory_type", "listing_year")]
+  counts <- counts[totals, on = c(group, "inventory_type", "listing_year")]
   counts[,
     .(hhi = sum((n / total)^2)),
     by = c(group, "inventory_type", "listing_year")
@@ -60,10 +61,11 @@ all_vars <- c("make", "powertrain", "vehicle_type", "price_bin")
 compute_hhi <- function(dt, group, geoid) {
   vars <- setdiff(all_vars, group)
   join_on <- c(group, "inventory_type", "listing_year")
-  hhi <- get_hhi(dt, group, vars[1])
+  totals <- dt[, .(total = sum(n)), by = join_on]
+  hhi <- get_hhi(dt, group, vars[1], totals)
   setnames(hhi, "hhi", paste0("hhi_", vars[1]))
   for (v in vars[-1]) {
-    hhi_v <- get_hhi(dt, group, v)
+    hhi_v <- get_hhi(dt, group, v, totals)
     setnames(hhi_v, "hhi", paste0("hhi_", v))
     hhi <- hhi[hhi_v, on = join_on]
   }
@@ -79,16 +81,19 @@ compute_p <- function(dt, group, geoid) {
   counts[, total := sum(n), by = c("inventory_type", "listing_year")]
   counts[, p := (n / total)]
   counts[, GEOID := geoid]
-  counts$n <- NULL
-  counts$total <- NULL
+  counts[, c("n", "total") := NULL]
   return(counts)
 }
 
-# Load dealer dataset for selected isochrone
-dealers_ds <- open_dataset(here::here(
+# Load dealer dataset for selected isochrone into memory as a keyed data.table
+# to avoid ~84k individual parquet scans in the loop
+dealers <- open_dataset(here::here(
   'data-local',
   paste0('dealers_in_', iso, '_min.parquet')
-))
+)) %>%
+  collect() %>%
+  as.data.table()
+setkey(dealers, "GEOID")
 
 # Get all unique GEOIDs from the tracts dataset
 coords_tract <- get_coords_tract()
@@ -100,9 +105,9 @@ geoids <- coords_tract$GEOID
 force_reprocess <- FALSE
 
 # Get list of already processed GEOIDs
-if (!force_reprocess && dir.exists(output_dir_pt)) {
+if (!force_reprocess && dir.exists(output_dir_hhi_pt)) {
   existing_partitions <- list.files(
-    output_dir_pt,
+    output_dir_hhi_pt,
     full.names = FALSE
   )
   existing_geoids <- gsub(".parquet", "", existing_partitions)
@@ -124,31 +129,28 @@ if (!force_reprocess && dir.exists(output_dir_pt)) {
 total_geoids <- length(geoids)
 cat('N geoids left:', length(remaining_geoids))
 
-# remaining_geoids <- sample(remaining_geoids, 100)
+#  <- sample(remaining_geoids, 100)
 
 start <- Sys.time()
 for (i in seq_along(remaining_geoids)) {
   geoid <- remaining_geoids[i]
 
   # Get dealers for this GEOID
-  dealer_ids <- dealers_ds %>%
-    filter(GEOID == geoid) %>%
-    pull(dealer_id, as_vector = TRUE)
-
+  dealer_ids <- dealers[GEOID == geoid, dealer_id]
   temp <- dealer_counts[dealer_id %in% dealer_ids, ]
 
   # Write HHI files
   write_parquet(
     compute_hhi(temp, "powertrain", geoid),
-    file.path(output_dir_pt, paste0(geoid, '.parquet'))
+    file.path(output_dir_hhi_pt, paste0(geoid, '.parquet'))
   )
   write_parquet(
     compute_hhi(temp, "vehicle_type", geoid),
-    file.path(output_dir_vt, paste0(geoid, '.parquet'))
+    file.path(output_dir_hhi_vt, paste0(geoid, '.parquet'))
   )
   write_parquet(
     compute_hhi(temp, "price_bin", geoid),
-    file.path(output_dir_pb, paste0(geoid, '.parquet'))
+    file.path(output_dir_hhi_pb, paste0(geoid, '.parquet'))
   )
 
   # Write proportion files
@@ -179,13 +181,13 @@ cat("Total time:", elapsed_time, "seconds\n")
 # Merge into single parquet files
 
 # HHI files
-open_dataset(output_dir_pt) %>%
+open_dataset(output_dir_hhi_pt) %>%
   write_parquet(file.path(counts_root, paste0("hhi_pt_", iso, ".parquet")))
 
-open_dataset(output_dir_vt) %>%
+open_dataset(output_dir_hhi_vt) %>%
   write_parquet(file.path(counts_root, paste0("hhi_vt_", iso, ".parquet")))
 
-open_dataset(output_dir_pb) %>%
+open_dataset(output_dir_hhi_pb) %>%
   write_parquet(file.path(counts_root, paste0("hhi_pb_", iso, ".parquet")))
 
 # Proportion files
