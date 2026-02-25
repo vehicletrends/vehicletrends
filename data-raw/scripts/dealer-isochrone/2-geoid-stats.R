@@ -1,4 +1,4 @@
-source(here::here("inst", "data-prep", "0setup.R"))
+source(here::here("data-raw", "scripts", "0setup.R"))
 
 # # Make initial count of all vehicles by dealer_id
 # # Do this only once then comment it out

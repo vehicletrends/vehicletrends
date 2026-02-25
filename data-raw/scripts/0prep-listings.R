@@ -1,4 +1,4 @@
-source(here::here("inst", "data-prep", "0setup.R"))
+source(here::here("data-raw", "scripts", "0setup.R"))
 
 # The raw listings are stored on an external drive. Since they are
 # under a license agreement, they cannot be made publicly

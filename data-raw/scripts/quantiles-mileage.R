@@ -1,4 +1,4 @@
-source(here::here("inst", "data-prep", "0setup.R"))
+source(here::here("data-raw", "scripts", "0setup.R"))
 
 get_quantiles_vmt <- function(df) {
   df %>%
