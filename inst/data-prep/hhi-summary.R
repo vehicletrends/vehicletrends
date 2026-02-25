@@ -38,7 +38,7 @@ make_hhi_summary <- function(dt, hhi_col, group_col) {
 }
 
 # Combine all HHI summaries into one tidy dataset
-hhi <- rbindlist(list(
+hhi_local <- rbindlist(list(
   # By powertrain
   make_hhi_summary(hhi_pt, "hhi_make", "powertrain"),
   make_hhi_summary(hhi_pt, "hhi_vehicle_type", "powertrain"),
@@ -55,7 +55,7 @@ hhi <- rbindlist(list(
 
 # Reorder columns
 setcolorder(
-  hhi,
+  hhi_local,
   c(
     "group_var",
     "group_level",
@@ -88,18 +88,18 @@ vehicle_type_labels <- c(
   "pickup" = "Pickup",
   "minivan" = "Minivan"
 )
-hhi[group_var == "powertrain", group_level := powertrain_labels[group_level]]
-hhi[
+hhi_local[group_var == "powertrain", group_level := powertrain_labels[group_level]]
+hhi_local[
   group_var == "vehicle_type",
   group_level := vehicle_type_labels[group_level]
 ]
 
 # Save CSV to data-raw
-write_csv(hhi, here('data-raw', 'hhi.csv'))
+write_csv(hhi_local, here('data-raw', 'hhi_local.csv'))
 
 # Export as .rda
-hhi <- as_tibble(hhi)
-usethis::use_data(hhi, overwrite = TRUE)
+hhi_local <- as_tibble(hhi_local)
+usethis::use_data(hhi_local, overwrite = TRUE)
 
 # ggplots ----
 
@@ -140,6 +140,6 @@ hhi_plot <- function(data, group_name, y_label) {
     )
 }
 
-hhi_plot(hhi, "powertrain", "Powertrain")
-hhi_plot(hhi, "vehicle_type", "Vehicle Type")
-hhi_plot(hhi, "price_bin", "Price Bin")
+hhi_plot(hhi_local, "powertrain", "Powertrain")
+hhi_plot(hhi_local, "vehicle_type", "Vehicle Type")
+hhi_plot(hhi_local, "price_bin", "Price Bin")

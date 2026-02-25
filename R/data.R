@@ -327,7 +327,7 @@
 #'
 #' @docType data
 #'
-#' @usage data(hhi)
+#' @usage data(hhi_local)
 #'
 #' @keywords datasets
 #'
@@ -335,10 +335,54 @@
 #' \href{https://www.marketcheck.com/}{Marketcheck}.
 #'
 #' @examples
-#' data(hhi)
+#' data(hhi_local)
 #'
-#' head(hhi)
-"hhi"
+#' head(hhi_local)
+"hhi_local"
+
+#' Local market share summary statistics by census tract
+#'
+#' Summary statistics of the share of vehicle listings (`p`) across US census
+#' tracts, measuring the distribution of local market shares for different
+#' vehicle market segments. Values are computed per census tract based on
+#' dealers reachable within a 60-minute drive time isochrone, then summarized
+#' across tracts. Three grouping variables are included: powertrain, vehicle
+#' type, and price bin, each crossed with inventory type and listing year.
+#'
+#' Census-tract-level values (before summarization) are available as
+#' parquet files on GitHub at
+#' \url{https://github.com/vehicletrends/vehicletrends/releases/tag/data-v1}.
+#'
+#' @format A tibble with 11 variables:
+#'
+#' Variable | Description
+#' -------- | -------------------------------------------
+#' `group_var`      | Grouping variable: "powertrain", "vehicle_type", or "price_bin"
+#' `group_level`    | Level of the grouping variable (e.g., "Gasoline", "Car", "$30k-$40k")
+#' `inventory_type` | Inventory type: "New" or "Used"
+#' `listing_year`   | Year of the vehicle listing
+#' `mean`           | Mean local market share across census tracts
+#' `median`         | Median local market share across census tracts
+#' `q25`            | 25th percentile local market share across census tracts
+#' `q75`            | 75th percentile local market share across census tracts
+#' `IQR`            | Interquartile range of local market share across census tracts
+#' `upper`          | Upper whisker bound (q75 + 1.5 * IQR)
+#' `lower`          | Lower whisker bound (q25 - 1.5 * IQR)
+#'
+#' @docType data
+#'
+#' @usage data(p_local)
+#'
+#' @keywords datasets
+#'
+#' @source Computed from vehicle listings data from
+#' \href{https://www.marketcheck.com/}{Marketcheck}.
+#'
+#' @examples
+#' data(p_local)
+#'
+#' head(p_local)
+"p_local"
 
 #' Percentage of dealers with at least one listing by variable pairs
 #'
