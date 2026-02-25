@@ -7,7 +7,7 @@
 #   gh release delete data-v1 --yes
 # Then re-run this script.
 
-gh release create data-v1 \
+gh release create data-v2 \
   data-local/hhi_pt_60.parquet \
   data-local/hhi_vt_60.parquet \
   data-local/hhi_pb_60.parquet \
@@ -15,6 +15,6 @@ gh release create data-v1 \
   --notes "Raw HHI parquet files computed per census tract using a 60-minute drive time isochrone. The names are by the grouping variable: pt = powertrain, vt = vehicle_type (body style), pb = price_bin
 
 Download URLs:
-- https://github.com/vehicletrends/vehicletrends/releases/download/data-v1/hhi_pt_60.parquet
-- https://github.com/vehicletrends/vehicletrends/releases/download/data-v1/hhi_vt_60.parquet
-- https://github.com/vehicletrends/vehicletrends/releases/download/data-v1/hhi_pb_60.parquet"
+- https://github.com/vehicletrends/vehicletrends/releases/download/data-v2/hhi_pt_60.parquet
+- https://github.com/vehicletrends/vehicletrends/releases/download/data-v2/hhi_vt_60.parquet
+- https://github.com/vehicletrends/vehicletrends/releases/download/data-v2/hhi_pb_60.parquet"
