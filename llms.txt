@@ -41,7 +41,8 @@ for detailed data dictionaries.
 | `dep_annual_model` | Estimated annual depreciation rate by make and model                            |
 | `percent_listings` | Share of vehicle listings across powertrain, vehicle type, and price bin        |
 | `percent_dealers`  | Percentage of dealers with at least one listing by variable pairs               |
-| `hhi`              | HHI market concentration summary statistics across US census tracts             |
+| `hhi_local`        | HHI market concentration summary statistics across US census tracts             |
+| `p_local`          | Local market share summary statistics across US census tracts                   |
 | `registrations`    | Annual vehicle registration counts by US state and powertrain type (2016–2024)  |
 
 ## Citation information
@@ -92,8 +93,10 @@ Data frames contained in this package
   : Share of listings by variable pairs and singular variables
 - [`percent_dealers`](https://pkg.vehicletrends.us/reference/percent_dealers.md)
   : Percentage of dealers with at least one listing by variable pairs
-- [`hhi`](https://pkg.vehicletrends.us/reference/hhi.md) :
+- [`hhi_local`](https://pkg.vehicletrends.us/reference/hhi_local.md) :
   Herfindahl-Hirschman Index (HHI) summary statistics by census tract
+- [`p_local`](https://pkg.vehicletrends.us/reference/p_local.md) : Local
+  market share summary statistics by census tract
 - [`registrations`](https://pkg.vehicletrends.us/reference/registrations.md)
   : Alternative fuel vehicle registrations by state
 

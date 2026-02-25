@@ -321,7 +321,7 @@ head(percent_dealers, 10)
 #> 10         Pickup 0.215214411
 ```
 
-## `hhi`
+## `hhi_local`
 
 Herfindahl-Hirschman Index (HHI) summary statistics across US census
 tracts, measuring market concentration for different vehicle market
@@ -350,29 +350,80 @@ summarization) are also available as parquet files on
 | `lower`        | Lower whisker bound (q25 - 1.5 \* IQR)                                                    |
 
 ``` r
-head(hhi, 10)
-#>     group_var                    group_level hhi_var listing_year       mean
-#> 1  powertrain         Battery Electric (BEV)    make         2022 0.20312602
-#> 2  powertrain         Battery Electric (BEV)    make         2023 0.15328833
-#> 3  powertrain         Battery Electric (BEV)    make         2024 0.15696601
-#> 4  powertrain         Battery Electric (BEV)    make         2025 0.16444612
-#> 5  powertrain                         Diesel    make         2022 0.21996845
-#> 6  powertrain Plug-In Hybrid Electric (PHEV)    make         2023 0.21815277
-#> 7  powertrain          Hybrid Electric (HEV)    make         2024 0.24772064
-#> 8  powertrain          Hybrid Electric (HEV)    make         2022 0.24089100
-#> 9  powertrain                       Gasoline    make         2022 0.09468131
-#> 10 powertrain                       Gasoline    make         2023 0.09733042
-#>        median        q25        q75        IQR     upper         lower
-#> 1  0.14537291 0.12569731 0.20665352 0.08095621 0.3280878  0.0042629983
-#> 2  0.10563205 0.09391663 0.14352344 0.04960681 0.2179337  0.0195064116
-#> 3  0.10964525 0.08868479 0.14803217 0.05934738 0.2370532 -0.0003362752
-#> 4  0.12047871 0.09665293 0.17031514 0.07366221 0.2808085 -0.0138403851
-#> 5  0.21260221 0.18776975 0.24389814 0.05612839 0.3280907  0.1035771613
-#> 6  0.17352926 0.14372901 0.22007527 0.07634626 0.3345947  0.0292096194
-#> 7  0.22115182 0.19967534 0.25606102 0.05638568 0.3406395  0.1150968290
-#> 8  0.21350351 0.19184023 0.25497530 0.06313507 0.3496779  0.0971376127
-#> 9  0.08149692 0.07339856 0.09731230 0.02391374 0.1331829  0.0375279508
-#> 10 0.08568870 0.07502934 0.09976942 0.02474007 0.1368795  0.0379192299
+head(hhi_local, 10)
+#>     group_var            group_level hhi_var listing_year      mean    median
+#> 1  powertrain Battery Electric (BEV)    make         2025 0.2281757 0.1922108
+#> 2  powertrain Battery Electric (BEV)    make         2024 0.2290159 0.1958011
+#> 3  powertrain Battery Electric (BEV)    make         2021 0.2991893 0.2577515
+#> 4  powertrain Battery Electric (BEV)    make         2023 0.2503708 0.2178611
+#> 5  powertrain Battery Electric (BEV)    make         2022 0.3367828 0.3089308
+#> 6  powertrain                 Diesel    make         2023 0.2252425 0.2148836
+#> 7  powertrain                 Diesel    make         2022 0.2284639 0.2197895
+#> 8  powertrain                 Diesel    make         2025 0.2340765 0.2228044
+#> 9  powertrain                 Diesel    make         2024 0.2305378 0.2193800
+#> 10 powertrain        Flex Fuel (E85)    make         2022 0.4768817 0.3200439
+#>          q25       q75        IQR     upper       lower
+#> 1  0.1364988 0.2650060 0.12850720 0.4577668 -0.05626202
+#> 2  0.1277967 0.2726680 0.14487134 0.4899751 -0.08951030
+#> 3  0.1943984 0.3456040 0.15120567 0.5724125 -0.03241015
+#> 4  0.1347314 0.2948265 0.16009508 0.5349691 -0.10541120
+#> 5  0.1661640 0.4424988 0.27633481 0.8570010 -0.24833819
+#> 6  0.2071404 0.2250711 0.01793070 0.2519672  0.18024436
+#> 7  0.2090337 0.2306076 0.02157394 0.2629685  0.17667277
+#> 8  0.2175441 0.2327736 0.01522954 0.2556179  0.19469977
+#> 9  0.2138155 0.2302501 0.01643458 0.2549020  0.18916363
+#> 10 0.2128875 0.7386170 0.52572951 1.5272113 -0.57570677
+```
+
+## `p_local`
+
+Local market share summary statistics across US census tracts, measuring
+the distribution of the share of vehicle listings (`p`) for different
+vehicle market segments. Values are computed per census tract based on
+dealers reachable within a 60-minute drive time isochrone, then
+summarized across tracts. Three grouping variables are included:
+powertrain, vehicle type, and price bin. Census-tract-level values
+(before summarization) are also available as parquet files on
+[GitHub](https://github.com/vehicletrends/vehicletrends/releases/tag/data-v1).
+
+| Variable         | Description                                                             |
+|:-----------------|:------------------------------------------------------------------------|
+| `group_var`      | Grouping variable: “powertrain”, “vehicle_type”, or “price_bin”         |
+| `group_level`    | Level of the grouping variable (e.g., “Gasoline”, “Car”, “\$30k-\$40k”) |
+| `inventory_type` | Inventory type: “New” or “Used”                                         |
+| `listing_year`   | Year of the vehicle listing                                             |
+| `mean`           | Mean local market share across census tracts                            |
+| `median`         | Median local market share across census tracts                          |
+| `q25`            | 25th percentile local market share across census tracts                 |
+| `q75`            | 75th percentile local market share across census tracts                 |
+| `IQR`            | Interquartile range of local market share across census tracts          |
+| `upper`          | Upper whisker bound (q75 + 1.5 \* IQR)                                  |
+| `lower`          | Lower whisker bound (q25 - 1.5 \* IQR)                                  |
+
+``` r
+head(p_local, 10)
+#>     group_var            group_level inventory_type listing_year        mean
+#> 1  powertrain Battery Electric (BEV)            New         2025 0.042667113
+#> 2  powertrain Battery Electric (BEV)            New         2024 0.046262512
+#> 3  powertrain Battery Electric (BEV)           Used         2021 0.005406185
+#> 4  powertrain Battery Electric (BEV)           Used         2024 0.020051480
+#> 5  powertrain Battery Electric (BEV)           Used         2023 0.013141464
+#> 6  powertrain Battery Electric (BEV)           Used         2022 0.008715149
+#> 7  powertrain Battery Electric (BEV)           Used         2025 0.026557616
+#> 8  powertrain                 Diesel           Used         2023 0.032129920
+#> 9  powertrain                 Diesel           Used         2022 0.031783710
+#> 10 powertrain                 Diesel           Used         2025 0.034581686
+#>         median         q25         q75         IQR      upper         lower
+#> 1  0.041085481 0.034037533 0.048416693 0.014379160 0.06998543  0.0124687935
+#> 2  0.044353099 0.037626658 0.051068453 0.013441795 0.07123115  0.0174639654
+#> 3  0.004586378 0.003447483 0.006252421 0.002804938 0.01045983 -0.0007599233
+#> 4  0.015735710 0.012542852 0.020185771 0.007642919 0.03165015  0.0010784724
+#> 5  0.011312013 0.008820033 0.014142383 0.005322350 0.02212591  0.0008365081
+#> 6  0.007060302 0.005785052 0.009307720 0.003522668 0.01459172  0.0005010506
+#> 7  0.022417082 0.017587623 0.028387948 0.010800325 0.04458844  0.0013871352
+#> 8  0.031125883 0.028097768 0.034741198 0.006643430 0.04470634  0.0181326232
+#> 9  0.031086034 0.027303897 0.034463712 0.007159815 0.04520343  0.0165641749
+#> 10 0.033097019 0.029682575 0.037742402 0.008059828 0.04983214  0.0175928328
 ```
 
 ## `registrations`

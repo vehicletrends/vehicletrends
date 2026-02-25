@@ -13,7 +13,7 @@ remaining grouping variables).
 ## Usage
 
 ``` r
-data(hhi)
+data(hhi_local)
 ```
 
 ## Format
@@ -49,17 +49,17 @@ parquet files on GitHub at
 ## Examples
 
 ``` r
-data(hhi)
+data(hhi_local)
 
-head(hhi)
+head(hhi_local)
 #> # A tibble: 6 × 11
-#>   group_var  group_level   hhi_var listing_year  mean median    q25   q75    IQR
-#>   <chr>      <chr>         <chr>          <dbl> <dbl>  <dbl>  <dbl> <dbl>  <dbl>
-#> 1 powertrain Battery Elec… make            2022 0.203  0.145 0.126  0.207 0.0810
-#> 2 powertrain Battery Elec… make            2023 0.153  0.106 0.0939 0.144 0.0496
-#> 3 powertrain Battery Elec… make            2024 0.157  0.110 0.0887 0.148 0.0593
-#> 4 powertrain Battery Elec… make            2025 0.164  0.120 0.0967 0.170 0.0737
-#> 5 powertrain Diesel        make            2022 0.220  0.213 0.188  0.244 0.0561
-#> 6 powertrain Plug-In Hybr… make            2023 0.218  0.174 0.144  0.220 0.0763
+#>   group_var  group_level    hhi_var listing_year  mean median   q25   q75    IQR
+#>   <chr>      <chr>          <chr>          <dbl> <dbl>  <dbl> <dbl> <dbl>  <dbl>
+#> 1 powertrain Battery Elect… make            2025 0.228  0.192 0.136 0.265 0.129 
+#> 2 powertrain Battery Elect… make            2024 0.229  0.196 0.128 0.273 0.145 
+#> 3 powertrain Battery Elect… make            2021 0.299  0.258 0.194 0.346 0.151 
+#> 4 powertrain Battery Elect… make            2023 0.250  0.218 0.135 0.295 0.160 
+#> 5 powertrain Battery Elect… make            2022 0.337  0.309 0.166 0.442 0.276 
+#> 6 powertrain Diesel         make            2023 0.225  0.215 0.207 0.225 0.0179
 #> # ℹ 2 more variables: upper <dbl>, lower <dbl>
 ```
