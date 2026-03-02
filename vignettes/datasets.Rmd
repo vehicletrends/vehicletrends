@@ -212,6 +212,9 @@ Local market share summary statistics across US census tracts, measuring the dis
 head(p_local_summary, 10)
 ```
 
+```{r, child='../man/rmdchunks/_large-data-files.Rmd'}
+```
+
 ## `registrations`
 
 Annual vehicle registration counts by US state and powertrain type, scraped from the [Alternative Fuels Data Center (AFDC)](https://afdc.energy.gov/vehicle-registration) for years 2016 through 2024.

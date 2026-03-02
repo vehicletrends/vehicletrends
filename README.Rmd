@@ -60,6 +60,9 @@ Once loaded, all datasets are available directly by name. See the [datasets arti
 | `p_local_summary` | Local market share of listings summary statistics across all US census tracts (local market defined as dealers within 60 minute isocrhone) |
 | `registrations` | Annual vehicle registration counts by US state and powertrain type (2016--2024) |
 
+```{r, child='man/rmdchunks/_large-data-files.Rmd'}
+```
+
 ## Citation information
 
 If you use this package in a publication, please cite it! You can get the citation by typing `citation("vehicletrends")` into R:
