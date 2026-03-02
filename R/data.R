@@ -340,8 +340,7 @@
 #' data(hhi_local_summary)
 #'
 #' head(hhi_local_summary)
-#' @name hhi_local_summary
-NULL
+"hhi_local_summary"
 
 #' Local market share summary statistics across local markets
 #'
@@ -387,8 +386,7 @@ NULL
 #' data(p_local_summary)
 #'
 #' head(p_local_summary)
-#' @name p_local_summary
-NULL
+"p_local_summary"
 
 #' Percentage of dealers with at least one listing by variable pairs
 #'
