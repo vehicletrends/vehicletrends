@@ -33,7 +33,7 @@ make_p_summary <- function(dt, group_col) {
 }
 
 # Combine all p summaries into one tidy dataset
-p_local <- rbindlist(list(
+p_local_summary <- rbindlist(list(
   make_p_summary(p_pt, "powertrain"),
   make_p_summary(p_vt, "vehicle_type"),
   make_p_summary(p_pb, "price_bin")
@@ -41,7 +41,7 @@ p_local <- rbindlist(list(
 
 # Reorder columns
 setcolorder(
-  p_local,
+  p_local_summary,
   c(
     "group_var",
     "group_level",
@@ -74,16 +74,16 @@ vehicle_type_labels <- c(
   "pickup" = "Pickup",
   "minivan" = "Minivan"
 )
-p_local[group_var == "powertrain", group_level := powertrain_labels[group_level]]
-p_local[
+p_local_summary[group_var == "powertrain", group_level := powertrain_labels[group_level]]
+p_local_summary[
   group_var == "vehicle_type",
   group_level := vehicle_type_labels[group_level]
 ]
-p_local[, inventory_type := str_to_title(inventory_type)]
+p_local_summary[, inventory_type := str_to_title(inventory_type)]
 
 # Save CSV to data-raw
-write_csv(p_local, here('data-raw', 'p_local.csv'))
+write_csv(p_local_summary, here('data-raw', 'p_local_summary.csv'))
 
 # Export as .rda
-p_local <- as_tibble(p_local)
-usethis::use_data(p_local, overwrite = TRUE)
+p_local_summary <- as_tibble(p_local_summary)
+usethis::use_data(p_local_summary, overwrite = TRUE)

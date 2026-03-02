@@ -293,7 +293,7 @@
 #' head(dep_annual_model)
 "dep_annual_model"
 
-#' Herfindahl-Hirschman Index (HHI) summary statistics by census tract
+#' Herfindahl-Hirschman Index (HHI) summary statistics across local markets
 #'
 #' Summary statistics of the Herfindahl-Hirschman Index (HHI) across US census
 #' tracts, measuring market concentration for different vehicle market
@@ -306,8 +306,10 @@
 #' variables).
 #'
 #' Census-tract-level HHI values (before summarization) are available as
-#' parquet files on GitHub at
-#' \url{https://github.com/vehicletrends/vehicletrends/releases/tag/data-v1}.
+#' parquet files:
+#' \url{https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_pb_60.parquet},
+#' \url{https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_pt_60.parquet},
+#' \url{https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_vt_60.parquet}.
 #'
 #' @format A tibble with 11 variables:
 #'
@@ -327,7 +329,7 @@
 #'
 #' @docType data
 #'
-#' @usage data(hhi_local)
+#' @usage data(hhi_local_summary)
 #'
 #' @keywords datasets
 #'
@@ -335,12 +337,13 @@
 #' \href{https://www.marketcheck.com/}{Marketcheck}.
 #'
 #' @examples
-#' data(hhi_local)
+#' data(hhi_local_summary)
 #'
-#' head(hhi_local)
-"hhi_local"
+#' head(hhi_local_summary)
+#' @name hhi_local_summary
+NULL
 
-#' Local market share summary statistics by census tract
+#' Local market share summary statistics across local markets
 #'
 #' Summary statistics of the share of vehicle listings (`p`) across US census
 #' tracts, measuring the distribution of local market shares for different
@@ -350,8 +353,10 @@
 #' type, and price bin, each crossed with inventory type and listing year.
 #'
 #' Census-tract-level values (before summarization) are available as
-#' parquet files on GitHub at
-#' \url{https://github.com/vehicletrends/vehicletrends/releases/tag/data-v1}.
+#' parquet files:
+#' \url{https://pub-17d608be304c4976845ab692fc09de91.r2.dev/p_pb_60.parquet},
+#' \url{https://pub-17d608be304c4976845ab692fc09de91.r2.dev/p_pt_60.parquet},
+#' \url{https://pub-17d608be304c4976845ab692fc09de91.r2.dev/p_vt_60.parquet}.
 #'
 #' @format A tibble with 11 variables:
 #'
@@ -371,7 +376,7 @@
 #'
 #' @docType data
 #'
-#' @usage data(p_local)
+#' @usage data(p_local_summary)
 #'
 #' @keywords datasets
 #'
@@ -379,10 +384,11 @@
 #' \href{https://www.marketcheck.com/}{Marketcheck}.
 #'
 #' @examples
-#' data(p_local)
+#' data(p_local_summary)
 #'
-#' head(p_local)
-"p_local"
+#' head(p_local_summary)
+#' @name p_local_summary
+NULL
 
 #' Percentage of dealers with at least one listing by variable pairs
 #'

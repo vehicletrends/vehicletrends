@@ -46,6 +46,6 @@ reference:
   - dep_annual_model
   - percent_listings
   - percent_dealers
-  - hhi_local
-  - p_local
+  - hhi_local_summary
+  - p_local_summary
   - registrations
