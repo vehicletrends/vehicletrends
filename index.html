@@ -142,6 +142,59 @@
 </table>
 </div>
 <div class="section level2">
+<h2 id="large-raw-data-files">Large Raw Data Files<a class="anchor" aria-label="anchor" href="#large-raw-data-files"></a>
+</h2>
+<p>The following large files are hosted on Cloudflare R2 and can be downloaded directly. The <code>hhi_*</code> and <code>p_*</code> parquet files are the census-tract-level source data used to compute the <code>hhi_local_summary</code> and <code>p_local_summary</code> package datasets. File name suffixes indicate the grouping variable (<code>pb</code> = price bin, <code>pt</code> = powertrain, <code>vt</code> = vehicle type) and isochrone radius (<code>60</code> = 60-minute drive time).</p>
+<table class="table">
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">File</th>
+<th align="left">Description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left"><a href="https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_pb_60.parquet" class="external-link">hhi_pb_60.parquet</a></td>
+<td align="left">HHI per census tract, grouped by price bin (60-min isochrone)</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_pt_60.parquet" class="external-link">hhi_pt_60.parquet</a></td>
+<td align="left">HHI per census tract, grouped by powertrain (60-min isochrone)</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_vt_60.parquet" class="external-link">hhi_vt_60.parquet</a></td>
+<td align="left">HHI per census tract, grouped by vehicle type (60-min isochrone)</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://pub-17d608be304c4976845ab692fc09de91.r2.dev/p_pb_60.parquet" class="external-link">p_pb_60.parquet</a></td>
+<td align="left">Market share (p) per census tract, grouped by price bin (60-min isochrone)</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://pub-17d608be304c4976845ab692fc09de91.r2.dev/p_pt_60.parquet" class="external-link">p_pt_60.parquet</a></td>
+<td align="left">Market share (p) per census tract, grouped by powertrain (60-min isochrone)</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://pub-17d608be304c4976845ab692fc09de91.r2.dev/p_vt_60.parquet" class="external-link">p_vt_60.parquet</a></td>
+<td align="left">Market share (p) per census tract, grouped by vehicle type (60-min isochrone)</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://pub-17d608be304c4976845ab692fc09de91.r2.dev/tracts.rds" class="external-link">tracts.rds</a></td>
+<td align="left">US census tract geometries (full resolution)</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="https://pub-17d608be304c4976845ab692fc09de91.r2.dev/tracts_simplified.rds" class="external-link">tracts_simplified.rds</a></td>
+<td align="left">US census tract geometries (simplified for faster rendering)</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_tracts.pmtiles" class="external-link">hhi_tracts.pmtiles</a></td>
+<td align="left">HHI per census tract as PMTiles for interactive map visualization</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section level2">
 <h2 id="citation-information">Citation information<a class="anchor" aria-label="anchor" href="#citation-information"></a>
 </h2>
 <p>If you use this package in a publication, please cite it! You can get the citation by typing <code>citation("vehicletrends")</code> into R:</p>
