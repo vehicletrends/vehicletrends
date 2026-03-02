@@ -30,20 +30,20 @@ for detailed data dictionaries.
 
 ## Datasets
 
-| Dataset            | Description                                                                     |
-|:-------------------|:--------------------------------------------------------------------------------|
-| `vmt_age`          | Cumulative odometer mileage quantiles by age, powertrain, and vehicle type      |
-| `vmt_daily`        | Daily vehicle miles traveled quantiles by powertrain and vehicle type           |
-| `vmt_annual_type`  | Estimated annual VMT by powertrain and vehicle type                             |
-| `vmt_annual_model` | Estimated annual VMT by make and model                                          |
-| `depreciation`     | Retention rate quantiles for used vehicles by age, powertrain, and vehicle type |
-| `dep_annual_type`  | Estimated annual depreciation rate by powertrain and vehicle type               |
-| `dep_annual_model` | Estimated annual depreciation rate by make and model                            |
-| `percent_listings` | Share of vehicle listings across powertrain, vehicle type, and price bin        |
-| `percent_dealers`  | Percentage of dealers with at least one listing by variable pairs               |
-| `hhi_local`        | HHI market concentration summary statistics across US census tracts             |
-| `p_local`          | Local market share summary statistics across US census tracts                   |
-| `registrations`    | Annual vehicle registration counts by US state and powertrain type (2016–2024)  |
+| Dataset             | Description                                                                                                                                                    |
+|:--------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `vmt_age`           | Cumulative odometer mileage quantiles by age, powertrain, and vehicle type                                                                                     |
+| `vmt_daily`         | Daily vehicle miles traveled quantiles by powertrain and vehicle type                                                                                          |
+| `vmt_annual_type`   | Estimated annual VMT by powertrain and vehicle type                                                                                                            |
+| `vmt_annual_model`  | Estimated annual VMT by make and model                                                                                                                         |
+| `depreciation`      | Retention rate quantiles for used vehicles by age, powertrain, and vehicle type                                                                                |
+| `dep_annual_type`   | Estimated annual depreciation rate by powertrain and vehicle type                                                                                              |
+| `dep_annual_model`  | Estimated annual depreciation rate by make and model                                                                                                           |
+| `percent_listings`  | Share of vehicle listings across powertrain, vehicle type, and price bin                                                                                       |
+| `percent_dealers`   | Percentage of dealers with at least one listing by variable pairs                                                                                              |
+| `hhi_local_summary` | Local market HHI (measure of market concentration) summary statistics across all US census tracts (local market defined as dealers within 60 minute isocrhone) |
+| `p_local_summary`   | Local market share of listings summary statistics across all US census tracts (local market defined as dealers within 60 minute isocrhone)                     |
+| `registrations`     | Annual vehicle registration counts by US state and powertrain type (2016–2024)                                                                                 |
 
 ## Citation information
 

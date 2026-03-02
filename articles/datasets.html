@@ -25,7 +25,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">vehicletrends</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.4</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.5</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -643,8 +643,8 @@ group-category combination</td>
 <span><span class="co">#&gt; 10         Pickup 0.215214411</span></span></code></pre></div>
 </div>
 <div class="section level2">
-<h2 id="hhi_local">
-<code>hhi_local</code><a class="anchor" aria-label="anchor" href="#hhi_local"></a>
+<h2 id="hhi_local_summary">
+<code>hhi_local_summary</code><a class="anchor" aria-label="anchor" href="#hhi_local_summary"></a>
 </h2>
 <p>Herfindahl-Hirschman Index (HHI) summary statistics across US census
 tracts, measuring market concentration for different vehicle market
@@ -655,7 +655,9 @@ across tracts. Higher HHI values indicate greater market concentration
 each grouping variable (powertrain, vehicle type, price bin), HHI is
 computed over the other three variables (make, and the two remaining
 grouping variables). Census-tract-level HHI values (before
-summarization) are also available as parquet files on <a href="https://github.com/vehicletrends/vehicletrends/releases/tag/data-v1" class="external-link">GitHub</a>.</p>
+summarization) are available as parquet files: <a href="https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_pb_60.parquet" class="external-link">hhi_pb_60.parquet</a>,
+<a href="https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_pt_60.parquet" class="external-link">hhi_pt_60.parquet</a>,
+<a href="https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_vt_60.parquet" class="external-link">hhi_vt_60.parquet</a>.</p>
 <table class="table">
 <colgroup>
 <col width="18%">
@@ -716,7 +718,7 @@ summarization) are also available as parquet files on <a href="https://github.co
 </tbody>
 </table>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">hhi_local</span>, <span class="fl">10</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">hhi_local_summary</span>, <span class="fl">10</span><span class="op">)</span></span>
 <span><span class="co">#&gt;     group_var            group_level hhi_var listing_year      mean    median</span></span>
 <span><span class="co">#&gt; 1  powertrain Battery Electric (BEV)    make         2025 0.2281757 0.1922108</span></span>
 <span><span class="co">#&gt; 2  powertrain Battery Electric (BEV)    make         2024 0.2290159 0.1958011</span></span>
@@ -741,8 +743,8 @@ summarization) are also available as parquet files on <a href="https://github.co
 <span><span class="co">#&gt; 10 0.2128875 0.7386170 0.52572951 1.5272113 -0.57570677</span></span></code></pre></div>
 </div>
 <div class="section level2">
-<h2 id="p_local">
-<code>p_local</code><a class="anchor" aria-label="anchor" href="#p_local"></a>
+<h2 id="p_local_summary">
+<code>p_local_summary</code><a class="anchor" aria-label="anchor" href="#p_local_summary"></a>
 </h2>
 <p>Local market share summary statistics across US census tracts,
 measuring the distribution of the share of vehicle listings
@@ -750,8 +752,10 @@ measuring the distribution of the share of vehicle listings
 computed per census tract based on dealers reachable within a 60-minute
 drive time isochrone, then summarized across tracts. Three grouping
 variables are included: powertrain, vehicle type, and price bin.
-Census-tract-level values (before summarization) are also available as
-parquet files on <a href="https://github.com/vehicletrends/vehicletrends/releases/tag/data-v1" class="external-link">GitHub</a>.</p>
+Census-tract-level values (before summarization) are available as
+parquet files: <a href="https://pub-17d608be304c4976845ab692fc09de91.r2.dev/p_pb_60.parquet" class="external-link">p_pb_60.parquet</a>,
+<a href="https://pub-17d608be304c4976845ab692fc09de91.r2.dev/p_pt_60.parquet" class="external-link">p_pt_60.parquet</a>,
+<a href="https://pub-17d608be304c4976845ab692fc09de91.r2.dev/p_vt_60.parquet" class="external-link">p_vt_60.parquet</a>.</p>
 <table class="table">
 <colgroup>
 <col width="18%">
@@ -814,7 +818,7 @@ tracts</td>
 </tbody>
 </table>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">p_local</span>, <span class="fl">10</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">p_local_summary</span>, <span class="fl">10</span><span class="op">)</span></span>
 <span><span class="co">#&gt;     group_var            group_level inventory_type listing_year        mean</span></span>
 <span><span class="co">#&gt; 1  powertrain Battery Electric (BEV)            New         2025 0.042667113</span></span>
 <span><span class="co">#&gt; 2  powertrain Battery Electric (BEV)            New         2024 0.046262512</span></span>

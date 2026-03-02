@@ -321,7 +321,7 @@ head(percent_dealers, 10)
 #> 10         Pickup 0.215214411
 ```
 
-## `hhi_local`
+## `hhi_local_summary`
 
 Herfindahl-Hirschman Index (HHI) summary statistics across US census
 tracts, measuring market concentration for different vehicle market
@@ -332,8 +332,10 @@ across tracts. Higher HHI values indicate greater market concentration
 each grouping variable (powertrain, vehicle type, price bin), HHI is
 computed over the other three variables (make, and the two remaining
 grouping variables). Census-tract-level HHI values (before
-summarization) are also available as parquet files on
-[GitHub](https://github.com/vehicletrends/vehicletrends/releases/tag/data-v1).
+summarization) are available as parquet files:
+[hhi_pb_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_pb_60.parquet),
+[hhi_pt_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_pt_60.parquet),
+[hhi_vt_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_vt_60.parquet).
 
 | Variable       | Description                                                                               |
 |:---------------|:------------------------------------------------------------------------------------------|
@@ -350,7 +352,7 @@ summarization) are also available as parquet files on
 | `lower`        | Lower whisker bound (q25 - 1.5 \* IQR)                                                    |
 
 ``` r
-head(hhi_local, 10)
+head(hhi_local_summary, 10)
 #>     group_var            group_level hhi_var listing_year      mean    median
 #> 1  powertrain Battery Electric (BEV)    make         2025 0.2281757 0.1922108
 #> 2  powertrain Battery Electric (BEV)    make         2024 0.2290159 0.1958011
@@ -375,7 +377,7 @@ head(hhi_local, 10)
 #> 10 0.2128875 0.7386170 0.52572951 1.5272113 -0.57570677
 ```
 
-## `p_local`
+## `p_local_summary`
 
 Local market share summary statistics across US census tracts, measuring
 the distribution of the share of vehicle listings (`p`) for different
@@ -383,8 +385,10 @@ vehicle market segments. Values are computed per census tract based on
 dealers reachable within a 60-minute drive time isochrone, then
 summarized across tracts. Three grouping variables are included:
 powertrain, vehicle type, and price bin. Census-tract-level values
-(before summarization) are also available as parquet files on
-[GitHub](https://github.com/vehicletrends/vehicletrends/releases/tag/data-v1).
+(before summarization) are available as parquet files:
+[p_pb_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/p_pb_60.parquet),
+[p_pt_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/p_pt_60.parquet),
+[p_vt_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/p_vt_60.parquet).
 
 | Variable         | Description                                                             |
 |:-----------------|:------------------------------------------------------------------------|
@@ -401,7 +405,7 @@ powertrain, vehicle type, and price bin. Census-tract-level values
 | `lower`          | Lower whisker bound (q25 - 1.5 \* IQR)                                  |
 
 ``` r
-head(p_local, 10)
+head(p_local_summary, 10)
 #>     group_var            group_level inventory_type listing_year        mean
 #> 1  powertrain Battery Electric (BEV)            New         2025 0.042667113
 #> 2  powertrain Battery Electric (BEV)            New         2024 0.046262512

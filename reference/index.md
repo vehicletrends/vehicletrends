@@ -22,9 +22,10 @@ Data frames contained in this package
   : Share of listings by variable pairs and singular variables
 - [`percent_dealers`](https://pkg.vehicletrends.us/reference/percent_dealers.md)
   : Percentage of dealers with at least one listing by variable pairs
-- [`hhi_local`](https://pkg.vehicletrends.us/reference/hhi_local.md) :
-  Herfindahl-Hirschman Index (HHI) summary statistics by census tract
-- [`p_local`](https://pkg.vehicletrends.us/reference/p_local.md) : Local
-  market share summary statistics by census tract
+- [`hhi_local_summary`](https://pkg.vehicletrends.us/reference/hhi_local_summary.md)
+  : Herfindahl-Hirschman Index (HHI) summary statistics across local
+  markets
+- [`p_local_summary`](https://pkg.vehicletrends.us/reference/p_local_summary.md)
+  : Local market share summary statistics across local markets
 - [`registrations`](https://pkg.vehicletrends.us/reference/registrations.md)
   : Alternative fuel vehicle registrations by state

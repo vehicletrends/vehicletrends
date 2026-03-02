@@ -1,4 +1,4 @@
-# Herfindahl-Hirschman Index (HHI) summary statistics by census tract
+# Herfindahl-Hirschman Index (HHI) summary statistics across local markets
 
 Summary statistics of the Herfindahl-Hirschman Index (HHI) across US
 census tracts, measuring market concentration for different vehicle
@@ -13,7 +13,7 @@ remaining grouping variables).
 ## Usage
 
 ``` r
-data(hhi_local)
+data(hhi_local_summary)
 ```
 
 ## Format
@@ -43,15 +43,17 @@ Computed from vehicle listings data from
 ## Details
 
 Census-tract-level HHI values (before summarization) are available as
-parquet files on GitHub at
-<https://github.com/vehicletrends/vehicletrends/releases/tag/data-v1>.
+parquet files:
+<https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_pb_60.parquet>,
+<https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_pt_60.parquet>,
+<https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_vt_60.parquet>.
 
 ## Examples
 
 ``` r
-data(hhi_local)
+data(hhi_local_summary)
 
-head(hhi_local)
+head(hhi_local_summary)
 #> # A tibble: 6 × 11
 #>   group_var  group_level    hhi_var listing_year  mean median   q25   q75    IQR
 #>   <chr>      <chr>          <chr>          <dbl> <dbl>  <dbl> <dbl> <dbl>  <dbl>
