@@ -451,6 +451,82 @@ type) and isochrone radius (`60` = 60-minute drive time).
 | [tracts_simplified.rds](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/tracts_simplified.rds) | US census tract geometries (simplified for faster rendering)                  |
 | [hhi_tracts.pmtiles](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_tracts.pmtiles)       | HHI per census tract as PMTiles for interactive map visualization             |
 
+## `price_trends_new`
+
+Average prices and listing counts for new vehicle inventory by listing
+year, state, model year, and vehicle type. Includes the number of unique
+make-model-year combinations available in each state.
+
+| Variable            | Description                                                 |
+|:--------------------|:------------------------------------------------------------|
+| `listing_year`      | Calendar year when listing was scraped (2018–2025)          |
+| `state`             | US state abbreviation (e.g., “CA”, “TX”, “NY”)              |
+| `year`              | Model year of the vehicle                                   |
+| `vehicle_type`      | Vehicle type: “car”, “cuv”, “suv”, “pickup”, “minivan”      |
+| `avg_price`         | Average listing price (USD)                                 |
+| `n_listings`        | Number of listings                                          |
+| `n_make_model_year` | Number of unique make-model-year combinations in this state |
+
+``` r
+head(price_trends_new, 10)
+#>    listing_year state year vehicle_type avg_price n_listings n_make_model_year
+#> 1          2018    AK 2016       pickup  44915.88          1               407
+#> 2          2018    AK 2016          car  31867.35          6               407
+#> 3          2018    AK 2016          suv  57233.70          1               407
+#> 4          2018    AK 2017          car  35670.13        359               407
+#> 5          2018    AK 2017          cuv  42770.38        230               407
+#> 6          2018    AK 2017      minivan  40072.08         25               407
+#> 7          2018    AK 2017       pickup  52027.46        368               407
+#> 8          2018    AK 2017          suv  70851.14         97               407
+#> 9          2018    AK 2018          cuv  41896.27       3048               407
+#> 10         2018    AK 2018      minivan  45911.83        145               407
+```
+
+## `price_trends_used`
+
+Average prices, listing counts, and depreciation rates for used vehicle
+inventory by listing year, state, model year, and vehicle type. Includes
+annual depreciation rates calculated using exponential decay modeling on
+retention rates (price/MSRP) and the number of unique make-model-year
+combinations available in each state.
+
+| Variable            | Description                                                                |
+|:--------------------|:---------------------------------------------------------------------------|
+| `listing_year`      | Calendar year when listing was scraped (2018–2025)                         |
+| `state`             | US state abbreviation (e.g., “CA”, “TX”, “NY”)                             |
+| `year`              | Model year of the vehicle                                                  |
+| `vehicle_type`      | Vehicle type: “car”, “cuv”, “suv”, “pickup”, “minivan”                     |
+| `avg_price`         | Average listing price (USD)                                                |
+| `n_listings`        | Number of listings                                                         |
+| `dep_annual_rate`   | Annual depreciation rate (proportion, 0–1) for this state and listing year |
+| `n_make_model_year` | Number of unique make-model-year combinations in this state                |
+
+``` r
+head(price_trends_used, 10)
+#>    listing_year state year vehicle_type avg_price n_listings dep_annual_rate
+#> 1          2018    AK 2004          cuv  9562.734          8      0.06493018
+#> 2          2018    AK 2004       pickup 14244.578         31      0.06493018
+#> 3          2018    AK 2004      minivan  9605.733          1      0.06493018
+#> 4          2018    AK 2004          car  9885.443          7      0.06493018
+#> 5          2018    AK 2004          suv 10516.263         13      0.06493018
+#> 6          2018    AK 2005          cuv  9595.951         19      0.06493018
+#> 7          2018    AK 2005      minivan  7737.759          6      0.06493018
+#> 8          2018    AK 2005          car  8607.808         27      0.06493018
+#> 9          2018    AK 2005       pickup 18431.482         69      0.06493018
+#> 10         2018    AK 2005          suv 14101.120         39      0.06493018
+#>    n_make_model_year
+#> 1               1561
+#> 2               1561
+#> 3               1561
+#> 4               1561
+#> 5               1561
+#> 6               1561
+#> 7               1561
+#> 8               1561
+#> 9               1561
+#> 10              1561
+```
+
 ## `registrations`
 
 Annual vehicle registration counts by US state and powertrain type,

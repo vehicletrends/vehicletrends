@@ -911,6 +911,150 @@ visualization</td>
 </table>
 </div>
 <div class="section level2">
+<h2 id="price_trends_new">
+<code>price_trends_new</code><a class="anchor" aria-label="anchor" href="#price_trends_new"></a>
+</h2>
+<p>Average prices and listing counts for new vehicle inventory by
+listing year, state, model year, and vehicle type. Includes the number
+of unique make-model-year combinations available in each state.</p>
+<table class="table">
+<colgroup>
+<col width="18%">
+<col width="81%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">Variable</th>
+<th align="left">Description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>listing_year</code></td>
+<td align="left">Calendar year when listing was scraped (2018–2025)</td>
+</tr>
+<tr class="even">
+<td align="left"><code>state</code></td>
+<td align="left">US state abbreviation (e.g., “CA”, “TX”, “NY”)</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>year</code></td>
+<td align="left">Model year of the vehicle</td>
+</tr>
+<tr class="even">
+<td align="left"><code>vehicle_type</code></td>
+<td align="left">Vehicle type: “car”, “cuv”, “suv”, “pickup”,
+“minivan”</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>avg_price</code></td>
+<td align="left">Average listing price (USD)</td>
+</tr>
+<tr class="even">
+<td align="left"><code>n_listings</code></td>
+<td align="left">Number of listings</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>n_make_model_year</code></td>
+<td align="left">Number of unique make-model-year combinations in this
+state</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">price_trends_new</span>, <span class="fl">10</span><span class="op">)</span></span>
+<span><span class="co">#&gt;    listing_year state year vehicle_type avg_price n_listings n_make_model_year</span></span>
+<span><span class="co">#&gt; 1          2018    AK 2016       pickup  44915.88          1               407</span></span>
+<span><span class="co">#&gt; 2          2018    AK 2016          car  31867.35          6               407</span></span>
+<span><span class="co">#&gt; 3          2018    AK 2016          suv  57233.70          1               407</span></span>
+<span><span class="co">#&gt; 4          2018    AK 2017          car  35670.13        359               407</span></span>
+<span><span class="co">#&gt; 5          2018    AK 2017          cuv  42770.38        230               407</span></span>
+<span><span class="co">#&gt; 6          2018    AK 2017      minivan  40072.08         25               407</span></span>
+<span><span class="co">#&gt; 7          2018    AK 2017       pickup  52027.46        368               407</span></span>
+<span><span class="co">#&gt; 8          2018    AK 2017          suv  70851.14         97               407</span></span>
+<span><span class="co">#&gt; 9          2018    AK 2018          cuv  41896.27       3048               407</span></span>
+<span><span class="co">#&gt; 10         2018    AK 2018      minivan  45911.83        145               407</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="price_trends_used">
+<code>price_trends_used</code><a class="anchor" aria-label="anchor" href="#price_trends_used"></a>
+</h2>
+<p>Average prices, listing counts, and depreciation rates for used
+vehicle inventory by listing year, state, model year, and vehicle type.
+Includes annual depreciation rates calculated using exponential decay
+modeling on retention rates (price/MSRP) and the number of unique
+make-model-year combinations available in each state.</p>
+<table class="table">
+<colgroup>
+<col width="18%">
+<col width="81%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">Variable</th>
+<th align="left">Description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>listing_year</code></td>
+<td align="left">Calendar year when listing was scraped (2018–2025)</td>
+</tr>
+<tr class="even">
+<td align="left"><code>state</code></td>
+<td align="left">US state abbreviation (e.g., “CA”, “TX”, “NY”)</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>year</code></td>
+<td align="left">Model year of the vehicle</td>
+</tr>
+<tr class="even">
+<td align="left"><code>vehicle_type</code></td>
+<td align="left">Vehicle type: “car”, “cuv”, “suv”, “pickup”,
+“minivan”</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>avg_price</code></td>
+<td align="left">Average listing price (USD)</td>
+</tr>
+<tr class="even">
+<td align="left"><code>n_listings</code></td>
+<td align="left">Number of listings</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>dep_annual_rate</code></td>
+<td align="left">Annual depreciation rate (proportion, 0–1) for this
+state and listing year</td>
+</tr>
+<tr class="even">
+<td align="left"><code>n_make_model_year</code></td>
+<td align="left">Number of unique make-model-year combinations in this
+state</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">price_trends_used</span>, <span class="fl">10</span><span class="op">)</span></span>
+<span><span class="co">#&gt;    listing_year state year vehicle_type avg_price n_listings dep_annual_rate</span></span>
+<span><span class="co">#&gt; 1          2018    AK 2004          cuv  9562.734          8      0.06493018</span></span>
+<span><span class="co">#&gt; 2          2018    AK 2004       pickup 14244.578         31      0.06493018</span></span>
+<span><span class="co">#&gt; 3          2018    AK 2004      minivan  9605.733          1      0.06493018</span></span>
+<span><span class="co">#&gt; 4          2018    AK 2004          car  9885.443          7      0.06493018</span></span>
+<span><span class="co">#&gt; 5          2018    AK 2004          suv 10516.263         13      0.06493018</span></span>
+<span><span class="co">#&gt; 6          2018    AK 2005          cuv  9595.951         19      0.06493018</span></span>
+<span><span class="co">#&gt; 7          2018    AK 2005      minivan  7737.759          6      0.06493018</span></span>
+<span><span class="co">#&gt; 8          2018    AK 2005          car  8607.808         27      0.06493018</span></span>
+<span><span class="co">#&gt; 9          2018    AK 2005       pickup 18431.482         69      0.06493018</span></span>
+<span><span class="co">#&gt; 10         2018    AK 2005          suv 14101.120         39      0.06493018</span></span>
+<span><span class="co">#&gt;    n_make_model_year</span></span>
+<span><span class="co">#&gt; 1               1561</span></span>
+<span><span class="co">#&gt; 2               1561</span></span>
+<span><span class="co">#&gt; 3               1561</span></span>
+<span><span class="co">#&gt; 4               1561</span></span>
+<span><span class="co">#&gt; 5               1561</span></span>
+<span><span class="co">#&gt; 6               1561</span></span>
+<span><span class="co">#&gt; 7               1561</span></span>
+<span><span class="co">#&gt; 8               1561</span></span>
+<span><span class="co">#&gt; 9               1561</span></span>
+<span><span class="co">#&gt; 10              1561</span></span></code></pre></div>
+</div>
+<div class="section level2">
 <h2 id="registrations">
 <code>registrations</code><a class="anchor" aria-label="anchor" href="#registrations"></a>
 </h2>
@@ -948,7 +1092,7 @@ Data Center (AFDC)</a> for years 2016 through 2024.</p>
 </tr>
 </tbody>
 </table>
-<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">registrations</span>, <span class="fl">10</span><span class="op">)</span></span>
 <span><span class="co">#&gt;    year   state                     powertrain   count</span></span>
 <span><span class="co">#&gt; 1  2016 Alabama         Battery Electric (BEV)     500</span></span>

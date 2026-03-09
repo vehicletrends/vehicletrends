@@ -27,5 +27,11 @@ Data frames contained in this package
   markets
 - [`p_local_summary`](https://pkg.vehicletrends.us/reference/p_local_summary.md)
   : Local market share summary statistics across local markets
+- [`price_trends_new`](https://pkg.vehicletrends.us/reference/price_trends_new.md)
+  : Price trends for new vehicle listings by state, year, and vehicle
+  type
+- [`price_trends_used`](https://pkg.vehicletrends.us/reference/price_trends_used.md)
+  : Price trends for used vehicle listings by state, year, and vehicle
+  type
 - [`registrations`](https://pkg.vehicletrends.us/reference/registrations.md)
   : Alternative fuel vehicle registrations by state
