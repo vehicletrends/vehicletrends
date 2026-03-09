@@ -421,3 +421,72 @@
 #'
 #' head(percent_dealers)
 "percent_dealers"
+
+#' Price trends for new vehicle listings by state, year, and vehicle type
+#'
+#' Average prices and listing counts for new vehicle inventory by listing year,
+#' state, model year, and vehicle type. Includes the number of unique
+#' make-model-year combinations available in each state.
+#'
+#' @format A tibble with 7 variables:
+#'
+#' Variable | Description
+#' -------- | -------------------------------------------
+#' `listing_year`       | Calendar year when listing was scraped (2018--2025)
+#' `state`              | US state abbreviation (e.g., "CA", "TX", "NY")
+#' `year`               | Model year of the vehicle
+#' `vehicle_type`       | Vehicle type: "car", "cuv", "suv", "pickup", "minivan"
+#' `avg_price`          | Average listing price (USD)
+#' `n_listings`         | Number of listings
+#' `n_make_model_year`  | Number of unique make-model-year combinations in this state
+#'
+#' @docType data
+#'
+#' @usage data(price_trends_new)
+#'
+#' @keywords datasets
+#'
+#' @source Computed from new vehicle listings data from
+#' \href{https://www.marketcheck.com/}{Marketcheck}.
+#'
+#' @examples
+#' data(price_trends_new)
+#'
+#' head(price_trends_new)
+"price_trends_new"
+
+#' Price trends for used vehicle listings by state, year, and vehicle type
+#'
+#' Average prices, listing counts, and depreciation rates for used vehicle
+#' inventory by listing year, state, model year, and vehicle type. Includes
+#' annual depreciation rates calculated using exponential decay modeling on
+#' retention rates (price/MSRP) and the number of unique make-model-year
+#' combinations available in each state.
+#'
+#' @format A tibble with 8 variables:
+#'
+#' Variable | Description
+#' -------- | -------------------------------------------
+#' `listing_year`       | Calendar year when listing was scraped (2018--2025)
+#' `state`              | US state abbreviation (e.g., "CA", "TX", "NY")
+#' `year`               | Model year of the vehicle
+#' `vehicle_type`       | Vehicle type: "car", "cuv", "suv", "pickup", "minivan"
+#' `avg_price`          | Average listing price (USD)
+#' `n_listings`         | Number of listings
+#' `dep_annual_rate`    | Annual depreciation rate (proportion, 0--1) for this state and listing year
+#' `n_make_model_year`  | Number of unique make-model-year combinations in this state
+#'
+#' @docType data
+#'
+#' @usage data(price_trends_used)
+#'
+#' @keywords datasets
+#'
+#' @source Computed from used vehicle listings data from
+#' \href{https://www.marketcheck.com/}{Marketcheck}.
+#'
+#' @examples
+#' data(price_trends_used)
+#'
+#' head(price_trends_used)
+"price_trends_used"

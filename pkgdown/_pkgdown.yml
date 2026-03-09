@@ -48,4 +48,6 @@ reference:
   - percent_dealers
   - hhi_local_summary
   - p_local_summary
+  - price_trends_new
+  - price_trends_used
   - registrations

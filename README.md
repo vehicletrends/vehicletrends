@@ -50,6 +50,8 @@ for detailed data dictionaries.
 | `percent_dealers` | Percentage of dealers with at least one listing by variable pairs |
 | `hhi_local_summary` | Local market HHI (measure of market concentration) summary statistics across all US census tracts (local market defined as dealers within 60 minute isocrhone) |
 | `p_local_summary` | Local market share of listings summary statistics across all US census tracts (local market defined as dealers within 60 minute isocrhone) |
+| `price_trends_new` | Average prices and listing counts for new vehicle inventory by state, year, and vehicle type |
+| `price_trends_used` | Average prices, listing counts, and depreciation rates for used vehicle inventory by state, year, and vehicle type |
 | `registrations` | Annual vehicle registration counts by US state and powertrain type (2016–2024) |
 
 ## Large Raw Data Files

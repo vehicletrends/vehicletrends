@@ -215,6 +215,43 @@ head(p_local_summary, 10)
 ```{r, child='../man/rmdchunks/_large-data-files.Rmd'}
 ```
 
+## `price_trends_new`
+
+Average prices and listing counts for new vehicle inventory by listing year, state, model year, and vehicle type. Includes the number of unique make-model-year combinations available in each state.
+
+| Variable | Description |
+|:----------|:------------------------------------------------|
+| `listing_year` | Calendar year when listing was scraped (2018--2025) |
+| `state` | US state abbreviation (e.g., "CA", "TX", "NY") |
+| `year` | Model year of the vehicle |
+| `vehicle_type` | Vehicle type: "car", "cuv", "suv", "pickup", "minivan" |
+| `avg_price` | Average listing price (USD) |
+| `n_listings` | Number of listings |
+| `n_make_model_year` | Number of unique make-model-year combinations in this state |
+
+```{r}
+head(price_trends_new, 10)
+```
+
+## `price_trends_used`
+
+Average prices, listing counts, and depreciation rates for used vehicle inventory by listing year, state, model year, and vehicle type. Includes annual depreciation rates calculated using exponential decay modeling on retention rates (price/MSRP) and the number of unique make-model-year combinations available in each state.
+
+| Variable | Description |
+|:----------|:------------------------------------------------|
+| `listing_year` | Calendar year when listing was scraped (2018--2025) |
+| `state` | US state abbreviation (e.g., "CA", "TX", "NY") |
+| `year` | Model year of the vehicle |
+| `vehicle_type` | Vehicle type: "car", "cuv", "suv", "pickup", "minivan" |
+| `avg_price` | Average listing price (USD) |
+| `n_listings` | Number of listings |
+| `dep_annual_rate` | Annual depreciation rate (proportion, 0--1) for this state and listing year |
+| `n_make_model_year` | Number of unique make-model-year combinations in this state |
+
+```{r}
+head(price_trends_used, 10)
+```
+
 ## `registrations`
 
 Annual vehicle registration counts by US state and powertrain type, scraped from the [Alternative Fuels Data Center (AFDC)](https://afdc.energy.gov/vehicle-registration) for years 2016 through 2024.
