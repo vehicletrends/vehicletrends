@@ -1,5 +1,9 @@
 # Changelog
 
+## vehicletrends 0.0.6
+
+- Added `price_trends_new` and `price_trends_used`.
+
 ## vehicletrends 0.0.5
 
 - Renamed `hhi_local` to `hhi_local_summary` and `p_local` to
