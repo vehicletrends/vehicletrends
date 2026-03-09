@@ -1,3 +1,7 @@
+# vehicletrends 0.0.6
+
+- Added `price_trends_new` and `price_trends_used`.
+
 # vehicletrends 0.0.5
 
 - Renamed `hhi_local` to `hhi_local_summary` and `p_local` to `p_local_summary` to better reflect that these datasets contain summary statistics (mean, median, IQR, etc.) computed across census tracts, not the tract-level values themselves.
