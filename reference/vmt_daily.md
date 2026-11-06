@@ -16,13 +16,13 @@ data(vmt_daily)
 
 A tibble with 5,346 rows and 4 variables:
 
-|                |                                                                                                                                                                                            |
-|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Variable       | Description                                                                                                                                                                                |
-| `powertrain`   | Powertrain category: "All", "Gasoline", "Battery Electric (BEV)", "BEV (Tesla)", "BEV (Non-Tesla)", "Hybrid Electric (HEV)", "Plug-In Hybrid Electric (PHEV)", "Diesel", "Flex Fuel (E85)" |
-| `vehicle_type` | Vehicle type: "All", "Car", "CUV", "SUV", "Pickup", "Minivan"                                                                                                                              |
-| `quantile`     | Quantile level (1 through 99)                                                                                                                                                              |
-| `miles`        | Daily vehicle miles traveled at the given quantile                                                                                                                                         |
+|  |  |
+|----|----|
+| Variable | Description |
+| `powertrain` | Powertrain category: "All", "Gasoline", "Battery Electric (BEV)", "BEV (Tesla)", "BEV (Non-Tesla)", "Hybrid Electric (HEV)", "Plug-In Hybrid Electric (PHEV)", "Diesel", "Flex Fuel (E85)" |
+| `vehicle_type` | Vehicle type: "All", "Car", "CUV", "SUV", "Pickup", "Minivan" |
+| `quantile` | Quantile level (1 through 99) |
+| `miles` | Daily vehicle miles traveled at the given quantile |
 
 ## Source
 

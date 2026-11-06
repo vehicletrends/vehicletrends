@@ -16,16 +16,16 @@ data(percent_dealers)
 
 A data frame with 7 variables:
 
-|                  |                                                                                    |
-|------------------|------------------------------------------------------------------------------------|
-| Variable         | Description                                                                        |
-| `listing_year`   | Year of the vehicle listing (2018–2024)                                            |
-| `inventory_type` | Inventory type: "New" or "Used"                                                    |
-| `group_var`      | Name of the grouping variable: "powertrain", "vehicle_type", or "price_bin"        |
-| `group_level`    | Level of the grouping variable (e.g., "Gasoline", "Car", "\$30k-\$40k")            |
-| `category_var`   | Name of the category variable: "powertrain", "vehicle_type", or "price_bin"        |
-| `category_level` | Level of the category variable                                                     |
-| `p`              | Proportion of dealers with at least one listing in this group-category combination |
+|  |  |
+|----|----|
+| Variable | Description |
+| `listing_year` | Year of the vehicle listing (2018–2024) |
+| `inventory_type` | Inventory type: "New" or "Used" |
+| `group_var` | Name of the grouping variable: "powertrain", "vehicle_type", or "price_bin" |
+| `group_level` | Level of the grouping variable (e.g., "Gasoline", "Car", "\$30k-\$40k") |
+| `category_var` | Name of the category variable: "powertrain", "vehicle_type", or "price_bin" |
+| `category_level` | Level of the category variable |
+| `p` | Proportion of dealers with at least one listing in this group-category combination |
 
 ## Source
 

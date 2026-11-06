@@ -16,17 +16,17 @@ data(price_trends_used)
 
 A tibble with 8 variables:
 
-|                     |                                                                            |
-|---------------------|----------------------------------------------------------------------------|
-| Variable            | Description                                                                |
-| `listing_year`      | Calendar year when listing was scraped (2018–2025)                         |
-| `state`             | US state abbreviation (e.g., "CA", "TX", "NY")                             |
-| `year`              | Model year of the vehicle                                                  |
-| `vehicle_type`      | Vehicle type: "car", "cuv", "suv", "pickup", "minivan"                     |
-| `avg_price`         | Average listing price (USD)                                                |
-| `n_listings`        | Number of listings                                                         |
-| `dep_annual_rate`   | Annual depreciation rate (proportion, 0–1) for this state and listing year |
-| `n_make_model_year` | Number of unique make-model-year combinations in this state                |
+|  |  |
+|----|----|
+| Variable | Description |
+| `listing_year` | Calendar year when listing was scraped (2018–2025) |
+| `state` | US state abbreviation (e.g., "CA", "TX", "NY") |
+| `year` | Model year of the vehicle |
+| `vehicle_type` | Vehicle type: "car", "cuv", "suv", "pickup", "minivan" |
+| `avg_price` | Average listing price (USD) |
+| `n_listings` | Number of listings |
+| `dep_annual_rate` | Annual depreciation rate (proportion, 0–1) for this state and listing year |
+| `n_make_model_year` | Number of unique make-model-year combinations in this state |
 
 ## Source
 

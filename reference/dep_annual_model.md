@@ -19,14 +19,14 @@ data(dep_annual_model)
 
 A data frame with 5 variables:
 
-|                |                                                                                                                                                   |
-|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| Variable       | Description                                                                                                                                       |
-| `make`         | Vehicle manufacturer (e.g., "Toyota", "BMW", "Mercedes-Benz")                                                                                     |
-| `model`        | Vehicle model name (e.g., "Camry", "RAV4", "Model 3")                                                                                             |
-| `vehicle_type` | Vehicle type: "Car", "CUV", "SUV", "Pickup", "Minivan"                                                                                            |
-| `powertrain`   | Powertrain category: "Gasoline", "Battery Electric (BEV)", "Hybrid Electric (HEV)", "Plug-In Hybrid Electric (PHEV)", "Diesel", "Flex Fuel (E85)" |
-| `dep_annual`   | Estimated annual depreciation rate (proportion, 0–1)                                                                                              |
+|  |  |
+|----|----|
+| Variable | Description |
+| `make` | Vehicle manufacturer (e.g., "Toyota", "BMW", "Mercedes-Benz") |
+| `model` | Vehicle model name (e.g., "Camry", "RAV4", "Model 3") |
+| `vehicle_type` | Vehicle type: "Car", "CUV", "SUV", "Pickup", "Minivan" |
+| `powertrain` | Powertrain category: "Gasoline", "Battery Electric (BEV)", "Hybrid Electric (HEV)", "Plug-In Hybrid Electric (PHEV)", "Diesel", "Flex Fuel (E85)" |
+| `dep_annual` | Estimated annual depreciation rate (proportion, 0–1) |
 
 ## Source
 

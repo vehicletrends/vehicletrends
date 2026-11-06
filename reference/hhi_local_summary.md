@@ -20,20 +20,20 @@ data(hhi_local_summary)
 
 A tibble with 11 variables:
 
-|                |                                                                                           |
-|----------------|-------------------------------------------------------------------------------------------|
-| Variable       | Description                                                                               |
-| `group_var`    | Grouping variable: "powertrain", "vehicle_type", or "price_bin"                           |
-| `group_level`  | Level of the grouping variable (e.g., "Gasoline", "Car", "\$30k-\$40k")                   |
-| `hhi_var`      | Variable over which HHI is computed: "make", "powertrain", "vehicle_type", or "price_bin" |
-| `listing_year` | Year of the vehicle listing                                                               |
-| `mean`         | Mean HHI across census tracts                                                             |
-| `median`       | Median HHI across census tracts                                                           |
-| `q25`          | 25th percentile HHI across census tracts                                                  |
-| `q75`          | 75th percentile HHI across census tracts                                                  |
-| `IQR`          | Interquartile range of HHI across census tracts                                           |
-| `upper`        | Upper whisker bound (q75 + 1.5 \* IQR)                                                    |
-| `lower`        | Lower whisker bound (q25 - 1.5 \* IQR)                                                    |
+|  |  |
+|----|----|
+| Variable | Description |
+| `group_var` | Grouping variable: "powertrain", "vehicle_type", or "price_bin" |
+| `group_level` | Level of the grouping variable (e.g., "Gasoline", "Car", "\$30k-\$40k") |
+| `hhi_var` | Variable over which HHI is computed: "make", "powertrain", "vehicle_type", or "price_bin" |
+| `listing_year` | Year of the vehicle listing |
+| `mean` | Mean HHI across census tracts |
+| `median` | Median HHI across census tracts |
+| `q25` | 25th percentile HHI across census tracts |
+| `q75` | 75th percentile HHI across census tracts |
+| `IQR` | Interquartile range of HHI across census tracts |
+| `upper` | Upper whisker bound (q75 + 1.5 \* IQR) |
+| `lower` | Lower whisker bound (q25 - 1.5 \* IQR) |
 
 ## Source
 

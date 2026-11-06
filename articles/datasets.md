@@ -11,15 +11,16 @@ mileage and age up to 15 years (180 months) are included. Quantiles are
 provided at the 25th, 50th, and 75th percentiles across various
 groupings of powertrain and vehicle type.
 
-| Variable       | Description                                                                                                                                                                                |
-|:---------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `age_bin`      | Midpoint of 3-month age bin in months (e.g., 1.5, 4.5, …, up to 180)                                                                                                                       |
-| `powertrain`   | Powertrain category: “All”, “Gasoline”, “Battery Electric (BEV)”, “BEV (Tesla)”, “BEV (Non-Tesla)”, “Hybrid Electric (HEV)”, “Plug-In Hybrid Electric (PHEV)”, “Diesel”, “Flex Fuel (E85)” |
-| `vehicle_type` | Vehicle type: “All”, “Car”, “CUV”, “SUV”, “Pickup”, “Minivan”                                                                                                                              |
-| `quantile`     | Quantile level (25, 50, or 75)                                                                                                                                                             |
-| `miles`        | Total odometer miles at the given quantile                                                                                                                                                 |
+| Variable | Description |
+|:---|:---|
+| `age_bin` | Midpoint of 3-month age bin in months (e.g., 1.5, 4.5, …, up to 180) |
+| `powertrain` | Powertrain category: “All”, “Gasoline”, “Battery Electric (BEV)”, “BEV (Tesla)”, “BEV (Non-Tesla)”, “Hybrid Electric (HEV)”, “Plug-In Hybrid Electric (PHEV)”, “Diesel”, “Flex Fuel (E85)” |
+| `vehicle_type` | Vehicle type: “All”, “Car”, “CUV”, “SUV”, “Pickup”, “Minivan” |
+| `quantile` | Quantile level (25, 50, or 75) |
+| `miles` | Total odometer miles at the given quantile |
 
 ``` r
+
 head(vmt_age, 10)
 #>    age_bin powertrain vehicle_type quantile       miles
 #> 1      1.5        All          All       25    7.487188
@@ -42,14 +43,15 @@ and age up to 15 years are included. Percentile quantiles from the 1st
 through 99th are provided across various groupings of powertrain and
 vehicle type.
 
-| Variable       | Description                                                                                                                                                                                |
-|:---------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `powertrain`   | Powertrain category: “All”, “Gasoline”, “Battery Electric (BEV)”, “BEV (Tesla)”, “BEV (Non-Tesla)”, “Hybrid Electric (HEV)”, “Plug-In Hybrid Electric (PHEV)”, “Diesel”, “Flex Fuel (E85)” |
-| `vehicle_type` | Vehicle type: “All”, “Car”, “CUV”, “SUV”, “Pickup”, “Minivan”                                                                                                                              |
-| `quantile`     | Quantile level (1 through 99)                                                                                                                                                              |
-| `miles`        | Daily vehicle miles traveled at the given quantile                                                                                                                                         |
+| Variable | Description |
+|:---|:---|
+| `powertrain` | Powertrain category: “All”, “Gasoline”, “Battery Electric (BEV)”, “BEV (Tesla)”, “BEV (Non-Tesla)”, “Hybrid Electric (HEV)”, “Plug-In Hybrid Electric (PHEV)”, “Diesel”, “Flex Fuel (E85)” |
+| `vehicle_type` | Vehicle type: “All”, “Car”, “CUV”, “SUV”, “Pickup”, “Minivan” |
+| `quantile` | Quantile level (1 through 99) |
+| `miles` | Daily vehicle miles traveled at the given quantile |
 
 ``` r
+
 head(vmt_daily, 10)
 #>    powertrain vehicle_type quantile     miles
 #> 1         All          All        1  2.719209
@@ -71,13 +73,14 @@ powertrain and vehicle type. Computed by fitting OLS regressions of
 total odometer miles on vehicle age (in years) for used vehicle
 listings; the slope coefficient represents the estimated annual VMT.
 
-| Variable       | Description                                                                                                                                       |
-|:---------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `vehicle_type` | Vehicle type: “Car”, “CUV”, “SUV”, “Pickup”, “Minivan”                                                                                            |
-| `powertrain`   | Powertrain category: “Gasoline”, “Battery Electric (BEV)”, “Hybrid Electric (HEV)”, “Plug-In Hybrid Electric (PHEV)”, “Diesel”, “Flex Fuel (E85)” |
-| `vmt_annual`   | Estimated annual vehicle miles traveled                                                                                                           |
+| Variable | Description |
+|:---|:---|
+| `vehicle_type` | Vehicle type: “Car”, “CUV”, “SUV”, “Pickup”, “Minivan” |
+| `powertrain` | Powertrain category: “Gasoline”, “Battery Electric (BEV)”, “Hybrid Electric (HEV)”, “Plug-In Hybrid Electric (PHEV)”, “Diesel”, “Flex Fuel (E85)” |
+| `vmt_annual` | Estimated annual vehicle miles traveled |
 
 ``` r
+
 head(vmt_annual_type, 10)
 #>                powertrain vehicle_type vmt_annual
 #> 1  Battery Electric (BEV)          CUV   9805.068
@@ -101,15 +104,16 @@ slope coefficient represents the estimated annual VMT. Only make/model
 combinations with at least 100 listings are included, and results are
 filtered to positive annual VMT values only.
 
-| Variable       | Description                                                                                                                                       |
-|:---------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `make`         | Vehicle manufacturer (e.g., “Toyota”, “BMW”, “Mercedes-Benz”)                                                                                     |
-| `model`        | Vehicle model name (e.g., “Camry”, “RAV4”, “Model 3”)                                                                                             |
-| `vehicle_type` | Vehicle type: “Car”, “CUV”, “SUV”, “Pickup”, “Minivan”                                                                                            |
-| `powertrain`   | Powertrain category: “Gasoline”, “Battery Electric (BEV)”, “Hybrid Electric (HEV)”, “Plug-In Hybrid Electric (PHEV)”, “Diesel”, “Flex Fuel (E85)” |
-| `vmt_annual`   | Estimated annual vehicle miles traveled                                                                                                           |
+| Variable | Description |
+|:---|:---|
+| `make` | Vehicle manufacturer (e.g., “Toyota”, “BMW”, “Mercedes-Benz”) |
+| `model` | Vehicle model name (e.g., “Camry”, “RAV4”, “Model 3”) |
+| `vehicle_type` | Vehicle type: “Car”, “CUV”, “SUV”, “Pickup”, “Minivan” |
+| `powertrain` | Powertrain category: “Gasoline”, “Battery Electric (BEV)”, “Hybrid Electric (HEV)”, “Plug-In Hybrid Electric (PHEV)”, “Diesel”, “Flex Fuel (E85)” |
+| `vmt_annual` | Estimated annual vehicle miles traveled |
 
 ``` r
+
 head(vmt_annual_model, 10)
 #>          make               model                     powertrain vehicle_type
 #> 1       Acura                 MDX                       Gasoline          CUV
@@ -144,15 +148,16 @@ valid price and MSRP values are included, with ages ranging from 12 to
 75th percentiles across various groupings of powertrain and vehicle
 type.
 
-| Variable       | Description                                                                                                                                                                                |
-|:---------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `age_bin`      | Midpoint of 3-month age bin in months (e.g., 13.5, 16.5, …, up to 180)                                                                                                                     |
-| `powertrain`   | Powertrain category: “All”, “Gasoline”, “Battery Electric (BEV)”, “BEV (Tesla)”, “BEV (Non-Tesla)”, “Hybrid Electric (HEV)”, “Plug-In Hybrid Electric (PHEV)”, “Diesel”, “Flex Fuel (E85)” |
-| `vehicle_type` | Vehicle type: “All”, “Car”, “CUV”, “SUV”, “Pickup”, “Minivan”                                                                                                                              |
-| `quantile`     | Quantile level (25, 50, or 75)                                                                                                                                                             |
-| `rr`           | Retention rate (price / MSRP) at the given quantile                                                                                                                                        |
+| Variable | Description |
+|:---|:---|
+| `age_bin` | Midpoint of 3-month age bin in months (e.g., 13.5, 16.5, …, up to 180) |
+| `powertrain` | Powertrain category: “All”, “Gasoline”, “Battery Electric (BEV)”, “BEV (Tesla)”, “BEV (Non-Tesla)”, “Hybrid Electric (HEV)”, “Plug-In Hybrid Electric (PHEV)”, “Diesel”, “Flex Fuel (E85)” |
+| `vehicle_type` | Vehicle type: “All”, “Car”, “CUV”, “SUV”, “Pickup”, “Minivan” |
+| `quantile` | Quantile level (25, 50, or 75) |
+| `rr` | Retention rate (price / MSRP) at the given quantile |
 
 ``` r
+
 head(depreciation, 10)
 #>    age_bin powertrain vehicle_type quantile        rr
 #> 1     13.5        All          All       25 0.8077305
@@ -176,13 +181,14 @@ listings; the annual depreciation rate is `1 - exp(b)` where `b` is the
 age coefficient. Only used vehicles aged 1–10 years with valid price and
 MSRP values are included.
 
-| Variable       | Description                                                                                                                                       |
-|:---------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `vehicle_type` | Vehicle type: “Car”, “CUV”, “SUV”, “Pickup”, “Minivan”                                                                                            |
-| `powertrain`   | Powertrain category: “Gasoline”, “Battery Electric (BEV)”, “Hybrid Electric (HEV)”, “Plug-In Hybrid Electric (PHEV)”, “Diesel”, “Flex Fuel (E85)” |
-| `dep_annual`   | Estimated annual depreciation rate (proportion, 0–1)                                                                                              |
+| Variable | Description |
+|:---|:---|
+| `vehicle_type` | Vehicle type: “Car”, “CUV”, “SUV”, “Pickup”, “Minivan” |
+| `powertrain` | Powertrain category: “Gasoline”, “Battery Electric (BEV)”, “Hybrid Electric (HEV)”, “Plug-In Hybrid Electric (PHEV)”, “Diesel”, “Flex Fuel (E85)” |
+| `dep_annual` | Estimated annual depreciation rate (proportion, 0–1) |
 
 ``` r
+
 head(dep_annual_type, 10)
 #>                powertrain vehicle_type dep_annual
 #> 1  Battery Electric (BEV)          CUV 0.10402026
@@ -208,15 +214,16 @@ MSRP values are included. Only make/model combinations with at least 100
 listings are included, and results are filtered to positive depreciation
 rates only.
 
-| Variable       | Description                                                                                                                                       |
-|:---------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `make`         | Vehicle manufacturer (e.g., “Toyota”, “BMW”, “Mercedes-Benz”)                                                                                     |
-| `model`        | Vehicle model name (e.g., “Camry”, “RAV4”, “Model 3”)                                                                                             |
-| `vehicle_type` | Vehicle type: “Car”, “CUV”, “SUV”, “Pickup”, “Minivan”                                                                                            |
-| `powertrain`   | Powertrain category: “Gasoline”, “Battery Electric (BEV)”, “Hybrid Electric (HEV)”, “Plug-In Hybrid Electric (PHEV)”, “Diesel”, “Flex Fuel (E85)” |
-| `dep_annual`   | Estimated annual depreciation rate (proportion, 0–1)                                                                                              |
+| Variable | Description |
+|:---|:---|
+| `make` | Vehicle manufacturer (e.g., “Toyota”, “BMW”, “Mercedes-Benz”) |
+| `model` | Vehicle model name (e.g., “Camry”, “RAV4”, “Model 3”) |
+| `vehicle_type` | Vehicle type: “Car”, “CUV”, “SUV”, “Pickup”, “Minivan” |
+| `powertrain` | Powertrain category: “Gasoline”, “Battery Electric (BEV)”, “Hybrid Electric (HEV)”, “Plug-In Hybrid Electric (PHEV)”, “Diesel”, “Flex Fuel (E85)” |
+| `dep_annual` | Estimated annual depreciation rate (proportion, 0–1) |
 
 ``` r
+
 head(dep_annual_model, 10)
 #>     make        model      powertrain vehicle_type dep_annual
 #> 1  Acura          MDX        Gasoline          CUV 0.11083871
@@ -240,18 +247,19 @@ bin, vehicle type by powertrain, vehicle type by price bin, price bin by
 powertrain, and price bin by vehicle type) plus three singular time
 trends for powertrain, vehicle type, and price bin individually.
 
-| Variable         | Description                                                                                                   |
-|:-----------------|:--------------------------------------------------------------------------------------------------------------|
-| `listing_year`   | Year of the vehicle listing (2018–2024)                                                                       |
-| `inventory_type` | Inventory type: “New” or “Used”                                                                               |
-| `group_var`      | Name of the grouping variable: “powertrain”, “vehicle_type”, or “price_bin”                                   |
-| `group_level`    | Level of the grouping variable (e.g., “Gasoline”, “Car”, “\$30k-\$40k”)                                       |
-| `category_var`   | Name of the category variable: “powertrain”, “vehicle_type”, or “price_bin”; `NA` for singular time trends    |
-| `category_level` | Level of the category variable; `NA` for singular time trends                                                 |
-| `n`              | Number of listings in this group-category combination                                                         |
-| `p`              | Proportion of listings within the group (sums to 1 within each listing year, inventory type, and group level) |
+| Variable | Description |
+|:---|:---|
+| `listing_year` | Year of the vehicle listing (2018–2024) |
+| `inventory_type` | Inventory type: “New” or “Used” |
+| `group_var` | Name of the grouping variable: “powertrain”, “vehicle_type”, or “price_bin” |
+| `group_level` | Level of the grouping variable (e.g., “Gasoline”, “Car”, “\$30k-\$40k”) |
+| `category_var` | Name of the category variable: “powertrain”, “vehicle_type”, or “price_bin”; `NA` for singular time trends |
+| `category_level` | Level of the category variable; `NA` for singular time trends |
+| `n` | Number of listings in this group-category combination |
+| `p` | Proportion of listings within the group (sums to 1 within each listing year, inventory type, and group level) |
 
 ``` r
+
 head(percent_listings, 10)
 #>    listing_year inventory_type  group_var            group_level category_var
 #> 1          2018            New powertrain Battery Electric (BEV) vehicle_type
@@ -285,17 +293,18 @@ and inventory types. Three variable-pair combinations are included:
 powertrain by vehicle type, powertrain by price bin, and vehicle type by
 price bin.
 
-| Variable         | Description                                                                        |
-|:-----------------|:-----------------------------------------------------------------------------------|
-| `listing_year`   | Year of the vehicle listing (2018–2024)                                            |
-| `inventory_type` | Inventory type: “New” or “Used”                                                    |
-| `group_var`      | Name of the grouping variable: “powertrain”, “vehicle_type”, or “price_bin”        |
-| `group_level`    | Level of the grouping variable (e.g., “Gasoline”, “Car”, “\$30k-\$40k”)            |
-| `category_var`   | Name of the category variable: “powertrain”, “vehicle_type”, or “price_bin”        |
-| `category_level` | Level of the category variable                                                     |
-| `p`              | Proportion of dealers with at least one listing in this group-category combination |
+| Variable | Description |
+|:---|:---|
+| `listing_year` | Year of the vehicle listing (2018–2024) |
+| `inventory_type` | Inventory type: “New” or “Used” |
+| `group_var` | Name of the grouping variable: “powertrain”, “vehicle_type”, or “price_bin” |
+| `group_level` | Level of the grouping variable (e.g., “Gasoline”, “Car”, “\$30k-\$40k”) |
+| `category_var` | Name of the category variable: “powertrain”, “vehicle_type”, or “price_bin” |
+| `category_level` | Level of the category variable |
+| `p` | Proportion of dealers with at least one listing in this group-category combination |
 
 ``` r
+
 head(percent_dealers, 10)
 #>    listing_year inventory_type  group_var            group_level category_var
 #> 1          2019            New powertrain Battery Electric (BEV) vehicle_type
@@ -337,21 +346,22 @@ summarization) are available as parquet files:
 [hhi_pt_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_pt_60.parquet),
 [hhi_vt_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_vt_60.parquet).
 
-| Variable       | Description                                                                               |
-|:---------------|:------------------------------------------------------------------------------------------|
-| `group_var`    | Grouping variable: “powertrain”, “vehicle_type”, or “price_bin”                           |
-| `group_level`  | Level of the grouping variable (e.g., “Gasoline”, “Car”, “\$30k-\$40k”)                   |
-| `hhi_var`      | Variable over which HHI is computed: “make”, “powertrain”, “vehicle_type”, or “price_bin” |
-| `listing_year` | Year of the vehicle listing                                                               |
-| `mean`         | Mean HHI across census tracts                                                             |
-| `median`       | Median HHI across census tracts                                                           |
-| `q25`          | 25th percentile HHI across census tracts                                                  |
-| `q75`          | 75th percentile HHI across census tracts                                                  |
-| `IQR`          | Interquartile range of HHI across census tracts                                           |
-| `upper`        | Upper whisker bound (q75 + 1.5 \* IQR)                                                    |
-| `lower`        | Lower whisker bound (q25 - 1.5 \* IQR)                                                    |
+| Variable | Description |
+|:---|:---|
+| `group_var` | Grouping variable: “powertrain”, “vehicle_type”, or “price_bin” |
+| `group_level` | Level of the grouping variable (e.g., “Gasoline”, “Car”, “\$30k-\$40k”) |
+| `hhi_var` | Variable over which HHI is computed: “make”, “powertrain”, “vehicle_type”, or “price_bin” |
+| `listing_year` | Year of the vehicle listing |
+| `mean` | Mean HHI across census tracts |
+| `median` | Median HHI across census tracts |
+| `q25` | 25th percentile HHI across census tracts |
+| `q75` | 75th percentile HHI across census tracts |
+| `IQR` | Interquartile range of HHI across census tracts |
+| `upper` | Upper whisker bound (q75 + 1.5 \* IQR) |
+| `lower` | Lower whisker bound (q25 - 1.5 \* IQR) |
 
 ``` r
+
 head(hhi_local_summary, 10)
 #>     group_var            group_level hhi_var listing_year      mean    median
 #> 1  powertrain Battery Electric (BEV)    make         2025 0.2281757 0.1922108
@@ -390,21 +400,22 @@ powertrain, vehicle type, and price bin. Census-tract-level values
 [p_pt_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/p_pt_60.parquet),
 [p_vt_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/p_vt_60.parquet).
 
-| Variable         | Description                                                             |
-|:-----------------|:------------------------------------------------------------------------|
-| `group_var`      | Grouping variable: “powertrain”, “vehicle_type”, or “price_bin”         |
-| `group_level`    | Level of the grouping variable (e.g., “Gasoline”, “Car”, “\$30k-\$40k”) |
-| `inventory_type` | Inventory type: “New” or “Used”                                         |
-| `listing_year`   | Year of the vehicle listing                                             |
-| `mean`           | Mean local market share across census tracts                            |
-| `median`         | Median local market share across census tracts                          |
-| `q25`            | 25th percentile local market share across census tracts                 |
-| `q75`            | 75th percentile local market share across census tracts                 |
-| `IQR`            | Interquartile range of local market share across census tracts          |
-| `upper`          | Upper whisker bound (q75 + 1.5 \* IQR)                                  |
-| `lower`          | Lower whisker bound (q25 - 1.5 \* IQR)                                  |
+| Variable | Description |
+|:---|:---|
+| `group_var` | Grouping variable: “powertrain”, “vehicle_type”, or “price_bin” |
+| `group_level` | Level of the grouping variable (e.g., “Gasoline”, “Car”, “\$30k-\$40k”) |
+| `inventory_type` | Inventory type: “New” or “Used” |
+| `listing_year` | Year of the vehicle listing |
+| `mean` | Mean local market share across census tracts |
+| `median` | Median local market share across census tracts |
+| `q25` | 25th percentile local market share across census tracts |
+| `q75` | 75th percentile local market share across census tracts |
+| `IQR` | Interquartile range of local market share across census tracts |
+| `upper` | Upper whisker bound (q75 + 1.5 \* IQR) |
+| `lower` | Lower whisker bound (q25 - 1.5 \* IQR) |
 
 ``` r
+
 head(p_local_summary, 10)
 #>     group_var            group_level inventory_type listing_year        mean
 #> 1  powertrain Battery Electric (BEV)            New         2025 0.042667113
@@ -439,17 +450,17 @@ and `p_local_summary` package datasets. File name suffixes indicate the
 grouping variable (`pb` = price bin, `pt` = powertrain, `vt` = vehicle
 type) and isochrone radius (`60` = 60-minute drive time).
 
-| File                                                                                               | Description                                                                   |
-|:---------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------|
-| [hhi_pb_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_pb_60.parquet)         | HHI per census tract, grouped by price bin (60-min isochrone)                 |
-| [hhi_pt_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_pt_60.parquet)         | HHI per census tract, grouped by powertrain (60-min isochrone)                |
-| [hhi_vt_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_vt_60.parquet)         | HHI per census tract, grouped by vehicle type (60-min isochrone)              |
-| [p_pb_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/p_pb_60.parquet)             | Market share (p) per census tract, grouped by price bin (60-min isochrone)    |
-| [p_pt_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/p_pt_60.parquet)             | Market share (p) per census tract, grouped by powertrain (60-min isochrone)   |
-| [p_vt_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/p_vt_60.parquet)             | Market share (p) per census tract, grouped by vehicle type (60-min isochrone) |
-| [tracts.rds](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/tracts.rds)                       | US census tract geometries (full resolution)                                  |
-| [tracts_simplified.rds](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/tracts_simplified.rds) | US census tract geometries (simplified for faster rendering)                  |
-| [hhi_tracts.pmtiles](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_tracts.pmtiles)       | HHI per census tract as PMTiles for interactive map visualization             |
+| File | Description |
+|:---|:---|
+| [hhi_pb_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_pb_60.parquet) | HHI per census tract, grouped by price bin (60-min isochrone) |
+| [hhi_pt_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_pt_60.parquet) | HHI per census tract, grouped by powertrain (60-min isochrone) |
+| [hhi_vt_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_vt_60.parquet) | HHI per census tract, grouped by vehicle type (60-min isochrone) |
+| [p_pb_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/p_pb_60.parquet) | Market share (p) per census tract, grouped by price bin (60-min isochrone) |
+| [p_pt_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/p_pt_60.parquet) | Market share (p) per census tract, grouped by powertrain (60-min isochrone) |
+| [p_vt_60.parquet](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/p_vt_60.parquet) | Market share (p) per census tract, grouped by vehicle type (60-min isochrone) |
+| [tracts.rds](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/tracts.rds) | US census tract geometries (full resolution) |
+| [tracts_simplified.rds](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/tracts_simplified.rds) | US census tract geometries (simplified for faster rendering) |
+| [hhi_tracts.pmtiles](https://pub-17d608be304c4976845ab692fc09de91.r2.dev/hhi_tracts.pmtiles) | HHI per census tract as PMTiles for interactive map visualization |
 
 ## `price_trends_new`
 
@@ -457,17 +468,18 @@ Average prices and listing counts for new vehicle inventory by listing
 year, state, model year, and vehicle type. Includes the number of unique
 make-model-year combinations available in each state.
 
-| Variable            | Description                                                 |
-|:--------------------|:------------------------------------------------------------|
-| `listing_year`      | Calendar year when listing was scraped (2018–2025)          |
-| `state`             | US state abbreviation (e.g., “CA”, “TX”, “NY”)              |
-| `year`              | Model year of the vehicle                                   |
-| `vehicle_type`      | Vehicle type: “car”, “cuv”, “suv”, “pickup”, “minivan”      |
-| `avg_price`         | Average listing price (USD)                                 |
-| `n_listings`        | Number of listings                                          |
+| Variable | Description |
+|:---|:---|
+| `listing_year` | Calendar year when listing was scraped (2018–2025) |
+| `state` | US state abbreviation (e.g., “CA”, “TX”, “NY”) |
+| `year` | Model year of the vehicle |
+| `vehicle_type` | Vehicle type: “car”, “cuv”, “suv”, “pickup”, “minivan” |
+| `avg_price` | Average listing price (USD) |
+| `n_listings` | Number of listings |
 | `n_make_model_year` | Number of unique make-model-year combinations in this state |
 
 ``` r
+
 head(price_trends_new, 10)
 #>    listing_year state year vehicle_type avg_price n_listings n_make_model_year
 #> 1          2018    AK 2016       pickup  44915.88          1               407
@@ -490,18 +502,19 @@ annual depreciation rates calculated using exponential decay modeling on
 retention rates (price/MSRP) and the number of unique make-model-year
 combinations available in each state.
 
-| Variable            | Description                                                                |
-|:--------------------|:---------------------------------------------------------------------------|
-| `listing_year`      | Calendar year when listing was scraped (2018–2025)                         |
-| `state`             | US state abbreviation (e.g., “CA”, “TX”, “NY”)                             |
-| `year`              | Model year of the vehicle                                                  |
-| `vehicle_type`      | Vehicle type: “car”, “cuv”, “suv”, “pickup”, “minivan”                     |
-| `avg_price`         | Average listing price (USD)                                                |
-| `n_listings`        | Number of listings                                                         |
-| `dep_annual_rate`   | Annual depreciation rate (proportion, 0–1) for this state and listing year |
-| `n_make_model_year` | Number of unique make-model-year combinations in this state                |
+| Variable | Description |
+|:---|:---|
+| `listing_year` | Calendar year when listing was scraped (2018–2025) |
+| `state` | US state abbreviation (e.g., “CA”, “TX”, “NY”) |
+| `year` | Model year of the vehicle |
+| `vehicle_type` | Vehicle type: “car”, “cuv”, “suv”, “pickup”, “minivan” |
+| `avg_price` | Average listing price (USD) |
+| `n_listings` | Number of listings |
+| `dep_annual_rate` | Annual depreciation rate (proportion, 0–1) for this state and listing year |
+| `n_make_model_year` | Number of unique make-model-year combinations in this state |
 
 ``` r
+
 head(price_trends_used, 10)
 #>    listing_year state year vehicle_type avg_price n_listings dep_annual_rate
 #> 1          2018    AK 2004          cuv  9562.734          8      0.06493018
@@ -534,14 +547,15 @@ scraped from the [Alternative Fuels Data Center
 (AFDC)](https://afdc.energy.gov/vehicle-registration) for years 2016
 through 2024.
 
-| Variable     | Description                                                                                                                                                                                                                                                    |
-|:-------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `year`       | Registration year (2016–2024)                                                                                                                                                                                                                                  |
-| `state`      | US state name (e.g., “Alabama”, “California”)                                                                                                                                                                                                                  |
+| Variable | Description |
+|:---|:---|
+| `year` | Registration year (2016–2024) |
+| `state` | US state name (e.g., “Alabama”, “California”) |
 | `powertrain` | Fuel/powertrain type (e.g., “Battery Electric (BEV)”, “Diesel”, “Gasoline”, “Hybrid Electric (HEV)”, “Plug-In Hybrid Electric (PHEV)”, “Biodiesel”, “Compressed Natural Gas (CNG)”, “Ethanol/Flex Fuel (E85)”, “Fuel Cell”, “Hydrogen”, “Methanol”, “Propane”) |
-| `count`      | Number of registered vehicles                                                                                                                                                                                                                                  |
+| `count` | Number of registered vehicles |
 
 ``` r
+
 head(registrations, 10)
 #>    year   state                     powertrain   count
 #> 1  2016 Alabama         Battery Electric (BEV)     500

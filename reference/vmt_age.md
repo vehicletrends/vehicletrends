@@ -16,14 +16,14 @@ data(vmt_age)
 
 A tibble with 8,118 rows and 5 variables:
 
-|                |                                                                                                                                                                                            |
-|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Variable       | Description                                                                                                                                                                                |
-| `age_bin`      | Midpoint of 3-month age bin in months (e.g., 1.5, 4.5, ..., up to 180)                                                                                                                     |
-| `powertrain`   | Powertrain category: "All", "Gasoline", "Battery Electric (BEV)", "BEV (Tesla)", "BEV (Non-Tesla)", "Hybrid Electric (HEV)", "Plug-In Hybrid Electric (PHEV)", "Diesel", "Flex Fuel (E85)" |
-| `vehicle_type` | Vehicle type: "All", "Car", "CUV", "SUV", "Pickup", "Minivan"                                                                                                                              |
-| `quantile`     | Quantile level (25, 50, or 75)                                                                                                                                                             |
-| `miles`        | Total odometer miles at the given quantile                                                                                                                                                 |
+|  |  |
+|----|----|
+| Variable | Description |
+| `age_bin` | Midpoint of 3-month age bin in months (e.g., 1.5, 4.5, ..., up to 180) |
+| `powertrain` | Powertrain category: "All", "Gasoline", "Battery Electric (BEV)", "BEV (Tesla)", "BEV (Non-Tesla)", "Hybrid Electric (HEV)", "Plug-In Hybrid Electric (PHEV)", "Diesel", "Flex Fuel (E85)" |
+| `vehicle_type` | Vehicle type: "All", "Car", "CUV", "SUV", "Pickup", "Minivan" |
+| `quantile` | Quantile level (25, 50, or 75) |
+| `miles` | Total odometer miles at the given quantile |
 
 ## Source
 

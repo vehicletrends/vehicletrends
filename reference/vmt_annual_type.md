@@ -15,12 +15,12 @@ data(vmt_annual_type)
 
 A data frame with 31 rows and 3 variables:
 
-|                |                                                                                                                                                   |
-|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| Variable       | Description                                                                                                                                       |
-| `vehicle_type` | Vehicle type: "Car", "CUV", "SUV", "Pickup", "Minivan"                                                                                            |
-| `powertrain`   | Powertrain category: "Gasoline", "Battery Electric (BEV)", "Hybrid Electric (HEV)", "Plug-In Hybrid Electric (PHEV)", "Diesel", "Flex Fuel (E85)" |
-| `vmt_annual`   | Estimated annual vehicle miles traveled                                                                                                           |
+|  |  |
+|----|----|
+| Variable | Description |
+| `vehicle_type` | Vehicle type: "Car", "CUV", "SUV", "Pickup", "Minivan" |
+| `powertrain` | Powertrain category: "Gasoline", "Battery Electric (BEV)", "Hybrid Electric (HEV)", "Plug-In Hybrid Electric (PHEV)", "Diesel", "Flex Fuel (E85)" |
+| `vmt_annual` | Estimated annual vehicle miles traveled |
 
 ## Source
 

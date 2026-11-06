@@ -17,14 +17,14 @@ data(depreciation)
 
 A tibble with 6,486 rows and 5 variables:
 
-|                |                                                                                                                                                                                            |
-|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Variable       | Description                                                                                                                                                                                |
-| `age_bin`      | Midpoint of 3-month age bin in months (e.g., 13.5, 16.5, ..., up to 180)                                                                                                                   |
-| `powertrain`   | Powertrain category: "All", "Gasoline", "Battery Electric (BEV)", "BEV (Tesla)", "BEV (Non-Tesla)", "Hybrid Electric (HEV)", "Plug-In Hybrid Electric (PHEV)", "Diesel", "Flex Fuel (E85)" |
-| `vehicle_type` | Vehicle type: "All", "Car", "CUV", "SUV", "Pickup", "Minivan"                                                                                                                              |
-| `quantile`     | Quantile level (25, 50, or 75)                                                                                                                                                             |
-| `rr`           | Retention rate (price / MSRP) at the given quantile                                                                                                                                        |
+|  |  |
+|----|----|
+| Variable | Description |
+| `age_bin` | Midpoint of 3-month age bin in months (e.g., 13.5, 16.5, ..., up to 180) |
+| `powertrain` | Powertrain category: "All", "Gasoline", "Battery Electric (BEV)", "BEV (Tesla)", "BEV (Non-Tesla)", "Hybrid Electric (HEV)", "Plug-In Hybrid Electric (PHEV)", "Diesel", "Flex Fuel (E85)" |
+| `vehicle_type` | Vehicle type: "All", "Car", "CUV", "SUV", "Pickup", "Minivan" |
+| `quantile` | Quantile level (25, 50, or 75) |
+| `rr` | Retention rate (price / MSRP) at the given quantile |
 
 ## Source
 

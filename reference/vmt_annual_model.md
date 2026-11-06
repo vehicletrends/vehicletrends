@@ -17,14 +17,14 @@ data(vmt_annual_model)
 
 A data frame with 548 rows and 5 variables:
 
-|                |                                                                                                                                                   |
-|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| Variable       | Description                                                                                                                                       |
-| `make`         | Vehicle manufacturer (e.g., "Toyota", "BMW", "Mercedes-Benz")                                                                                     |
-| `model`        | Vehicle model name (e.g., "Camry", "RAV4", "Model 3")                                                                                             |
-| `vehicle_type` | Vehicle type: "Car", "CUV", "SUV", "Pickup", "Minivan"                                                                                            |
-| `powertrain`   | Powertrain category: "Gasoline", "Battery Electric (BEV)", "Hybrid Electric (HEV)", "Plug-In Hybrid Electric (PHEV)", "Diesel", "Flex Fuel (E85)" |
-| `vmt_annual`   | Estimated annual vehicle miles traveled                                                                                                           |
+|  |  |
+|----|----|
+| Variable | Description |
+| `make` | Vehicle manufacturer (e.g., "Toyota", "BMW", "Mercedes-Benz") |
+| `model` | Vehicle model name (e.g., "Camry", "RAV4", "Model 3") |
+| `vehicle_type` | Vehicle type: "Car", "CUV", "SUV", "Pickup", "Minivan" |
+| `powertrain` | Powertrain category: "Gasoline", "Battery Electric (BEV)", "Hybrid Electric (HEV)", "Plug-In Hybrid Electric (PHEV)", "Diesel", "Flex Fuel (E85)" |
+| `vmt_annual` | Estimated annual vehicle miles traveled |
 
 ## Source
 

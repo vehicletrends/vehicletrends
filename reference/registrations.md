@@ -14,13 +14,13 @@ data(registrations)
 
 A tibble with 5,616 rows and 4 variables:
 
-|              |                                                                                                                                                                                                                                                                |
-|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Variable     | Description                                                                                                                                                                                                                                                    |
-| `year`       | Registration year (2016–2024)                                                                                                                                                                                                                                  |
-| `state`      | US state name (e.g., "Alabama", "California")                                                                                                                                                                                                                  |
+|  |  |
+|----|----|
+| Variable | Description |
+| `year` | Registration year (2016–2024) |
+| `state` | US state name (e.g., "Alabama", "California") |
 | `powertrain` | Fuel/powertrain type (e.g., "Battery Electric (BEV)", "Diesel", "Gasoline", "Hybrid Electric (HEV)", "Plug-In Hybrid Electric (PHEV)", "Biodiesel", "Compressed Natural Gas (CNG)", "Ethanol/Flex Fuel (E85)", "Fuel Cell", "Hydrogen", "Methanol", "Propane") |
-| `count`      | Number of registered vehicles                                                                                                                                                                                                                                  |
+| `count` | Number of registered vehicles |
 
 ## Source
 

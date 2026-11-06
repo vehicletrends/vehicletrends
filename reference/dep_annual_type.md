@@ -17,12 +17,12 @@ data(dep_annual_type)
 
 A data frame with 3 variables:
 
-|                |                                                                                                                                                   |
-|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| Variable       | Description                                                                                                                                       |
-| `vehicle_type` | Vehicle type: "Car", "CUV", "SUV", "Pickup", "Minivan"                                                                                            |
-| `powertrain`   | Powertrain category: "Gasoline", "Battery Electric (BEV)", "Hybrid Electric (HEV)", "Plug-In Hybrid Electric (PHEV)", "Diesel", "Flex Fuel (E85)" |
-| `dep_annual`   | Estimated annual depreciation rate (proportion, 0–1)                                                                                              |
+|  |  |
+|----|----|
+| Variable | Description |
+| `vehicle_type` | Vehicle type: "Car", "CUV", "SUV", "Pickup", "Minivan" |
+| `powertrain` | Powertrain category: "Gasoline", "Battery Electric (BEV)", "Hybrid Electric (HEV)", "Plug-In Hybrid Electric (PHEV)", "Diesel", "Flex Fuel (E85)" |
+| `dep_annual` | Estimated annual depreciation rate (proportion, 0–1) |
 
 ## Source
 
