@@ -15,7 +15,7 @@ library(ggrepel)
 library(dplyr)
 library(ggplot2)
 
-path_raw_data <- '/Volumes/SSK SSD/marketcheck/db/clean/db'
+path_raw_data <- '/Volumes/SSK SSD/marketcheck/db/arrow/listings_clean'
 
 # Isochrone travel time threshold (minutes) used for HHI calculations
 isochrone_min <- 60 # Also can use 30 or 90
@@ -103,13 +103,14 @@ raw_data_filters <- function(ds) {
     filter(!is.na(latitude)) %>%
     filter(!is.na(longitude)) %>%
     filter(age_years <= 15) %>%
-    # Recode powertrain variable for "hybrid" and "conventional"
+    # Recode powertrain variable for "hybrid" and "gasoline" (the rebuilt
+    # database calls gasoline "gasoline"; the legacy one called it "conventional")
     mutate(
       powertrain = ifelse(
         powertrain == 'hybrid',
         'hev',
         ifelse(
-          powertrain == 'conventional',
+          powertrain == 'gasoline',
           'cv',
           powertrain
         )

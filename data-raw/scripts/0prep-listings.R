@@ -10,6 +10,13 @@ source(here::here("data-raw", "scripts", "0setup.R"))
 # Open arrow dataset
 
 ds <- open_dataset(path_raw_data) %>%
+  # The rebuilt database prefixes the dealer's location columns; rename them
+  # back to the legacy names the rest of this repo uses.
+  rename(
+    state = dealer_state,
+    latitude = dealer_latitude,
+    longitude = dealer_longitude
+  ) %>%
   raw_data_filters() # Function in '0-setup.R'
 
 # # Number of powertrain-vehicle_type listings
@@ -57,7 +64,6 @@ ds <- ds %>%
     model,
     msrp,
     price,
-    class,
     miles,
     range,
     body_type,
